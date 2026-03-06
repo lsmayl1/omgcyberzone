@@ -1,0 +1,24 @@
+import * as React from "react";
+
+const Logo = (props: React.SVGProps<SVGSVGElement>) => {
+  return (
+    <svg width={934} height={253} viewBox="0 0 934 253" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <path d="M771.5 44L629.5 186V250.5H650.5L841 60V44H771.5Z" fill="white"/>
+    <path d="M813.5 0.5L777.5 36.5H845.5V54.5H913.5C913.1 54.5 927 40.8333 934 34L900.5 0.5H813.5Z" fill="white"/>
+    <path d="M854.5 88L794.5 148H838V234L899 173.5V88H854.5Z" fill="white"/>
+    <path d="M724.5 197.5L688 234L691.5 250.5H821.5L832 240V197.5H724.5Z" fill="white"/>
+    <path d="M401.5 155C401.5 154.6 337.833 218.5 306 250.5H392L425 217.5V155C417.167 155.167 401.5 155.4 401.5 155Z" fill="white"/>
+    <path d="M431 212V148H409.5L556.5 1H580C579.833 21.5 579.6 62.6 580 63C580.4 63.4 480.833 162.5 431 212Z" fill="white"/>
+    <path d="M529.5 156C529.5 155.6 465.833 219.5 434 251.5H520L553 218.5V156C545.167 156.167 529.5 156.4 529.5 156Z" fill="white"/>
+    <path d="M559 213V149H537.5L684.5 2H708C707.833 22.5 707.6 63.6 708 64C708.4 64.4 608.833 163.5 559 213Z" fill="white"/>
+    <path d="M273.5 155L177 251.5L263.5 251L296.5 218L297 155H273.5Z" fill="white"/>
+    <path d="M302 149H280H277L426 0H450.5C450.333 20.8333 450.1 62.5 450.5 62.5C450.9 62.5 441.333 71.8333 436.5 76.5L426 66L399.5 92.5V114.5L302 212V149Z" fill="white"/>
+    <path d="M109 190.5L244.5 55H261V124.5L177.5 208H109V190.5Z" fill="white"/>
+    <path d="M35 197L15 217L47.5 251L134 252.5L171 214H102.5V197H35Z" fill="white"/>
+    <path d="M127.5 1L92 36.5H159V53.5H227L246.5 34L213.5 1H127.5Z" fill="white"/>
+    <path d="M17.5 196.5L153 61V42H83.5L0 127.25V163V196.5H17.5Z" fill="white"/>
+    </svg>
+  );
+};
+
+export default Logo;

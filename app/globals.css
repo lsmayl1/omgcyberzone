@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+:root {
+  --background: #0D0F12;
+  --foreground: #171717;
+  --mainRed: #e93737;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-mainRed: var(--mainRed);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0D0F12;
+    --foreground: #0D0F12;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Inter", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
