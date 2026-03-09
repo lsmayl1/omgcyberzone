@@ -1,22 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
-
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
 :root {
-  --background: #0D0F12;
+  --background: #0d0f12;
   --foreground: #171717;
   --mainRed: #e93737;
+  --boxColor: #1a1f25;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-mainRed: var(--mainRed);
+  --color-boxColor: var(--boxColor);
+  --font-sans: "Inter", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0D0F12;
-    --foreground: #0D0F12;
+    --background: #0d0f12;
+    --foreground: #0d0f12;
   }
 }
 

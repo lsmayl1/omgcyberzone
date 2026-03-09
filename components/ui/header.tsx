@@ -16,7 +16,7 @@ export const Header = () => {
       <Logo className="size-24 " />
       <div className="flex gap-8 font-bold items-center">
         {menu.map((m, i) => (
-          <li className="cursor-pointer" key={i}>
+          <li className="cursor-pointer text-white" key={i}>
             {m.name}
           </li>
         ))}
