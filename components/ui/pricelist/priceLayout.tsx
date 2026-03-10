@@ -5,7 +5,7 @@ import { PriceList } from "./priceList";
 
 export const PriceLayout = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-8 py-4 px-8">
+    <div className="flex flex-col justify-center items-center gap-8 py-4 px-8 border border-b-mainRed">
       <h1 className="text-white text-4xl font-bold ">Игровые ПК</h1>
       <div className="flex gap-16">
         <div className="flex gap-4">

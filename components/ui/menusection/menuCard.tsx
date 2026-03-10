@@ -1,0 +1,135 @@
+"use client";
+import Image from "next/image";
+import React, { useState } from "react";
+
+export const MenuCard = () => {
+  const [food, setFood] = useState([
+    {
+      name: "Пицца BBQ с курицей",
+      description: "Соус барбекю, сыр гауда, сыр чеддер, лук, перец, курица",
+      category: [
+        { key: "25 см", price: "13.00 ₼", selected: true },
+        { key: "30 см", price: "15.00 ₼", selected: false },
+        { key: "35 см", price: "18.00 ₼", selected: false },
+      ],
+      img: "/menu-food/pizza.png",
+    },
+    {
+      name: "Пицца BBQ с курицей",
+      description: "Соус барбекю, сыр гауда, сыр чеддер, лук, перец, курица",
+      category: [
+        { key: "25 см", price: "13.00 ₼", selected: true },
+        { key: "30 см", price: "15.00 ₼", selected: false },
+        { key: "35 см", price: "18.00 ₼", selected: false },
+      ],
+      img: "/menu-food/pizza.png",
+    },
+    {
+      name: "Пицца BBQ с курицей",
+      description: "Соус барбекю, сыр гауда, сыр чеддер, лук, перец, курица",
+      category: [
+        { key: "25 см", price: "13.00 ₼", selected: true },
+        { key: "30 см", price: "15.00 ₼", selected: false },
+        { key: "35 см", price: "18.00 ₼", selected: false },
+      ],
+      img: "/menu-food/pizza.png",
+    },
+    {
+      name: "Пицца BBQ с курицей",
+      description: "Соус барбекю, сыр гауда, сыр чеддер, лук, перец, курица",
+      category: [
+        { key: "25 см", price: "13.00 ₼", selected: true },
+        { key: "30 см", price: "15.00 ₼", selected: false },
+        { key: "35 см", price: "18.00 ₼", selected: false },
+      ],
+      img: "/menu-food/pizza.png",
+    },
+    {
+      name: "Пицца BBQ с курицей",
+      description: "Соус барбекю, сыр гауда, сыр чеддер, лук, перец, курица",
+      category: [
+        { key: "25 см", price: "13.00 ₼", selected: true },
+        { key: "30 см", price: "15.00 ₼", selected: false },
+        { key: "35 см", price: "18.00 ₼", selected: false },
+      ],
+      img: "/menu-food/pizza.png",
+    },
+    {
+      name: "Пицца BBQ с курицей",
+      description: "Соус барбекю, сыр гауда, сыр чеддер, лук, перец, курица",
+      category: [
+        { key: "25 см", price: "13.00 ₼", selected: true },
+        { key: "30 см", price: "15.00 ₼", selected: false },
+        { key: "35 см", price: "18.00 ₼", selected: false },
+      ],
+      img: "/menu-food/pizza.png",
+    },
+    {
+      name: "Пицца BBQ с курицей",
+      description: "Соус барбекю, сыр гауда, сыр чеддер, лук, перец, курица",
+      category: [
+        { key: "25 см", price: "13.00 ₼", selected: true },
+        { key: "30 см", price: "15.00 ₼", selected: false },
+        { key: "35 см", price: "18.00 ₼", selected: false },
+      ],
+      img: "/menu-food/pizza.png",
+    },
+    {
+      name: "Пицца BBQ с курицей",
+      description: "Соус барбекю, сыр гауда, сыр чеддер, лук, перец, курица",
+      category: [
+        { key: "25 см", price: "13.00 ₼", selected: true },
+        { key: "30 см", price: "15.00 ₼", selected: false },
+        { key: "35 см", price: "18.00 ₼", selected: false },
+      ],
+      img: "/menu-food/pizza.png",
+    },
+  ]);
+
+  const handleChangeSelected = (foodIndex: number, categoryIndex: number) => {
+    const updatedFood = food.map((item, i) => {
+      if (i === foodIndex) {
+        return {
+          ...item,
+          category: item.category.map((cat, idx) => ({
+            ...cat,
+            selected: idx === categoryIndex,
+          })),
+        };
+      }
+      return item;
+    });
+    setFood(updatedFood);
+  };
+
+  return (
+    <div className="grid grid-cols-4 gap-2">
+      {food.map((dt, i) => (
+        <div
+          key={i}
+          className="flex bg-boxColor p-4 flex-col gap-4 relative rounded-xl "
+        >
+          <div className="  relative  h-64">
+            <Image src={dt.img} alt={dt.name} fill />
+          </div>
+          <span className="text-white text-xl font-semibold">{dt.name}</span>
+          <p className="text-[#66676D] font-semibold">{dt.description}</p>
+          <div className="flex gap-2">
+            {dt.category.map((ct, idx) => (
+              <button
+                onClick={() => handleChangeSelected(i, idx)}
+                className={`text-white rounded-lg font-semibold text-lg  p-2 ${ct.selected ? "bg-mainRed" : "bg-background"}`}
+                key={idx}
+              >
+                {ct.key}
+              </button>
+            ))}
+          </div>
+          <span className="flex justify-end text-end w-full text-white text-2xl font-bold">
+            {dt.category.find((item) => item.selected)?.price}
+          </span>
+        </div>
+      ))}
+    </div>
+  );
+};

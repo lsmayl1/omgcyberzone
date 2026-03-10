@@ -49,32 +49,32 @@ export const PriceList = ({
   return (
     <div className="bg-boxColor w-1/2 rounded-xl p-8 flex flex-col gap-4">
       <div className="flex justify-between items-center">
-        <span className="bg-mainRed px-4 py-2 rounded-2xl text-white font-bold ">
+        <span className="bg-mainRed px-4 py-2 rounded-xl text-white font-bold ">
           {title}
         </span>
-        <span className="text-white font-bold text-3xl ">{count}</span>
+        <span className="text-white font-bold text-xl ">{count}</span>
       </div>
       {data?.price?.map((dt, i) => (
         <div
           key={i}
-          className="text-white flex bg-background rounded-xl p-6 font-bold text-xl flex-col gap-4"
+          className="text-white flex bg-background rounded-xl p-4 font-bold text-xl flex-col gap-4"
         >
-          <h1> {dt.hour}</h1>
+          <h1 className="text-md"> {dt.hour}</h1>
           <div className="flex gap-2 text-nowrap">
-            <div className="bg-boxColor items-center p-3 rounded-lg flex gap-2 w-full justify-between">
+            <div className="bg-boxColor items-center p-2 rounded-lg flex gap-2 w-full justify-between">
               <Sun />
-              {dt.dayPrice}
+              <span className="text-lg">{dt.dayPrice}</span>
             </div>
-            <div className="bg-boxColor p-3 rounded-lg items-center flex gap-2 w-full justify-between">
+            <div className="bg-boxColor p-2 rounded-lg items-center flex gap-2 w-full justify-between">
               <Night />
-              {dt.nightPrice}
+              <span className="text-lg">{dt.nightPrice}</span>
             </div>
           </div>
         </div>
       ))}
       <div className="flex flex-col gap-4">
         <div className="bg-background items-center text-white rounded-lg text-xl font-semibold p-4 flex justify-between">
-          <h1>Характеристики</h1>
+          <h1 className="text-lg">Характеристики</h1>
           <Collapse />
         </div>
         <div className="bg-background rounded-lg flex flex-col gap-6 p-4">

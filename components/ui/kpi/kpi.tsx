@@ -30,7 +30,7 @@ export const Kpi = () => {
     },
   ];
   return (
-    <div className="flex gap-2 p-4">
+    <div className="flex gap-2 p-4 mt-4">
       {kpi.map((kp, i) => (
         <div
           key={i}
