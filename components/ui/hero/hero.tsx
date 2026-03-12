@@ -17,7 +17,7 @@ export const Hero = () => {
       <div className="absolute w-full flex flex-col h-full">
         <div className="flex justify-center h-full items-center  flex-col  text-white gap-12 max-md:gap-6 ">
           <h1 className="text-4xl  max-md:text-lg font-black text-center w-9/12 capitalize">
-            Выигрывай чаще и получай удовольствие от компьютерных игр
+            ONE MORE GAME
           </h1>
           <BookButton />
         </div>

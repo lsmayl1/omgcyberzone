@@ -5,7 +5,6 @@ import { useState } from "react";
 import { HamburgerMenu } from "@/assets/hamburger-menu";
 
 export const Header = () => {
-  const width = window.innerWidth;
   const [hamburgerMenu, setHamburgerMenu] = useState(false);
   const menu = [
     { name: "Главная", path: "/" },
@@ -28,10 +27,10 @@ export const Header = () => {
         <div className="absolute w-full h-full  z-50 left-0 top-0 ">
           <div className=" bg-boxColor  h-full p-4 flex  flex-col w-full ">
             <div className="flex justify-end">
-            <HamburgerMenu
-              className="size-8 text-white rotate-180 "
-              onClick={() => setHamburgerMenu(false)}
-            />
+              <HamburgerMenu
+                className="size-8 text-white rotate-180 "
+                onClick={() => setHamburgerMenu(false)}
+              />
             </div>
 
             <div className="flex flex-col gap-8 font-bold items-center max-md:gap-4 ">
