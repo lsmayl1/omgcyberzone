@@ -4,10 +4,6 @@ import React from "react";
 
 // swiper imports – make sure `npm install swiper` is run first
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper/modules";
 
 export const Carousel = () => {
   const slides = [
@@ -23,25 +19,23 @@ export const Carousel = () => {
   ];
 
   return (
-    <div className="w-full text-white">
+    <div className="w-full text-white max-md:hidden">
       <Swiper
-        modules={[Pagination, Navigation]}
-        pagination={{ clickable: true }}
-        navigation
         spaceBetween={10}
         slidesPerView={3}
         loop
         breakpoints={{
+          480: { slidesPerView: 1 },
           640: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
       >
         {slides.map((src, i) => (
-          <SwiperSlide key={i} className="flex justify-center gap-2">
+          <SwiperSlide key={i} className="flex justify-center gap-2 px-1">
             <img
               src={src}
-              className="w-full h-full rounded-lg"
+              className="w-full h-9/12 rounded-lg"
               alt={`slide-${i}`}
             />
           </SwiperSlide>

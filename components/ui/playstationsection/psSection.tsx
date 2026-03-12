@@ -14,7 +14,7 @@ export const PsSection = () => {
     ],
   };
   return (
-    <div className="flex flex-col gap-4 pt-8 border border-b-mainRed px-8">
+    <div className="flex flex-col gap-4 py-8  border-b  border-b-mainRed px-12">
       <div className="flex justify-center flex-col pt-4 items-center gap-8">
         <h1 className="text-white text-4xl font-bold ">PlayStation 5</h1>
         <div className="flex gap-16">

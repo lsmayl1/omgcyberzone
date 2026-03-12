@@ -38,7 +38,7 @@ export const PremiumSection = () => {
     { key: "monitor", icon: <Monitor /> },
   ];
   return (
-    <div className="flex flex-col gap-8 p-8 border border-b-mainRed">
+    <div className="flex flex-col gap-8 px-12 py-8  border-b  border-b-mainRed">
       <div className="flex justify-center flex-col pt-4 items-center gap-8 ">
         <h1 className="text-white text-4xl font-bold ">Премиум </h1>
       </div>

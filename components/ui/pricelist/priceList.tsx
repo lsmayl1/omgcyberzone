@@ -47,9 +47,9 @@ export const PriceList = ({
     { key: "monitor", icon: <Monitor /> },
   ];
   return (
-    <div className="bg-boxColor w-1/2 rounded-xl p-8 flex flex-col gap-4">
+    <div className="bg-boxColor w-full rounded-xl p-8 flex flex-col gap-4 max-md:p-4 max-md:gap-2">
       <div className="flex justify-between items-center">
-        <span className="bg-mainRed px-4 py-2 rounded-xl text-white font-bold ">
+        <span className="bg-mainRed px-4 py-2 rounded-xl text-white font-bold max-md:px-2 max-md:py-1 max-md:text-md ">
           {title}
         </span>
         <span className="text-white font-bold text-xl ">{count}</span>
@@ -57,17 +57,17 @@ export const PriceList = ({
       {data?.price?.map((dt, i) => (
         <div
           key={i}
-          className="text-white flex bg-background rounded-xl p-4 font-bold text-xl flex-col gap-4"
+          className="text-white flex bg-background rounded-xl p-4 font-bold text-xl flex-col gap-4 max-md:p-3 max-md:gap-2"
         >
           <h1 className="text-md"> {dt.hour}</h1>
           <div className="flex gap-2 text-nowrap">
             <div className="bg-boxColor items-center p-2 rounded-lg flex gap-2 w-full justify-between">
-              <Sun />
-              <span className="text-lg">{dt.dayPrice}</span>
+              <Sun className="max-md:size-6" />
+              <span className="text-lg max-md:text-md">{dt.dayPrice}</span>
             </div>
             <div className="bg-boxColor p-2 rounded-lg items-center flex gap-2 w-full justify-between">
-              <Night />
-              <span className="text-lg">{dt.nightPrice}</span>
+              <Night className="max-md:size-6" />
+              <span className="text-lg max-md:text-md">{dt.nightPrice}</span>
             </div>
           </div>
         </div>
@@ -81,7 +81,7 @@ export const PriceList = ({
           {data?.specs?.map((spec, i) => (
             <div className="flex flex-col gap-4" key={i}>
               <div className="flex gap-4 text-white text-md items-center ">
-                <div className="w-14">
+                <div className="w-14 ">
                   {icon.find((item) => item.key === spec.key)?.icon}
                 </div>
                 <span className="font-semibold">{spec.name}</span>
