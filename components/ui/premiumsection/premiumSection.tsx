@@ -1,6 +1,5 @@
-import Night from "@/assets/Night";
-import Sun from "@/assets/sun";
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { BookButton } from "../buttons/bookButton";
 import Image from "next/image";
 import Collapse from "@/assets/Collapse";
@@ -12,8 +11,11 @@ import Mouse from "@/assets/pc/mouse";
 import Headset from "@/assets/pc/headset";
 import Keyboard from "@/assets/pc/keyboard";
 import Monitor from "@/assets/pc/monitor";
+import { BookModal } from "../bookModal";
 
 export const PremiumSection = () => {
+  const [bookModal, setBookModal] = useState(false);
+
   const data = {
     specs: [
       { key: "cpu", name: "INTEL I5 12400" },
@@ -39,6 +41,8 @@ export const PremiumSection = () => {
   ];
   return (
     <div className="flex flex-col gap-8 px-12 py-8  border-b  border-b-mainRed">
+      <BookModal open={bookModal} handleClose={() => setBookModal(false)} />
+
       <div className="flex justify-center flex-col pt-4 items-center gap-8 ">
         <h1 className="text-white text-4xl font-bold ">Премиум </h1>
       </div>
@@ -83,7 +87,10 @@ export const PremiumSection = () => {
           </div>
 
           <div className="">
-            <BookButton title="Забронировать PS5" />
+            <BookButton
+              title="Забронировать PS5"
+              showModal={() => setBookModal(true)}
+            />
           </div>
         </div>
         <Image

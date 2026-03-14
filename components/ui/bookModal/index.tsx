@@ -4,7 +4,13 @@ import Phone from "@/assets/Phone";
 import { Telegram } from "@/assets/Telegram";
 import React from "react";
 
-export const BookModal = ({ open, handleClose }) => {
+export const BookModal = ({
+  open,
+  handleClose,
+}: {
+  open: boolean;
+  handleClose: () => void;
+}) => {
   if (!open) return null;
   return (
     <div

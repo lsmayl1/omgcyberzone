@@ -26,7 +26,10 @@ export const Hero = () => {
             <h1 className="text-4xl  max-md:text-lg font-black text-center w-9/12 capitalize">
               ONE MORE GAME
             </h1>
-            <BookButton showModal={() => setBookModal(true)} />
+            <BookButton
+              title="Забронировать"
+              showModal={() => setBookModal(true)}
+            />
           </div>
         </div>
       </div>

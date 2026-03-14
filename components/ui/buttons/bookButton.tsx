@@ -1,6 +1,12 @@
 import React from "react";
 
-export const BookButton = ({ title = "Забронировать", showModal }) => {
+export const BookButton = ({
+  title = "Забронировать",
+  showModal,
+}: {
+  title: string;
+  showModal: () => void;
+}) => {
   return (
     <button
       onClick={showModal}

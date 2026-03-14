@@ -47,7 +47,7 @@ export const Header = () => {
               ))}
             </div>
             <div className="">
-              <BookButton showModal={() => setBookModal(true)} />
+              <BookButton title="Забронировать" showModal={() => setBookModal(true)} />
             </div>
           </div>
         </div>
