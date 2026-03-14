@@ -35,7 +35,56 @@
     --foreground: #0d0f12;
   }
 }
+.container-custom {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
 
+/* breakpoints */
+@media (min-width: 375px) {
+  .container-custom {
+    max-width: 375px;
+  }
+}
+
+@media (min-width: 480px) {
+  .container-custom {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 640px) {
+  .container-custom {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-custom {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-custom {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-custom {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container-custom {
+    max-width: 1536px;
+  }
+}
 
 body {
   background: var(--background);
@@ -48,4 +97,19 @@ li {
 }
 button {
   cursor: pointer;
+}
+@layer components {
+  .no-scrollbar-buttons::-webkit-scrollbar-button {
+    display: none;
+  }
+  .no-scrollbar-buttons {
+    -webkit-appearance: none;
+  }
+}
+
+/* Hide scrollbar buttons (arrows) for Chrome, Safari, Edge, Opera */
+::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
 }

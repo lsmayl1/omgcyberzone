@@ -29,8 +29,8 @@ export const Kpi = () => {
       img: "/icons/calendar.png",
     },
   ];
-  return ( 
-    <div className="grid grid-cols-4 gap-2 px-12 max-md:px-4 pt-4 mt-4 max-md:grid-cols-2 w-full">
+  return (
+    <div className="grid grid-cols-4 gap-2 container-custom pt-8 max-md:grid-cols-2 w-full">
       {kpi.map((kp, i) => (
         <div
           key={i}
@@ -41,11 +41,13 @@ export const Kpi = () => {
             alt=""
             width={50}
             height={50}
-            className="absolute bottom-14 z-45 right-0 max-md:size-8"
+            className="absolute bottom-14 z-40 right-0 max-md:size-8"
           />
           <div className="flex flex-col">
             <h1 className="font-bold text-2xl max-md:text-xl">{kp.value}</h1>
-            <h4 className="font-bold text-[#C6D1E0] max-md:text-sm">{kp.title}</h4>
+            <h4 className="font-bold text-[#C6D1E0] max-md:text-sm">
+              {kp.title}
+            </h4>
           </div>
         </div>
       ))}

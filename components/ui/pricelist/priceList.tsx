@@ -47,7 +47,7 @@ export const PriceList = ({
     { key: "monitor", icon: <Monitor /> },
   ];
   return (
-    <div className="bg-boxColor w-full rounded-xl p-8 flex flex-col gap-4 max-md:p-4 max-md:gap-2">
+    <div className="bg-boxColor w-full rounded-xl p-8 flex flex-col gap-4 max-md:p-4 max-md:gap-2 ">
       <div className="flex justify-between items-center">
         <span className="bg-mainRed px-4 py-2 rounded-xl text-white font-bold max-md:px-2 max-md:py-1 max-md:text-md ">
           {title}
@@ -72,12 +72,12 @@ export const PriceList = ({
           </div>
         </div>
       ))}
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 max-md:gap-2">
         <div className="bg-background items-center text-white rounded-lg text-xl font-semibold p-4 flex justify-between">
           <h1 className="text-lg">Характеристики</h1>
           <Collapse />
         </div>
-        <div className="bg-background rounded-lg flex flex-col gap-6 p-4">
+        <div className="bg-background rounded-lg flex flex-col gap-6 p-4 max-md:p-2 ">
           {data?.specs?.map((spec, i) => (
             <div className="flex flex-col gap-4" key={i}>
               <div className="flex gap-4 text-white text-md items-center ">

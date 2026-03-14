@@ -103,29 +103,29 @@ export const MenuCard = () => {
   };
 
   return (
-    <div className="grid grid-cols-4 gap-2">
+    <div className="grid grid-cols-4 max-lg:grid-cols-2 gap-2 max-md:grid-cols-1 max-md:gap-1">
       {food.map((dt, i) => (
         <div
           key={i}
-          className="flex bg-boxColor p-4 flex-col gap-4 relative rounded-xl "
+          className="flex bg-boxColor p-4 flex-col gap-4 relative rounded-xl max-md:p-2 max-md:gap-4"
         >
-          <div className="  relative  h-64">
+          <div className="  relative  h-64 max-md:max-h-36">
             <Image src={dt.img} alt={dt.name} fill />
           </div>
-          <span className="text-white text-xl font-semibold">{dt.name}</span>
-          <p className="text-[#66676D] font-semibold">{dt.description}</p>
-          <div className="flex gap-2">
+          <span className="text-white text-xl font-semibold max-md:text-lg">{dt.name}</span>
+          <p className="text-[#66676D] font-semibold max-md:text-xs">{dt.description}</p>
+          <div className="flex gap-2 max-md:gap-1 ">
             {dt.category.map((ct, idx) => (
               <button
                 onClick={() => handleChangeSelected(i, idx)}
-                className={`text-white rounded-lg font-semibold text-lg  p-2 ${ct.selected ? "bg-mainRed" : "bg-background"}`}
+                className={`text-white rounded-lg font-semibold text-lg text-nowrap max-md:text-flg  p-2 max-md:p-2 max-md:rounded-lg ${ct.selected ? "bg-mainRed" : "bg-background"}`}
                 key={idx}
               >
                 {ct.key}
               </button>
             ))}
           </div>
-          <span className="flex justify-end text-end w-full text-white text-2xl font-bold">
+          <span className="flex justify-end text-end w-full text-white text-2xl font-bold max-md:text-lg">
             {dt.category.find((item) => item.selected)?.price}
           </span>
         </div>

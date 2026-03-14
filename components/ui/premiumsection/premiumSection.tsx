@@ -91,7 +91,7 @@ export const PremiumSection = () => {
           alt="ps5"
           width={600}
           height={1200}
-          className="flex-1"
+          className="flex-1 max-md:hidden"
         />
       </div>
     </div>

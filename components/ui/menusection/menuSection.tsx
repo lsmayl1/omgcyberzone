@@ -28,10 +28,12 @@ export const MenuSection = () => {
     { key: "kalyan", icon: "/icons/menu/Kalyan.png", name: "Кальян" },
   ];
   return (
-    <div className="flex flex-col px-12 py-8 gap-4 items-center  border-b-mainRed">
-      <h1 className="text-white text-center text-4xl font-semibold pb-4">Меню</h1>
-      <div className="flex flex-col gap-2 w-full">
-        <div className="grid grid-cols-5 gap-2">
+    <div className="flex flex-col container-custom py-8 gap-4   border-b-mainRed max-md:gap-2">
+      <h1 className="text-white text-center text-4xl font-semibold pb-4">
+        Меню
+      </h1>
+      <div className="flex flex-col gap-2 w-full max-md:hidden ">
+        <div className="grid grid-cols-5 gap-2 max-md:gap-1">
           {icons.slice(0, 5).map((dt, i) => (
             <div
               key={i}
@@ -58,8 +60,25 @@ export const MenuSection = () => {
           ))}
         </div>
       </div>
+      <div className="md:hidden">
+        <div className="flex overflow-x-auto gap-2 max-md:gap-1 pb-2">
+          {icons.map((dt, i) => (
+            <div
+              key={i}
+              className="text-white flex-col justify-center bg-boxColor flex items-center rounded-lg p-4 gap-3 max-md:min-w-28 "
+            >
+              <Image src={dt.icon} alt={dt.key} width={50} height={25} />
+              <span className="capitalize text-lg font-semibold max-md:text-xs">
+                {dt.name}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
       <MenuCard />
-	  <button className="rounded-xl text-white bg-mainRed font-bold w-fit px-4 py-2 text-xl mt-4">Смотреть ещё</button>
+      <button className="rounded-xl text-white bg-mainRed font-bold w-fit px-4 py-2 text-xl mt-4 max-md:text-flg">
+        Смотреть ещё
+      </button>
     </div>
   );
 };

@@ -2,27 +2,15 @@ import Night from "@/assets/Night";
 import Sun from "@/assets/sun";
 import React from "react";
 import { PriceList } from "./priceList";
+import { DayNight } from "../dayNightComponent";
 
 export const PriceLayout = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-8 py-8 px-12 max-md:px-4 border-b  border-b-mainRed">
+    <div className="flex flex-col justify-center items-center gap-8 py-8 px-12 max-md:px-8 max-md:gap-4 border-b  border-b-mainRed">
       <h1 className="text-white text-4xl font-bold max-md:text-xl ">
         Игровые ПК
       </h1>
-      <div className="flex gap-16 max-md:gap-4 max-md:flex-col">
-        <div className="flex gap-4 items-center">
-          <Sun className="max-md:size-6" />
-          <span className="text-white text-xl max-md:text-md text-nowrap font-semibold">
-            День: 8:00-16:00
-          </span>
-        </div>
-        <div className="flex gap-4 items-center">
-          <Night className="max-md:size-6" />
-          <span className="text-white text-xl font-semibold max-md:text-md text-nowrap">
-            Ночь: 8:00-16:00
-          </span>
-        </div>
-      </div>
+      <DayNight />
       <div className="grid grid-cols-3 max-md:grid-cols-1 max-md:w-full gap-2 w-full">
         <PriceList
           title={"STANDART"}

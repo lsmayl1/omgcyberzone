@@ -6,16 +6,18 @@ import { MenuSection } from "@/components/ui/menusection/menuSection";
 import { PsSection } from "@/components/ui/playstationsection/psSection";
 import { PremiumSection } from "@/components/ui/premiumsection/premiumSection";
 import { PriceLayout } from "@/components/ui/pricelist/priceLayout";
+import { Rooms } from "@/components/ui/rooms";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen w-full  bg-background ">
+    <div className="flex flex-col min-h-screen w-full  bg-background no-scrollbar ">
       <Header />
       <Hero />
       <Kpi />
-      <PriceLayout />
-      <PsSection />
-      <PremiumSection />
+      <Rooms />
+      {/* <PriceLayout /> */}
+      {/* <PsSection />
+      <PremiumSection /> */}
       <MenuSection />
       <Footer />
     </div>
