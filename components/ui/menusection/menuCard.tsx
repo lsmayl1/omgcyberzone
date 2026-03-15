@@ -110,10 +110,14 @@ export const MenuCard = () => {
           className="flex bg-boxColor p-4 flex-col gap-4 relative rounded-xl max-md:p-2 max-md:gap-4"
         >
           <div className="  relative  h-64 max-md:max-h-36">
-            <Image src={dt.img} alt={dt.name} fill />
+            <Image src={dt.img} alt={dt.name} className="w-full h-full" fill />
           </div>
-          <span className="text-white text-xl font-semibold max-md:text-lg">{dt.name}</span>
-          <p className="text-[#66676D] font-semibold max-md:text-xs">{dt.description}</p>
+          <span className="text-white text-xl font-semibold max-md:text-lg">
+            {dt.name}
+          </span>
+          <p className="text-[#66676D] font-semibold max-md:text-xs">
+            {dt.description}
+          </p>
           <div className="flex gap-2 max-md:gap-1 ">
             {dt.category.map((ct, idx) => (
               <button

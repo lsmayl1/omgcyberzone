@@ -4,13 +4,15 @@ import { BookButton } from "./buttons/bookButton";
 import { useState } from "react";
 import { HamburgerMenu } from "@/assets/hamburger-menu";
 import { BookModal } from "./bookModal";
-
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 export const Header = () => {
+  const pathname = usePathname();
   const [hamburgerMenu, setHamburgerMenu] = useState(false);
   const [bookModal, setBookModal] = useState(false);
   const menu = [
     { name: "Главная", path: "/" },
-    { name: "Тарифы", path: "/plan" },
+    { name: "Тарифы", path: "/plans" },
     { name: "Игры", path: "/games" },
     { name: "Интерьер", path: "/interier" },
     { name: "Меню", path: "/menu" },
@@ -38,25 +40,33 @@ export const Header = () => {
 
             <div className="flex flex-col gap-8 font-bold items-center max-md:gap-4 ">
               {menu.map((m, i) => (
-                <li
+                <Link
+                  href={m.path}
                   className="cursor-pointer text-white max-md:text-sm"
                   key={i}
                 >
                   {m.name}
-                </li>
+                </Link>
               ))}
             </div>
             <div className="">
-              <BookButton title="Забронировать" showModal={() => setBookModal(true)} />
+              <BookButton
+                title="Забронировать"
+                showModal={() => setBookModal(true)}
+              />
             </div>
           </div>
         </div>
       ) : (
         <div className="flex gap-8 font-bold items-center max-md:gap-4 max-lg:hidden ">
           {menu.map((m, i) => (
-            <li className="cursor-pointer text-white max-md:text-sm" key={i}>
+            <Link
+              href={m.path}
+              className={`cursor-pointer text-white max-md:text-sm ${pathname === m.path ? "border-b" : ""}`}
+              key={i}
+            >
               {m.name}
-            </li>
+            </Link>
           ))}
         </div>
       )}

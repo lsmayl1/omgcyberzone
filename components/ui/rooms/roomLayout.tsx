@@ -63,7 +63,7 @@ export const RoomLayout = ({ data }: { data: Data }) => {
           ))}
         </div>
         <div className="flex  gap-2 w-1/2 max-2xl:w-full">
-          <div className="flex flex-col w-full gap-2">
+          <div className="flex flex-col w-full gap-2 justify-between">
             {data?.price?.map((dt, i) => (
               <div
                 key={i}

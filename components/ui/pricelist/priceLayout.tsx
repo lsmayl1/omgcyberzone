@@ -6,7 +6,7 @@ import { DayNight } from "../dayNightComponent";
 
 export const PriceLayout = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-8 py-8 px-12 max-md:px-8 max-md:gap-4 border-b  border-b-mainRed">
+    <div className="flex flex-col justify-center items-center gap-8 py-8 container-custom max-md:px-8 max-md:gap-4 border-b  border-b-mainRed">
       <h1 className="text-white text-4xl font-bold max-md:text-xl ">
         Игровые ПК
       </h1>

@@ -39,7 +39,13 @@ export const MenuSection = () => {
               key={i}
               className="text-white flex-col justify-center bg-boxColor flex items-center rounded-lg p-4 gap-3 "
             >
-              <Image src={dt.icon} alt={dt.key} width={50} height={25} />
+              <Image
+                src={dt.icon}
+                alt={dt.key}
+                width={40}
+                height={40}
+                className="w-auto h-auto"
+              />
               <span className="capitalize text-lg font-semibold">
                 {dt.name}
               </span>
@@ -52,7 +58,13 @@ export const MenuSection = () => {
               key={i}
               className="text-white flex-col justify-center bg-boxColor flex items-center rounded-lg p-4 gap-3 "
             >
-              <Image src={dt.icon} alt={dt.key} width={50} height={25} />
+              <Image
+                src={dt.icon}
+                alt={dt.key}
+                width={40}
+                height={40}
+                className="w-auto h-auto"
+              />
               <span className="capitalize text-lg font-semibold">
                 {dt.name}
               </span>
@@ -67,7 +79,13 @@ export const MenuSection = () => {
               key={i}
               className="text-white flex-col justify-center bg-boxColor flex items-center rounded-lg p-4 gap-3 max-md:min-w-28 "
             >
-              <Image src={dt.icon} alt={dt.key} width={50} height={25} />
+              <Image
+                src={dt.icon}
+                alt={dt.key}
+                width={40}
+                height={40}
+                className="w-auto h-auto"
+              />
               <span className="capitalize text-lg font-semibold max-md:text-xs">
                 {dt.name}
               </span>

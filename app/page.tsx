@@ -11,7 +11,6 @@ import { Rooms } from "@/components/ui/rooms";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen w-full  bg-background no-scrollbar ">
-      <Header />
       <Hero />
       <Kpi />
       <Rooms />
@@ -19,7 +18,6 @@ export default function Home() {
       {/* <PsSection />
       <PremiumSection /> */}
       <MenuSection />
-      <Footer />
     </div>
   );
 }
