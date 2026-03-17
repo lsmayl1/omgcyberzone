@@ -17,6 +17,7 @@ export const Header = () => {
     { name: "Интерьер", path: "/interier" },
     { name: "Меню", path: "/menu" },
     { name: "Галерея", path: "/gallery" },
+    { name: "FAQ", path: "/faq" },
     { name: "Контакты", path: "/contacts" },
   ];
   return (

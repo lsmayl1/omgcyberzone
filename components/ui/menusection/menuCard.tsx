@@ -107,31 +107,33 @@ export const MenuCard = () => {
       {food.map((dt, i) => (
         <div
           key={i}
-          className="flex bg-boxColor p-4 flex-col gap-4 relative rounded-xl max-md:p-2 max-md:gap-4"
+          className="flex bg-boxColor  flex-col gap-4 relative rounded-4xl max-md:p-2 max-md:gap-4"
         >
           <div className="  relative  h-64 max-md:max-h-36">
             <Image src={dt.img} alt={dt.name} className="w-full h-full" fill />
           </div>
-          <span className="text-white text-xl font-semibold max-md:text-lg">
-            {dt.name}
-          </span>
-          <p className="text-[#66676D] font-semibold max-md:text-xs">
-            {dt.description}
-          </p>
-          <div className="flex gap-2 max-md:gap-1 ">
-            {dt.category.map((ct, idx) => (
-              <button
-                onClick={() => handleChangeSelected(i, idx)}
-                className={`text-white rounded-lg font-semibold text-lg text-nowrap max-md:text-flg  p-2 max-md:p-2 max-md:rounded-lg ${ct.selected ? "bg-mainRed" : "bg-background"}`}
-                key={idx}
-              >
-                {ct.key}
-              </button>
-            ))}
+          <div className="p-4 flex flex-col gap-4">
+            <span className="text-white text-xl font-semibold max-md:text-lg">
+              {dt.name}
+            </span>
+            <p className="text-[#66676D] font-semibold max-md:text-xs">
+              {dt.description}
+            </p>
+            <div className="flex gap-2 max-md:gap-1 ">
+              {dt.category.map((ct, idx) => (
+                <button
+                  onClick={() => handleChangeSelected(i, idx)}
+                  className={`text-white rounded-lg font-semibold text-lg text-nowrap max-md:text-flg  p-2 max-md:p-2 max-md:rounded-lg ${ct.selected ? "bg-mainRed" : "bg-background"}`}
+                  key={idx}
+                >
+                  {ct.key}
+                </button>
+              ))}
+            </div>
+            <span className="flex justify-end text-end w-full text-white text-2xl font-bold max-md:text-lg">
+              {dt.category.find((item) => item.selected)?.price}
+            </span>
           </div>
-          <span className="flex justify-end text-end w-full text-white text-2xl font-bold max-md:text-lg">
-            {dt.category.find((item) => item.selected)?.price}
-          </span>
         </div>
       ))}
     </div>

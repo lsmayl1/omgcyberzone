@@ -5,6 +5,7 @@ import MainRoom from "@/public/gamerparking.webp";
 import { BookButton } from "../buttons/bookButton";
 import { Carousel } from "../carousel/carousel";
 import { BookModal } from "../bookModal";
+import Logo from "@/assets/Logo";
 
 export const Hero = () => {
   const [bookModal, setBookModal] = useState(false);
@@ -22,9 +23,13 @@ export const Hero = () => {
           />
         </div>
         <div className="absolute w-full flex flex-col h-full">
-          <div className="flex justify-center h-full items-center  flex-col  text-white gap-12 max-md:gap-6 ">
-            <h1 className="text-4xl  max-md:text-lg font-black text-center w-9/12 capitalize">
-              ONE MORE GAME
+          <div className="flex justify-center h-full items-center  flex-col  text-white gap-8 max-md:gap-6 ">
+            <h4 className="uppercase font-bold tracking-widest text-2xl text-mainRed">
+              Лучшее игровое место в Баку
+            </h4>
+    
+            <h1 className="text-xl tracking-wider  max-md:text-lg font-semibold text-center w-1/2 text-white uppercase">
+              Эпичный геймплей, вкусная еда и непревзойдённый комфорт
             </h1>
             <BookButton
               title="Забронировать"

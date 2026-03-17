@@ -80,7 +80,7 @@ export const Rooms = () => {
       ],
     },
     {
-      title: "PlayStation Zone",
+      title: "PLAYSTATION",
       key: "ps",
       images: [{ src: "/pszone2.webp", alt: "pro" }],
       price: [
@@ -104,7 +104,7 @@ export const Rooms = () => {
       ],
     },
     {
-      title: "Premium Zone",
+      title: "PREMIUM",
       key: "premium",
       images: [{ src: "/pszone2.webp", alt: "pro" }],
 

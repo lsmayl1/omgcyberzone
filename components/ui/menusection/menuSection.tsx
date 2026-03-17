@@ -15,7 +15,7 @@ import { MenuCard } from "./menuCard";
 
 export const MenuSection = () => {
   const icons = [
-    { key: "pizza", icon: "/icons/menu/pizza.png", name: "Пицца" },
+    { key: "pizza", icon: "/icons/menu/Pizza.png", name: "Пицца" },
     { key: "burger", icon: "/icons/menu/Burger.png", name: "Бургер" },
     { key: "roll", icon: "/icons/menu/Roll.png", name: "Ролл" },
     { key: "sandwich", icon: "/icons/menu/Sandwich.png", name: "Сэндвич" },
@@ -28,7 +28,7 @@ export const MenuSection = () => {
     { key: "kalyan", icon: "/icons/menu/Kalyan.png", name: "Кальян" },
   ];
   return (
-    <div className="flex flex-col container-custom py-8 gap-4   border-b-mainRed max-md:gap-2">
+    <div className="flex flex-col container-custom py-8 gap-4  border-b border-b-mainRed max-md:gap-2">
       <h1 className="text-white text-center text-4xl font-semibold pb-4">
         Меню
       </h1>
@@ -94,9 +94,11 @@ export const MenuSection = () => {
         </div>
       </div>
       <MenuCard />
-      <button className="rounded-xl text-white bg-mainRed font-bold w-fit px-4 py-2 text-xl mt-4 max-md:text-flg">
-        Смотреть ещё
-      </button>
+      <div className="flex items-center justify-center">
+        <button className="rounded-xl text-white bg-mainRed font-bold w-fit px-4 py-2 text-xl mt-4 max-md:text-flg">
+          Смотреть ещё
+        </button>
+      </div>
     </div>
   );
 };

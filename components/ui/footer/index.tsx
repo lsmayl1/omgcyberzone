@@ -5,10 +5,9 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <div className="w-full flex-col gap-8 container-custom  pt-8">
-      <h1 className="text-white text-4xl font-bold text-center">Контакты</h1>
-      <div className="flex gap-2 py-8 max-md:flex-col-reverse">
-        <div className="flex-1 bg-boxColor rounded-[60px] max-md:rounded-2xl flex gap-12 flex-col p-8">
+    <div className="w-full flex-col gap-8   pt-8 bg-boxColor">
+      <div className="flex gap-2 py-8 max-md:flex-col-reverse container-custom">
+        <div className="flex-1  rounded-[60px] max-md:rounded-2xl flex gap-12 flex-col p-8">
           <h1 className="capitalize text-white font-bold text-4xl max-md:text-2xl">
             проспект Азадлыг 103, Баку, Азербайджан
           </h1>
@@ -40,7 +39,7 @@ export const Footer = () => {
           <img src="/footer_map.png" alt="" className="w-full rounded-4xl" />
         </div>
       </div>
-      <h1 className="text-center text-white">© 2025 OMG Cyber Zone.</h1>
+      <h1 className="text-center text-white uppercase">© 2025 OMG Cyber Zone.</h1>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import { Footer } from "@/components/ui/footer";
+import { Gallery } from "@/components/ui/gallery";
 import { Header } from "@/components/ui/header";
 import { Hero } from "@/components/ui/hero/hero";
 import { Kpi } from "@/components/ui/kpi/kpi";
@@ -15,9 +16,9 @@ export default function Home() {
       <Kpi />
       <Rooms />
       {/* <PriceLayout /> */}
-      {/* <PsSection />
-      <PremiumSection /> */}
+      {/* <PsSection /> */}
       <MenuSection />
+      <Gallery />
     </div>
   );
 }
