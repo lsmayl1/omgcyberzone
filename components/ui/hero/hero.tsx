@@ -24,11 +24,11 @@ export const Hero = () => {
         </div>
         <div className="absolute w-full flex flex-col h-full">
           <div className="flex justify-center h-full items-center  flex-col  text-white gap-8 max-md:gap-6 ">
-            <h4 className="uppercase font-bold tracking-widest text-2xl text-mainRed">
+            <h4 className="uppercase font-bold tracking-widest text-2xl text-mainRed max-md:text-md">
               Лучшее игровое место в Баку
             </h4>
     
-            <h1 className="text-xl tracking-wider  max-md:text-lg font-semibold text-center w-1/2 text-white uppercase">
+            <h1 className="text-xl tracking-wider  max-md:text-lg font-semibold text-center w-1/2 text-white uppercase max-md:w-9/12 max-md:text-fsm">
               Эпичный геймплей, вкусная еда и непревзойдённый комфорт
             </h1>
             <BookButton

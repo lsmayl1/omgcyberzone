@@ -12,16 +12,25 @@ export const Header = () => {
   const [bookModal, setBookModal] = useState(false);
   const menu = [
     { name: "Главная", path: "/" },
-    { name: "Тарифы", path: "/plans" },
+    { name: "Тарифы", path: "/plans", id: "plans" },
     { name: "Игры", path: "/games" },
-    { name: "Интерьер", path: "/interier" },
-    { name: "Меню", path: "/menu" },
-    { name: "Галерея", path: "/gallery" },
-    { name: "FAQ", path: "/faq" },
-    { name: "Контакты", path: "/contacts" },
+    { name: "Меню", path: "/menu", id: "menu" },
+    { name: "Галерея", path: "/gallery", id: "gallery" },
+    { name: "FAQ", path: "/faq", id: "faq" },
+    { name: "Контакты", path: "/contacts", id: "footer" },
   ];
+
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
   return (
-    <div className="flex px-54 container-custom w-full h-24  justify-between items-center overflow-hidden max-md:h-14 max-md:gap-4  ">
+    <div className="flex  px-54 container-custom w-full h-24  justify-between items-center overflow-hidden max-md:h-14 max-md:gap-4  ">
       <BookModal open={bookModal} handleClose={() => setBookModal(false)} />
       <Logo className="size-24 max-md:w-22 h-12 " />
       <HamburgerMenu
@@ -61,13 +70,13 @@ export const Header = () => {
       ) : (
         <div className="flex gap-8 font-bold items-center max-md:gap-4 max-lg:hidden ">
           {menu.map((m, i) => (
-            <Link
-              href={m.path}
+            <button
               className={`cursor-pointer text-white max-md:text-sm ${pathname === m.path ? "border-b" : ""}`}
               key={i}
+              onClick={() => scrollToSection(m.id)}
             >
               {m.name}
-            </Link>
+            </button>
           ))}
         </div>
       )}

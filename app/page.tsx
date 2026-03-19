@@ -1,3 +1,4 @@
+import { FAQ } from "@/components/ui/faq";
 import { Footer } from "@/components/ui/footer";
 import { Gallery } from "@/components/ui/gallery";
 import { Header } from "@/components/ui/header";
@@ -19,6 +20,7 @@ export default function Home() {
       {/* <PsSection /> */}
       <MenuSection />
       <Gallery />
+      <FAQ />
     </div>
   );
 }

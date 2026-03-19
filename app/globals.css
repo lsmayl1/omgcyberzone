@@ -43,6 +43,9 @@
   padding-right: 16px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 /* breakpoints */
 @media (min-width: 375px) {
   .container-custom {

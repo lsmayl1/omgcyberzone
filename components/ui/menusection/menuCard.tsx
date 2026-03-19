@@ -107,10 +107,10 @@ export const MenuCard = () => {
       {food.map((dt, i) => (
         <div
           key={i}
-          className="flex bg-boxColor  flex-col gap-4 relative rounded-4xl max-md:p-2 max-md:gap-4"
+          className="flex bg-boxColor  flex-col gap-4 relative rounded-4xl  max-md:gap-2"
         >
           <div className="  relative  h-64 max-md:max-h-36">
-            <Image src={dt.img} alt={dt.name} className="w-full h-full" fill />
+            <Image src={dt.img} alt={dt.name} className="w-full h-full rouned-xl" fill />
           </div>
           <div className="p-4 flex flex-col gap-4">
             <span className="text-white text-xl font-semibold max-md:text-lg">

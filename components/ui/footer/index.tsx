@@ -5,7 +5,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <div className="w-full flex-col gap-8   pt-8 bg-boxColor">
+    <div id="footer" className="w-full flex-col gap-8   pt-8 bg-boxColor">
       <div className="flex gap-2 py-8 max-md:flex-col-reverse container-custom">
         <div className="flex-1  rounded-[60px] max-md:rounded-2xl flex gap-12 flex-col p-8">
           <h1 className="capitalize text-white font-bold text-4xl max-md:text-2xl">
