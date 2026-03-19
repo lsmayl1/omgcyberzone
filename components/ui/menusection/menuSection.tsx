@@ -28,7 +28,10 @@ export const MenuSection = () => {
     { key: "kalyan", icon: "/icons/menu/Kalyan.png", name: "Кальян" },
   ];
   return (
-    <div id="menu" className="flex flex-col container-custom py-8 gap-4  border-b border-b-mainRed max-md:gap-2">
+    <div
+      id="menu"
+      className="flex section scroll-mt-20 flex-col container-custom py-8 gap-4  border-b border-b-mainRed max-md:gap-2"
+    >
       <h1 className="text-white text-center text-4xl font-semibold pb-4">
         Меню
       </h1>

@@ -42,6 +42,9 @@
   padding-left: 16px;
   padding-right: 16px;
 }
+section {
+  scroll-margin-top: 260px; /* header hündürlüyü */
+}
 
 html {
   scroll-behavior: smooth;

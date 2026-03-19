@@ -132,7 +132,10 @@ export const Rooms = () => {
   const [selectedRoom, setSelectedRoom] = useState(menu[0]);
 
   return (
-    <div id="plans" className="flex flex-col justify-center items-center gap-2 py-8 container-custom max-md:gap-4 border-b  border-b-mainRed overflow-auto">
+    <div
+      id="plans"
+      className="flex scroll-mt-20 flex-col justify-center items-center gap-2 py-8 container-custom max-md:gap-4 border-b  border-b-mainRed overflow-auto"
+    >
       <h1 className="text-white text-4xl font-bold max-md:text-xl mb-8 max-md:mb-2 ">
         Выберите игровую зону
       </h1>

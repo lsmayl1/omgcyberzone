@@ -40,7 +40,7 @@ export const FAQ = () => {
     }
   };
   return (
-    <div id="faq" className="flex flex-col gap-2 container-custom py-4">
+    <div id="faq" className="flex scroll-mt-20 flex-col gap-2 container-custom py-4">
       <h1 className="text-white text-4xl font-bold max-md:text-xl mb-8 max-md:mb-2 text-center ">
         FAQ
       </h1>

@@ -30,7 +30,7 @@ export const Header = () => {
     }
   };
   return (
-    <div className="flex  px-54 container-custom w-full h-24  justify-between items-center overflow-hidden max-md:h-14 max-md:gap-4  ">
+    <div className="flex fixed bg-foreground z-50  px-64 w-full h-24  justify-between items-center overflow-hidden max-md:h-14 max-md:gap-4  ">
       <BookModal open={bookModal} handleClose={() => setBookModal(false)} />
       <Logo className="size-24 max-md:w-22 h-12 " />
       <HamburgerMenu
@@ -68,16 +68,26 @@ export const Header = () => {
           </div>
         </div>
       ) : (
-        <div className="flex gap-8 font-bold items-center max-md:gap-4 max-lg:hidden ">
-          {menu.map((m, i) => (
+        <div className="flex gap-12 items-center">
+          <div className="flex gap-8 font-bold items-center max-md:gap-4 max-lg:hidden ">
+            {menu.map((m, i) => (
+              <button
+                className={`cursor-pointer text-white max-md:text-sm ${pathname === m.path ? "border-b" : ""}`}
+                key={i}
+                onClick={() => scrollToSection(m.id)}
+              >
+                {m.name}
+              </button>
+            ))}
+          </div>
+          <div className="">
             <button
-              className={`cursor-pointer text-white max-md:text-sm ${pathname === m.path ? "border-b" : ""}`}
-              key={i}
-              onClick={() => scrollToSection(m.id)}
+              onClick={() => setBookModal(true)}
+              className="bg-mainRed p-2 rounded-lg text-white font-semibold px-4"
             >
-              {m.name}
+              Забронировать
             </button>
-          ))}
+          </div>
         </div>
       )}
     </div>
