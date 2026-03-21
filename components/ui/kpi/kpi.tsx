@@ -34,7 +34,7 @@ export const Kpi = () => {
       {kpi.map((kp, i) => (
         <div
           key={i}
-          className="w-full bg-boxColor p-4 rounded-xl text-white relative"
+          className="w-full backdrop-blur-md bg-white/5   p-4 rounded-xl text-white relative"
         >
           <Image
             src={kp.img}

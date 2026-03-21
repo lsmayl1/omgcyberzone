@@ -4,6 +4,7 @@ import Image from "next/image";
 import MainRoom from "@/public/gamerparking.webp";
 import { BookButton } from "../buttons/bookButton";
 import { BookModal } from "../bookModal";
+import { Kpi } from "../kpi/kpi";
 
 export const Hero = () => {
   const [bookModal, setBookModal] = useState(false);
@@ -11,31 +12,43 @@ export const Hero = () => {
   return (
     <div
       id="main"
-      className="w-full relative  justify-center overflow-hidden flex flex-col mt-16 "
+      className="w-full relative   overflow-hidden flex flex-col mt-24 "
     >
       <BookModal open={bookModal} handleClose={() => setBookModal(false)} />
-      <div className="relative w-full flex justify-center">
-        <div className="h-128 max-md:h-64 w-full overflow-hidden">
+
+      <div className="relative w-full flex">
+        <div className="h-196 max-md:h-64 w-full overflow-hidden">
           <Image
             src={MainRoom}
             alt="proRoom"
             loading="eager"
-            className="opacity-20 w-full h-full object-cover object-center"
+            className="opacity-15 w-full h-full object-cover object-center"
           />
         </div>
-        <div className="absolute w-full flex flex-col h-full ">
-          <div className="flex justify-center h-full items-center  flex-col  text-white gap-8 max-md:gap-6 ">
-            <h4 className="uppercase font-bold tracking-widest text-2xl text-mainRed max-md:text-md">
-              Лучшее игровое место в Баку
+        <div className="absolute items-center justify-center w-full flex flex-col h-full  ">
+          <div className="flex  container-custom   flex-col  text-white gap-14 max-md:gap-6 ">
+            <h4 className="uppercase font-bold tracking-widest text-2xl text-[#EE332D] max-md:text-md border-l-4 pl-4 border-[#EE332D] ">
+              GAMING CENTER BAKU
+            </h4>
+            <h4 className="uppercase font-bold  leading-18 text-6xl text-white max-md:text-md border-l-2 pl-4 border-[#EE332D]/20 ">
+              Добро пожаловать <br /> в
+              <span className="text-[#EE332D]"> OMG CYBER ZONE</span>
             </h4>
 
-            <h1 className="text-xl mb-8 tracking-wider  max-md:text-lg font-semibold text-center w-1/2 text-white uppercase max-md:w-9/12 max-md:text-fsm">
-              Эпичный геймплей, вкусная еда и непревзойдённый комфорт
+            <h1 className="text-xl mb-8 tracking-wider  max-md:text-lg font-semibold   text-gray-400  max-md:w-9/12 max-md:text-fsm">
+              Эпичный геймплей, вкусная еда и непревзойдённый комфорт.
             </h1>
-            <BookButton
-              title="Забронировать"
-              showModal={() => setBookModal(true)}
-            />
+            <div className="flex gap-4 items-center">
+              <BookButton
+                title="Забронировать Место"
+                showModal={() => setBookModal(true)}
+              />
+              <button className="uppercase px-8 py-4 border-white border rounded-xl text-lg font-semibold">
+                Посмотреть игры
+              </button>
+            </div>
+
+            <Kpi />
           </div>
         </div>
       </div>
