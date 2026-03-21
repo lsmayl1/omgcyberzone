@@ -1,19 +1,10 @@
-import Burger from "@/assets/menu-icons/Burger";
-import Coffee from "@/assets/menu-icons/Coffee";
-import Drinks from "@/assets/menu-icons/Drinks";
-import Kalyan from "@/assets/menu-icons/Kalyan";
-import Pasta from "@/assets/menu-icons/Pasta";
-import Pizza from "@/assets/menu-icons/Pizza";
-import Roll from "@/assets/menu-icons/Roll";
-import Salads from "@/assets/menu-icons/Salads";
-import Sandwich from "@/assets/menu-icons/Sandwich";
-import Snacks from "@/assets/menu-icons/Snacks";
-import Sweets from "@/assets/menu-icons/Sweets";
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import { MenuCard } from "./menuCard";
 
 export const MenuSection = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
   const icons = [
     { key: "pizza", icon: "/icons/menu/Pizza.png", name: "Пицца" },
     { key: "burger", icon: "/icons/menu/Burger.png", name: "Бургер" },
@@ -35,52 +26,35 @@ export const MenuSection = () => {
       <h1 className="text-white text-center text-4xl font-semibold pb-4">
         Меню
       </h1>
-      <div className="flex flex-col gap-2 w-full max-md:hidden ">
-        <div className="grid grid-cols-5 gap-2 max-md:gap-1">
-          {icons.slice(0, 5).map((dt, i) => (
-            <div
-              key={i}
-              className="text-white flex-col justify-center bg-boxColor flex items-center rounded-lg p-4 gap-3 "
-            >
-              <Image
-                src={dt.icon}
-                alt={dt.key}
-                width={40}
-                height={40}
-                className="w-auto h-auto"
-              />
-              <span className="capitalize text-lg font-semibold">
-                {dt.name}
-              </span>
-            </div>
-          ))}
-        </div>
-        <div className="grid grid-cols-6 gap-2">
-          {icons.slice(5).map((dt, i) => (
-            <div
-              key={i}
-              className="text-white flex-col justify-center bg-boxColor flex items-center rounded-lg p-4 gap-3 "
-            >
-              <Image
-                src={dt.icon}
-                alt={dt.key}
-                width={40}
-                height={40}
-                className="w-auto h-auto"
-              />
-              <span className="capitalize text-lg font-semibold">
-                {dt.name}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="md:hidden">
-        <div className="flex overflow-x-auto gap-2 max-md:gap-1 pb-2">
+      <div
+        ref={scrollRef}
+        className="flex flex-col gap-2 w-full max-md:hidden overflow-x-auto min-h-0  no-scrollbar-buttons select-none  cursor-grab active:cursor-grabbing"
+        onMouseDown={(e) => {
+          const container = scrollRef.current;
+          if (!container) return;
+
+          const startX = e.pageX;
+          const startScroll = container.scrollLeft;
+
+          const onMove = (e: MouseEvent) => {
+            const dx = e.pageX - startX;
+            container.scrollLeft = startScroll - dx;
+          };
+
+          const onUp = () => {
+            document.removeEventListener("mousemove", onMove);
+            document.removeEventListener("mouseup", onUp);
+          };
+
+          document.addEventListener("mousemove", onMove);
+          document.addEventListener("mouseup", onUp);
+        }}
+      >
+        <div className="flex w-full gap-2 max-md:gap-1 pb-2 ">
           {icons.map((dt, i) => (
             <div
               key={i}
-              className="text-white flex-col justify-center bg-boxColor flex items-center rounded-lg p-4 gap-3 max-md:min-w-28 "
+              className="text-white select-none  flex-col shrink-0 justify-center bg-boxColor flex items-center rounded-lg w-48 p-4 gap-3 "
             >
               <Image
                 src={dt.icon}
@@ -89,13 +63,14 @@ export const MenuSection = () => {
                 height={40}
                 className="w-auto h-auto"
               />
-              <span className="capitalize text-lg font-semibold max-md:text-xs">
+              <span className="capitalize text-lg font-semibold">
                 {dt.name}
               </span>
             </div>
           ))}
         </div>
       </div>
+
       <MenuCard />
       <div className="flex items-center justify-center">
         <button className="rounded-xl text-white bg-mainRed font-bold w-fit px-4 py-2 text-xl mt-4 max-md:text-flg">

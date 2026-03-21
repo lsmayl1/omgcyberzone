@@ -13,7 +13,7 @@ export const Gallery = () => {
   ];
 
   return (
-    <div id="gallery" className="py-8 scroll-mt-20 flex flex-col gap-8 container-custom">
+    <div id="gallery" className="py-8 scroll-mt-20 flex flex-col gap-8 container-custom border-b border-mainRed">
       <h1 className="text-white text-center text-4xl font-semibold pb-4">
         Галерея
       </h1>

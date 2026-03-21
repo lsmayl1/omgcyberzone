@@ -3,9 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import MainRoom from "@/public/gamerparking.webp";
 import { BookButton } from "../buttons/bookButton";
-import { Carousel } from "../carousel/carousel";
 import { BookModal } from "../bookModal";
-import Logo from "@/assets/Logo";
 
 export const Hero = () => {
   const [bookModal, setBookModal] = useState(false);
