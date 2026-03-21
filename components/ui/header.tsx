@@ -11,16 +11,16 @@ export const Header = () => {
   const [hamburgerMenu, setHamburgerMenu] = useState(false);
   const [bookModal, setBookModal] = useState(false);
   const menu = [
-    { name: "Главная", path: "/" },
+    { name: "Главная", path: "/", id: "main" },
     { name: "Тарифы", path: "/plans", id: "plans" },
-    { name: "Игры", path: "/games" },
+    { name: "Игры", path: "/games", id: "games" },
     { name: "Меню", path: "/menu", id: "menu" },
     { name: "Галерея", path: "/gallery", id: "gallery" },
     { name: "FAQ", path: "/faq", id: "faq" },
     { name: "Контакты", path: "/contacts", id: "footer" },
   ];
 
-  const scrollToSection = (id) => {
+  const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({
@@ -32,7 +32,10 @@ export const Header = () => {
   return (
     <div className="flex fixed bg-foreground z-50  px-64 w-full h-24  justify-between items-center overflow-hidden max-md:h-14 max-md:gap-4  ">
       <BookModal open={bookModal} handleClose={() => setBookModal(false)} />
-      <Logo className="size-24 max-md:w-22 h-12 " />
+      <Logo
+        className="size-24 max-md:w-22 h-12 cursor-pointer"
+        onClick={() => scrollToSection("main")}
+      />
       <HamburgerMenu
         className="size-8 text-white rotate-180 lg:hidden"
         onClick={() => setHamburgerMenu(true)}
@@ -74,7 +77,7 @@ export const Header = () => {
               <button
                 className={`cursor-pointer text-white max-md:text-sm ${pathname === m.path ? "border-b" : ""}`}
                 key={i}
-                onClick={() => scrollToSection(m.id)}
+                onClick={() => scrollToSection(m?.id)}
               >
                 {m.name}
               </button>

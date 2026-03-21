@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Plus = (prop) => {
+export const Plus = (prop: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       className={` ${prop.className}`}

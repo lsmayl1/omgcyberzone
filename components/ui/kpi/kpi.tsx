@@ -20,7 +20,7 @@ export const Kpi = () => {
       key: "games",
       value: "40 +",
       title: "Игр в библиотеке",
-      img: "/icons/games.png",
+      img: "/icons/csgo.webp",
     },
     {
       key: "open",
@@ -41,7 +41,7 @@ export const Kpi = () => {
             alt=""
             width={50}
             height={50}
-            className="absolute bottom-14 z-40 right-0 max-md:size-8"
+            className="absolute bottom-14 z-40 right-0 max-md:size-8 rounded-lg"
           />
           <div className="flex flex-col">
             <h1 className="font-bold text-2xl max-md:text-xl">{kp.value}</h1>

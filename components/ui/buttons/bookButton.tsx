@@ -10,7 +10,7 @@ export const BookButton = ({
   return (
     <button
       onClick={showModal}
-      className="bg-[#fd2002]  px-8 py-4 rounded-xl font-bold cursor-pointer max-md:text-sm max-md:px-4 max-md:py-1 text-white uppercase"
+      className="bg-[#fd2002]  px-8 py-2 rounded-xl font-bold cursor-pointer max-md:text-sm max-md:px-4 max-md:py-1 text-white uppercase"
     >
       {title}
     </button>
