@@ -5,8 +5,8 @@ import { Header } from "@/components/ui/header";
 import { Footer } from "@/components/ui/footer";
 
 export const metadata: Metadata = {
-  title: "OMG CYBERZONE",
-  description: "OMG CYBERZONE",
+  title: "OMG CYBER ZONE",
+  description: "OMG CYBER ZONE",
   icons: {
     icon: "/logo.ico",
   },

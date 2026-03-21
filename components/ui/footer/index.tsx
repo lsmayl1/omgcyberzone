@@ -9,7 +9,7 @@ export const Footer = () => {
       <div className="flex gap-2 py-8 max-md:flex-col-reverse container-custom">
         <div className="flex-1  rounded-[60px] max-md:rounded-2xl flex gap-12 flex-col p-8">
           <h1 className="capitalize text-white font-bold text-4xl max-md:text-2xl">
-            проспект Азадлыг 103, Баку, Азербайджан
+            проспект Азадлыг 103E, Баку, Азербайджан
           </h1>
           <div className="flex flex-col gap-8">
             <div className="flex items-center gap-4">
