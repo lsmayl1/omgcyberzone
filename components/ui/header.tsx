@@ -8,7 +8,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 export const Header = () => {
   const pathname = usePathname();
-  const [hamburgerMenu, setHamburgerMenu] = useState(true);
+  const [hamburgerMenu, setHamburgerMenu] = useState(false);
   const [bookModal, setBookModal] = useState(false);
   const menu = [
     { name: "Главная", path: "/", id: "main" },
