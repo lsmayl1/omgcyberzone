@@ -45,7 +45,7 @@ export const Kpi = () => {
           />
           <div className="flex flex-col">
             <h1 className="font-bold text-2xl max-md:text-xl">{kp.value}</h1>
-            <h4 className="font-bold text-[#C6D1E0] max-md:text-sm">
+            <h4 className="font-bold text-[#C6D1E0] max-md:text-sm text-nowrap" >
               {kp.title}
             </h4>
           </div>

@@ -18,10 +18,10 @@ export const Gallery = () => {
         Галерея
       </h1>
       <div className="max-w-full">
-        <div className="grid grid-cols-4 gap-2 auto-rows-[200px]">
+        <div className="grid grid-cols-4 max-md:grid-cols-2 gap-2 auto-rows-[200px]">
           <img
             src={images[0]}
-            className="w-full h-full object-cover rounded-xl col-span-1 row-span-1"
+            className="w-full h-full object-cover rounded-xl col-span-1 row-span-1 max-md:row-span-2"
           />
 
           <img
@@ -31,12 +31,12 @@ export const Gallery = () => {
 
           <img
             src={images[2]}
-            className="w-full h-full object-cover rounded-xl col-span-2 row-span-1"
+            className="w-full h-full object-cover rounded-xl col-span-2 row-span-1 "
           />
 
           <img
             src={images[3]}
-            className="w-full h-full object-cover rounded-xl col-span-1 row-span-1"
+            className="w-full h-full object-cover rounded-xl col-span-1 row-span-1 max-md:col-span-2"
           />
 
           <img

@@ -59,7 +59,7 @@ export const FAQ = () => {
           className="bg-boxColor text-white p-4 rounded-xl text-xl flex flex-col gap-2 transition"
         >
           <div className="flex justify-between">
-            <h1>{dt.question}</h1>
+            <h1 className="w-9/12">{dt.question}</h1>
             <button
               className="bg-foreground rounded-full size-8 items-center flex justify-center"
               onClick={() => handleOpenFaq(dt)}
