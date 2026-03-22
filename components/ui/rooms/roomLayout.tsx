@@ -26,13 +26,13 @@ type Image = {
 
 type Price = {
   hour: string;
-  dayPrice: string;
-  nightPrice: string;
+  dayPrice?: string;
+  nightPrice?: string;
 };
 
 type Data = {
-  price: Price[];
-  specs: Spec[];
+  price?: Price[];
+  specs?: Spec[];
   image: Image[];
 };
 
@@ -67,7 +67,7 @@ export const RoomLayout = ({ data }: { data: Data }) => {
             ))}
           </div>
         </div>
-        {data.price?.length > 0 && (
+        {data?.price && data.price.length > 0 && (
           <div className="flex flex-2  w-1/2 max-2xl:w-full flex-col">
             <h1 className="text-white text-2xl font-bold max-md:text-xl mb-4 max-md:mb-2  border-l-4 border-mainRed pl-4  ">
               Тарифы
@@ -103,7 +103,7 @@ export const RoomLayout = ({ data }: { data: Data }) => {
         )}
       </div>
 
-      {data.specs?.length > 0 && (
+      {data.specs && data.specs?.length > 0 && (
         <div className="bg-background rounded-lg flex  justify-between p-4 max-md:p-2 w-full overflow-auto gap-4 mt-2 items-center	">
           {data?.specs?.map((spec, i) => (
             <div className="flex flex-col gap-4 border-r " key={i}>
