@@ -48,32 +48,38 @@ export const FAQ = () => {
   return (
     <div
       id="faq"
-      className="flex scroll-mt-20 flex-col gap-2 container-custom py-4"
+      className="flex scroll-mt-20 flex-col gap-8 container-custom py-16"
     >
-      <h1 className="text-white text-4xl font-bold max-md:text-xl mb-8 max-md:mb-2 text-center ">
+      <h1 className="text-white text-4xl font-bold max-md:text-xl mb-4 max-md:mb-2  border-l-4 border-mainRed pl-4  ">
         FAQ
       </h1>
-      {data?.map((dt, i) => (
-        <div
-          key={i}
-          className="bg-boxColor text-white p-4 rounded-xl text-xl flex flex-col gap-2 transition"
-        >
-          <div className="flex justify-between">
-            <h1 className="w-9/12">{dt.question}</h1>
-            <button
-              className="bg-foreground rounded-full size-8 items-center flex justify-center"
-              onClick={() => handleOpenFaq(dt)}
-            >
-              {openFaq?.id === dt.id ? <Close className="size-6" /> : <Plus />}
-            </button>
-          </div>
-          {openFaq?.id === dt.id && (
-            <div>
-              <span className="text-md text-gray-300">{openFaq.answer}</span>
+      <div className="flex flex-col gap-4">
+        {data?.map((dt, i) => (
+          <div
+            key={i}
+            className="bg-boxColor text-white p-4 rounded-xl text-xl flex flex-col gap-2 transition"
+          >
+            <div className="flex justify-between">
+              <h1 className="w-9/12">{dt.question}</h1>
+              <button
+                className="bg-foreground rounded-full size-8 items-center flex justify-center"
+                onClick={() => handleOpenFaq(dt)}
+              >
+                {openFaq?.id === dt.id ? (
+                  <Close className="size-6" />
+                ) : (
+                  <Plus />
+                )}
+              </button>
             </div>
-          )}
-        </div>
-      ))}
+            {openFaq?.id === dt.id && (
+              <div>
+                <span className="text-md text-gray-300">{openFaq.answer}</span>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

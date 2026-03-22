@@ -14,7 +14,7 @@ export const DayNight = () => {
       <div className="flex gap-4 items-center max-md:gap-2">
         <Night className="max-md:size-4" />
         <span className="text-white text-xl font-semibold max-md:text-sm text-nowrap">
-          Ночь: 8:00-16:00
+          Ночь: 16:00-8:00
         </span>
       </div>
     </div>

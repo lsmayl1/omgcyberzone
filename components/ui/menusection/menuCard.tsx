@@ -113,7 +113,7 @@ export const MenuCard = () => {
             <Image
               src={dt.img}
               alt={dt.name}
-              className="w-full h-full rounded-xl "
+              className="w-full h-full rounded-xl transition-transform duration-300 hover:scale-105 "
               width={400}
               height={64}
             />
@@ -129,7 +129,7 @@ export const MenuCard = () => {
               {dt.category.map((ct, idx) => (
                 <button
                   onClick={() => handleChangeSelected(i, idx)}
-                  className={`text-white rounded-lg font-semibold text-lg text-nowrap max-md:text-flg  p-2 max-md:p-2 max-md:rounded-lg ${ct.selected ? "bg-mainRed" : "bg-background"}`}
+                  className={`text-white hover:bg-mainRed rounded-lg font-semibold text-lg text-nowrap max-md:text-flg  p-2 max-md:p-2 max-md:rounded-lg ${ct.selected ? "bg-mainRed" : "bg-background"}`}
                   key={idx}
                 >
                   {ct.key}

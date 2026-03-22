@@ -36,7 +36,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="flex-1 ">
-          <img src="/footer_map.png" alt="" className="w-full rounded-4xl" />
+          <img src="/footer_map.png" alt="" className="w-full rounded-4xl transition-transform duration-300 hover:scale-120" />
         </div>
       </div>
       <h1 className="text-center text-white uppercase">© 2025 OMG Cyber Zone.</h1>

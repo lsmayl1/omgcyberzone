@@ -32,29 +32,35 @@ export const Games = () => {
   return (
     <div
       id="games"
-      className="flex scroll-mt-20 flex-col py-8 border-b border-mainRed container-custom gap-8 "
+      className="flex scroll-mt-20 flex-col py-16 border-b border-mainRed container-custom gap-8 "
     >
-      <h1 className="text-white text-4xl font-bold max-md:text-xl mb-8 max-md:mb-2 text-center  ">
-        Игры
-      </h1>
-      <div className="flex gap-2 justify-between w-1/2 overflow-auto pb-2 ">
-        <button
-          onClick={() => setSelectedDevice("pc")}
-          className={`text-white text-xl font-semibold text-nowrap max-xl:text-sm py-2 px-4 rounded-lg w-full ${selectedDevice === "pc" ? "bg-mainRed" : "bg-boxColor"}  `}
-        >
-          PC
-        </button>
-        <button
-          onClick={() => setSelectedDevice("ps")}
-          className={`text-white text-xl font-semibold text-nowrap max-xl:text-sm py-2 px-4 rounded-lg w-full ${selectedDevice === "ps" ? "bg-mainRed" : "bg-boxColor"} `}
-        >
-          PS
-        </button>
+      <div className="flex justify-between items-center">
+        <h1 className="text-white text-4xl font-bold max-md:text-xl mb-4 max-md:mb-2 text-center border-l-4 border-mainRed pl-4 uppercase ">
+          Игры
+        </h1>
+        <div className="flex gap-2 justify-between w-1/4 overflow-auto pb-2 ">
+          <button
+            onClick={() => setSelectedDevice("pc")}
+            className={`text-white text-xl font-semibold text-nowrap max-xl:text-sm py-2 px-4 rounded-lg w-full ${selectedDevice === "pc" ? "bg-mainRed" : "bg-boxColor"}  `}
+          >
+            PC
+          </button>
+          <button
+            onClick={() => setSelectedDevice("ps")}
+            className={`text-white text-xl font-semibold text-nowrap max-xl:text-sm py-2 px-4 rounded-lg w-full ${selectedDevice === "ps" ? "bg-mainRed" : "bg-boxColor"} `}
+          >
+            PS
+          </button>
+        </div>
       </div>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 gap-2">
         {gamelist.pc.map((gm, i) => (
           <div key={i}>
-            <img src={gm.img} alt="" />
+            <img
+              src={gm.img}
+              alt=""
+              className="transition-transform duration-300 hover:scale-120 cursor-pointer"
+            />
           </div>
         ))}
       </div>

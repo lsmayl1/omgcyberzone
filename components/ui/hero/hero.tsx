@@ -30,20 +30,20 @@ export const Hero = () => {
             <h4 className="uppercase font-bold tracking-widest text-2xl text-[#EE332D] max-md:text-xl border-l-4 pl-4 border-[#EE332D] ">
               GAMING CENTER BAKU
             </h4>
-            <h4 className="uppercase font-bold  leading-18 max-md:leading-8 text-6xl text-white max-md:text-2xl border-l-2 pl-4 border-[#EE332D]/20 ">
+            <h4 className="uppercase font-bold  leading-18 max-md:leading-8 text-6xl text-white max-md:text-2xl border-l-4 pl-4 border-[#EE332D] ">
               Добро пожаловать <br /> в
               <span className="text-[#EE332D]"> OMG CYBER ZONE</span>
             </h4>
 
-            <h1 className="text-xl mb-8 tracking-wider  max-md:text-lg font-semibold   text-gray-400  max-md:w-9/12 max-md:text-fsm">
+            {/* <h1 className="text-xl mb-8 tracking-wider  max-md:text-lg font-semibold   text-gray-400  max-md:w-9/12 max-md:text-fsm">
               Эпичный геймплей, вкусная еда и непревзойдённый комфорт.
-            </h1>
+            </h1> */}
             <div className="flex gap-4 items-center max-md:flex-col max-md:items-start">
               <BookButton
                 title="Забронировать Место"
                 showModal={() => setBookModal(true)}
               />
-              <button className="uppercase px-8 py-4 border-white border rounded-xl text-lg font-semibold text-nowrap max-md:text-sm  max-md:px-4 max-md:py-1 max-md:rounded-sm">
+              <button className="uppercase px-8 py-4 border-white border rounded-xl text-lg font-semibold text-nowrap max-md:text-sm  max-md:px-4 max-md:py-1 max-md:rounded-sm transition-transform duration-300 hover:scale-105">
                 Посмотреть игры
               </button>
             </div>

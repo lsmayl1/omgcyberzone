@@ -21,14 +21,14 @@ export const MenuSection = () => {
   return (
     <div
       id="menu"
-      className="flex section scroll-mt-20 flex-col container-custom py-8 gap-4  border-b border-b-mainRed max-md:gap-2"
+      className="flex  scroll-mt-20 flex-col container-custom py-16 gap-4  border-b border-b-mainRed max-md:gap-2"
     >
-      <h1 className="text-white text-center text-4xl font-semibold pb-4">
+      <h1 className="text-white text-4xl font-bold max-md:text-xl mb-4 max-md:mb-2  border-l-4 border-mainRed pl-4 uppercase  ">
         Меню
       </h1>
       <div
         ref={scrollRef}
-        className="flex flex-col gap-2 w-full max-md:hidden overflow-x-auto min-h-0  no-scrollbar-buttons select-none  cursor-grab active:cursor-grabbing"
+        className="flex flex-col gap-2 w-full max-md:hidden overflow-x-auto min-h-0  no-scrollbar-buttons select-none  cursor-pointer active:cursor-pointer"
         onMouseDown={(e) => {
           const container = scrollRef.current;
           if (!container) return;
@@ -54,7 +54,7 @@ export const MenuSection = () => {
           {icons.map((dt, i) => (
             <div
               key={i}
-              className="text-white select-none  flex-col shrink-0 justify-center bg-boxColor flex items-center rounded-lg w-48 p-4 gap-3 "
+              className="text-white select-none hover:bg-mainRed  flex-col shrink-0 justify-center bg-boxColor flex items-center rounded-lg w-48 p-4 gap-3 "
             >
               <Image
                 src={dt.icon}
