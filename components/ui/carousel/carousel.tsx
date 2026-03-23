@@ -1,25 +1,33 @@
 "use client";
+import { Blob } from "buffer";
 import Image from "next/image";
 import React from "react";
 
 // swiper imports – make sure `npm install swiper` is run first
 import { Swiper, SwiperSlide } from "swiper/react";
+type Slide = {
+  src: string;
+};
 
-export const Carousel = () => {
-  const slides = [
-    "/standart_carousel_1.png",
-    "/standart_carousel_2.png",
-    "/standart_carousel_3.png",
-    "/standart_carousel_1.png",
-    "/standart_carousel_2.png",
-    "/standart_carousel_3.png",
-    "/standart_carousel_1.png",
-    "/standart_carousel_2.png",
-    "/standart_carousel_3.png",
-  ];
+type CarouselProps = {
+  slides: Slide[];
+};
 
+export const Carousel: React.FC<CarouselProps> = ({ slides }) => {
+  if (slides.length === 1) {
+    return (
+      <div className="w-full h-96 relative">
+        <Image
+          src={slides[0].src}
+          alt="single-image"
+          fill
+          className="object-cover rounded-md"
+        />
+      </div>
+    );
+  }
   return (
-    <div className="w-full text-white ">
+    <div className="w-full text-white h-full ">
       <Swiper
         spaceBetween={2}
         slidesPerView={3}
@@ -31,13 +39,16 @@ export const Carousel = () => {
           1024: { slidesPerView: 3 },
         }}
       >
-        {slides.map((src, i) => (
-          <SwiperSlide key={i} className="flex justify-center h-full">
-            <img
-              src={src}
-              className="w-full h-9/12  rounded-lg max-md:h-full"
-              alt={`slide-${i}`}
-            />
+        {slides?.map((slide, i) => (
+          <SwiperSlide key={i} className="flex justify-center max-h-96 h-full ">
+            <div className="h-96">
+              <Image
+                src={slide.src}
+                fill
+                className="object-cover rounded-md"
+                alt={`slide-${i}`}
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
