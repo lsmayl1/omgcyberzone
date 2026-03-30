@@ -5,17 +5,19 @@ import { HamburgerMenu } from "@/assets/hamburger-menu";
 import { BookModal } from "./bookModal";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 export const Header = () => {
   const pathname = usePathname();
+  const navigate = useRouter();
   const [hamburgerMenu, setHamburgerMenu] = useState(false);
   const [bookModal, setBookModal] = useState(false);
   const menu = [
     { name: "Главная", path: "/", id: "main" },
     { name: "Тарифы", id: "plans" },
-    { name: "Игры", path: "/games", id: "games" },
+    { name: "Игры", path: "/", id: "games" },
     { name: "Меню", path: "/menu", id: "menu" },
     { name: "Галерея", id: "gallery" },
-    { name: "FAQ", path: "/faq", id: "faq" },
+    { name: "FAQ", path: "/", id: "faq" },
     { name: "Контакты", id: "footer" },
   ];
 
@@ -28,13 +30,22 @@ export const Header = () => {
       });
     }
   };
+
+  const handlePath = (path: string) => {
+    if (pathname !== path) {
+      navigate.push(path);
+    }
+  };
   return (
     <div className="flex fixed  bg-foreground z-40  w-full h-24  justify-between items-center  max-md:h-14 max-md:gap-4  ">
       <div className="flex  container-custom bg-foreground z-40  w-full   justify-between items-center overflow-hidden max-md:gap-4">
         <BookModal open={bookModal} handleClose={() => setBookModal(false)} />
         <Logo
           className="size-24 max-md:w-22 h-12 cursor-pointer"
-          onClick={() => scrollToSection("main")}
+          onClick={() => {
+            handlePath("/");
+            scrollToSection("main");
+          }}
         />
         <HamburgerMenu
           className="size-10 text-white rotate-180 lg:hidden"
@@ -43,8 +54,8 @@ export const Header = () => {
 
         {hamburgerMenu ? (
           <div className="absolute w-screen h-screen  z-50 left-0 top-0 ">
-            <div className=" bg-boxColor gap-8  h-full p-8 flex  flex-col w-full ">
-              <div className="flex justify-between items-center">
+            <div className=" bg-foreground gap-8 h-full p-1.5 flex  flex-col w-full ">
+              <div className="flex justify-between items-center container-custom  ">
                 <Logo
                   className="size-24 max-md:w-22 h-12 cursor-pointer"
                   onClick={() => scrollToSection("main")}
@@ -54,11 +65,12 @@ export const Header = () => {
                   onClick={() => setHamburgerMenu(false)}
                 />
               </div>
-              <div className="flex flex-col gap-12 font-bold max-md:gap-12 ">
+              <div className="flex flex-col gap-12 font-bold max-md:gap-12 container-custom ">
                 {menu.map((m, i) =>
                   m.path ? (
                     <Link
                       href={m.path}
+                      onClick={() => setHamburgerMenu(false)}
                       className="cursor-pointer text-white max-md:text-lg"
                       key={i}
                     >
@@ -79,8 +91,11 @@ export const Header = () => {
                 )}
               </div>
               <button
-                onClick={() => setBookModal(true)}
-                className="bg-mainRed w-fit text-lg   px-8 py-4 rounded-xl font-semibold cursor-pointer max-md:text-sm max-md:px-4 max-md:py-1 text-white uppercase text-nowrap max-md:rounded-sm"
+                onClick={() => {
+                  setHamburgerMenu(false);
+                  setBookModal(true);
+                }}
+                className="bg-mainRed w-fit text-lg container-custom   px-8 py-4 rounded-xl font-semibold cursor-pointer max-md:text-sm max-md:px-4 max-md:py-1 text-white uppercase text-nowrap max-md:rounded-sm"
               >
                 Забронировать
               </button>

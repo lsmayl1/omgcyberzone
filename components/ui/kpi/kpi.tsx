@@ -30,7 +30,7 @@ export const Kpi = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-4 gap-2 container-custom pt-8 max-md:grid-cols-2 w-full">
+    <div className="grid grid-cols-4 gap-2  pt-8 max-md:grid-cols-2 w-full">
       {kpi.map((kp, i) => (
         <div
           key={i}

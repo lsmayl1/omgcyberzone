@@ -92,7 +92,7 @@ export const RoomLayout = ({ data }: { data: Data }) => {
               </h1>
               <DayNight />
             </div>
-            <div className="flex  w-full h-full gap-2 ">
+            <div className="flex  w-full h-full gap-2 max-md:flex-col ">
               <div className="flex w-full flex-col bg-background rounded-xl p-4 gap-2">
                 <span className="text-white mb-2 text-xl uppercase flex items-center gap-2">
                   Будни{" "}

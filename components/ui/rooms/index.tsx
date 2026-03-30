@@ -184,16 +184,16 @@ export const Rooms = () => {
       id="plans"
       className="flex scroll-mt-20 flex-col  gap-8 py-16 container-custom max-md:gap-4 border-b  border-b-mainRed overflow-auto"
     >
-      <div className="flex gap-24 items-center  justify-between ">
+      <div className="flex gap-24 items-center  justify-between max-md:flex-col max-md:gap-8 max-md:items-start">
         <h1 className="text-white text-4xl font-bold max-md:text-xl  max-md:mb-2 border-l-4 border-mainRed pl-4 text-nowrap ">
           ВЫБЕРИТЕ ЗОНУ
         </h1>
-        <div className="flex gap-1 justify-between w-full overflow-auto bg-boxColor p-2 rounded-lg ">
+        <div className="flex  justify-between w-full overflow-auto bg-boxColor p-2 rounded-lg ">
           {menu.map((m, i) => (
             <button
               key={i} 
               onClick={() => setSelectedRoom(m)}
-              className={`text-white text-md hover:bg-mainRed transition-all duration-300 font-semibold text-nowrap max-xl:text-sm p-1 rounded-lg w-full ${selectedRoom.key === m.key ? "bg-mainRed" : "bg-boxColor"}`}
+              className={`text-white text-md hover:bg-mainRed transition-all duration-300 font-semibold text-nowrap max-xl:text-sm p-2 max-sm:text-[0.8rem] rounded-lg w-full ${selectedRoom.key === m.key ? "bg-mainRed" : "bg-boxColor"}`}
             >
               {m.title}
             </button>

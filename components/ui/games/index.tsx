@@ -34,11 +34,11 @@ export const Games = () => {
       id="games"
       className="flex scroll-mt-20 flex-col py-16 border-b border-mainRed container-custom gap-8 "
     >
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center max-md:flex-col max-md:gap-4 max-md:items-start">
         <h1 className="text-white text-4xl font-bold max-md:text-xl mb-4 max-md:mb-2 text-center border-l-4 border-mainRed pl-4 uppercase ">
           Игры
         </h1>
-        <div className="flex gap-2 justify-between w-1/4 overflow-auto pb-2 ">
+        <div className="flex justify-between w-1/4  p-2 rounded-lg bg-boxColor  ">
           <button
             onClick={() => setSelectedDevice("pc")}
             className={`text-white text-xl font-semibold text-nowrap max-xl:text-sm py-2 px-4 rounded-lg w-full ${selectedDevice === "pc" ? "bg-mainRed" : "bg-boxColor"}  `}
@@ -53,7 +53,7 @@ export const Games = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-4 gap-2 max-md:gap-1 max-md:grid-cols-2">
         {gamelist.pc.map((gm, i) => (
           <div key={i}>
             <img
@@ -65,7 +65,7 @@ export const Games = () => {
         ))}
       </div>
       <div className="flex items-center justify-center">
-        <button className="rounded-xl text-white bg-mainRed font-bold w-fit px-4 py-2 text-xl mt-4 max-md:text-flg">
+        <button className="rounded-xl text-white bg-mainRed font-bold w-fit px-4 py-2 text-md mt-4 max-md:text-flg">
           Смотреть ещё
         </button>
       </div>

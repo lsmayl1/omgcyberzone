@@ -71,13 +71,13 @@ html {
 /* breakpoints */
 @media (min-width: 375px) {
   .container-custom {
-    max-width: 375px;
+    max-width: 480px;
   }
 }
 
 @media (min-width: 480px) {
   .container-custom {
-    max-width: 350px;
+    max-width: 480px;
   }
 }
 
@@ -138,4 +138,14 @@ button {
   display: none;
   width: 0;
   height: 0;
+}
+
+/* Utility class to hide scrollbar while keeping scroll functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
