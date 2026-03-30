@@ -10,7 +10,7 @@ export const Rooms = () => {
       title: "STANDART",
       key: "standart",
       images: [
-        { src: "/standart_2.webp", alt: "standart" },
+        { src: "/standart_room.webp", alt: "standart" },
         { src: "/standart_3.webp", alt: "standart" },
         { src: "/standart_4.webp", alt: "standart" },
       ],
@@ -188,12 +188,12 @@ export const Rooms = () => {
         <h1 className="text-white text-4xl font-bold max-md:text-xl  max-md:mb-2 border-l-4 border-mainRed pl-4 text-nowrap ">
           ВЫБЕРИТЕ ЗОНУ
         </h1>
-        <div className="flex gap-2 justify-between w-full overflow-auto  ">
+        <div className="flex gap-1 justify-between w-full overflow-auto bg-boxColor p-2 rounded-lg ">
           {menu.map((m, i) => (
             <button
-              key={i}
+              key={i} 
               onClick={() => setSelectedRoom(m)}
-              className={`text-white text-lg hover:bg-mainRed transition-all duration-300 font-semibold text-nowrap max-xl:text-sm p-2 rounded-lg w-full ${selectedRoom.key === m.key ? "bg-mainRed" : "bg-boxColor"}`}
+              className={`text-white text-md hover:bg-mainRed transition-all duration-300 font-semibold text-nowrap max-xl:text-sm p-1 rounded-lg w-full ${selectedRoom.key === m.key ? "bg-mainRed" : "bg-boxColor"}`}
             >
               {m.title}
             </button>

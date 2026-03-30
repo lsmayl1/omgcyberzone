@@ -1,6 +1,5 @@
 "use client";
 import Logo from "@/assets/Logo";
-import { BookButton } from "./buttons/bookButton";
 import { useState } from "react";
 import { HamburgerMenu } from "@/assets/hamburger-menu";
 import { BookModal } from "./bookModal";
@@ -12,12 +11,12 @@ export const Header = () => {
   const [bookModal, setBookModal] = useState(false);
   const menu = [
     { name: "Главная", path: "/", id: "main" },
-    { name: "Тарифы", path: "/plans", id: "plans" },
+    { name: "Тарифы", id: "plans" },
     { name: "Игры", path: "/games", id: "games" },
     { name: "Меню", path: "/menu", id: "menu" },
-    { name: "Галерея", path: "/gallery", id: "gallery" },
+    { name: "Галерея", id: "gallery" },
     { name: "FAQ", path: "/faq", id: "faq" },
-    { name: "Контакты", path: "/contacts", id: "footer" },
+    { name: "Контакты", id: "footer" },
   ];
 
   const scrollToSection = (id: string) => {
@@ -56,15 +55,28 @@ export const Header = () => {
                 />
               </div>
               <div className="flex flex-col gap-12 font-bold max-md:gap-12 ">
-                {menu.map((m, i) => (
-                  <Link
-                    href={m.path}
-                    className="cursor-pointer text-white max-md:text-lg"
-                    key={i}
-                  >
-                    {m.name}
-                  </Link>
-                ))}
+                {menu.map((m, i) =>
+                  m.path ? (
+                    <Link
+                      href={m.path}
+                      className="cursor-pointer text-white max-md:text-lg"
+                      key={i}
+                    >
+                      {m.name}
+                    </Link>
+                  ) : (
+                    <button
+                      key={i}
+                      onClick={() => {
+                        scrollToSection(m.id);
+                        setHamburgerMenu(false);
+                      }}
+                      className="cursor-pointer text-white max-md:text-lg text-left"
+                    >
+                      {m.name}
+                    </button>
+                  ),
+                )}
               </div>
               <button
                 onClick={() => setBookModal(true)}
@@ -77,15 +89,25 @@ export const Header = () => {
         ) : (
           <div className="flex gap-12 items-center max-lg:hidden ">
             <div className="flex gap-8 font-bold items-center max-md:gap-4  ">
-              {menu.map((m, i) => (
-                <button
-                  className={`cursor-pointer text-white max-md:text-sm ${pathname === m.path ? "border-b" : ""}`}
-                  key={i}
-                  onClick={() => scrollToSection(m?.id)}
-                >
-                  {m.name}
-                </button>
-              ))}
+              {menu.map((m, i) =>
+                m?.path ? (
+                  <Link
+                    href={m?.path || "#"}
+                    className={`cursor-pointer text-white max-md:text-sm ${pathname === m.path ? "border-b" : ""}`}
+                    key={i}
+                  >
+                    {m.name}
+                  </Link>
+                ) : (
+                  <button
+                    className={`cursor-pointer text-white max-md:text-sm ${pathname === m.path ? "border-b" : ""}`}
+                    key={i}
+                    onClick={() => scrollToSection(m?.id)}
+                  >
+                    {m.name}
+                  </button>
+                ),
+              )}
             </div>
             <div className="">
               <button

@@ -50,20 +50,20 @@ export const MenuSection = () => {
           document.addEventListener("mouseup", onUp);
         }}
       >
-        <div className="flex w-full gap-2 max-md:gap-1 pb-2 ">
+        <div className="flex w-full gap-1 max-md:gap-1 pb-2 ">
           {icons.map((dt, i) => (
             <div
               key={i}
-              className="text-white select-none hover:bg-mainRed  flex-col shrink-0 justify-center bg-boxColor flex items-center rounded-lg w-48 p-4 gap-3 "
+              className="text-white select-none hover:bg-mainRed  flex-col shrink-0 justify-center bg-boxColor flex items-center rounded-xl w-30 p-4 gap-3 "
             >
               <Image
                 src={dt.icon}
                 alt={dt.key}
                 width={40}
                 height={40}
-                className="w-auto h-auto"
+                className="size-8 object-contain"
               />
-              <span className="capitalize text-lg font-semibold">
+              <span className=" text-xs font-semibold uppercase ">
                 {dt.name}
               </span>
             </div>

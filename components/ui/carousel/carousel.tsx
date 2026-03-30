@@ -29,23 +29,26 @@ export const Carousel: React.FC<CarouselProps> = ({ slides }) => {
   return (
     <div className="w-full text-white h-full ">
       <Swiper
-        spaceBetween={2}
+        spaceBetween={7}
         slidesPerView={3}
         loop
         breakpoints={{
           480: { slidesPerView: 1 },
           640: { slidesPerView: 1 },
           768: { slidesPerView: 1 },
-          1024: { slidesPerView: 3 },
+          1024: { slidesPerView: 2 },
         }}
       >
         {slides?.map((slide, i) => (
-          <SwiperSlide key={i} className="flex justify-center max-h-96 h-full ">
+          <SwiperSlide
+            key={i}
+            className="flex justify-center max-h-96 h-full gap-4 "
+          >
             <div className="h-96">
               <Image
                 src={slide.src}
                 fill
-                className="object-cover rounded-md"
+                className="object-cover rounded-xl"
                 alt={`slide-${i}`}
               />
             </div>

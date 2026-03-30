@@ -103,11 +103,11 @@ export const MenuCard = () => {
   };
 
   return (
-    <div className="grid grid-cols-4 max-lg:grid-cols-2 gap-2 max-md:grid-cols-1 max-md:gap-1">
+    <div className="grid grid-cols-4 max-lg:grid-cols-2 gap-4 max-md:grid-cols-1 max-md:gap-1">
       {food.map((dt, i) => (
         <div
           key={i}
-          className="flex bg-boxColor  flex-col gap-4 relative rounded-4xl  max-md:gap-2"
+          className="flex bg-boxColor  flex-col gap-2 relative rounded-xl  max-md:gap-2"
         >
           <div className=" h-64 max-md:max-h-36">
             <Image
@@ -118,18 +118,18 @@ export const MenuCard = () => {
               height={64}
             />
           </div>
-          <div className="p-4 flex flex-col gap-4">
-            <span className="text-white text-xl font-semibold max-md:text-lg">
+          <div className="px-3 py-2 flex flex-col gap-4">
+            <span className="text-white text-lg font-semibold max-md:text-lg">
               {dt.name}
             </span>
-            <p className="text-[#66676D] font-semibold max-md:text-xs">
+            <p className="text-[#66676D] text-sm font-semibold max-md:text-xs">
               {dt.description}
             </p>
             <div className="flex gap-2 max-md:gap-1 ">
               {dt.category.map((ct, idx) => (
                 <button
                   onClick={() => handleChangeSelected(i, idx)}
-                  className={`text-white hover:bg-mainRed rounded-lg font-semibold text-lg text-nowrap max-md:text-flg  p-2 max-md:p-2 max-md:rounded-lg ${ct.selected ? "bg-mainRed" : "bg-background"}`}
+                  className={`text-white hover:bg-mainRed rounded-lg font-semibold text-sm text-nowrap max-md:text-flg  p-2 max-md:p-2 max-md:rounded-lg ${ct.selected ? "bg-mainRed" : "bg-background"}`}
                   key={idx}
                 >
                   {ct.key}
