@@ -1,4 +1,4 @@
-import Collapse from "@/assets/Collapse";
+"use client";
 import Night from "@/assets/Night";
 import Armchair from "@/assets/pc/armchair";
 import Cpu from "@/assets/pc/cpu";
@@ -6,167 +6,215 @@ import Headset from "@/assets/pc/headset";
 import Keyboard from "@/assets/pc/keyboard";
 import Monitor from "@/assets/pc/monitor";
 import Mouse from "@/assets/pc/mouse";
-import MousePad from "@/assets/pc/mouse-pad";
 import Ram from "@/assets/pc/ram";
 import Ssd from "@/assets/pc/ssd";
 import VideoCard from "@/assets/pc/video-card";
 import Sun from "@/assets/sun";
-import Image from "next/image";
-import React from "react";
-import { DayNight } from "../dayNightComponent";
+import React, { useState } from "react";
 import { Carousel } from "../carousel/carousel";
+import { minHourlyPrice, type Price, type Room } from "@/data/rooms";
+import { useI18n } from "@/i18n/I18nProvider";
 
-type Spec = {
-  key: string;
-  name: string;
+const ICONS: Record<string, React.ReactNode> = {
+  cpu: <Cpu />,
+  videoCart: <VideoCard />,
+  ram: <Ram />,
+  ssd: <Ssd />,
+  mouse: <Mouse />,
+  headset: <Headset />,
+  keyboard: <Keyboard />,
+  monitor: <Monitor />,
+  armchair: <Armchair />,
 };
 
-type Image = {
-  src: string;
-  alt: string;
-};
+type Period = "midweek" | "weekend";
 
-type Price = {
-  hour: string;
-  dayPrice?: string;
-  nightPrice?: string;
-};
+export const RoomLayout = ({ room }: { room: Room }) => {
+  const { t, plural } = useI18n();
+  const [period, setPeriod] = useState<Period>("midweek");
 
-type Data = {
-  price?: { midweek: Price[]; weekend: Price[] };
-  specs?: Spec[];
-  image: Image[];
-};
+  const alt = t.roomAlts[room.key as keyof typeof t.roomAlts] ?? "";
+  const from = minHourlyPrice(room);
+  const rows: Price[] = room.price?.[period] ?? [];
 
-export const RoomLayout = ({ data }: { data: Data }) => {
-  const icon = [
-    { key: "cpu", icon: <Cpu /> },
-    { key: "videoCart", icon: <VideoCard /> },
-    { key: "ram", icon: <Ram /> },
-    { key: "ssd", icon: <Ssd /> },
-    { key: "mouse", icon: <Mouse /> },
-    { key: "headset", icon: <Headset /> },
-    { key: "keyboard", icon: <Keyboard /> },
-    { key: "monitor", icon: <Monitor /> },
-    // { key: "mousepad", icon: <MousePad /> },
-    { key: "armchair", icon: <Armchair /> },
+  const periods: { key: Period; label: string; days: string }[] = [
+    { key: "midweek", label: t.rooms.midweek, days: t.rooms.midweekDays },
+    { key: "weekend", label: t.rooms.weekend, days: t.rooms.weekendDays },
   ];
+
   return (
-    <div className="bg-boxColor w-full h-full rounded-xl p-6 flex-col  gap-6 max-md:p-2 max-md:gap-2 ">
-      <div className="flex flex-col w-fullh-fit gap-6  ">
-        <div className="flex flex-col flex-4">
-          <h1 className="text-white uppercase text-xl font-bold max-md:text-xl mb-4 max-md:mb-2  border-l-4 border-mainRed pl-4  ">
-            Интерьер
-          </h1>
-          <div className="h-full overflow-hidden rounded-2xl max-h-128 w-full">
-            <Carousel slides={data.image} />
-          </div>
+    <div className="bg-boxColor rounded-2xl overflow-hidden grid lg:grid-cols-2">
+      {/* Photos. On lg the cell stretches to the details column's height and
+          the carousel is absolutely positioned to fill it. */}
+      <div className="relative h-72 sm:h-96 lg:h-auto lg:min-h-96">
+        <div className="absolute inset-0">
+          <Carousel slides={room.images.map((src) => ({ src, alt }))} />
         </div>
-        {data.specs && data.specs?.length > 0 && (
-          <div className="flex flex-col gap-1 ">
-            <h1 className="text-white uppercase text-xl font-bold max-md:text-xl mb-4 max-md:mb-2  border-l-4 border-mainRed pl-4  ">
-              Характеристики
-            </h1>
-            <div className="bg-background  bottom-0 rounded-lg flex  justify-between p-4 max-md:p-2 w-full overflow-auto gap-4  items-center	">
-              {data?.specs?.map((spec, i) => (
-                <div className="flex flex-col gap-2 border-r " key={i}>
-                  <div className="flex flex-col  text-white text-md items-center justify-center ">
-                    <div className="size-12 max-md:size-14 flex items-center justify-center ">
-                      {icon.find((item) => item.key === spec.key)?.icon}
-                    </div>
-                    <span className="font-semibold text-nowrap text-sm max-md:text-fsm">
-                      {spec.name}
-                    </span>
-                  </div>
-                </div>
+      </div>
+
+      {/* Details */}
+      <div className="flex flex-col gap-5 p-6 max-md:p-4 max-md:gap-4">
+        <div className="flex items-end justify-between gap-4 border-b border-white/10 pb-4">
+          <div>
+            <h3 className="text-white text-2xl font-bold uppercase tracking-wide max-md:text-xl">
+              {room.title}
+            </h3>
+            <p className="text-gray-400 text-xs mt-1">{alt}</p>
+          </div>
+          {from && (
+            <div className="text-right shrink-0">
+              <p className="text-gray-400 text-[0.7rem] uppercase tracking-wider">
+                {t.rooms.priceFrom}
+              </p>
+              <p className="text-mainRed text-2xl font-bold leading-tight max-md:text-xl">
+                {from}
+                <span className="text-gray-400 text-xs font-medium ml-1">
+                  {t.rooms.perHour}
+                </span>
+              </p>
+            </div>
+          )}
+        </div>
+
+        {/* Specs as compact chips instead of a wide scrolling icon strip */}
+        {room.specs && room.specs.length > 0 && (
+          <section className="flex flex-col gap-2">
+            <h4 className="text-gray-400 text-[0.7rem] font-semibold uppercase tracking-wider">
+              {t.rooms.specs}
+            </h4>
+            {/* Two columns at every size — one column made this nine rows
+                tall on phones, which was most of the section's height. */}
+            <ul className="grid grid-cols-2 gap-1.5">
+              {room.specs.map((spec) => (
+                <li
+                  key={spec.key}
+                  className="flex items-center gap-2 bg-background rounded-lg px-2.5 py-2 max-md:px-2 max-md:py-1.5"
+                >
+                  <span className="size-4 shrink-0 flex items-center justify-center [&>svg]:size-4">
+                    {ICONS[spec.key]}
+                  </span>
+                  <span className="text-gray-200 text-xs max-md:text-[0.7rem] truncate">
+                    {spec.name}
+                  </span>
+                </li>
               ))}
-            </div>
-          </div>
+            </ul>
+          </section>
         )}
-        {data?.price && data.price?.midweek?.length > 0 && (
-          <div className="">
-            {" "}
-            <div className="flex justify-between items-center ">
-              <h1 className="text-white text-xl font-bold max-md:text-xl mb-4 max-md:mb-2  border-l-4 border-mainRed pl-4 uppercase  ">
-                Тарифы
-              </h1>
-              <DayNight />
-            </div>
-            <div className="flex  w-full h-full gap-2 max-md:flex-col ">
-              <div className="flex w-full flex-col bg-background rounded-xl p-4 gap-2">
-                <span className="text-white mb-2 text-xl uppercase flex items-center gap-2">
-                  Будни{" "}
-                  <div className="bg-boxColor w-fit p-2 text-fsm rounded">
-                    ПН - ПТ
-                  </div>{" "}
-                </span>
-                {data?.price?.midweek.map((dt, i) => (
-                  <div
-                    key={i}
-                    className="text-white flex bg-background rounded-xl  font-bold text-xl  items-center gap-4 max-md:p-3 max-md:gap-2"
+
+        {/* Pricing: one period at a time rather than two stacked tables */}
+        {room.price && rows.length > 0 && (
+          <section className="flex flex-col gap-3">
+            <div className="flex items-center justify-between gap-3">
+              <h4 className="text-gray-400 text-[0.7rem] font-semibold uppercase tracking-wider">
+                {t.rooms.tariffs}
+              </h4>
+              <div className="flex bg-background rounded-lg p-1 gap-1">
+                {periods.map((p) => (
+                  <button
+                    key={p.key}
+                    type="button"
+                    onClick={() => setPeriod(p.key)}
+                    aria-pressed={period === p.key}
+                    title={p.days}
+                    className={`px-3 py-1.5 rounded-md text-xs font-semibold transition-colors ${
+                      period === p.key
+                        ? "bg-mainRed text-white"
+                        : "text-gray-400 hover:text-white"
+                    }`}
                   >
-                    <h1 className="text-md text-nowrap"> {dt.hour}</h1>
-
-                    <div className="flex gap-2 text-nowrap w-full">
-                      {dt.dayPrice && (
-                        <div className="bg-boxColor items-center p-2 rounded-lg flex gap-2 w-full justify-between">
-                          <Sun className="size-6" />
-                          <span className="text-xl max-md:text-md tracking-wide">
-                            {dt.dayPrice}
-                          </span>
-                        </div>
-                      )}
-
-                      <div className="bg-boxColor p-2 rounded-lg items-center flex gap-2 w-full justify-between">
-                        <Night className=" size-6" />
-                        <span className="text-xl max-md:text-md tracking-wide">
-                          {dt.nightPrice}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="flex w-full flex-col bg-background rounded-xl p-4 gap-2">
-                <span className="text-white mb-2 text-xl uppercase flex items-center gap-2">
-                  Выходные{" "}
-                  <div className="bg-boxColor w-fit p-2 text-fsm rounded">
-                    СБ - ВС
-                  </div>
-                </span>
-                {data?.price?.weekend.map((dt, i) => (
-                  <div
-                    key={i}
-                    className="text-white flex bg-background rounded-xl  font-bold text-xl  items-center gap-4 max-md:p-3 max-md:gap-2"
-                  >
-                    <h1 className="text-md text-nowrap"> {dt.hour}</h1>
-
-                    <div className="flex gap-2 text-nowrap w-full">
-                      {dt.dayPrice && (
-                        <div className="bg-boxColor items-center p-2 rounded-lg flex gap-2 w-full justify-between">
-                          <Sun className="max-md:size-6" />
-                          <span className="text-xl max-md:text-md tracking-wide">
-                            {dt.dayPrice}
-                          </span>
-                        </div>
-                      )}
-
-                      <div className="bg-boxColor p-2 rounded-lg items-center flex gap-2 w-full justify-between">
-                        <div className="flex items-center gap-2">
-                          <Sun className="size-6" />
-                          -
-                          <Night className="size-6" />
-                        </div>
-                        <span className="text-xl tracking-wide max-md:text-md">
-                          {dt.nightPrice}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+                    {p.label}
+                  </button>
                 ))}
               </div>
             </div>
-          </div>
+
+            <p className="text-gray-500 text-[0.7rem] -mt-1">
+              {periods.find((p) => p.key === period)?.days}
+            </p>
+
+            <ul className="flex flex-col">
+              {rows.map((row) => {
+                /*
+                 * On weekdays the multi-hour packages (3/5/7/9) only run at
+                 * night, 16:00–08:00 — they carry a nightPrice and no
+                 * dayPrice. At weekends and on holidays every package runs
+                 * round the clock, so the same single price covers day and
+                 * night. Keying purely off dayPrice would have mislabelled
+                 * the weekday packages as all-day.
+                 */
+                const allDay = period === "weekend";
+                const label = allDay ? t.rooms.allDay : t.rooms.night;
+
+                return (
+                  <li
+                    key={row.hours}
+                    className="flex items-center justify-between gap-3 py-2 max-md:py-1.5 border-b border-white/5 last:border-0"
+                  >
+                    <span className="text-gray-300 text-sm font-medium">
+                      {plural(t.rooms.hours, row.hours)}
+                    </span>
+                    <div className="flex items-center gap-2">
+                      {row.dayPrice && (
+                        <span
+                          title={t.rooms.day}
+                          className="flex items-center gap-1.5 bg-background rounded-md px-2.5 py-1"
+                        >
+                          <Sun className="size-4 shrink-0" aria-hidden="true" />
+                          <span className="sr-only">{t.rooms.day}</span>
+                          <span className="text-white text-sm font-semibold tabular-nums">
+                            {row.dayPrice}
+                          </span>
+                        </span>
+                      )}
+                      <span
+                        title={label}
+                        className="flex items-center gap-1.5 bg-background rounded-md px-2.5 py-1"
+                      >
+                        {allDay ? (
+                          <span
+                            className="flex items-center gap-0.5"
+                            aria-hidden="true"
+                          >
+                            <Sun className="size-4 shrink-0" />
+                            <Night className="size-4 shrink-0" />
+                          </span>
+                        ) : (
+                          <Night
+                            className="size-4 shrink-0"
+                            aria-hidden="true"
+                          />
+                        )}
+                        <span className="sr-only">{label}</span>
+                        <span className="text-white text-sm font-semibold tabular-nums">
+                          {row.nightPrice}
+                        </span>
+                      </span>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+
+            <p className="text-gray-400 text-[0.7rem] leading-relaxed">
+              {period === "weekend" ? t.rooms.weekendNote : t.rooms.midweekNote}
+            </p>
+
+            {/* The day/night split only means something on weekdays. */}
+            <p
+              className={`text-gray-500 text-[0.7rem] items-center gap-3 pt-1 ${
+                period === "midweek" ? "flex" : "hidden"
+              }`}
+            >
+              <span className="flex items-center gap-1">
+                <Sun className="size-3.5" aria-hidden="true" /> {t.dayNight.day}
+              </span>
+              <span className="flex items-center gap-1">
+                <Night className="size-3.5" aria-hidden="true" />{" "}
+                {t.dayNight.night}
+              </span>
+            </p>
+          </section>
         )}
       </div>
     </div>

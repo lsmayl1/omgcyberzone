@@ -1,24 +1,8 @@
 "use client";
 import Image from "next/image";
-import React, { useRef, useState } from "react";
-
-interface MenuItem {
-  id: number;
-  name: string;
-  description: string;
-  category: string;
-  sizes: { key: string; price: string }[];
-  selectedSizeIndex: number;
-  image: string;
-  isPopular?: boolean;
-  isSpicy?: boolean;
-}
-
-interface Category {
-  key: string;
-  icon: string;
-  name: string;
-}
+import React, { useState } from "react";
+import { formatSize, type MenuItem } from "@/data/menu";
+import { useI18n } from "@/i18n/I18nProvider";
 
 interface MenuCardProps {
   items: MenuItem[];
@@ -26,13 +10,13 @@ interface MenuCardProps {
 }
 
 export const MenuCard = ({ items, limit }: MenuCardProps) => {
-  const [selectedSizeIndex, setSelectedSizeIndex] = useState<Record<number, number>>({});
+  const { locale, t } = useI18n();
+  const [selectedSizeIndex, setSelectedSizeIndex] = useState<
+    Record<number, number>
+  >({});
 
   const handleSizeChange = (itemId: number, newSizeIndex: number) => {
-    setSelectedSizeIndex((prev) => ({
-      ...prev,
-      [itemId]: newSizeIndex,
-    }));
+    setSelectedSizeIndex((prev) => ({ ...prev, [itemId]: newSizeIndex }));
   };
 
   const displayItems = limit ? items.slice(0, limit) : items;
@@ -40,7 +24,17 @@ export const MenuCard = ({ items, limit }: MenuCardProps) => {
   return (
     <div className="grid grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 gap-4 max-md:gap-3">
       {displayItems.map((item) => {
-        const currentIndex = selectedSizeIndex[item.id] ?? item.selectedSizeIndex ?? 0;
+        const rawIndex =
+          selectedSizeIndex[item.id] ?? item.selectedSizeIndex ?? 0;
+        // Clamp so a bad selectedSizeIndex in the JSON can't crash the grid.
+        const currentIndex = Math.min(
+          Math.max(rawIndex, 0),
+          Math.max(item.sizes.length - 1, 0),
+        );
+        const currentPrice = item.sizes[currentIndex]?.price ?? "—";
+        const name = item.name[locale];
+        const description = item.description[locale];
+
         return (
           <div
             key={item.id}
@@ -51,19 +45,20 @@ export const MenuCard = ({ items, limit }: MenuCardProps) => {
               <div className="relative h-48 overflow-hidden">
                 <Image
                   src={item.image}
-                  alt={item.name}
+                  alt={name}
                   fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute top-3 left-3 flex gap-2">
                   {item.isPopular && (
                     <span className="bg-mainRed text-white text-xs font-bold px-2 py-1 rounded-full">
-                      Популярное
+                      {t.menu.badges.popular}
                     </span>
                   )}
                   {item.isSpicy && (
                     <span className="bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-                      Острое
+                      {t.menu.badges.spicy}
                     </span>
                   )}
                 </div>
@@ -71,10 +66,10 @@ export const MenuCard = ({ items, limit }: MenuCardProps) => {
               <div className="p-4 flex flex-col gap-3">
                 <div>
                   <h3 className="text-white text-lg font-bold mb-1 group-hover:text-mainRed transition-colors">
-                    {item.name}
+                    {name}
                   </h3>
                   <p className="text-gray-400 text-sm line-clamp-2 min-h-6">
-                    {item.description}
+                    {description}
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -82,21 +77,24 @@ export const MenuCard = ({ items, limit }: MenuCardProps) => {
                     <button
                       key={idx}
                       onClick={() => handleSizeChange(item.id, idx)}
+                      aria-pressed={currentIndex === idx}
                       className={`px-3 py-1.5 rounded-lg text-sm font-semibold transition-all ${
                         currentIndex === idx
                           ? "bg-mainRed text-white"
                           : "bg-background text-gray-400 hover:bg-mainRed/50 hover:text-white"
                       }`}
                     >
-                      {size.key}
+                      {formatSize(size, t)}
                     </button>
                   ))}
                 </div>
                 <div className="flex items-center pt-3 justify-end">
                   <div className="flex flex-col">
-                    <span className="text-gray-400 text-xs">Цена:</span>
+                    <span className="text-gray-400 text-xs">
+                      {t.menu.price}
+                    </span>
                     <span className="text-white text-xl font-bold">
-                      {item.sizes[currentIndex].price}
+                      {currentPrice}
                     </span>
                   </div>
                 </div>
@@ -105,36 +103,35 @@ export const MenuCard = ({ items, limit }: MenuCardProps) => {
 
             {/* Mobile: Flex Row Layout */}
             <div className="hidden max-md:flex flex-row gap-3 max-md:gap-2">
-              {/* Image */}
               <div className="relative w-28 h-28 shrink-0 rounded-xl overflow-hidden">
                 <Image
                   src={item.image}
-                  alt={item.name}
+                  alt={name}
                   fill
+                  sizes="112px"
                   className="object-cover"
                 />
                 <div className="absolute top-1 left-1 flex gap-1">
                   {item.isPopular && (
                     <span className="bg-mainRed text-white text-[0.50rem] font-bold px-1.5 py-0.5 rounded-full">
-                      Популярное
+                      {t.menu.badges.popular}
                     </span>
                   )}
                   {item.isSpicy && (
                     <span className="bg-orange-500 text-white text-[0.50rem] font-bold px-1.5 py-0.5 rounded-full">
-                      Острое
+                      {t.menu.badges.spicy}
                     </span>
                   )}
                 </div>
               </div>
 
-              {/* Content */}
               <div className="flex-1 flex flex-col justify-between py-1 max-md:pr-1">
                 <div>
                   <h3 className="text-white text-base font-bold mb-1 max-md:text-[0.8rem]">
-                    {item.name}
+                    {name}
                   </h3>
                   <p className="text-gray-400 text-xs line-clamp-2 max-md:text-[0.45rem] min-h-4">
-                    {item.description}
+                    {description}
                   </p>
                 </div>
 
@@ -144,19 +141,20 @@ export const MenuCard = ({ items, limit }: MenuCardProps) => {
                       <button
                         key={idx}
                         onClick={() => handleSizeChange(item.id, idx)}
+                        aria-pressed={currentIndex === idx}
                         className={`px-2 py-1 rounded-lg text-xs font-semibold transition-all max-md:text-[0.5rem] max-md:px-1.5 ${
                           currentIndex === idx
                             ? "bg-mainRed text-white"
                             : "bg-background text-gray-400 hover:bg-mainRed/50 hover:text-white"
                         }`}
                       >
-                        {size.key}
+                        {formatSize(size, t)}
                       </button>
                     ))}
                   </div>
                   <div className="flex items-center justify-between max-md:justify-end px-2">
                     <span className="text-white text-lg font-bold max-md:text-[0.95rem]">
-                      {item.sizes[currentIndex].price}
+                      {currentPrice}
                     </span>
                   </div>
                 </div>

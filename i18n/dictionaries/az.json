@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "siteName": "OMG CYBER ZONE",
+    "home": {
+      "title": "OMG CYBER ZONE — Bakıda kompüter klubu",
+      "description": "Bakıda oyun mərkəzi: güclü oyun kompüterləri, PlayStation 5, mətbəx və qəlyan. 24/7 açığıq, Azadlıq prospekti 103E."
+    },
+    "menu": {
+      "title": "Menyu — OMG CYBER ZONE",
+      "description": "Bakıdakı OMG CYBER ZONE kompüter klubunda pizza, burger, rol, pasta, desert, qəhvə və qəlyan."
+    },
+    "plans": {
+      "title": "Tariflər — OMG CYBER ZONE",
+      "description": "OMG CYBER ZONE-da oyun kompüterləri və PlayStation 5 üçün saatlıq qiymətlər."
+    }
+  },
+  "nav": {
+    "home": "Ana səhifə",
+    "plans": "Tariflər",
+    "games": "Oyunlar",
+    "menu": "Menyu",
+    "gallery": "Qalereya",
+    "faq": "FAQ",
+    "contacts": "Əlaqə",
+    "book": "Rezervasiya et",
+    "openMenu": "Menyunu aç",
+    "closeMenu": "Menyunu bağla",
+    "toHome": "OMG Cyber Zone — ana səhifəyə",
+    "language": "Dil"
+  },
+  "hero": {
+    "badge": "GAMING CENTER BAKU",
+    "titlePrefix": "",
+    "titleSuffix": "-a xoş gəlmisiniz",
+    "bookSeat": "Yer rezerv et",
+    "viewGames": "Oyunlara bax"
+  },
+  "kpi": {
+    "pc": "Güclü kompüter",
+    "ps": "PS 5",
+    "games": "Kitabxanada oyun",
+    "open": "Həmişə açıq"
+  },
+  "dayNight": {
+    "day": "8:00 - 16:00",
+    "night": "16:00 - 8:00"
+  },
+  "rooms": {
+    "heading": "Zonanı seçin",
+    "interior": "İnteryer",
+    "specs": "Xüsusiyyətlər",
+    "tariffs": "Tariflər",
+    "midweek": "İş günləri",
+    "midweekDays": "B.E - C",
+    "weekend": "Həftəsonu",
+    "weekendDays": "Ş - B",
+    "priceFrom": "Başlanğıc qiymət",
+    "perHour": "/ saat",
+    "day": "Gündüz",
+    "night": "Gecə",
+    "allDay": "Bütün gün",
+    "midweekNote": "3, 5, 7 və 9 saatlıq paketlər yalnız gecə — 16:00-dan 08:00-a qədər keçərlidir.",
+    "weekendNote": "Həftəsonu və bayram günlərində bütün paketlər sutka boyu keçərlidir.",
+    "hours": {
+      "other": "{n} saat"
+    }
+  },
+  "games": {
+    "heading": "Oyunlar",
+    "pc": "PC",
+    "ps": "PS",
+    "emptyTitle": "PlayStation oyunlarının siyahısı tezliklə əlavə olunacaq",
+    "emptyHint": "Mövcud oyunları telefonla dəqiqləşdirin",
+    "more": "Daha çox"
+  },
+  "menu": {
+    "heading": "Menyu",
+    "more": "Daha çox",
+    "empty": "Bu kateqoriyada hələ heç nə yoxdur",
+    "price": "Qiymət:",
+    "badges": {
+      "popular": "Populyar",
+      "spicy": "Acı"
+    },
+    "categories": {
+      "all": "Hamısı",
+      "pizza": "Pizza",
+      "burger": "Burger",
+      "roll": "Rol",
+      "sandwich": "Sendviç",
+      "pasta": "Pasta",
+      "salads": "Salatlar",
+      "snacks": "Qəlyanaltılar",
+      "sweets": "Desert",
+      "drinks": "İçkilər",
+      "coffee": "Qəhvə",
+      "kalyan": "Qəlyan"
+    },
+    "units": {
+      "cm": "sm",
+      "g": "q",
+      "l": "l",
+      "ml": "ml",
+      "pcs": "əd"
+    },
+    "sizeLabels": {
+      "standard": "Standart",
+      "double": "İkiqat",
+      "premium": "Premium"
+    }
+  },
+  "menuPage": {
+    "badge": "Xoş gəlmisiniz",
+    "titleLine1": "Dadlı yeməklər",
+    "titleLine2": "rahat mühitdə",
+    "lead": "Şef-aşpazdan ən yaxşı yeməklər. Təzə ingredientlər, müəllif reseptləri və unudulmaz dad.",
+    "heroImageAlt": "Peperoni pizza",
+    "stats": [
+      {
+        "value": "30+",
+        "label": "növ pizza"
+      },
+      {
+        "value": "15 dəq",
+        "label": "servis vaxtı"
+      },
+      {
+        "value": "4.9",
+        "label": "reytinq"
+      }
+    ],
+    "searchLabel": "Yemək axtarışı",
+    "searchPlaceholder": "Yemək axtar...",
+    "clearSearch": "Axtarışı təmizlə",
+    "found": "Tapıldı:",
+    "dishes": {
+      "other": "yemək"
+    },
+    "emptyTitle": "Heç nə tapılmadı",
+    "emptyHint": "Sorğunu və ya kateqoriyanı dəyişməyə cəhd edin"
+  },
+  "gallery": {
+    "heading": "Qalereya",
+    "alts": {
+      "pszone2": "PlayStation zonası",
+      "standart_3": "Oyun zalı",
+      "standart_2": "Oyun yerləri",
+      "standart_4": "Klubun interyeri",
+      "standart_room": "STANDART zonası",
+      "gamerparking": "Klubun ümumi görünüşü",
+      "pszone": "PlayStation zonasının divanları",
+      "standart_5": "Oyunçu iş yeri"
+    }
+  },
+  "roomAlts": {
+    "standart": "STANDART zonası",
+    "vip": "VIP zonası",
+    "pro": "PRO zonası",
+    "ps": "PlayStation zonası",
+    "premium": "PREMIUM zonası"
+  },
+  "faq": {
+    "heading": "FAQ",
+    "items": [
+      {
+        "question": "Öz yeməyim və içkimlə gələ bilərəmmi?",
+        "answer": "Təəssüf ki, kluba öz yeməyiniz və içkinizlə gəlmək qadağandır. Bunun üçün narahat olmayın — bizdə çox geniş çeşiddə içki və qəlyanaltı münasib qiymətlərlə mövcuddur."
+      },
+      {
+        "question": "Öz cihazlarımı qoşa bilərəmmi (siçan, klaviatura, qulaqlıq)?",
+        "answer": "Bəli, əlbəttə. Öz siçanınızı, klaviaturanızı və qulaqlıqlarınızı qoşa bilərsiniz — hər kompüterdə rahat əlçatan USB portları var. Qoşulma və ya tənzimləmə üçün köməyə ehtiyacınız olsa, administratora müraciət edin."
+      },
+      {
+        "question": "İş saatlarınız necədir?",
+        "answer": "Biz sutka boyu, 24/7 işləyirik — həftəsonu və bayram günləri də daxil olmaqla. Gündüz tarifi 8:00-dan 16:00-a, gecə tarifi isə 16:00-dan 8:00-a qədər keçərlidir. Ünvan: Azadlıq prospekti 103E, Bakı."
+      },
+      {
+        "question": "Yaş məhdudiyyəti varmı?",
+        "answer": "Xeyr, yaş məhdudiyyəti yoxdur — istənilən yaşdan qonaqları məmnuniyyətlə qəbul edirik. Uşaqlarla gəlirsinizsə, administrator uyğun zonanı seçməyə və oyunlar barədə məsləhət verməyə kömək edəcək."
+      }
+    ]
+  },
+  "footer": {
+    "address": "Azadlıq prospekti 103E, Bakı, Azərbaycan",
+    "phone": "Telefon",
+    "instagram": "Instagram",
+    "telegram": "Telegram",
+    "mapAlt": "Xəritə: Azadlıq prospekti 103E, Bakı",
+    "copyright": "© 2025 OMG Cyber Zone."
+  },
+  "modal": {
+    "title": "Rezervasiya",
+    "close": "Bağla"
+  },
+  "plansPage": {
+    "heading": "Oyun kompüterləri",
+    "pcCount": "50 PC"
+  }
+}

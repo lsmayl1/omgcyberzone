@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "siteName": "OMG CYBER ZONE",
+    "home": {
+      "title": "OMG CYBER ZONE — Bakü'de oyun salonu",
+      "description": "Bakü'de oyun merkezi: güçlü oyun bilgisayarları, PlayStation 5, mutfak ve nargile. 7/24 açığız, Azadlıq Bulvarı 103E."
+    },
+    "menu": {
+      "title": "Menü — OMG CYBER ZONE",
+      "description": "Bakü'deki OMG CYBER ZONE oyun salonunda pizza, burger, roll, makarna, tatlı, kahve ve nargile."
+    },
+    "plans": {
+      "title": "Tarifeler — OMG CYBER ZONE",
+      "description": "OMG CYBER ZONE'da oyun bilgisayarları ve PlayStation 5 için saatlik fiyatlar."
+    }
+  },
+  "nav": {
+    "home": "Ana sayfa",
+    "plans": "Tarifeler",
+    "games": "Oyunlar",
+    "menu": "Menü",
+    "gallery": "Galeri",
+    "faq": "SSS",
+    "contacts": "İletişim",
+    "book": "Rezervasyon yap",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "toHome": "OMG Cyber Zone — ana sayfaya",
+    "language": "Dil"
+  },
+  "hero": {
+    "badge": "GAMING CENTER BAKU",
+    "titlePrefix": "",
+    "titleSuffix": "'a hoş geldiniz",
+    "bookSeat": "Yer ayırt",
+    "viewGames": "Oyunlara göz at"
+  },
+  "kpi": {
+    "pc": "Güçlü bilgisayar",
+    "ps": "PS 5",
+    "games": "Kütüphanede oyun",
+    "open": "Her zaman açık"
+  },
+  "dayNight": {
+    "day": "8:00 - 16:00",
+    "night": "16:00 - 8:00"
+  },
+  "rooms": {
+    "heading": "Bölgeni seç",
+    "interior": "İç mekân",
+    "specs": "Özellikler",
+    "tariffs": "Tarifeler",
+    "midweek": "Hafta içi",
+    "midweekDays": "PZT - CUM",
+    "weekend": "Hafta sonu",
+    "weekendDays": "CMT - PAZ",
+    "priceFrom": "Başlangıç fiyatı",
+    "perHour": "/ saat",
+    "day": "Gündüz",
+    "night": "Gece",
+    "allDay": "Tüm gün",
+    "midweekNote": "3, 5, 7 ve 9 saatlik paketler yalnızca gece — 16:00 ile 08:00 arasında geçerlidir.",
+    "weekendNote": "Hafta sonu ve resmi tatillerde tüm paketler 24 saat geçerlidir.",
+    "hours": {
+      "other": "{n} saat"
+    }
+  },
+  "games": {
+    "heading": "Oyunlar",
+    "pc": "PC",
+    "ps": "PS",
+    "emptyTitle": "PlayStation oyun listesi çok yakında",
+    "emptyHint": "Mevcut oyunları telefonla öğrenebilirsiniz",
+    "more": "Daha fazla"
+  },
+  "menu": {
+    "heading": "Menü",
+    "more": "Daha fazla",
+    "empty": "Bu kategoride henüz bir şey yok",
+    "price": "Fiyat:",
+    "badges": {
+      "popular": "Popüler",
+      "spicy": "Acılı"
+    },
+    "categories": {
+      "all": "Tümü",
+      "pizza": "Pizza",
+      "burger": "Burger",
+      "roll": "Roll",
+      "sandwich": "Sandviç",
+      "pasta": "Makarna",
+      "salads": "Salatalar",
+      "snacks": "Atıştırmalıklar",
+      "sweets": "Tatlı",
+      "drinks": "İçecekler",
+      "coffee": "Kahve",
+      "kalyan": "Nargile"
+    },
+    "units": {
+      "cm": "cm",
+      "g": "g",
+      "l": "L",
+      "ml": "ml",
+      "pcs": "adet"
+    },
+    "sizeLabels": {
+      "standard": "Standart",
+      "double": "Duble",
+      "premium": "Premium"
+    }
+  },
+  "menuPage": {
+    "badge": "Hoş geldiniz",
+    "titleLine1": "Lezzetli yemekler",
+    "titleLine2": "keyifli bir ortamda",
+    "lead": "Şefimizden en iyi yemekler. Taze malzemeler, özel tarifler ve unutulmaz bir lezzet.",
+    "heroImageAlt": "Pepperoni pizza",
+    "stats": [
+      {
+        "value": "30+",
+        "label": "pizza çeşidi"
+      },
+      {
+        "value": "15 dk",
+        "label": "servis süresi"
+      },
+      {
+        "value": "4.9",
+        "label": "puan"
+      }
+    ],
+    "searchLabel": "Yemek ara",
+    "searchPlaceholder": "Yemek ara...",
+    "clearSearch": "Aramayı temizle",
+    "found": "Bulundu:",
+    "dishes": {
+      "other": "yemek"
+    },
+    "emptyTitle": "Hiçbir şey bulunamadı",
+    "emptyHint": "Aramanızı veya kategoriyi değiştirmeyi deneyin"
+  },
+  "gallery": {
+    "heading": "Galeri",
+    "alts": {
+      "pszone2": "PlayStation bölgesi",
+      "standart_3": "Oyun salonu",
+      "standart_2": "Oyun istasyonları",
+      "standart_4": "Kulüp iç mekânı",
+      "standart_room": "STANDART bölgesi",
+      "gamerparking": "Kulübün genel görünümü",
+      "pszone": "PlayStation bölgesi koltukları",
+      "standart_5": "Oyuncu çalışma alanı"
+    }
+  },
+  "roomAlts": {
+    "standart": "STANDART bölgesi",
+    "vip": "VIP bölgesi",
+    "pro": "PRO bölgesi",
+    "ps": "PlayStation bölgesi",
+    "premium": "PREMIUM bölgesi"
+  },
+  "faq": {
+    "heading": "SSS",
+    "items": [
+      {
+        "question": "Kendi yiyecek ve içeceğimi getirebilir miyim?",
+        "answer": "Maalesef kulübe kendi yiyecek ve içeceğinizle gelmek yasaktır. Bunun için endişelenmenize gerek yok — uygun fiyatlarla çok geniş bir içecek ve atıştırmalık çeşidimiz var."
+      },
+      {
+        "question": "Kendi cihazlarımı bağlayabilir miyim (fare, klavye, kulaklık)?",
+        "answer": "Evet, tabii ki. Kendi farenizi, klavyenizi ve kulaklığınızı bağlayabilirsiniz — her bilgisayarda kolay erişilebilir USB portları bulunuyor. Bağlantı veya ayarlar için yardıma ihtiyacınız olursa yöneticimize danışmanız yeterli."
+      },
+      {
+        "question": "Çalışma saatleriniz nedir?",
+        "answer": "7/24 kesintisiz hizmet veriyoruz — hafta sonları ve resmi tatiller dahil. Gündüz tarifesi 08:00-16:00, gece tarifesi 16:00-08:00 arasında geçerlidir. Adresimiz: Azadlıq Bulvarı 103E, Bakü."
+      },
+      {
+        "question": "Yaş sınırı var mı?",
+        "answer": "Hayır, yaş sınırı yoktur — her yaştan misafirimizi ağırlıyoruz. Çocuklarla geliyorsanız, yöneticimiz uygun bölgeyi seçmenize ve oyun konusunda size yardımcı olur."
+      }
+    ]
+  },
+  "footer": {
+    "address": "Azadlıq Bulvarı 103E, Bakü, Azerbaycan",
+    "phone": "Telefon",
+    "instagram": "Instagram",
+    "telegram": "Telegram",
+    "mapAlt": "Harita: Azadlıq Bulvarı 103E, Bakü",
+    "copyright": "© 2025 OMG Cyber Zone."
+  },
+  "modal": {
+    "title": "Rezervasyon",
+    "close": "Kapat"
+  },
+  "plansPage": {
+    "heading": "Oyun bilgisayarları",
+    "pcCount": "50 PC"
+  }
+}

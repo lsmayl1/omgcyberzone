@@ -1,60 +1,64 @@
 "use client";
-import { Blob } from "buffer";
 import Image from "next/image";
 import React from "react";
 
-// swiper imports – make sure `npm install swiper` is run first
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+
 type Slide = {
   src: string;
+  alt?: string;
 };
 
 type CarouselProps = {
   slides: Slide[];
 };
 
+// Widest breakpoint shows 1 slide per view; Swiper needs at least a couple
+// more than that to loop cleanly, otherwise it warns and disables looping.
+const MIN_SLIDES_FOR_LOOP = 3;
+
+const SIZES = "(max-width: 1024px) 100vw, 50vw";
+
+/** Fills its container — the parent decides the height. */
 export const Carousel: React.FC<CarouselProps> = ({ slides }) => {
+  if (slides.length === 0) return null;
+
   if (slides.length === 1) {
     return (
-      <div className="w-full h-96 relative">
+      <div className="relative w-full h-full">
         <Image
           src={slides[0].src}
-          alt="single-image"
+          alt={slides[0].alt ?? ""}
           fill
-          className="object-cover rounded-md"
+          sizes={SIZES}
+          className="object-cover"
         />
       </div>
     );
   }
+
   return (
-    <div className="w-full text-white h-full ">
-      <Swiper
-        spaceBetween={7}
-        slidesPerView={3}
-        loop
-        breakpoints={{
-          480: { slidesPerView: 1 },
-          640: { slidesPerView: 1 },
-          768: { slidesPerView: 1 },
-          1024: { slidesPerView: 2 },
-        }}
-      >
-        {slides?.map((slide, i) => (
-          <SwiperSlide
-            key={i}
-            className="flex justify-center max-h-96 h-full gap-4 "
-          >
-            <div className="h-96">
-              <Image
-                src={slide.src}
-                fill
-                className="object-cover rounded-xl"
-                alt={`slide-${i}`}
-              />
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+    <Swiper
+      modules={[Pagination]}
+      className="w-full h-full text-white"
+      slidesPerView={1}
+      pagination={{ clickable: true }}
+      loop={slides.length >= MIN_SLIDES_FOR_LOOP}
+    >
+      {slides.map((slide, i) => (
+        <SwiperSlide key={`${slide.src}-${i}`}>
+          <div className="relative w-full h-full">
+            <Image
+              src={slide.src}
+              fill
+              sizes={SIZES}
+              className="object-cover"
+              alt={slide.alt ?? ""}
+            />
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 };

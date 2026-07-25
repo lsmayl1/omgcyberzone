@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "siteName": "OMG CYBER ZONE",
+    "home": {
+      "title": "OMG CYBER ZONE — gaming club in Baku",
+      "description": "Gaming centre in Baku: high-end gaming PCs, PlayStation 5, kitchen and hookah. Open 24/7 at Azadlig Avenue 103E."
+    },
+    "menu": {
+      "title": "Menu — OMG CYBER ZONE",
+      "description": "Pizza, burgers, sushi rolls, pasta, desserts, coffee and hookah at the OMG CYBER ZONE gaming club in Baku."
+    },
+    "plans": {
+      "title": "Pricing — OMG CYBER ZONE",
+      "description": "Hourly rates for gaming PCs and PlayStation 5 at OMG CYBER ZONE."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "plans": "Pricing",
+    "games": "Games",
+    "menu": "Menu",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contacts": "Contacts",
+    "book": "Book now",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "toHome": "OMG Cyber Zone — go to homepage",
+    "language": "Language"
+  },
+  "hero": {
+    "badge": "GAMING CENTER BAKU",
+    "titlePrefix": "Welcome to",
+    "titleSuffix": "",
+    "bookSeat": "Book a seat",
+    "viewGames": "View games"
+  },
+  "kpi": {
+    "pc": "Powerful PCs",
+    "ps": "PS 5",
+    "games": "Games in library",
+    "open": "Always open"
+  },
+  "dayNight": {
+    "day": "8:00 - 16:00",
+    "night": "16:00 - 8:00"
+  },
+  "rooms": {
+    "heading": "Choose your zone",
+    "interior": "Interior",
+    "specs": "Specs",
+    "tariffs": "Pricing",
+    "midweek": "Weekdays",
+    "midweekDays": "MON - FRI",
+    "weekend": "Weekend",
+    "weekendDays": "SAT - SUN",
+    "priceFrom": "Starting from",
+    "perHour": "/ hour",
+    "day": "Day",
+    "night": "Night",
+    "allDay": "All day",
+    "midweekNote": "The 3, 5, 7 and 9 hour packages are night-only — from 16:00 to 08:00.",
+    "weekendNote": "At weekends and on public holidays every package is valid around the clock.",
+    "hours": {
+      "one": "{n} hour",
+      "other": "{n} hours"
+    }
+  },
+  "games": {
+    "heading": "Games",
+    "pc": "PC",
+    "ps": "PS",
+    "emptyTitle": "The PlayStation game list is coming soon",
+    "emptyHint": "Call us to check which titles are available",
+    "more": "Show more"
+  },
+  "menu": {
+    "heading": "Menu",
+    "more": "Show more",
+    "empty": "Nothing in this category yet",
+    "price": "Price:",
+    "badges": {
+      "popular": "Popular",
+      "spicy": "Spicy"
+    },
+    "categories": {
+      "all": "All",
+      "pizza": "Pizza",
+      "burger": "Burgers",
+      "roll": "Rolls",
+      "sandwich": "Sandwiches",
+      "pasta": "Pasta",
+      "salads": "Salads",
+      "snacks": "Snacks",
+      "sweets": "Desserts",
+      "drinks": "Drinks",
+      "coffee": "Coffee",
+      "kalyan": "Hookah"
+    },
+    "units": {
+      "cm": "cm",
+      "g": "g",
+      "l": "L",
+      "ml": "ml",
+      "pcs": "pcs"
+    },
+    "sizeLabels": {
+      "standard": "Standard",
+      "double": "Double",
+      "premium": "Premium"
+    }
+  },
+  "menuPage": {
+    "badge": "Welcome",
+    "titleLine1": "Delicious food",
+    "titleLine2": "in a cosy atmosphere",
+    "lead": "The best dishes from our chef. Fresh ingredients, signature recipes and unforgettable flavour.",
+    "heroImageAlt": "Pepperoni pizza",
+    "stats": [
+      {
+        "value": "30+",
+        "label": "pizza varieties"
+      },
+      {
+        "value": "15 min",
+        "label": "serving time"
+      },
+      {
+        "value": "4.9",
+        "label": "rating"
+      }
+    ],
+    "searchLabel": "Search dishes",
+    "searchPlaceholder": "Search dishes...",
+    "clearSearch": "Clear search",
+    "found": "Found:",
+    "dishes": {
+      "one": "dish",
+      "other": "dishes"
+    },
+    "emptyTitle": "Nothing found",
+    "emptyHint": "Try changing your search or category"
+  },
+  "gallery": {
+    "heading": "Gallery",
+    "alts": {
+      "pszone2": "PlayStation area",
+      "standart_3": "Gaming hall",
+      "standart_2": "Gaming stations",
+      "standart_4": "Club interior",
+      "standart_room": "STANDART zone",
+      "gamerparking": "General view of the club",
+      "pszone": "PlayStation area sofas",
+      "standart_5": "Gamer workstation"
+    }
+  },
+  "roomAlts": {
+    "standart": "STANDART zone",
+    "vip": "VIP zone",
+    "pro": "PRO zone",
+    "ps": "PlayStation zone",
+    "premium": "PREMIUM zone"
+  },
+  "faq": {
+    "heading": "FAQ",
+    "items": [
+      {
+        "question": "Can I bring my own food and drinks?",
+        "answer": "Unfortunately, bringing your own food and drinks into the club is not allowed. There is no need to worry about it though — we offer a very wide range of drinks and snacks at fair prices."
+      },
+      {
+        "question": "Can I connect my own devices (mouse, keyboard, headset)?",
+        "answer": "Yes, of course. You are welcome to connect your own mouse, keyboard and headset — every PC has easily accessible USB ports. If you need a hand plugging in or configuring your gear, just ask an administrator."
+      },
+      {
+        "question": "What are your opening hours?",
+        "answer": "We are open around the clock, 24/7 — including weekends and public holidays. Day rates apply from 8:00 to 16:00 and night rates from 16:00 to 8:00. You will find us at Azadlig Avenue 103E, Baku."
+      },
+      {
+        "question": "Is there an age restriction?",
+        "answer": "No, there are no age restrictions — guests of any age are welcome. If you are coming with children, our administrator will help you pick a suitable zone and suggest games to match."
+      }
+    ]
+  },
+  "footer": {
+    "address": "Azadlig Avenue 103E, Baku, Azerbaijan",
+    "phone": "Phone",
+    "instagram": "Instagram",
+    "telegram": "Telegram",
+    "mapAlt": "Map: Azadlig Avenue 103E, Baku",
+    "copyright": "© 2025 OMG Cyber Zone."
+  },
+  "modal": {
+    "title": "Booking",
+    "close": "Close"
+  },
+  "plansPage": {
+    "heading": "Gaming PCs",
+    "pcCount": "50 PCs"
+  }
+}

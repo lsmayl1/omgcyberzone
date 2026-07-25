@@ -6,14 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:i18n": "node scripts/check-i18n.mjs"
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "react-router-dom": "^7.13.1",
     "swiper": "^12.1.2"
   },
   "devDependencies": {

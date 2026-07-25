@@ -10,14 +10,13 @@ import Ssd from "@/assets/pc/ssd";
 import VideoCard from "@/assets/pc/video-card";
 import Sun from "@/assets/sun";
 import React from "react";
-
-type Spec = {
-  key: string;
-  name: string;
-};
+import type { Spec } from "@/data/rooms";
+import type { Dictionary } from "@/i18n/types";
+import { plural } from "@/i18n/format";
+import type { Locale } from "@/i18n/config";
 
 type Price = {
-  hour: string;
+  hours: number;
   dayPrice: string;
   nightPrice: string;
 };
@@ -27,25 +26,30 @@ type Data = {
   specs: Spec[];
 };
 
+const ICONS: { key: string; icon: React.ReactNode }[] = [
+  { key: "cpu", icon: <Cpu /> },
+  { key: "videoCart", icon: <VideoCard /> },
+  { key: "ram", icon: <Ram /> },
+  { key: "ssd", icon: <Ssd /> },
+  { key: "mouse", icon: <Mouse /> },
+  { key: "headset", icon: <Headset /> },
+  { key: "keyboard", icon: <Keyboard /> },
+  { key: "monitor", icon: <Monitor /> },
+];
+
 export const PriceList = ({
   title,
   count,
   data,
+  t,
+  locale,
 }: {
   title: string;
   count: string;
   data: Data;
+  t: Dictionary;
+  locale: Locale;
 }) => {
-  const icon = [
-    { key: "cpu", icon: <Cpu /> },
-    { key: "videoCart", icon: <VideoCard /> },
-    { key: "ram", icon: <Ram /> },
-    { key: "ssd", icon: <Ssd /> },
-    { key: "mouse", icon: <Mouse /> },
-    { key: "headset", icon: <Headset /> },
-    { key: "keyboard", icon: <Keyboard /> },
-    { key: "monitor", icon: <Monitor /> },
-  ];
   return (
     <div className="bg-boxColor w-full rounded-xl p-8 flex flex-col gap-4 max-md:p-4 max-md:gap-2 ">
       <div className="flex justify-between items-center">
@@ -59,7 +63,9 @@ export const PriceList = ({
           key={i}
           className="text-white flex bg-background rounded-xl p-4 font-bold text-xl flex-col gap-4 max-md:p-3 max-md:gap-2"
         >
-          <h1 className="text-md"> {dt.hour}</h1>
+          <h3 className="text-md">
+            {plural(locale, t.rooms.hours, dt.hours)}
+          </h3>
           <div className="flex gap-2 text-nowrap">
             <div className="bg-boxColor items-center p-2 rounded-lg flex gap-2 w-full justify-between">
               <Sun className="max-md:size-6" />
@@ -74,15 +80,15 @@ export const PriceList = ({
       ))}
       <div className="flex flex-col gap-4 max-md:gap-2">
         <div className="bg-background items-center text-white rounded-lg text-xl font-semibold p-4 flex justify-between">
-          <h1 className="text-lg">Характеристики</h1>
+          <h3 className="text-lg">{t.rooms.specs}</h3>
           <Collapse />
         </div>
         <div className="bg-background rounded-lg flex flex-col gap-6 p-4 max-md:p-2 ">
-          {data?.specs?.map((spec, i) => (
-            <div className="flex flex-col gap-4" key={i}>
+          {data?.specs?.map((spec) => (
+            <div className="flex flex-col gap-4" key={spec.key}>
               <div className="flex gap-4 text-white text-md items-center ">
                 <div className="w-14 ">
-                  {icon.find((item) => item.key === spec.key)?.icon}
+                  {ICONS.find((item) => item.key === spec.key)?.icon}
                 </div>
                 <span className="font-semibold">{spec.name}</span>
               </div>
