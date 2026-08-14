@@ -34,6 +34,8 @@ export const RoomLayout = ({ room }: { room: Room }) => {
   const [period, setPeriod] = useState<Period>("midweek");
 
   const alt = t.roomAlts[room.key as keyof typeof t.roomAlts] ?? "";
+  const description =
+    t.rooms.descriptions[room.key as keyof typeof t.rooms.descriptions] ?? "";
   const from = minHourlyPrice(room);
   const rows: Price[] = room.price?.[period] ?? [];
 
@@ -52,8 +54,12 @@ export const RoomLayout = ({ room }: { room: Room }) => {
         </div>
       </div>
 
-      {/* Details */}
-      <div className="flex flex-col gap-5 p-6 max-md:p-4 max-md:gap-4">
+      {/* Details. Keyed on the zone so React remounts it and the swap
+          animation replays; the carousel next door keeps its own state. */}
+      <div
+        key={room.key}
+        className="flex flex-col gap-5 p-6 max-md:p-4 max-md:gap-4 animate-swap"
+      >
         <div className="flex items-end justify-between gap-4 border-b border-white/10 pb-4">
           <div>
             <h3 className="text-white text-2xl font-bold uppercase tracking-wide max-md:text-xl">
@@ -75,6 +81,12 @@ export const RoomLayout = ({ room }: { room: Room }) => {
             </div>
           )}
         </div>
+
+        {description && (
+          <p className="text-gray-300 text-sm leading-relaxed max-md:text-xs">
+            {description}
+          </p>
+        )}
 
         {/* Specs as compact chips instead of a wide scrolling icon strip */}
         {room.specs && room.specs.length > 0 && (

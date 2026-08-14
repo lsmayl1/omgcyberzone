@@ -3,7 +3,7 @@
     "siteName": "OMG CYBER ZONE",
     "home": {
       "title": "OMG CYBER ZONE — Bakıda kompüter klubu",
-      "description": "Bakıda oyun mərkəzi: güclü oyun kompüterləri, PlayStation 5, mətbəx və qəlyan. 24/7 açığıq, Azadlıq prospekti 103E."
+      "description": "1 Gbit/s xəttə bağlı 50 oyun kompüteri, PlayStation 5, komanda üçün ayrıca otaq, mətbəx və qəlyan. Azadlıq prospekti 103E, Bakı — 24/7 açığıq."
     },
     "menu": {
       "title": "Menyu — OMG CYBER ZONE",
@@ -32,14 +32,25 @@
     "badge": "GAMING CENTER BAKU",
     "titlePrefix": "",
     "titleSuffix": "-a xoş gəlmisiniz",
+    "subtitle": "50 oyun stansiyası, PlayStation 5 və komanda üçün ayrıca otaq. Bakıda gecə-gündüz açığıq.",
     "bookSeat": "Yer rezerv et",
     "viewGames": "Oyunlara bax"
   },
   "kpi": {
     "pc": "Güclü kompüter",
     "ps": "PS 5",
-    "games": "Kitabxanada oyun",
-    "open": "Həmişə açıq"
+    "area": "Klubun sahəsi",
+    "internet": "İnternet",
+    "internetValue": "1 Gbit/s"
+  },
+  "about": {
+    "heading": "Klub haqqında",
+    "title": "Komandalar üçün qurulub",
+    "lead": "Qaranlıq, sakit, təmiz. OMG Cyber Zone 2023-cü ildən Bakıda fəaliyyət göstərir.",
+    "body": [
+      "Əsas zal, PlayStation zalı, lounge və üç ayrıca otaq. Hər masada 240 Hz monitor və DXRacer kreslo var, PRO zonasında isə ekranlar 500 Hz-də işləyir.",
+      "Biz bu yeri komandalar üçün qurmuşuq. Beş nəfər gəlin, otağı götürün, qapını bağlayın və səhərə qədər oynayın — biz heç vaxt bağlamırıq."
+    ]
   },
   "dayNight": {
     "day": "8:00 - 16:00",
@@ -61,6 +72,13 @@
     "allDay": "Bütün gün",
     "midweekNote": "3, 5, 7 və 9 saatlıq paketlər yalnız gecə — 16:00-dan 08:00-a qədər keçərlidir.",
     "weekendNote": "Həftəsonu və bayram günlərində bütün paketlər sutka boyu keçərlidir.",
+    "descriptions": {
+      "standart": "Əsas zalda 30 stansiya — klubun ürəyi. Core i5-12400F, RTX 3060 Ti və 240 Hz DELL ekranı ən sərfəli saatlıq qiymətə.",
+      "vip": "Gücdə real bir pillə yuxarı — 10 stansiya: Core i7-12700F, RTX 3080 və 32 GB RAM, eyni 240 Hz ekranlarda.",
+      "pro": "Rəqabətli oyun üçün 5 stansiya: Core i7-12700F, RTX 4070 Ti və 500 Hz monitor — klubun ən sürətli ekranları, Logitech Superlight 2 və Logitech PRO dəsti ilə.",
+      "ps": "Ayrıca zalda 6 PlayStation 5 yeri — divanlar, pultlar və tam lobbi üçün kifayət qədər yer.",
+      "premium": "Bütöv komanda üçün ayrıca otaq: 2K 240 Hz monitorlarda 5 kompüter və bir PlayStation 5. Qapını bağlayın — otaq sizindir."
+    },
     "hours": {
       "other": "{n} saat"
     }
@@ -71,6 +89,11 @@
     "ps": "PS",
     "emptyTitle": "PlayStation oyunlarının siyahısı tezliklə əlavə olunacaq",
     "emptyHint": "Mövcud oyunları telefonla dəqiqləşdirin",
+    "searchLabel": "Oyun axtarışı",
+    "searchPlaceholder": "Oyun axtar...",
+    "clearSearch": "Axtarışı təmizlə",
+    "notFound": "Heç nə tapılmadı",
+    "notFoundHint": "Başqa ad yoxlayın",
     "more": "Daha çox"
   },
   "menu": {

@@ -3,7 +3,7 @@
     "siteName": "OMG CYBER ZONE",
     "home": {
       "title": "OMG CYBER ZONE — gaming club in Baku",
-      "description": "Gaming centre in Baku: high-end gaming PCs, PlayStation 5, kitchen and hookah. Open 24/7 at Azadlig Avenue 103E."
+      "description": "50 gaming PCs on a 1 Gbit/s line, PlayStation 5, a private team room, kitchen and hookah. Open 24/7 at Azadlig Avenue 103E, Baku."
     },
     "menu": {
       "title": "Menu — OMG CYBER ZONE",
@@ -32,14 +32,25 @@
     "badge": "GAMING CENTER BAKU",
     "titlePrefix": "Welcome to",
     "titleSuffix": "",
+    "subtitle": "50 gaming stations, PlayStation 5 and a private team room. Open around the clock in Baku.",
     "bookSeat": "Book a seat",
     "viewGames": "View games"
   },
   "kpi": {
     "pc": "Powerful PCs",
     "ps": "PS 5",
-    "games": "Games in library",
-    "open": "Always open"
+    "area": "Floor area",
+    "internet": "Internet",
+    "internetValue": "1 Gbit/s"
+  },
+  "about": {
+    "heading": "About the club",
+    "title": "Built for teams",
+    "lead": "Dark, quiet, clean. OMG Cyber Zone has been open in Baku since 2023.",
+    "body": [
+      "A main hall, a PlayStation hall, a lounge and three private rooms. Every station has a 240 Hz monitor and a DXRacer chair, and in the PRO zone the screens run at 500 Hz.",
+      "We built this place around teams. Come as five, take a room, close the door and play until morning — we never close."
+    ]
   },
   "dayNight": {
     "day": "8:00 - 16:00",
@@ -61,6 +72,13 @@
     "allDay": "All day",
     "midweekNote": "The 3, 5, 7 and 9 hour packages are night-only — from 16:00 to 08:00.",
     "weekendNote": "At weekends and on public holidays every package is valid around the clock.",
+    "descriptions": {
+      "standart": "Thirty stations in the main hall — the heart of the club. Core i5-12400F, RTX 3060 Ti and a 240 Hz DELL screen at our lowest hourly rate.",
+      "vip": "Ten stations, a real step up in power: Core i7-12700F, RTX 3080 and 32 GB of RAM on the same 240 Hz screens.",
+      "pro": "Five stations built for competitive play: Core i7-12700F, RTX 4070 Ti and a 500 Hz monitor — the fastest screens in the club, with Logitech Superlight 2 and Logitech PRO gear.",
+      "ps": "Six PlayStation 5 seats in a hall of their own — sofas, controllers and room for a full lobby.",
+      "premium": "A private room for a whole team: five PCs on 2K 240 Hz monitors plus a PlayStation 5. Close the door and the room is yours."
+    },
     "hours": {
       "one": "{n} hour",
       "other": "{n} hours"
@@ -72,6 +90,11 @@
     "ps": "PS",
     "emptyTitle": "The PlayStation game list is coming soon",
     "emptyHint": "Call us to check which titles are available",
+    "searchLabel": "Search games",
+    "searchPlaceholder": "Search games...",
+    "clearSearch": "Clear search",
+    "notFound": "Nothing found",
+    "notFoundHint": "Try a different title",
     "more": "Show more"
   },
   "menu": {

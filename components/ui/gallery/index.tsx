@@ -7,7 +7,7 @@ export const Gallery = ({ t }: { t: Dictionary }) => {
   return (
     <div
       id="gallery"
-      className="py-16 scroll-mt-28 max-md:scroll-mt-20 flex flex-col gap-8 container-custom border-b border-mainRed"
+      className="py-16 scroll-mt-28 max-md:scroll-mt-20 flex flex-col gap-8 container-custom border-b border-white/10"
     >
       <h2 className="text-white text-4xl font-bold max-md:text-xl mb-4 max-md:mb-2 uppercase border-l-4 border-mainRed pl-4  ">
         {t.gallery.heading}

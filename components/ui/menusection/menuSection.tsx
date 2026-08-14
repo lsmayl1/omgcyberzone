@@ -20,7 +20,7 @@ export const MenuSection = () => {
   return (
     <div
       id="menu"
-      className="flex scroll-mt-28 max-md:scroll-mt-20 flex-col container-custom py-16 gap-4 border-b border-b-mainRed max-md:gap-2"
+      className="flex scroll-mt-28 max-md:scroll-mt-20 flex-col container-custom py-16 gap-4 border-b border-b-white/10 max-md:gap-2"
     >
       <h2 className="text-white text-4xl font-bold max-md:text-xl mb-4 max-md:mb-2 border-l-4 border-mainRed pl-4 uppercase">
         {t.menu.heading}

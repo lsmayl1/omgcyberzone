@@ -14,14 +14,15 @@ export type Room = {
   specs?: Spec[];
 };
 
+/** STANDART's build. Every other zone is expressed as a diff against it. */
 const BASE_SPECS: Spec[] = [
-  { key: "cpu", name: "INTEL I5 12400" },
+  { key: "cpu", name: "INTEL CORE I5-12400F" },
   { key: "videoCart", name: "RTX 3060 TI 8 GB" },
   { key: "ssd", name: "NVME 512GB" },
-  { key: "ram", name: "DDR5 32 GB 3600Mhz" },
-  { key: "monitor", name: "DELL 25 240Hz" },
-  { key: "mouse", name: "HyperX Pulsefire Haste" },
-  { key: "keyboard", name: "HyperX Alloy Core TKL" },
+  { key: "ram", name: "DDR5 16 GB 3600Mhz" },
+  { key: "monitor", name: "DELL 240Hz" },
+  { key: "mouse", name: "Endgame OP1 RGB" },
+  { key: "keyboard", name: "HyperX Alloy Origins" },
   { key: "headset", name: "HyperX Cloud II" },
 ];
 
@@ -51,7 +52,7 @@ export const ROOMS: Room[] = [
         { hours: 9, nightPrice: "18.00 ₼" },
       ],
     },
-    specs: withSpecs({ ram: "DDR5 16 GB 3600Mhz" }),
+    specs: withSpecs(),
   },
   {
     title: "VIP",
@@ -73,7 +74,11 @@ export const ROOMS: Room[] = [
         { hours: 9, nightPrice: "18.00 ₼" },
       ],
     },
-    specs: withSpecs(),
+    specs: withSpecs({
+      cpu: "INTEL CORE I7-12700F",
+      videoCart: "RTX 3080 12 GB",
+      ram: "DDR5 32 GB 3600Mhz",
+    }),
   },
   {
     title: "PRO",
@@ -95,7 +100,15 @@ export const ROOMS: Room[] = [
         { hours: 9, nightPrice: "30.00 ₼" },
       ],
     },
-    specs: withSpecs(),
+    specs: withSpecs({
+      cpu: "INTEL CORE I7-12700F",
+      videoCart: "RTX 4070 TI 12 GB",
+      ram: "DDR5 32 GB 3600Mhz",
+      monitor: "ALLINWARE 500Hz",
+      mouse: "Logitech Superlight 2",
+      keyboard: "Logitech G413 TKL SE",
+      headset: "Logitech PRO",
+    }),
   },
   {
     title: "PLAYSTATION",
@@ -122,7 +135,13 @@ export const ROOMS: Room[] = [
     title: "PREMIUM",
     key: "premium",
     images: ["/standart_4.webp"],
-    specs: withSpecs(),
+    specs: withSpecs({
+      ram: "DDR5 32 GB 3600Mhz",
+      monitor: "ARON 2K 240Hz",
+      mouse: "Logitech G PRO",
+      keyboard: "Logitech G413 TKL SE",
+      headset: "Logitech PRO",
+    }),
   },
 ];
 

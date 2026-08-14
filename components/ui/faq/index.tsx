@@ -13,7 +13,7 @@ export const FAQ = () => {
       id="faq"
       className="flex scroll-mt-28 max-md:scroll-mt-20 flex-col gap-8 container-custom py-16"
     >
-      <h2 className="text-white text-4xl font-bold max-md:text-xl mb-4 max-md:mb-2  border-l-4 border-mainRed pl-4  ">
+      <h2 className="text-white text-4xl font-bold max-md:text-xl mb-4 max-md:mb-2 uppercase border-l-4 border-mainRed pl-4  ">
         {t.faq.heading}
       </h2>
       <div className="flex flex-col gap-4">
@@ -22,10 +22,14 @@ export const FAQ = () => {
           return (
             <div
               key={i}
-              className="bg-boxColor text-white p-4 rounded-xl text-xl flex flex-col gap-2 transition"
+              className="bg-boxColor text-white p-4 rounded-xl flex flex-col gap-2 transition"
             >
               <div className="flex justify-between gap-4">
-                <h3 className="w-9/12 text-xl font-normal">{dt.question}</h3>
+                {/* flex-1, not w-9/12: the fixed fraction left dead space next
+                    to the shrink-0 button and squeezed the text on phones. */}
+                <h3 className="flex-1 text-xl max-md:text-base font-normal">
+                  {dt.question}
+                </h3>
                 <button
                   type="button"
                   aria-expanded={open}
@@ -39,7 +43,9 @@ export const FAQ = () => {
               </div>
               {open && (
                 <div id={`faq-answer-${i}`}>
-                  <span className="text-md text-gray-300">{dt.answer}</span>
+                  <span className="text-md max-md:text-sm leading-relaxed text-gray-300">
+                    {dt.answer}
+                  </span>
                 </div>
               )}
             </div>

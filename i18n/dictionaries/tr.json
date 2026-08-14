@@ -3,7 +3,7 @@
     "siteName": "OMG CYBER ZONE",
     "home": {
       "title": "OMG CYBER ZONE — Bakü'de oyun salonu",
-      "description": "Bakü'de oyun merkezi: güçlü oyun bilgisayarları, PlayStation 5, mutfak ve nargile. 7/24 açığız, Azadlıq Bulvarı 103E."
+      "description": "1 Gbit/sn hatta 50 oyun bilgisayarı, PlayStation 5, takıma özel oda, mutfak ve nargile. Azadlıq Bulvarı 103E, Bakü — 7/24 açığız."
     },
     "menu": {
       "title": "Menü — OMG CYBER ZONE",
@@ -32,14 +32,25 @@
     "badge": "GAMING CENTER BAKU",
     "titlePrefix": "",
     "titleSuffix": "'a hoş geldiniz",
+    "subtitle": "50 oyun istasyonu, PlayStation 5 ve takıma özel oda. Bakü'de 7/24 açığız.",
     "bookSeat": "Yer ayırt",
     "viewGames": "Oyunlara göz at"
   },
   "kpi": {
     "pc": "Güçlü bilgisayar",
     "ps": "PS 5",
-    "games": "Kütüphanede oyun",
-    "open": "Her zaman açık"
+    "area": "Kulüp alanı",
+    "internet": "İnternet",
+    "internetValue": "1 Gbit/sn"
+  },
+  "about": {
+    "heading": "Kulüp hakkında",
+    "title": "Takımlar için kuruldu",
+    "lead": "Karanlık, sessiz, tertemiz. OMG Cyber Zone 2023'ten beri Bakü'de.",
+    "body": [
+      "Ana salon, PlayStation salonu, lounge ve üç özel oda. Her istasyonda 240 Hz monitör ve DXRacer koltuk var, PRO bölgesinde ise ekranlar 500 Hz'de çalışıyor.",
+      "Burayı takımlar için kurduk. Beş kişi gelin, odayı alın, kapıyı kapatın ve sabaha kadar oynayın — biz hiç kapanmıyoruz."
+    ]
   },
   "dayNight": {
     "day": "8:00 - 16:00",
@@ -61,6 +72,13 @@
     "allDay": "Tüm gün",
     "midweekNote": "3, 5, 7 ve 9 saatlik paketler yalnızca gece — 16:00 ile 08:00 arasında geçerlidir.",
     "weekendNote": "Hafta sonu ve resmi tatillerde tüm paketler 24 saat geçerlidir.",
+    "descriptions": {
+      "standart": "Ana salonda 30 istasyon — kulübün kalbi. Core i5-12400F, RTX 3060 Ti ve 240 Hz DELL ekran, en uygun saatlik fiyatla.",
+      "vip": "Güçte gerçek bir üst basamak: Core i7-12700F, RTX 3080 ve 32 GB RAM'li 10 istasyon, aynı 240 Hz ekranlarda.",
+      "pro": "Rekabetçi oyun için 5 istasyon: Core i7-12700F, RTX 4070 Ti ve 500 Hz monitör — kulübün en hızlı ekranları, Logitech Superlight 2 ve Logitech PRO ekipmanıyla.",
+      "ps": "Kendine ait bir salonda 6 PlayStation 5 koltuğu — koltuklar, kollar ve tam bir lobiye yetecek alan.",
+      "premium": "Tam bir takım için özel oda: 2K 240 Hz monitörlerde beş bilgisayar ve bir PlayStation 5. Kapıyı kapatın, oda sizin."
+    },
     "hours": {
       "other": "{n} saat"
     }
@@ -71,6 +89,11 @@
     "ps": "PS",
     "emptyTitle": "PlayStation oyun listesi çok yakında",
     "emptyHint": "Mevcut oyunları telefonla öğrenebilirsiniz",
+    "searchLabel": "Oyun ara",
+    "searchPlaceholder": "Oyun ara...",
+    "clearSearch": "Aramayı temizle",
+    "notFound": "Hiçbir şey bulunamadı",
+    "notFoundHint": "Farklı bir ad deneyin",
     "more": "Daha fazla"
   },
   "menu": {

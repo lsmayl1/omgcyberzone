@@ -194,8 +194,38 @@ button {
   }
 }
 
+/* Zone tab switch: short enough to feel like a swap, not a page load. */
+@keyframes swap-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 8px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .animate-fade-up {
   animation: fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-swap {
+  animation: swap-in 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/*
+   Scroll reveal. The hidden state is applied by <Reveal> on mount, never in
+   the server HTML — with JS off or the observer unsupported the content just
+   stays visible instead of disappearing. Reveal also opts out entirely when
+   the user prefers reduced motion, so no [data-reveal] attribute is ever set.
+*/
+[data-reveal="out"] {
+  opacity: 0;
+}
+
+[data-reveal="in"] {
+  animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .animate-fade-in {
@@ -214,8 +244,11 @@ button {
   .animate-fade-up,
   .animate-fade-in,
   .animate-slow-zoom,
-  .animate-pulse-glow {
+  .animate-pulse-glow,
+  .animate-swap,
+  [data-reveal] {
     animation: none !important;
+    opacity: 1 !important;
   }
 
   html {

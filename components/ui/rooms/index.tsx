@@ -15,9 +15,9 @@ export const Rooms = () => {
       // No overflow-auto here: it made this its own scroll container, which
       // swallowed scroll-margin-top so #plans landed under the fixed header.
       // The tab strip below scrolls itself.
-      className="flex scroll-mt-28 max-md:scroll-mt-20 flex-col  gap-8 py-16 container-custom max-md:gap-4 border-b  border-b-mainRed"
+      className="flex scroll-mt-28 max-md:scroll-mt-20 flex-col  gap-8 py-16 container-custom max-md:gap-4 border-b  border-b-white/10"
     >
-      <div className="flex gap-24 items-center  justify-between max-md:flex-col max-md:gap-8 max-md:items-start">
+      <div className="flex gap-8 items-center  justify-between max-md:flex-col max-md:gap-8 max-md:items-start">
         <h2 className="text-white text-4xl font-bold max-md:text-xl  max-md:mb-2 border-l-4 border-mainRed pl-4 text-nowrap uppercase">
           {t.rooms.heading}
         </h2>
