@@ -34,7 +34,12 @@
     "titleSuffix": "'a hoş geldiniz",
     "subtitle": "50 oyun istasyonu, PlayStation 5 ve takıma özel oda. Bakü'de 7/24 açığız.",
     "bookSeat": "Yer ayırt",
-    "viewGames": "Oyunlara göz at"
+    "viewGames": "Oyunlara göz at",
+    "tiles": {
+      "zones": "Oyun bölgeleri",
+      "lounge": "Lounge & nargile",
+      "kitchen": "Mutfak & bar"
+    }
   },
   "kpi": {
     "pc": "Güçlü bilgisayar",
@@ -165,6 +170,11 @@
   "gallery": {
     "heading": "Galeri",
     "alts": {
+      "lounge": "Nargileli lounge alanı",
+      "pro_zone": "PRO bölgesi oyun istasyonları",
+      "ps_zone_1": "Koltuklu PlayStation 5 alanı",
+      "ps_zone_2": "Dinlenme alanında PlayStation 5 ekranı",
+      "ps_zone_3": "PlayStation 5 oynanıyor",
       "pszone2": "PlayStation bölgesi",
       "standart_3": "Oyun salonu",
       "standart_2": "Oyun istasyonları",
@@ -209,7 +219,8 @@
     "instagram": "Instagram",
     "telegram": "Telegram",
     "mapAlt": "Harita: Azadlıq Bulvarı 103E, Bakü",
-    "copyright": "© 2025 OMG Cyber Zone."
+    "copyright": "© 2025 OMG Cyber Zone.",
+    "directions": "Yol tarifi al"
   },
   "modal": {
     "title": "Rezervasyon",
@@ -218,5 +229,10 @@
   "plansPage": {
     "heading": "Oyun bilgisayarları",
     "pcCount": "50 PC"
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "lead": "Böyle bir sayfa yok — bağlantı eski olabilir ya da adreste bir yazım hatası var.",
+    "chooseLanguage": "Dil seçin"
   }
 }

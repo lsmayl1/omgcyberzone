@@ -25,6 +25,12 @@ export const Reveal = ({ children }: { children: React.ReactNode }) => {
     ).matches;
     if (reduced || typeof IntersectionObserver === "undefined") return;
 
+    // Anything already on screen stays as the server rendered it. Hiding it
+    // here and waiting for the observer would flash it out and back in: the
+    // first observer callback is delivered asynchronously, after paint.
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) return;
+
     el.dataset.reveal = "out";
 
     const observer = new IntersectionObserver(

@@ -10,8 +10,7 @@
     "check:i18n": "node scripts/check-i18n.mjs"
   },
   "dependencies": {
-    "@svgr/webpack": "^8.1.0",
-    "next": "16.1.6",
+    "next": "^16.3.5",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "swiper": "^12.1.2"
@@ -23,6 +22,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "heic-convert": "^2.1.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

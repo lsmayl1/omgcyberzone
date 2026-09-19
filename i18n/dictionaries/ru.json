@@ -34,7 +34,12 @@
     "titleSuffix": "",
     "subtitle": "50 игровых станций, PlayStation 5 и отдельная комната для команды. Работаем круглосуточно в Баку.",
     "bookSeat": "Забронировать место",
-    "viewGames": "Посмотреть игры"
+    "viewGames": "Посмотреть игры",
+    "tiles": {
+      "zones": "Игровые зоны",
+      "lounge": "Лаунж и кальян",
+      "kitchen": "Кухня и бар"
+    }
   },
   "kpi": {
     "pc": "Мощных ПК",
@@ -171,6 +176,11 @@
   "gallery": {
     "heading": "Галерея",
     "alts": {
+      "lounge": "Лаунж-зона с кальяном",
+      "pro_zone": "Зона PRO — игровые станции",
+      "ps_zone_1": "Зона PlayStation 5 с диванами",
+      "ps_zone_2": "Экран PlayStation 5 в зоне отдыха",
+      "ps_zone_3": "Игра на PlayStation 5",
       "pszone2": "Зона PlayStation",
       "standart_3": "Игровой зал",
       "standart_2": "Игровые места",
@@ -215,7 +225,8 @@
     "instagram": "Instagram",
     "telegram": "Telegram",
     "mapAlt": "Карта: проспект Азадлыг 103E, Баку",
-    "copyright": "© 2025 OMG Cyber Zone."
+    "copyright": "© 2025 OMG Cyber Zone.",
+    "directions": "Проложить маршрут"
   },
   "modal": {
     "title": "Бронирование",
@@ -224,5 +235,10 @@
   "plansPage": {
     "heading": "Игровые ПК",
     "pcCount": "50 ПК"
+  },
+  "notFound": {
+    "title": "Страница не найдена",
+    "lead": "Такой страницы нет — возможно, ссылка устарела или в адресе опечатка.",
+    "chooseLanguage": "Выберите язык"
   }
 }

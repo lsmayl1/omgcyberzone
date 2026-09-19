@@ -34,7 +34,12 @@
     "titleSuffix": "",
     "subtitle": "50 gaming stations, PlayStation 5 and a private team room. Open around the clock in Baku.",
     "bookSeat": "Book a seat",
-    "viewGames": "View games"
+    "viewGames": "View games",
+    "tiles": {
+      "zones": "Gaming zones",
+      "lounge": "Lounge & hookah",
+      "kitchen": "Kitchen & bar"
+    }
   },
   "kpi": {
     "pc": "Powerful PCs",
@@ -167,6 +172,11 @@
   "gallery": {
     "heading": "Gallery",
     "alts": {
+      "lounge": "Lounge area with hookah",
+      "pro_zone": "PRO zone gaming stations",
+      "ps_zone_1": "PlayStation 5 area with sofas",
+      "ps_zone_2": "PlayStation 5 screen in the lounge seating",
+      "ps_zone_3": "Playing on PlayStation 5",
       "pszone2": "PlayStation area",
       "standart_3": "Gaming hall",
       "standart_2": "Gaming stations",
@@ -211,7 +221,8 @@
     "instagram": "Instagram",
     "telegram": "Telegram",
     "mapAlt": "Map: Azadlig Avenue 103E, Baku",
-    "copyright": "© 2025 OMG Cyber Zone."
+    "copyright": "© 2025 OMG Cyber Zone.",
+    "directions": "Get directions"
   },
   "modal": {
     "title": "Booking",
@@ -220,5 +231,10 @@
   "plansPage": {
     "heading": "Gaming PCs",
     "pcCount": "50 PCs"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "lead": "This page does not exist — the link may be out of date or the address mistyped.",
+    "chooseLanguage": "Choose a language"
   }
 }

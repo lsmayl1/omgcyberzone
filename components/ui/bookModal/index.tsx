@@ -3,7 +3,7 @@ import Close from "@/assets/close";
 import Instagram from "@/assets/Instagram";
 import Phone from "@/assets/Phone";
 import { Telegram } from "@/assets/Telegram";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useI18n } from "@/i18n/I18nProvider";
 
 const PHONE = "+994 70 222 88 86";
@@ -18,11 +18,20 @@ export const BookModal = ({
 }) => {
   const { t } = useI18n();
 
+  // Every caller passes a fresh arrow, so depending on handleClose directly
+  // would re-run the effect on each parent render — re-reading the body
+  // overflow it had just set itself. Read it through a ref instead and key
+  // the effect purely on `open`.
+  const closeRef = useRef(handleClose);
+  useEffect(() => {
+    closeRef.current = handleClose;
+  });
+
   useEffect(() => {
     if (!open) return;
 
     const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") handleClose();
+      if (e.key === "Escape") closeRef.current();
     };
     document.addEventListener("keydown", onKeyDown);
 
@@ -33,7 +42,7 @@ export const BookModal = ({
       document.removeEventListener("keydown", onKeyDown);
       document.body.style.overflow = previous;
     };
-  }, [open, handleClose]);
+  }, [open]);
 
   if (!open) return null;
 

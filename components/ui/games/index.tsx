@@ -49,14 +49,19 @@ const GAMES: Record<Device, Game[]> = {
   ps: [],
 };
 
+// First screenful. The rest is one click away rather than a wall of covers.
+const PREVIEW_LIMIT = 8;
+
 export const Games = () => {
   const { t } = useI18n();
   const [selectedDevice, setSelectedDevice] = useState<Device>("pc");
   const [query, setQuery] = useState("");
+  const [expanded, setExpanded] = useState(false);
 
   const library = GAMES[selectedDevice];
   const needle = query.trim().toLowerCase();
   const games = library.filter((g) => g.title.toLowerCase().includes(needle));
+  const visible = expanded ? games : games.slice(0, PREVIEW_LIMIT);
 
   /* Two different empty states: the device has no titles at all (PS), or the
      search cleared them out. They need different copy. */
@@ -87,7 +92,10 @@ export const Games = () => {
               type="search"
               placeholder={t.games.searchPlaceholder}
               value={query}
-              onChange={(e) => setQuery(e.target.value)}
+              onChange={(e) => {
+                setQuery(e.target.value);
+                setExpanded(false);
+              }}
               className="w-full bg-boxColor text-white text-sm px-4 py-2 pl-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-mainRed transition-all placeholder:text-gray-500 [&::-webkit-search-cancel-button]:hidden"
             />
             <svg
@@ -108,7 +116,10 @@ export const Games = () => {
               <button
                 type="button"
                 aria-label={t.games.clearSearch}
-                onClick={() => setQuery("")}
+                onClick={() => {
+                  setQuery("");
+                  setExpanded(false);
+                }}
                 className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white"
               >
                 <svg
@@ -133,7 +144,10 @@ export const Games = () => {
             {devices.map((device) => (
               <button
                 key={device.key}
-                onClick={() => setSelectedDevice(device.key)}
+                onClick={() => {
+                  setSelectedDevice(device.key);
+                  setExpanded(false);
+                }}
                 aria-pressed={selectedDevice === device.key}
                 className={`text-xs font-semibold text-nowrap px-3 py-1.5 rounded-md transition-colors ${
                   selectedDevice === device.key
@@ -150,7 +164,7 @@ export const Games = () => {
 
       {games.length > 0 ? (
         <div className="grid grid-cols-4 gap-2 max-md:gap-1 max-md:grid-cols-2">
-          {games.map((gm) => (
+          {visible.map((gm) => (
             <div
               key={gm.name}
               className="group relative overflow-hidden rounded-lg max-md:rounded cursor-pointer"
@@ -186,9 +200,13 @@ export const Games = () => {
         </div>
       )}
 
-      {games.length > 0 && (
+      {!expanded && games.length > PREVIEW_LIMIT && (
         <div className="flex items-center justify-center">
-          <button className="rounded-xl text-white bg-mainRed font-bold w-fit px-4 py-2 text-md mt-4 max-md:text-flg">
+          <button
+            type="button"
+            onClick={() => setExpanded(true)}
+            className="rounded-xl text-white bg-mainRed font-bold w-fit px-4 py-2 text-md mt-4 max-md:text-flg"
+          >
             {t.games.more}
           </button>
         </div>

@@ -2,7 +2,7 @@ import { PriceLayout } from "@/components/ui/pricelist/priceLayout";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import React from "react";
-import { isLocale } from "@/i18n/config";
+import { absoluteUrl, alternatesFor, isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 
 /**
@@ -22,6 +22,12 @@ export const generateMetadata = async ({
   return {
     title: t.meta.plans.title,
     description: t.meta.plans.description,
+    // Metadata is inherited, so without this the page kept the locale
+    // layout's canonical and pointed at the homepage instead of itself.
+    alternates: {
+      canonical: absoluteUrl(locale, "/plans"),
+      languages: alternatesFor("/plans"),
+    },
     robots: { index: false, follow: false },
   };
 };

@@ -18,7 +18,7 @@ export const pathWithoutLocale = (pathname: string) => {
   return segments.length ? `/${segments.join("/")}` : "";
 };
 
-export const LanguageSwitcher = ({ onNavigate }: { onNavigate?: () => void }) => {
+export const LanguageSwitcher = () => {
   const { locale, t } = useI18n();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
@@ -76,10 +76,7 @@ export const LanguageSwitcher = ({ onNavigate }: { onNavigate?: () => void }) =>
               href={`/${l}${rest}`}
               hrefLang={l}
               role="menuitem"
-              onClick={() => {
-                setOpen(false);
-                onNavigate?.();
-              }}
+              onClick={() => setOpen(false)}
               className={`block rounded-md px-3 py-2 text-sm text-white transition-colors ${
                 l === locale ? "bg-mainRed" : "hover:bg-mainRed/60"
               }`}
