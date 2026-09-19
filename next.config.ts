@@ -45,7 +45,12 @@ const csp = [
   "base-uri 'self'",
   // No form posts anywhere in the site; tighten to self.
   "form-action 'self'",
-  "frame-src 'none'",
+  // The footer embeds a Google Maps iframe. This is the only third-party
+  // origin the site loads anything from, and frame-src governs only what may
+  // be framed *by* us — X-Frame-Options and frame-ancestors still stop anyone
+  // framing this site. Note the embed sets Google cookies as soon as the
+  // footer scrolls into view.
+  "frame-src https://www.google.com",
   "frame-ancestors 'none'",
   "upgrade-insecure-requests",
 ].join("; ");

@@ -11,7 +11,8 @@ Small, and worth keeping that way:
 - No API routes, no Server Actions, no middleware.
 - **No forms.** Nothing in the site performs `fetch`, `XHR` or a form POST.
   Contact happens through `tel:`, `instagram.com` and `t.me` links.
-- No third-party scripts: no analytics, chat widget, embed or iframe.
+- No third-party scripts: no analytics and no chat widget. The one embed is
+  the Google Maps iframe in the footer (see the CSP note below).
 - Inter is self-hosted by `next/font`; there is no Google Fonts request.
 - All images are local to `/public`.
 - The only environment variable is `NEXT_PUBLIC_SITE_URL`, which is a public
@@ -45,8 +46,18 @@ are served at the edge for both HTML and static assets.
 default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';
 img-src 'self' data:; font-src 'self'; connect-src 'self'; media-src 'self';
 worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self';
-form-action 'self'; frame-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+form-action 'self'; frame-src https://www.google.com; frame-ancestors 'none';
+upgrade-insecure-requests
 ```
+
+**`frame-src https://www.google.com`** is the footer's Maps embed, and the
+only third-party origin the site loads anything from. `frame-src` governs
+only what this site may *frame*; `X-Frame-Options`/`frame-ancestors` still
+stop anyone framing us. Two things follow from it: the embed sets Google
+cookies as soon as the footer scrolls into view, which is a consent question
+in the EU, and the CSP of a framed document is its own — our policy does not
+constrain what Google loads inside that iframe. If you ever drop the map,
+put `frame-src 'none'` back.
 
 `instagram.com` and `t.me` are **not** allowlisted, deliberately. They are link
 targets, and CSP does not govern top-level navigation — only subresources, and
