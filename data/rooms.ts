@@ -83,7 +83,9 @@ export const ROOMS: Room[] = [
   {
     title: "PRO",
     key: "pro",
-    images: ["/gamerparking.webp", "/standart_3.webp", "/standart_4.webp"],
+    // The real PRO room. It used to show gamerparking + two STANDART shots,
+    // which were not this zone at all.
+    images: ["/pro_zone.webp"],
     price: {
       midweek: [
         { hours: 1, dayPrice: "4.00 ₼", nightPrice: "5.00 ₼" },
@@ -113,7 +115,9 @@ export const ROOMS: Room[] = [
   {
     title: "PLAYSTATION",
     key: "ps",
-    images: ["/pszone2.webp", "/pszone.webp", "/pszone2.webp"],
+    // Three real PS-zone photos. The previous list repeated pszone2.webp
+    // twice, so the carousel looped past the same picture.
+    images: ["/ps_zone_1.webp", "/ps_zone_2.webp", "/ps_zone_3.webp"],
     price: {
       midweek: [
         { hours: 1, dayPrice: "4.00 ₼", nightPrice: "5.00 ₼" },
@@ -161,6 +165,13 @@ export const minHourlyPrice = (room: Room): string | null => {
 
 /** Gallery tiles: src + span, alt text comes from dictionary.gallery.alts. */
 export const GALLERY_TILES: { key: string; src: string; span: string }[] = [
+  // The real venue photography leads. All five are portrait (3:4), so each
+  // takes one column across two 200px rows.
+  { key: "lounge", src: "/lounge.webp", span: "col-span-1 row-span-2" },
+  { key: "pro_zone", src: "/pro_zone.webp", span: "col-span-1 row-span-2" },
+  { key: "ps_zone_1", src: "/ps_zone_1.webp", span: "col-span-1 row-span-2" },
+  { key: "ps_zone_2", src: "/ps_zone_2.webp", span: "col-span-1 row-span-2" },
+  { key: "ps_zone_3", src: "/ps_zone_3.webp", span: "col-span-1 row-span-2" },
   {
     key: "pszone2",
     src: "/pszone2.webp",

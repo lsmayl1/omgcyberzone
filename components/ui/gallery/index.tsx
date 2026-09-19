@@ -13,7 +13,9 @@ export const Gallery = ({ t }: { t: Dictionary }) => {
         {t.gallery.heading}
       </h2>
       <div className="max-w-full">
-        <div className="grid grid-cols-4 max-md:grid-cols-2 gap-2 auto-rows-[200px]">
+        {/* grid-flow-dense: the tiles mix 1x1, 2x1, 1x2 and 2x2 spans, and
+            without dense packing the portrait tiles leave gaps behind them. */}
+        <div className="grid grid-flow-dense grid-cols-4 max-md:grid-cols-2 gap-2 auto-rows-[200px]">
           {GALLERY_TILES.map((tile) => (
             <div
               key={tile.key}

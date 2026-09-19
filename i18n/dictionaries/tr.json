@@ -170,6 +170,11 @@
   "gallery": {
     "heading": "Galeri",
     "alts": {
+      "lounge": "Nargileli lounge alanı",
+      "pro_zone": "PRO bölgesi oyun istasyonları",
+      "ps_zone_1": "Koltuklu PlayStation 5 alanı",
+      "ps_zone_2": "Dinlenme alanında PlayStation 5 ekranı",
+      "ps_zone_3": "PlayStation 5 oynanıyor",
       "pszone2": "PlayStation bölgesi",
       "standart_3": "Oyun salonu",
       "standart_2": "Oyun istasyonları",
@@ -214,7 +219,8 @@
     "instagram": "Instagram",
     "telegram": "Telegram",
     "mapAlt": "Harita: Azadlıq Bulvarı 103E, Bakü",
-    "copyright": "© 2025 OMG Cyber Zone."
+    "copyright": "© 2025 OMG Cyber Zone.",
+    "directions": "Yol tarifi al"
   },
   "modal": {
     "title": "Rezervasyon",

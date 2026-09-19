@@ -170,6 +170,11 @@
   "gallery": {
     "heading": "Qalereya",
     "alts": {
+      "lounge": "Qəlyanlı lounge zonası",
+      "pro_zone": "PRO zonası — oyun stansiyaları",
+      "ps_zone_1": "Divanlı PlayStation 5 zonası",
+      "ps_zone_2": "İstirahət zonasında PlayStation 5 ekranı",
+      "ps_zone_3": "PlayStation 5-də oyun",
       "pszone2": "PlayStation zonası",
       "standart_3": "Oyun zalı",
       "standart_2": "Oyun yerləri",
@@ -214,7 +219,8 @@
     "instagram": "Instagram",
     "telegram": "Telegram",
     "mapAlt": "Xəritə: Azadlıq prospekti 103E, Bakı",
-    "copyright": "© 2025 OMG Cyber Zone."
+    "copyright": "© 2025 OMG Cyber Zone.",
+    "directions": "Marşrut qur"
   },
   "modal": {
     "title": "Rezervasiya",
