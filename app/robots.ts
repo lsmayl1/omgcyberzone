@@ -1,13 +1,14 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/i18n/config";
+import { LOCALES, SITE_URL, localePath } from "@/i18n/config";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
       allow: "/",
-      // Placeholder pricing page, see app/[locale]/plans/page.tsx
-      disallow: ["/ru/plans", "/en/plans", "/az/plans", "/tr/plans"],
+      // Placeholder pricing page, see app/[locale]/plans/page.tsx.
+      // Derived from LOCALES so adding a language cannot leave it exposed.
+      disallow: LOCALES.map((locale) => localePath(locale, "/plans")),
     },
     sitemap: `${SITE_URL}/sitemap.xml`,
     host: SITE_URL,

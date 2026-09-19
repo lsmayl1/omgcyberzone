@@ -1,5 +1,10 @@
 "use client";
-import { useCallback, useRef, type MouseEvent as ReactMouseEvent } from "react";
+import {
+  useCallback,
+  useEffect,
+  useRef,
+  type MouseEvent as ReactMouseEvent,
+} from "react";
 
 const DRAG_THRESHOLD = 5;
 
@@ -13,6 +18,11 @@ const DRAG_THRESHOLD = 5;
 export const useDragScroll = <T extends HTMLElement>() => {
   const ref = useRef<T>(null);
   const dragged = useRef(false);
+  // Teardown for a drag that is still in progress, so an unmount mid-drag
+  // does not leave the document-level listeners behind.
+  const endDrag = useRef<(() => void) | null>(null);
+
+  useEffect(() => () => endDrag.current?.(), []);
 
   const onMouseDown = useCallback((e: ReactMouseEvent) => {
     const container = ref.current;
@@ -34,8 +44,24 @@ export const useDragScroll = <T extends HTMLElement>() => {
       container.style.cursor = "grab";
       document.removeEventListener("mousemove", onMove);
       document.removeEventListener("mouseup", onUp);
+      endDrag.current = null;
+
+      /*
+       * The click that follows this mouseup only reaches onClickCapture when
+       * the pointer was released inside the container. Release it outside —
+       * easy to do when you fling the strip — and no click ever arrives, so
+       * the flag would stay set and eat the next genuine tap on a category.
+       * Clear it on a macrotask: the click, if there is one, is dispatched
+       * before this runs.
+       */
+      if (dragged.current) {
+        window.setTimeout(() => {
+          dragged.current = false;
+        }, 0);
+      }
     };
 
+    endDrag.current = onUp;
     document.addEventListener("mousemove", onMove);
     document.addEventListener("mouseup", onUp);
   }, []);

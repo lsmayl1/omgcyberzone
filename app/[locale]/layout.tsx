@@ -1,5 +1,5 @@
-import { Inter } from "next/font/google";
 import type { Metadata } from "next";
+import { inter } from "../fonts";
 import { notFound } from "next/navigation";
 import { Header } from "@/components/ui/header";
 import { Footer } from "@/components/ui/footer";
@@ -16,13 +16,18 @@ import { getDictionary } from "@/i18n/dictionaries";
 import { I18nProvider } from "@/i18n/I18nProvider";
 import { LocalBusinessJsonLd } from "@/components/seo/jsonLd";
 
-const inter = Inter({
-  subsets: ["latin", "cyrillic", "latin-ext"],
-  display: "swap",
-});
-
 export const generateStaticParams = () =>
   LOCALES.map((locale) => ({ locale }));
+
+/**
+ * Anything that is not one of LOCALES stops matching this segment, so /xx is
+ * an ordinary routing miss and gets app/not-found.tsx. Rejecting it with
+ * notFound() from inside this layout instead produced Next's bare internal
+ * error shell: the root layout is a pass-through with no <html>/<body>, and a
+ * layout that throws before rendering never reaches the not-found boundary
+ * below it.
+ */
+export const dynamicParams = false;
 
 export const generateMetadata = async ({
   params,

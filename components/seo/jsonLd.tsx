@@ -1,6 +1,18 @@
 import { LOCALES, SITE_URL, absoluteUrl, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/types";
 
+/**
+ * JSON is not HTML-escaped, so a literal "</script>" anywhere in the data
+ * would close the tag early and the rest would be parsed as markup. Nothing
+ * here is user input today, but the dictionaries are hand-edited — escaping
+ * the three characters that can break out costs nothing.
+ */
+const serialize = (data: unknown) =>
+  JSON.stringify(data).replace(
+    /[<>&]/g,
+    (c) => "\\u" + c.charCodeAt(0).toString(16).padStart(4, "0"),
+  );
+
 const PHONE = "+994702228886";
 const INSTAGRAM = "https://instagram.com/omgcyberzone";
 const TELEGRAM = "https://t.me/omgcyberzone";
@@ -56,8 +68,7 @@ export const LocalBusinessJsonLd = ({
   return (
     <script
       type="application/ld+json"
-      // Content is a compile-time constant, not user input.
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: serialize(data) }}
     />
   );
 };
@@ -77,7 +88,7 @@ export const FaqJsonLd = ({ t }: { t: Dictionary }) => {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: serialize(data) }}
     />
   );
 };
@@ -90,7 +101,10 @@ export const MenuJsonLd = ({
 }: {
   locale: Locale;
   t: Dictionary;
-  sections: { category: string; items: { name: string; description: string; price: string }[] }[];
+  sections: {
+    category: string;
+    items: { name: string; description: string; price: string }[];
+  }[];
 }) => {
   const data = {
     "@context": "https://schema.org",
@@ -116,7 +130,7 @@ export const MenuJsonLd = ({
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: serialize(data) }}
     />
   );
 };

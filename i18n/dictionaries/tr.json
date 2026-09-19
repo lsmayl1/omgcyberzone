@@ -34,7 +34,12 @@
     "titleSuffix": "'a hoş geldiniz",
     "subtitle": "50 oyun istasyonu, PlayStation 5 ve takıma özel oda. Bakü'de 7/24 açığız.",
     "bookSeat": "Yer ayırt",
-    "viewGames": "Oyunlara göz at"
+    "viewGames": "Oyunlara göz at",
+    "tiles": {
+      "zones": "Oyun bölgeleri",
+      "lounge": "Lounge & nargile",
+      "kitchen": "Mutfak & bar"
+    }
   },
   "kpi": {
     "pc": "Güçlü bilgisayar",
@@ -218,5 +223,10 @@
   "plansPage": {
     "heading": "Oyun bilgisayarları",
     "pcCount": "50 PC"
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "lead": "Böyle bir sayfa yok — bağlantı eski olabilir ya da adreste bir yazım hatası var.",
+    "chooseLanguage": "Dil seçin"
   }
 }

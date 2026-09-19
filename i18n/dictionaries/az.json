@@ -34,7 +34,12 @@
     "titleSuffix": "-a xoş gəlmisiniz",
     "subtitle": "50 oyun stansiyası, PlayStation 5 və komanda üçün ayrıca otaq. Bakıda gecə-gündüz açığıq.",
     "bookSeat": "Yer rezerv et",
-    "viewGames": "Oyunlara bax"
+    "viewGames": "Oyunlara bax",
+    "tiles": {
+      "zones": "Oyun zonaları",
+      "lounge": "Lounge və qəlyan",
+      "kitchen": "Mətbəx və bar"
+    }
   },
   "kpi": {
     "pc": "Güclü kompüter",
@@ -218,5 +223,10 @@
   "plansPage": {
     "heading": "Oyun kompüterləri",
     "pcCount": "50 PC"
+  },
+  "notFound": {
+    "title": "Səhifə tapılmadı",
+    "lead": "Belə bir səhifə yoxdur — keçid köhnəlmiş ola bilər və ya ünvanda səhv var.",
+    "chooseLanguage": "Dili seçin"
   }
 }
