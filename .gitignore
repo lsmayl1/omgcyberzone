@@ -39,3 +39,16 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Raw photo drops. Camera originals (HEIC / multi-MB JPEG) must never be
+# committed: git keeps every blob forever, and anything under public/ is
+# deployed and served. Run scripts/optimize-photos.mjs and commit the
+# WebP masters it writes to public/photos instead.
+/public/omg/
+*.heic
+*.heif
+
+# Converted masters. Kept out of public/ on purpose: everything under
+# public/ is deployed and served, and only the handful actually used on
+# the site belongs there. Re-runnable with scripts/optimize-photos.mjs.
+/photos-master/
