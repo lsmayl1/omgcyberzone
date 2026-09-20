@@ -1,9 +1,26 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
+import { useState } from "react";
 import { GALLERY_TILES } from "@/data/rooms";
 import type { Dictionary } from "@/i18n/types";
 
+const getTileLayout = (index: number) => {
+  if (index === 0) return "col-span-7 row-span-2 max-md:col-span-2";
+  if (index === 1 || index === 2)
+    return "col-span-5 row-span-1 max-md:col-span-2";
+  return "col-span-4 row-span-1 max-md:col-span-2";
+};
+
 export const Gallery = ({ t }: { t: Dictionary }) => {
+  const [showAll, setShowAll] = useState(false);
+  const [selectedTile, setSelectedTile] = useState<
+    (typeof GALLERY_TILES)[number] | null
+  >(null);
+  const galleryTiles = GALLERY_TILES.slice(0, 20);
+  const visibleTiles = showAll ? galleryTiles : galleryTiles.slice(0, 6);
+
   return (
     <div
       id="gallery"
@@ -13,25 +30,73 @@ export const Gallery = ({ t }: { t: Dictionary }) => {
         {t.gallery.heading}
       </h2>
       <div className="max-w-full">
-        {/* grid-flow-dense: the tiles mix 1x1, 2x1, 1x2 and 2x2 spans, and
-            without dense packing the portrait tiles leave gaps behind them. */}
-        <div className="grid grid-flow-dense grid-cols-4 max-md:grid-cols-2 gap-2 auto-rows-[200px]">
-          {GALLERY_TILES.map((tile) => (
-            <div
+        <div className="grid grid-flow-dense grid-cols-12 max-md:grid-cols-2 gap-3 auto-rows-[220px] max-md:auto-rows-[180px]">
+          {visibleTiles.map((tile, index) => (
+            <button
+              type="button"
               key={tile.key}
-              className={`relative overflow-hidden rounded-xl ${tile.span}`}
+              onClick={() => setSelectedTile(tile)}
+              className={`relative h-full min-h-0 overflow-hidden rounded-2xl bg-black/30 text-left ${getTileLayout(index)}`}
+              aria-label={
+                t.gallery.alts[tile.key as keyof typeof t.gallery.alts]
+              }
             >
               <Image
                 src={tile.src}
                 alt={t.gallery.alts[tile.key as keyof typeof t.gallery.alts]}
                 fill
                 sizes="(max-width: 768px) 50vw, 25vw"
-                className="object-cover transition-transform duration-300 hover:scale-120"
+                className="h-full w-full object-cover transition-transform duration-300 hover:scale-120"
               />
-            </div>
+            </button>
           ))}
         </div>
+        <button
+          type="button"
+          onClick={() => setShowAll((isShowingAll) => !isShowingAll)}
+          className="mt-6 rounded-lg border border-white/20 px-5 py-3 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:border-mainRed hover:bg-mainRed"
+        >
+          {showAll ? t.gallery.showLess : t.gallery.showAll}
+        </button>
       </div>
+      {selectedTile && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={
+            t.gallery.alts[selectedTile.key as keyof typeof t.gallery.alts]
+          }
+          onClick={() => setSelectedTile(null)}
+          onKeyDown={(event) => {
+            if (event.key === "Escape") setSelectedTile(null);
+          }}
+          tabIndex={-1}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+        >
+          <div
+            className="relative h-[90vh] w-[min(1100px,92vw)]"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <Image
+              src={selectedTile.src}
+              alt={
+                t.gallery.alts[selectedTile.key as keyof typeof t.gallery.alts]
+              }
+              fill
+              sizes="92vw"
+              className="object-contain"
+            />
+            <button
+              type="button"
+              onClick={() => setSelectedTile(null)}
+              aria-label="Close image"
+              className="absolute right-2 top-2 z-10 rounded-full bg-black/70 px-3 py-1 text-2xl leading-none text-white hover:bg-mainRed"
+            >
+              X
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

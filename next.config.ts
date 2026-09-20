@@ -23,7 +23,8 @@ import type { NextConfig } from "next";
  * third-party JS and no dynamic HTML injection, keeping the static render is
  * the better trade. See SECURITY.md for how to switch if that changes.
  *
- * 'unsafe-eval' is deliberately absent: production Next does not need it.
+ * Development React needs 'unsafe-eval' for debugging callstacks. It is
+ * enabled only in development; production keeps it absent.
  *
  * style-src 'unsafe-inline' is required by Next's injected <style> blocks and
  * by the inline style="animation-delay:…" attributes in the hero. Inline
@@ -31,7 +32,9 @@ import type { NextConfig } from "next";
  */
 const csp = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline'",
+  process.env.NODE_ENV === "development"
+    ? "script-src 'self' 'unsafe-inline' 'unsafe-eval'"
+    : "script-src 'self' 'unsafe-inline'",
   "style-src 'self' 'unsafe-inline'",
   // data: covers next/image placeholders and inline SVG data URIs.
   "img-src 'self' data:",

@@ -116,16 +116,17 @@
     "categories": {
       "all": "Все",
       "pizza": "Пицца",
-      "burger": "Бургер",
-      "roll": "Ролл",
-      "sandwich": "Сэндвич",
+      "sandwich": "Сэндвичи",
+      "burger": "Бургеры",
+      "roll": "Роллы",
       "pasta": "Паста",
       "salads": "Салаты",
+      "soups": "Супы",
       "snacks": "Закуски",
-      "sweets": "Десерт",
+      "milkshake": "Молочные коктейли",
       "drinks": "Напитки",
       "coffee": "Кофе",
-      "kalyan": "Кальян"
+      "sauces": "Соусы"
     },
     "units": {
       "cm": "см",
@@ -135,9 +136,8 @@
       "pcs": "шт"
     },
     "sizeLabels": {
-      "standard": "Стандарт",
-      "double": "Двойной",
-      "premium": "Премиум"
+      "medium": "Средний",
+      "large": "Большой"
     }
   },
   "menuPage": {
@@ -175,8 +175,14 @@
   },
   "gallery": {
     "heading": "Галерея",
+    "showAll": "Посмотреть все 20 фото",
+    "showLess": "Показать меньше",
     "alts": {
       "lounge": "Лаунж-зона с кальяном",
+      "lounge_2": "Зона отдыха лаунжа",
+      "vip_featured": "Игровая зона VIP",
+      "premium_featured": "Игровая зона PREMIUM",
+      "standard_featured": "Игровая зона STANDART",
       "pro_zone": "Зона PRO — игровые станции",
       "ps_zone_1": "Зона PlayStation 5 с диванами",
       "ps_zone_2": "Экран PlayStation 5 в зоне отдыха",
@@ -187,8 +193,15 @@
       "standart_4": "Интерьер клуба",
       "standart_room": "Зона STANDART",
       "gamerparking": "Общий вид клуба",
+      "gamerparking_2": "Общий вид клуба",
       "pszone": "Диваны зоны PlayStation",
-      "standart_5": "Рабочее место геймера"
+      "standart_5": "Рабочее место геймера",
+      "premium_1": "Игровая зона PREMIUM",
+      "premium_2": "Игровое место PREMIUM",
+      "pro_zone_2": "Игровая зона PRO",
+      "pro_zone_3": "Игровое место PRO",
+      "ps_zone_4": "Зона PlayStation 5",
+      "ps_zone_5": "Игровая зона PlayStation 5"
     }
   },
   "roomAlts": {
@@ -230,7 +243,16 @@
   },
   "modal": {
     "title": "Бронирование",
-    "close": "Закрыть"
+    "close": "Закрыть",
+    "name": "Имя",
+    "phone": "Телефон",
+    "date": "Дата",
+    "time": "Время",
+    "guests": "Гости",
+    "room": "Зона",
+    "submit": "Продолжить в WhatsApp",
+    "success": "Данные бронирования готовы в WhatsApp.",
+    "directContact": "Или свяжитесь с нами напрямую"
   },
   "plansPage": {
     "heading": "Игровые ПК",

@@ -112,17 +112,18 @@
     },
     "categories": {
       "all": "Tümü",
-      "pizza": "Pizza",
-      "burger": "Burger",
-      "roll": "Roll",
-      "sandwich": "Sandviç",
+      "pizza": "Pizzalar",
+      "sandwich": "Sandviçler",
+      "burger": "Burgerler",
+      "roll": "Dürümler",
       "pasta": "Makarna",
       "salads": "Salatalar",
+      "soups": "Çorbalar",
       "snacks": "Atıştırmalıklar",
-      "sweets": "Tatlı",
+      "milkshake": "Milkshake",
       "drinks": "İçecekler",
       "coffee": "Kahve",
-      "kalyan": "Nargile"
+      "sauces": "Soslar"
     },
     "units": {
       "cm": "cm",
@@ -132,9 +133,8 @@
       "pcs": "adet"
     },
     "sizeLabels": {
-      "standard": "Standart",
-      "double": "Duble",
-      "premium": "Premium"
+      "medium": "Orta",
+      "large": "Büyük"
     }
   },
   "menuPage": {
@@ -169,8 +169,14 @@
   },
   "gallery": {
     "heading": "Galeri",
+    "showAll": "20 fotoğrafın tümünü gör",
+    "showLess": "Daha az göster",
     "alts": {
       "lounge": "Nargileli lounge alanı",
+      "lounge_2": "Lounge dinlenme alanı",
+      "vip_featured": "VIP oyun alanı",
+      "premium_featured": "Premium oyun alanı",
+      "standard_featured": "STANDART oyun alanı",
       "pro_zone": "PRO bölgesi oyun istasyonları",
       "ps_zone_1": "Koltuklu PlayStation 5 alanı",
       "ps_zone_2": "Dinlenme alanında PlayStation 5 ekranı",
@@ -181,8 +187,15 @@
       "standart_4": "Kulüp iç mekânı",
       "standart_room": "STANDART bölgesi",
       "gamerparking": "Kulübün genel görünümü",
+      "gamerparking_2": "Kulübün genel görünümü",
       "pszone": "PlayStation bölgesi koltukları",
-      "standart_5": "Oyuncu çalışma alanı"
+      "standart_5": "Oyuncu çalışma alanı",
+      "premium_1": "Premium oyun alanı",
+      "premium_2": "Premium oyun istasyonu",
+      "pro_zone_2": "PRO oyun alanı",
+      "pro_zone_3": "PRO oyun istasyonu",
+      "ps_zone_4": "PlayStation 5 alanı",
+      "ps_zone_5": "PlayStation 5 oyun alanı"
     }
   },
   "roomAlts": {
@@ -224,7 +237,16 @@
   },
   "modal": {
     "title": "Rezervasyon",
-    "close": "Kapat"
+    "close": "Kapat",
+    "name": "Ad",
+    "phone": "Telefon",
+    "date": "Tarih",
+    "time": "Saat",
+    "guests": "Misafirler",
+    "room": "Alan",
+    "submit": "WhatsApp'ta devam et",
+    "success": "Rezervasyon bilgileriniz WhatsApp'ta hazır.",
+    "directContact": "Veya doğrudan iletişime geçin"
   },
   "plansPage": {
     "heading": "Oyun bilgisayarları",

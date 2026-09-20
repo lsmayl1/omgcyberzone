@@ -112,17 +112,18 @@
     },
     "categories": {
       "all": "Hamısı",
-      "pizza": "Pizza",
-      "burger": "Burger",
-      "roll": "Rol",
-      "sandwich": "Sendviç",
-      "pasta": "Pasta",
+      "pizza": "Pizzalar",
+      "sandwich": "Sendviçlər",
+      "burger": "Burgerlər",
+      "roll": "Rollar",
+      "pasta": "Spagetti",
       "salads": "Salatlar",
+      "soups": "Şorbalar",
       "snacks": "Qəlyanaltılar",
-      "sweets": "Desert",
+      "milkshake": "Milkşeyklər",
       "drinks": "İçkilər",
       "coffee": "Qəhvə",
-      "kalyan": "Qəlyan"
+      "sauces": "Souslar"
     },
     "units": {
       "cm": "sm",
@@ -132,9 +133,8 @@
       "pcs": "əd"
     },
     "sizeLabels": {
-      "standard": "Standart",
-      "double": "İkiqat",
-      "premium": "Premium"
+      "medium": "Orta",
+      "large": "Böyük"
     }
   },
   "menuPage": {
@@ -169,8 +169,14 @@
   },
   "gallery": {
     "heading": "Qalereya",
+    "showAll": "20 fotoya bax",
+    "showLess": "Daha az göstər",
     "alts": {
       "lounge": "Qəlyanlı lounge zonası",
+      "lounge_2": "Lounge istirahət zonası",
+      "vip_featured": "VIP oyun zonası",
+      "premium_featured": "Premium oyun zonası",
+      "standard_featured": "STANDART oyun zonası",
       "pro_zone": "PRO zonası — oyun stansiyaları",
       "ps_zone_1": "Divanlı PlayStation 5 zonası",
       "ps_zone_2": "İstirahət zonasında PlayStation 5 ekranı",
@@ -181,8 +187,15 @@
       "standart_4": "Klubun interyeri",
       "standart_room": "STANDART zonası",
       "gamerparking": "Klubun ümumi görünüşü",
+      "gamerparking_2": "Klubun ümumi görünüşü",
       "pszone": "PlayStation zonasının divanları",
-      "standart_5": "Oyunçu iş yeri"
+      "standart_5": "Oyunçu iş yeri",
+      "premium_1": "Premium oyun zonası",
+      "premium_2": "Premium oyun yeri",
+      "pro_zone_2": "PRO oyun zonası",
+      "pro_zone_3": "PRO oyun yeri",
+      "ps_zone_4": "PlayStation 5 zonası",
+      "ps_zone_5": "PlayStation 5 oyun zonası"
     }
   },
   "roomAlts": {
@@ -224,7 +237,16 @@
   },
   "modal": {
     "title": "Rezervasiya",
-    "close": "Bağla"
+    "close": "Bağla",
+    "name": "Ad",
+    "phone": "Telefon",
+    "date": "Tarix",
+    "time": "Saat",
+    "guests": "Qonaqlar",
+    "room": "Zona",
+    "submit": "WhatsApp-da davam et",
+    "success": "Rezervasiya məlumatlarınız WhatsApp-da hazırdır.",
+    "directContact": "Və ya birbaşa əlaqə saxlayın"
   },
   "plansPage": {
     "heading": "Oyun kompüterləri",

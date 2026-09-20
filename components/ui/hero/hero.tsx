@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import MainRoom from "@/public/gamerparking.webp";
+import MainRoom from "@/public/omg/IMG_2646.webp";
 import { BookButton } from "../buttons/bookButton";
 import { BookModal } from "../bookModal";
 import { Kpi } from "../kpi/kpi";

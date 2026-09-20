@@ -11,6 +11,21 @@
   --boxColor: #1a1f25;
 }
 
+.booking-input {
+  width: 100%;
+  border: 1px solid rgb(255 255 255 / 0.12);
+  border-radius: 0.5rem;
+  background: var(--background);
+  padding: 0.7rem 0.8rem;
+  color: white;
+  outline: none;
+}
+
+.booking-input:focus {
+  border-color: var(--mainRed);
+  box-shadow: 0 0 0 2px rgb(220 38 38 / 0.18);
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

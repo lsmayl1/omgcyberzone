@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import { formatSize, type MenuItem } from "@/data/menu";
+import { formatSize, hasSizeChoice, type MenuItem } from "@/data/menu";
 import { useI18n } from "@/i18n/I18nProvider";
 
 interface MenuCardProps {
@@ -32,6 +32,8 @@ export const MenuCard = ({ items, limit }: MenuCardProps) => {
           Math.max(item.sizes.length - 1, 0),
         );
         const currentPrice = item.sizes[currentIndex]?.price ?? "—";
+        // A sauce or a bottled drink has one price and nothing to pick.
+        const showSizes = hasSizeChoice(item.sizes);
         const name = item.name[locale];
         const description = item.description[locale];
 
@@ -72,8 +74,9 @@ export const MenuCard = ({ items, limit }: MenuCardProps) => {
                     {description}
                   </p>
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  {item.sizes.map((size, idx) => (
+                {showSizes && (
+                  <div className="flex flex-wrap gap-2">
+                    {item.sizes.map((size, idx) => (
                     <button
                       key={idx}
                       onClick={() => handleSizeChange(item.id, idx)}
@@ -84,10 +87,11 @@ export const MenuCard = ({ items, limit }: MenuCardProps) => {
                           : "bg-background text-gray-400 hover:bg-mainRed/50 hover:text-white"
                       }`}
                     >
-                      {formatSize(size, t)}
-                    </button>
-                  ))}
-                </div>
+                        {formatSize(size, t)}
+                      </button>
+                    ))}
+                  </div>
+                )}
                 <div className="flex items-center pt-3 justify-end">
                   <div className="flex flex-col">
                     <span className="text-gray-400 text-xs">
@@ -136,22 +140,24 @@ export const MenuCard = ({ items, limit }: MenuCardProps) => {
                 </div>
 
                 <div className="flex flex-col gap-2 mt-2 max-md:gap-0">
-                  <div className="flex flex-wrap gap-1.5 max-md:gap-1">
-                    {item.sizes.map((size, idx) => (
-                      <button
-                        key={idx}
-                        onClick={() => handleSizeChange(item.id, idx)}
-                        aria-pressed={currentIndex === idx}
-                        className={`px-2 py-1 rounded-lg text-xs font-semibold transition-all max-md:text-[0.5rem] max-md:px-1.5 ${
-                          currentIndex === idx
-                            ? "bg-mainRed text-white"
-                            : "bg-background text-gray-400 hover:bg-mainRed/50 hover:text-white"
-                        }`}
-                      >
-                        {formatSize(size, t)}
-                      </button>
-                    ))}
-                  </div>
+                  {showSizes && (
+                    <div className="flex flex-wrap gap-1.5 max-md:gap-1">
+                      {item.sizes.map((size, idx) => (
+                        <button
+                          key={idx}
+                          onClick={() => handleSizeChange(item.id, idx)}
+                          aria-pressed={currentIndex === idx}
+                          className={`px-2 py-1 rounded-lg text-xs font-semibold transition-all max-md:text-[0.5rem] max-md:px-1.5 ${
+                            currentIndex === idx
+                              ? "bg-mainRed text-white"
+                              : "bg-background text-gray-400 hover:bg-mainRed/50 hover:text-white"
+                          }`}
+                        >
+                          {formatSize(size, t)}
+                        </button>
+                      ))}
+                    </div>
+                  )}
                   <div className="flex items-center justify-between max-md:justify-end px-2">
                     <span className="text-white text-lg font-bold max-md:text-[0.95rem]">
                       {currentPrice}

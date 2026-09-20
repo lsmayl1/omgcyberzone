@@ -60,7 +60,7 @@ export const MenuPageContent = () => {
           <div className="relative min-h-[400px] lg:min-h-full">
             <div className="absolute inset-0">
               <Image
-                src="/menu-food/pizza-peperoni.avif"
+                src="/menu-food/pizza-pepperoni.webp"
                 alt={t.menuPage.heroImageAlt}
                 fill
                 priority

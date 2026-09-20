@@ -35,7 +35,13 @@ export const ROOMS: Room[] = [
   {
     title: "STANDART",
     key: "standart",
-    images: ["/standart_room.webp", "/standart_3.webp", "/standart_4.webp"],
+    images: [
+      "/images/standard-room-1.jpg",
+      "/images/standard-room-2.jpg",
+      "/images/standard-room-3.jpg",
+      "/images/standard-room-4.jpg",
+      "/images/standard-room-5.jpg",
+    ],
     price: {
       midweek: [
         { hours: 1, dayPrice: "1.80 ₼", nightPrice: "2.00 ₼" },
@@ -57,7 +63,7 @@ export const ROOMS: Room[] = [
   {
     title: "VIP",
     key: "vip",
-    images: ["/standart_2.webp", "/standart_3.webp", "/standart_4.webp"],
+    images: ["/omg/IMG_2638.webp", "/omg/IMG_2641.webp"],
     price: {
       midweek: [
         { hours: 1, dayPrice: "2.40 ₼", nightPrice: "3.00 ₼" },
@@ -85,7 +91,7 @@ export const ROOMS: Room[] = [
     key: "pro",
     // The real PRO room. It used to show gamerparking + two STANDART shots,
     // which were not this zone at all.
-    images: ["/pro_zone.webp"],
+    images: ["/omg/pro.webp", "/omg/IMG_2710.webp"],
     price: {
       midweek: [
         { hours: 1, dayPrice: "4.00 ₼", nightPrice: "5.00 ₼" },
@@ -115,9 +121,7 @@ export const ROOMS: Room[] = [
   {
     title: "PLAYSTATION",
     key: "ps",
-    // Three real PS-zone photos. The previous list repeated pszone2.webp
-    // twice, so the carousel looped past the same picture.
-    images: ["/ps_zone_1.webp", "/ps_zone_2.webp", "/ps_zone_3.webp"],
+    images: ["/omg/IMG_2628.webp", "/omg/IMG_2636.webp"],
     price: {
       midweek: [
         { hours: 1, dayPrice: "4.00 ₼", nightPrice: "5.00 ₼" },
@@ -138,7 +142,7 @@ export const ROOMS: Room[] = [
   {
     title: "PREMIUM",
     key: "premium",
-    images: ["/standart_4.webp"],
+    images: ["/omg/IMG_2691.webp", "/omg/IMG_2702.webp"],
     specs: withSpecs({
       ram: "DDR5 32 GB 3600Mhz",
       monitor: "ARON 2K 240Hz",
@@ -165,28 +169,29 @@ export const minHourlyPrice = (room: Room): string | null => {
 
 /** Gallery tiles: src + span, alt text comes from dictionary.gallery.alts. */
 export const GALLERY_TILES: { key: string; src: string; span: string }[] = [
-  // The real venue photography leads. All five are portrait (3:4), so each
-  // takes one column across two 200px rows.
-  { key: "lounge", src: "/lounge.webp", span: "col-span-1 row-span-2" },
-  { key: "pro_zone", src: "/pro_zone.webp", span: "col-span-1 row-span-2" },
-  { key: "ps_zone_1", src: "/ps_zone_1.webp", span: "col-span-1 row-span-2" },
-  { key: "ps_zone_2", src: "/ps_zone_2.webp", span: "col-span-1 row-span-2" },
-  { key: "ps_zone_3", src: "/ps_zone_3.webp", span: "col-span-1 row-span-2" },
+  // The first six photos use varied spans while their combined area fills the grid.
+  { key: "gamerparking", src: "/omg/IMG_2649.webp", span: "col-span-2 row-span-2" },
+  { key: "vip_featured", src: "/omg/IMG_2638.webp", span: "col-span-2 row-span-2" },
+  { key: "premium_featured", src: "/omg/IMG_2691.webp", span: "col-span-1 row-span-2" },
+  { key: "pro_zone", src: "/omg/pro.webp", span: "col-span-1 row-span-1" },
+  { key: "gamerparking_2", src: "/omg/IMG_2646.webp", span: "col-span-2 row-span-1" },
+  { key: "standard_featured", src: "/omg/IMG_2642.webp", span: "col-span-1 row-span-1" },
   {
     key: "pszone2",
-    src: "/pszone2.webp",
+    src: "/omg/IMG_2634.webp",
     span: "col-span-1 row-span-1 max-md:row-span-2",
   },
-  { key: "standart_3", src: "/standart_3.webp", span: "col-span-1 row-span-2" },
-  { key: "standart_2", src: "/standart_2.webp", span: "col-span-2 row-span-1" },
+  { key: "lounge_2", src: "/omg/IMG_2715.webp", span: "col-span-1 row-span-1" },
+  { key: "standart_3", src: "/omg/IMG_2642.webp", span: "col-span-1 row-span-2" },
+  { key: "standart_2", src: "/omg/IMG_2644.webp", span: "col-span-2 row-span-1" },
   {
     key: "standart_4",
-    src: "/standart_4.webp",
+    src: "/omg/IMG_2645.webp",
     span: "col-span-1 row-span-1 max-md:col-span-2",
   },
   {
     key: "standart_room",
-    src: "/standart_room.webp",
+    src: "/omg/IMG_2646.webp",
     span: "col-span-1 row-span-1",
   },
   {
@@ -194,6 +199,12 @@ export const GALLERY_TILES: { key: string; src: string; span: string }[] = [
     src: "/gamerparking.webp",
     span: "col-span-2 row-span-2",
   },
-  { key: "pszone", src: "/pszone.webp", span: "col-span-1 row-span-1" },
-  { key: "standart_5", src: "/standart_5.webp", span: "col-span-1 row-span-1" },
+  { key: "pszone", src: "/omg/IMG_2647.webp", span: "col-span-1 row-span-1" },
+  { key: "standart_5", src: "/omg/IMG_2651.webp", span: "col-span-1 row-span-1" },
+  { key: "premium_1", src: "/omg/IMG_2691.webp", span: "col-span-1 row-span-2" },
+  { key: "premium_2", src: "/omg/IMG_2702.webp", span: "col-span-1 row-span-2" },
+  { key: "pro_zone_2", src: "/omg/IMG_2706.webp", span: "col-span-1 row-span-2" },
+  { key: "pro_zone_3", src: "/omg/IMG_2710.webp", span: "col-span-1 row-span-2" },
+  { key: "ps_zone_4", src: "/omg/IMG_2628.webp", span: "col-span-1 row-span-2" },
+  { key: "ps_zone_5", src: "/omg/IMG_2636.webp", span: "col-span-1 row-span-2" },
 ];

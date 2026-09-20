@@ -1,13 +1,41 @@
 "use client";
-import Image from "next/image";
 import React from "react";
-import { CATEGORY_ICONS, CATEGORY_TAB_KEYS } from "@/data/menu";
+import {
+  Beef,
+  Coffee,
+  CupSoda,
+  Droplet,
+  IceCreamBowl,
+  Pizza,
+  Salad,
+  Sandwich,
+  Soup,
+  Utensils,
+  type LucideIcon,
+} from "lucide-react";
+import { CATEGORY_TAB_KEYS } from "@/data/menu";
 import { useDragScroll } from "@/hooks/useDragScroll";
 import { useI18n } from "@/i18n/I18nProvider";
 
 type MenuCategoryProps = {
   active: string;
   onChange: (key: string) => void;
+};
+
+const CATEGORY_ICONS: Record<string, LucideIcon> = {
+  all: Utensils,
+  pizza: Pizza,
+  sandwich: Sandwich,
+  burger: Beef,
+  roll: Sandwich,
+  pasta: Utensils,
+  salads: Salad,
+  soups: Soup,
+  snacks: Utensils,
+  milkshake: IceCreamBowl,
+  drinks: CupSoda,
+  coffee: Coffee,
+  sauces: Droplet,
 };
 
 export const MenuCategory = ({ active, onChange }: MenuCategoryProps) => {
@@ -23,7 +51,7 @@ export const MenuCategory = ({ active, onChange }: MenuCategoryProps) => {
       style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
     >
       {CATEGORY_TAB_KEYS.map((key) => {
-        const icon = CATEGORY_ICONS[key];
+        const Icon = CATEGORY_ICONS[key];
         return (
           <button
             key={key}
@@ -35,15 +63,7 @@ export const MenuCategory = ({ active, onChange }: MenuCategoryProps) => {
                 : "bg-boxColor text-white hover:bg-mainRed/80"
             }`}
           >
-            {icon && (
-              <Image
-                src={icon}
-                alt=""
-                width={32}
-                height={32}
-                className="w-8 h-8 object-contain"
-              />
-            )}
+            <Icon aria-hidden="true" size={30} strokeWidth={1.8} />
             <span className="text-xs font-semibold whitespace-nowrap">
               {t.menu.categories[key as keyof typeof t.menu.categories]}
             </span>

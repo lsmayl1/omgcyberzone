@@ -114,16 +114,17 @@
     "categories": {
       "all": "All",
       "pizza": "Pizza",
+      "sandwich": "Sandwiches",
       "burger": "Burgers",
       "roll": "Rolls",
-      "sandwich": "Sandwiches",
       "pasta": "Pasta",
       "salads": "Salads",
+      "soups": "Soups",
       "snacks": "Snacks",
-      "sweets": "Desserts",
+      "milkshake": "Milkshakes",
       "drinks": "Drinks",
       "coffee": "Coffee",
-      "kalyan": "Hookah"
+      "sauces": "Sauces"
     },
     "units": {
       "cm": "cm",
@@ -133,9 +134,8 @@
       "pcs": "pcs"
     },
     "sizeLabels": {
-      "standard": "Standard",
-      "double": "Double",
-      "premium": "Premium"
+      "medium": "Medium",
+      "large": "Large"
     }
   },
   "menuPage": {
@@ -171,8 +171,14 @@
   },
   "gallery": {
     "heading": "Gallery",
+    "showAll": "See all 20 photos",
+    "showLess": "Show less",
     "alts": {
       "lounge": "Lounge area with hookah",
+      "lounge_2": "Lounge seating area",
+      "vip_featured": "VIP gaming area",
+      "premium_featured": "Premium gaming area",
+      "standard_featured": "STANDART gaming area",
       "pro_zone": "PRO zone gaming stations",
       "ps_zone_1": "PlayStation 5 area with sofas",
       "ps_zone_2": "PlayStation 5 screen in the lounge seating",
@@ -183,8 +189,15 @@
       "standart_4": "Club interior",
       "standart_room": "STANDART zone",
       "gamerparking": "General view of the club",
+      "gamerparking_2": "General view of the club",
       "pszone": "PlayStation area sofas",
-      "standart_5": "Gamer workstation"
+      "standart_5": "Gamer workstation",
+      "premium_1": "Premium gaming zone",
+      "premium_2": "Premium gaming station",
+      "pro_zone_2": "PRO gaming zone",
+      "pro_zone_3": "PRO gaming station",
+      "ps_zone_4": "PlayStation 5 area",
+      "ps_zone_5": "PlayStation 5 gaming area"
     }
   },
   "roomAlts": {
@@ -226,7 +239,16 @@
   },
   "modal": {
     "title": "Booking",
-    "close": "Close"
+    "close": "Close",
+    "name": "Name",
+    "phone": "Phone",
+    "date": "Date",
+    "time": "Time",
+    "guests": "Guests",
+    "room": "Area",
+    "submit": "Continue in WhatsApp",
+    "success": "Your booking details are ready in WhatsApp.",
+    "directContact": "Or contact us directly"
   },
   "plansPage": {
     "heading": "Gaming PCs",

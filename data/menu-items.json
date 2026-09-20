@@ -2,20 +2,56 @@
   {
     "id": 1,
     "category": "pizza",
-    "image": "/menu-food/pizza-bbq-chicken.avif",
+    "image": "/menu-food/pizza-margherita.webp",
     "isPopular": true,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца BBQ с курицей",
-      "en": "BBQ Chicken Pizza",
-      "az": "BBQ toyuqlu pizza",
-      "tr": "BBQ tavuklu pizza"
+      "ru": "Пицца Маргарита",
+      "en": "Margherita Pizza",
+      "az": "Pizza Marqarita",
+      "tr": "Margarita Pizza"
     },
     "description": {
-      "ru": "Соус барбекю, сыр гауда, сыр чеддер, лук, перец, курица",
-      "en": "Barbecue sauce, gouda, cheddar, onion, pepper, chicken",
-      "az": "Barbekyu sousu, qauda pendiri, çedder pendiri, soğan, bibər, toyuq",
-      "tr": "Barbekü sos, gouda peyniri, cheddar peyniri, soğan, biber, tavuk"
+      "ru": "Соус для пиццы, сыр Моцарелла",
+      "en": "Pizza sauce, Mozzarella cheese",
+      "az": "Pizza sous, Mozzarella pendiri",
+      "tr": "Pizza sosu, mozzarella peyniri"
+    },
+    "sizes": [
+      {
+        "amount": 25,
+        "unit": "cm",
+        "price": "10.00 ₼"
+      },
+      {
+        "amount": 30,
+        "unit": "cm",
+        "price": "15.00 ₼"
+      },
+      {
+        "amount": 35,
+        "unit": "cm",
+        "price": "20.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "pizza",
+    "image": "/menu-food/pizza-pepperoni.webp",
+    "isPopular": true,
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Пицца Пепперони",
+      "en": "Pepperoni Pizza",
+      "az": "Pizza Pepperoni",
+      "tr": "Pepperoni Pizza"
+    },
+    "description": {
+      "ru": "Соус для пиццы, сыр Гауда, пепперони",
+      "en": "Pizza sauce, Gouda cheese, Pepperoni",
+      "az": "Pizza sous, Qauda pendiri, Pepperoni",
+      "tr": "Pizza sosu, gouda peyniri, pepperoni"
     },
     "sizes": [
       {
@@ -26,67 +62,31 @@
       {
         "amount": 30,
         "unit": "cm",
-        "price": "15.00 ₼"
+        "price": "19.00 ₼"
       },
       {
         "amount": 35,
         "unit": "cm",
-        "price": "18.00 ₼"
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "category": "pizza",
-    "image": "/menu-food/pizza-peperoni.avif",
-    "isPopular": true,
-    "selectedSizeIndex": 0,
-    "name": {
-      "ru": "Пепперони классика",
-      "en": "Pepperoni Classic",
-      "az": "Klassik peperoni",
-      "tr": "Klasik Pepperoni"
-    },
-    "description": {
-      "ru": "Томатный соус, моцарелла, пепперони, орегано",
-      "en": "Tomato sauce, mozzarella, pepperoni, oregano",
-      "az": "Pomidor sousu, motsarella, peperoni, orequano",
-      "tr": "Domates sos, mozzarella, pepperoni, kekik"
-    },
-    "sizes": [
-      {
-        "amount": 25,
-        "unit": "cm",
-        "price": "14.00 ₼"
-      },
-      {
-        "amount": 30,
-        "unit": "cm",
-        "price": "17.00 ₼"
-      },
-      {
-        "amount": 35,
-        "unit": "cm",
-        "price": "20.00 ₼"
+        "price": "24.00 ₼"
       }
     ]
   },
   {
     "id": 3,
     "category": "pizza",
-    "image": "/menu-food/pizza-marqarita.avif",
+    "image": "/menu-food/pizza-vegetarian.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Маргарита",
-      "en": "Margherita",
-      "az": "Marqarita",
-      "tr": "Margherita"
+      "ru": "Вегетарианская пицца",
+      "en": "Vegetarian Pizza",
+      "az": "Vegetarian Pizza",
+      "tr": "Vejetaryen Pizza"
     },
     "description": {
-      "ru": "Томатный соус, моцарелла, базилик, оливковое масло",
-      "en": "Tomato sauce, mozzarella, basil, olive oil",
-      "az": "Pomidor sousu, motsarella, reyhan, zeytun yağı",
-      "tr": "Domates sos, mozzarella, fesleğen, zeytinyağı"
+      "ru": "Соус для пиццы, сыр моцарелла, лук, помидор, грибы, перец, оливки",
+      "en": "Pizza sauce, Mozzarella cheese, Onion, tomato, Mushroom, Pepper, Olive",
+      "az": "Pizza sous, Mozzarella pendiri, Soğan,pomidor, Göbələk, Bibər, Zeytun",
+      "tr": "Pizza sosu, mozzarella peyniri, soğan, domates, mantar, biber, zeytin"
     },
     "sizes": [
       {
@@ -97,149 +97,7 @@
       {
         "amount": 30,
         "unit": "cm",
-        "price": "14.00 ₼"
-      },
-      {
-        "amount": 35,
-        "unit": "cm",
         "price": "16.00 ₼"
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "category": "pizza",
-    "image": "/menu-food/pizza-hawaiian.avif",
-    "selectedSizeIndex": 0,
-    "name": {
-      "ru": "Гавайская",
-      "en": "Hawaiian",
-      "az": "Havay",
-      "tr": "Hawaii"
-    },
-    "description": {
-      "ru": "Ветчина, ананас, моцарелла, томатный соус",
-      "en": "Ham, pineapple, mozzarella, tomato sauce",
-      "az": "Vetçina, ananas, motsarella, pomidor sousu",
-      "tr": "Jambon, ananas, mozzarella, domates sos"
-    },
-    "sizes": [
-      {
-        "amount": 25,
-        "unit": "cm",
-        "price": "12.00 ₼"
-      },
-      {
-        "amount": 30,
-        "unit": "cm",
-        "price": "15.00 ₼"
-      },
-      {
-        "amount": 35,
-        "unit": "cm",
-        "price": "18.00 ₼"
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "category": "pizza",
-    "image": "/menu-food/pizza-vegetarian.avif",
-    "selectedSizeIndex": 0,
-    "name": {
-      "ru": "Вегетарианская",
-      "en": "Vegetarian",
-      "az": "Vegetarian",
-      "tr": "Vejetaryen"
-    },
-    "description": {
-      "ru": "Шампиньоны, перец, оливки, томаты, моцарелла",
-      "en": "Mushrooms, pepper, olives, tomatoes, mozzarella",
-      "az": "Şampinyon, bibər, zeytun, pomidor, motsarella",
-      "tr": "Mantar, biber, zeytin, domates, mozzarella"
-    },
-    "sizes": [
-      {
-        "amount": 25,
-        "unit": "cm",
-        "price": "12.00 ₼"
-      },
-      {
-        "amount": 30,
-        "unit": "cm",
-        "price": "15.00 ₼"
-      },
-      {
-        "amount": 35,
-        "unit": "cm",
-        "price": "18.00 ₼"
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "category": "pizza",
-    "image": "/menu-food/pizza-capricciossa.avif",
-    "isPopular": true,
-    "selectedSizeIndex": 0,
-    "name": {
-      "ru": "Каприччоза",
-      "en": "Capricciosa",
-      "az": "Kaperiççoza",
-      "tr": "Capricciosa"
-    },
-    "description": {
-      "ru": "Ветчина, шампиньоны, артишоки, оливки, моцарелла",
-      "en": "Ham, mushrooms, artichokes, olives, mozzarella",
-      "az": "Vetçina, şampinyon, ənginar, zeytun, motsarella",
-      "tr": "Jambon, mantar, enginar, zeytin, mozzarella"
-    },
-    "sizes": [
-      {
-        "amount": 25,
-        "unit": "cm",
-        "price": "13.00 ₼"
-      },
-      {
-        "amount": 30,
-        "unit": "cm",
-        "price": "16.00 ₼"
-      },
-      {
-        "amount": 35,
-        "unit": "cm",
-        "price": "19.00 ₼"
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "category": "pizza",
-    "image": "/menu-food/pizza-mexico.avif",
-    "isSpicy": true,
-    "selectedSizeIndex": 0,
-    "name": {
-      "ru": "Мексиканская",
-      "en": "Mexican",
-      "az": "Meksika",
-      "tr": "Meksika"
-    },
-    "description": {
-      "ru": "Халапеньо, фарш, фасоль, кукуруза, соус чили",
-      "en": "Jalapeño, minced meat, beans, corn, chilli sauce",
-      "az": "Xalapenyo, qiymə, lobya, qarğıdalı, çili sousu",
-      "tr": "Jalapeño, kıyma, fasulye, mısır, acı biber sosu"
-    },
-    "sizes": [
-      {
-        "amount": 25,
-        "unit": "cm",
-        "price": "14.00 ₼"
-      },
-      {
-        "amount": 30,
-        "unit": "cm",
-        "price": "17.00 ₼"
       },
       {
         "amount": 35,
@@ -249,56 +107,21 @@
     ]
   },
   {
-    "id": 8,
+    "id": 4,
     "category": "pizza",
-    "image": "/menu-food/pizza-tuna.avif",
+    "image": "/menu-food/pizza-capricciosa.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "С тунцом",
-      "en": "Tuna Pizza",
-      "az": "Tunes balığı ilə",
-      "tr": "Ton balıklı"
+      "ru": "Пицца Каприччоза",
+      "en": "Capricciosa Pizza",
+      "az": "Capricciosa Pizza",
+      "tr": "Capricciosa Pizza"
     },
     "description": {
-      "ru": "Тунец, моцарелла, лук, томаты, оливки",
-      "en": "Tuna, mozzarella, onion, tomatoes, olives",
-      "az": "Tunes balığı, motsarella, soğan, pomidor, zeytun",
-      "tr": "Ton balığı, mozzarella, soğan, domates, zeytin"
-    },
-    "sizes": [
-      {
-        "amount": 25,
-        "unit": "cm",
-        "price": "15.00 ₼"
-      },
-      {
-        "amount": 30,
-        "unit": "cm",
-        "price": "18.00 ₼"
-      },
-      {
-        "amount": 35,
-        "unit": "cm",
-        "price": "21.00 ₼"
-      }
-    ]
-  },
-  {
-    "id": 9,
-    "category": "pizza",
-    "image": "/menu-food/pizza-chicken.avif",
-    "selectedSizeIndex": 0,
-    "name": {
-      "ru": "С курицей",
-      "en": "Chicken Pizza",
-      "az": "Toyuqlu",
-      "tr": "Tavuklu"
-    },
-    "description": {
-      "ru": "Куриное филе, шампиньоны, сыр, сливочный соус",
-      "en": "Chicken fillet, mushrooms, cheese, cream sauce",
-      "az": "Toyuq filesi, şampinyon, pendir, qaymaqlı sous",
-      "tr": "Tavuk fileto, mantar, peynir, kremalı sos"
+      "ru": "Соус для пиццы, сыр Гауда, ветчина, грибы, оливки",
+      "en": "Pizza sauce, Gouda cheese, Ham, Mushrooms, Olives",
+      "az": "Pizza sous, Qauda pendiri, Vetçina, Göbələk, Zeytun",
+      "tr": "Pizza sosu, gouda peyniri, jambon, mantar, zeytin"
     },
     "sizes": [
       {
@@ -309,73 +132,250 @@
       {
         "amount": 30,
         "unit": "cm",
-        "price": "16.00 ₼"
+        "price": "19.00 ₼"
       },
       {
         "amount": 35,
         "unit": "cm",
+        "price": "24.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "category": "pizza",
+    "image": "/menu-food/pizza-coco-mix.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Пицца Коко Микс",
+      "en": "Coco Mix Pizza",
+      "az": "Coco Miks Pizza",
+      "tr": "Coco Mix Pizza"
+    },
+    "description": {
+      "ru": "Соус для пиццы, сыр Гауда, помидор, перец, оливки, курица, кукуруза",
+      "en": "Pizza sauce, Gouda cheese, Tomato, Pepper, Olives, Chicken, Corn",
+      "az": "Pizza sous, Qauda pendiri, Pomidor, Bibər, Zeytun, Toyuq əti, Qarğıdalı",
+      "tr": "Pizza sosu, gouda peyniri, domates, biber, zeytin, tavuk, mısır"
+    },
+    "sizes": [
+      {
+        "amount": 25,
+        "unit": "cm",
+        "price": "14.00 ₼"
+      },
+      {
+        "amount": 30,
+        "unit": "cm",
         "price": "19.00 ₼"
+      },
+      {
+        "amount": 35,
+        "unit": "cm",
+        "price": "25.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "category": "pizza",
+    "image": "/menu-food/pizza-bbq-chicken.webp",
+    "isPopular": true,
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Пицца Барбекю с курицей",
+      "en": "BBQ Chicken Pizza",
+      "az": "Toyuq Barbekyu Pizza",
+      "tr": "Barbekü Tavuklu Pizza"
+    },
+    "description": {
+      "ru": "Соус для пиццы, сыр моцарелла, грибы, курица, соус барбекю",
+      "en": "Pizza sauce, Mozzarella cheese, Mushrooms, Chicken, BBQ sauce",
+      "az": "Pizza sous,Mozzarella pendiri, Göbələk, Toyuq əti, BBQ sous",
+      "tr": "Pizza sosu, mozzarella peyniri, mantar, tavuk, BBQ sos"
+    },
+    "sizes": [
+      {
+        "amount": 25,
+        "unit": "cm",
+        "price": "13.00 ₼"
+      },
+      {
+        "amount": 30,
+        "unit": "cm",
+        "price": "18.00 ₼"
+      },
+      {
+        "amount": 35,
+        "unit": "cm",
+        "price": "24.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "category": "pizza",
+    "image": "/menu-food/pizza-pesto.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Пицца Песто",
+      "en": "Pesto Pizza",
+      "az": "Pesto Pizza",
+      "tr": "Pesto Pizza"
+    },
+    "description": {
+      "ru": "Соус песто, сыр Гауда, пармезан, лук, перец, помидор, кукуруза",
+      "en": "Pesto sauce, Gouda cheese, Parmesan, Onion, Pepper, Tomato, Corn",
+      "az": "Pesto sous, Qauda pendiri, Parmesan, Soğan, Bibər, Pomidor, Qarğıdalı",
+      "tr": "Pesto sos, gouda peyniri, parmesan, soğan, biber, domates, mısır"
+    },
+    "sizes": [
+      {
+        "amount": 25,
+        "unit": "cm",
+        "price": "16.00 ₼"
+      },
+      {
+        "amount": 30,
+        "unit": "cm",
+        "price": "23.00 ₼"
+      },
+      {
+        "amount": 35,
+        "unit": "cm",
+        "price": "29.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "category": "pizza",
+    "image": "/menu-food/pizza-mexican.webp",
+    "isSpicy": true,
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Мексиканская пицца",
+      "en": "Mexican Pizza",
+      "az": "Meksika Pizza",
+      "tr": "Meksika Pizza"
+    },
+    "description": {
+      "ru": "Соус для пиццы, сыр Гауда, перец, помидор, халапеньо, говядина",
+      "en": "Pizza sauce, Gouda cheese, Pepper, Tomato, Jalapeño, Beef",
+      "az": "Pizza sous, Qauda pendiri, Bibər, Pomidor, Jalapeño, Mal əti",
+      "tr": "Pizza sosu, gouda peyniri, biber, domates, jalapeño, dana eti"
+    },
+    "sizes": [
+      {
+        "amount": 25,
+        "unit": "cm",
+        "price": "13.00 ₼"
+      },
+      {
+        "amount": 30,
+        "unit": "cm",
+        "price": "22.00 ₼"
+      },
+      {
+        "amount": 35,
+        "unit": "cm",
+        "price": "28.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "category": "pizza",
+    "image": "/menu-food/pizza-cheesy-pizzy.webp",
+    "isPopular": true,
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Пицца Cheesy Pizzy",
+      "en": "Cheesy Pizzy Pizza",
+      "az": "Cheesy Pizzy Pizza",
+      "tr": "Cheesy Pizzy Pizza"
+    },
+    "description": {
+      "ru": "Специальный соус, сыр гауда, голубой сыр, чеддер, пармезан",
+      "en": "Special sauce, gouda, blue cheese, cheddar, parmesan",
+      "az": "Xüsusi sous, Qauda pendiri, Kifli pendir, Çeddar, Parmesan,",
+      "tr": "Özel sos, gouda peyniri, mavi peynir, cheddar, parmesan"
+    },
+    "sizes": [
+      {
+        "amount": 25,
+        "unit": "cm",
+        "price": "13.00 ₼"
+      },
+      {
+        "amount": 30,
+        "unit": "cm",
+        "price": "20.00 ₼"
+      },
+      {
+        "amount": 35,
+        "unit": "cm",
+        "price": "26.00 ₼"
       }
     ]
   },
   {
     "id": 10,
     "category": "pizza",
-    "image": "/menu-food/pizza-sosisli.avif",
+    "image": "/menu-food/pizza-tuna.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "С сосисками",
-      "en": "Sausage Pizza",
-      "az": "Sosiskalı",
-      "tr": "Sosisli"
+      "ru": "Пицца с тунцом",
+      "en": "Tuna Bliss Pizza",
+      "az": "Tuna Bliss Pizza",
+      "tr": "Ton Balıklı Pizza"
     },
     "description": {
-      "ru": "Сосиски, сыр моцарелла, томаты, соус",
-      "en": "Sausages, mozzarella, tomatoes, sauce",
-      "az": "Sosiska, motsarella pendiri, pomidor, sous",
-      "tr": "Sosis, mozzarella peyniri, domates, sos"
+      "ru": "Соус для пиццы, сыр Гауда, грибы, оливки, тунец",
+      "en": "Pizza sauce, Gouda cheese, Mushrooms, Olives, Tuna",
+      "az": "Pizza sous, Qauda pendiri, Göbələk, Zeytun, Tuna balığı",
+      "tr": "Pizza sosu, gouda peyniri, mantar, zeytin, ton balığı"
     },
     "sizes": [
       {
         "amount": 25,
         "unit": "cm",
-        "price": "12.00 ₼"
+        "price": "14.00 ₼"
       },
       {
         "amount": 30,
         "unit": "cm",
-        "price": "15.00 ₼"
+        "price": "21.00 ₼"
       },
       {
         "amount": 35,
         "unit": "cm",
-        "price": "18.00 ₼"
+        "price": "27.00 ₼"
       }
     ]
   },
   {
     "id": 11,
     "category": "pizza",
-    "image": "/menu-food/pizza-et.avif",
-    "isPopular": true,
+    "image": "/menu-food/pizza-chicken.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Мясная",
-      "en": "Meat Pizza",
-      "az": "Ətli",
-      "tr": "Etli"
+      "ru": "Пицца с курицей",
+      "en": "Chicken Pizza",
+      "az": "Toyuqlu Pizza",
+      "tr": "Tavuklu Pizza"
     },
     "description": {
-      "ru": "Пепперони, ветчина, бекон, фарш, моцарелла",
-      "en": "Pepperoni, ham, bacon, minced meat, mozzarella",
-      "az": "Peperoni, vetçina, bekon, qiymə, motsarella",
-      "tr": "Pepperoni, jambon, pastırma, kıyma, mozzarella"
+      "ru": "Соус для пиццы, сыр Гауда, грибы, курица",
+      "en": "Pizza sauce, Gouda cheese, Mushrooms, Chicken",
+      "az": "Pizza sous, Qauda pendiri, Göbələk, Toyuq əti",
+      "tr": "Pizza sosu, gouda peyniri, mantar, tavuk"
     },
     "sizes": [
       {
         "amount": 25,
         "unit": "cm",
-        "price": "16.00 ₼"
+        "price": "14.00 ₼"
       },
       {
         "amount": 30,
@@ -392,61 +392,25 @@
   {
     "id": 12,
     "category": "pizza",
-    "image": "/menu-food/pizza-wow.avif",
-    "isPopular": true,
+    "image": "/menu-food/pizza-sausage.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Вау пицца",
-      "en": "Wow Pizza",
-      "az": "Vau pizza",
-      "tr": "Wow pizza"
+      "ru": "Пицца с колбасками",
+      "en": "Sausage Pizza",
+      "az": "Sosisli Pizza",
+      "tr": "Sosisli Pizza"
     },
     "description": {
-      "ru": "Фирменный рецепт: курица, бекон, халапеньо, сыр",
-      "en": "Signature recipe: chicken, bacon, jalapeño, cheese",
-      "az": "Xüsusi resept: toyuq, bekon, xalapenyo, pendir",
-      "tr": "Özel tarif: tavuk, pastırma, jalapeño, peynir"
+      "ru": "Соус для пиццы, сыр моцарелла, лук, перец, колбаса",
+      "en": "Pizza sauce, Mozzarella cheese, Onion, Pepper, Sausage",
+      "az": "Pizza sous, Mozzarella pendiri, Soğan, Bibər, Sosis",
+      "tr": "Pizza sosu, mozzarella peyniri, soğan, biber, sosis"
     },
     "sizes": [
       {
         "amount": 25,
         "unit": "cm",
-        "price": "15.00 ₼"
-      },
-      {
-        "amount": 30,
-        "unit": "cm",
-        "price": "18.00 ₼"
-      },
-      {
-        "amount": 35,
-        "unit": "cm",
-        "price": "22.00 ₼"
-      }
-    ]
-  },
-  {
-    "id": 13,
-    "category": "pizza",
-    "image": "/menu-food/pizza-qrandmix.avif",
-    "selectedSizeIndex": 0,
-    "name": {
-      "ru": "Гранд микс",
-      "en": "Grand Mix",
-      "az": "Qrand miks",
-      "tr": "Grand Mix"
-    },
-    "description": {
-      "ru": "Ассорти: пепперони, ветчина, грибы, оливки",
-      "en": "Assorted: pepperoni, ham, mushrooms, olives",
-      "az": "Assorti: peperoni, vetçina, göbələk, zeytun",
-      "tr": "Karışık: pepperoni, jambon, mantar, zeytin"
-    },
-    "sizes": [
-      {
-        "amount": 25,
-        "unit": "cm",
-        "price": "17.00 ₼"
+        "price": "14.00 ₼"
       },
       {
         "amount": 30,
@@ -461,127 +425,163 @@
     ]
   },
   {
-    "id": 14,
+    "id": 13,
     "category": "pizza",
-    "image": "/menu-food/pizza-sezar.avif",
+    "image": "/menu-food/pizza-meat.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Цезарь пицца",
-      "en": "Caesar Pizza",
-      "az": "Sezar pizza",
-      "tr": "Sezar pizza"
+      "ru": "Мясная пицца",
+      "en": "Meaty Pizza",
+      "az": "Ətli Pizza",
+      "tr": "Etli Pizza"
     },
     "description": {
-      "ru": "Курица, пармезан, салат ромэн, соус цезарь",
-      "en": "Chicken, parmesan, romaine lettuce, caesar sauce",
-      "az": "Toyuq, parmezan, romen kahısı, sezar sousu",
-      "tr": "Tavuk, parmesan, marul, sezar sos"
+      "ru": "Специальный соус, сыр Гауда, помидор, лук, говядина",
+      "en": "Special sauce, Gouda cheese, Tomato, Onion, Beef",
+      "az": "Xüsusi sous, Qauda pendiri, Pomidor, Soğan, Mal əti",
+      "tr": "Özel sos, gouda peyniri, domates, soğan, dana eti"
     },
     "sizes": [
       {
         "amount": 25,
         "unit": "cm",
-        "price": "14.00 ₼"
+        "price": "17.00 ₼"
       },
       {
         "amount": 30,
         "unit": "cm",
-        "price": "17.00 ₼"
+        "price": "23.00 ₼"
       },
       {
         "amount": 35,
         "unit": "cm",
-        "price": "20.00 ₼"
+        "price": "28.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "category": "pizza",
+    "image": "/menu-food/pizza-wow.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Пицца Вау",
+      "en": "Wow Pizza",
+      "az": "Wow Pizza",
+      "tr": "Wow Pizza"
+    },
+    "description": {
+      "ru": "Специальный соус, сыр Гауда, пепперони, грибы, авокадо, пармезан, курица",
+      "en": "Special sauce, Gouda cheese, Pepperoni, Mushrooms, Avocado, Parmesan, Chicken",
+      "az": "Xüsusi sous, Qauda pendiri, Pepperoni, Göbələk, Avokado, Parmesan, Toyuq",
+      "tr": "Özel sos, gouda peyniri, pepperoni, mantar, avokado, parmesan, tavuk"
+    },
+    "sizes": [
+      {
+        "amount": 25,
+        "unit": "cm",
+        "price": "17.00 ₼"
+      },
+      {
+        "amount": 30,
+        "unit": "cm",
+        "price": "24.00 ₼"
+      },
+      {
+        "amount": 35,
+        "unit": "cm",
+        "price": "30.00 ₼"
       }
     ]
   },
   {
     "id": 15,
     "category": "pizza",
-    "image": "/menu-food/pizza-mexican-chicken.avif",
-    "isSpicy": true,
+    "image": "/menu-food/pizza-grand-mix.webp",
+    "isPopular": true,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Мексиканская с курицей",
-      "en": "Mexican with Chicken",
-      "az": "Toyuqlu meksika",
-      "tr": "Tavuklu Meksika"
+      "ru": "Пицца Гранд Микс",
+      "en": "Grand Mix Pizza",
+      "az": "Qrand Miks Pizza",
+      "tr": "Grand Mix Pizza"
     },
     "description": {
-      "ru": "Курица, халапеньо, кукуруза, фасоль, чипотле",
-      "en": "Chicken, jalapeño, corn, beans, chipotle",
-      "az": "Toyuq, xalapenyo, qarğıdalı, lobya, çipotle",
-      "tr": "Tavuk, jalapeño, mısır, fasulye, chipotle"
+      "ru": "Соус для пиццы, сыр Гауда, пепперони, колбаски, грибы, перец, оливки, курица",
+      "en": "Pizza sauce, Gouda cheese, Pepperoni, Sausage, Mushrooms, Peppers, Olives, Chicken",
+      "az": "Pizza sous, Qauda pendiri, Pepperoni, Sosis, Göbələk, Bibər, Zeytun, Toyuq əti",
+      "tr": "Pizza sosu, gouda peyniri, pepperoni, sosis, mantar, biber, zeytin, tavuk"
     },
     "sizes": [
       {
         "amount": 25,
         "unit": "cm",
-        "price": "14.00 ₼"
+        "price": "17.00 ₼"
       },
       {
         "amount": 30,
         "unit": "cm",
-        "price": "17.00 ₼"
+        "price": "24.00 ₼"
       },
       {
         "amount": 35,
         "unit": "cm",
-        "price": "20.00 ₼"
+        "price": "30.00 ₼"
       }
     ]
   },
   {
     "id": 16,
     "category": "pizza",
-    "image": "/menu-food/pizza-naggets.avif",
+    "image": "/menu-food/pizza-caesar.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "С наггетсами",
-      "en": "Nuggets Pizza",
-      "az": "Naggetsli",
-      "tr": "Nuggetlı"
+      "ru": "Пицца Цезарь",
+      "en": "Caesar Pizza",
+      "az": "Pizza Sezar",
+      "tr": "Sezar Pizza"
     },
     "description": {
-      "ru": "Наггетсы, сыр, томаты, соус ранч",
-      "en": "Nuggets, cheese, tomatoes, ranch sauce",
-      "az": "Naggets, pendir, pomidor, ranç sousu",
-      "tr": "Nugget, peynir, domates, ranch sos"
+      "ru": "Соус Цезарь, сыр Гауда, айсберг, курица, помидоры черри, пармезан",
+      "en": "Caesar sauce, Gouda cheese, Iceberg, Chicken, Cherry tomatoes, Parmesan",
+      "az": "Sezar sous, Qauda pendiri, Aysberq, Toyuq əti, Çeri pomidor, Parmesan",
+      "tr": "Sezar sos, gouda peyniri, aysberg, tavuk, çeri domates, parmesan"
     },
     "sizes": [
       {
         "amount": 25,
         "unit": "cm",
-        "price": "13.00 ₼"
+        "price": "14.00 ₼"
       },
       {
         "amount": 30,
         "unit": "cm",
-        "price": "16.00 ₼"
+        "price": "21.00 ₼"
       },
       {
         "amount": 35,
         "unit": "cm",
-        "price": "19.00 ₼"
+        "price": "27.00 ₼"
       }
     ]
   },
   {
     "id": 17,
     "category": "pizza",
-    "image": "/menu-food/pizza-yunan.avif",
+    "image": "/menu-food/pizza-mexican-chicken.webp",
+    "isSpicy": true,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Греческая",
-      "en": "Greek",
-      "az": "Yunan",
-      "tr": "Yunan"
+      "ru": "Мексиканская пицца с курицей",
+      "en": "Mexican Chicken Pizza",
+      "az": "Mexican Chicken",
+      "tr": "Meksika Tavuklu Pizza"
     },
     "description": {
-      "ru": "Фета, оливки, томаты, огурцы, орегано",
-      "en": "Feta, olives, tomatoes, cucumbers, oregano",
-      "az": "Feta, zeytun, pomidor, xiyar, orequano",
-      "tr": "Beyaz peynir, zeytin, domates, salatalık, kekik"
+      "ru": "Соус для пиццы, грибы, перец, сыр Гауда, курица, помидор, халапеньо",
+      "en": "Pizza sauce, Mushrooms, Peppers, Gouda cheese, Chicken, Tomato, Jalapeño",
+      "az": "Pizza sous, Göbələk, Bibər, Qauda pendiri, Toyuq əti, Pomidor, Jalapeño",
+      "tr": "Pizza sosu, mantar, biber, gouda peyniri, tavuk, domates, jalapeño"
     },
     "sizes": [
       {
@@ -592,31 +592,31 @@
       {
         "amount": 30,
         "unit": "cm",
-        "price": "16.00 ₼"
+        "price": "20.00 ₼"
       },
       {
         "amount": 35,
         "unit": "cm",
-        "price": "19.00 ₼"
+        "price": "26.00 ₼"
       }
     ]
   },
   {
     "id": 18,
     "category": "pizza",
-    "image": "/menu-food/pizza-mushroom.avif",
+    "image": "/menu-food/pizza-nuggets.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Грибная",
-      "en": "Mushroom",
-      "az": "Göbələkli",
-      "tr": "Mantarlı"
+      "ru": "Пицца с наггетсами",
+      "en": "Nuggets Pizza",
+      "az": "Naggets Pizza",
+      "tr": "Nuggetlı Pizza"
     },
     "description": {
-      "ru": "Шампиньоны, трюфельное масло, моцарелла, лук",
-      "en": "Mushrooms, truffle oil, mozzarella, onion",
-      "az": "Şampinyon, trüfel yağı, motsarella, soğan",
-      "tr": "Mantar, trüf yağı, mozzarella, soğan"
+      "ru": "Соус для пиццы, наггетсы, грибы, кукуруза, сыр Гауда, помидоры",
+      "en": "Pizza sauce, Nuggets, Mushrooms, Corn, Gouda cheese, Tomato",
+      "az": "Pizza sous, Nuggets, Göbələk, Qarğıdalı, Qauda pendiri, Pomidor",
+      "tr": "Pizza sosu, nugget, mantar, mısır, gouda peyniri, domates"
     },
     "sizes": [
       {
@@ -627,37 +627,37 @@
       {
         "amount": 30,
         "unit": "cm",
-        "price": "17.00 ₼"
+        "price": "21.00 ₼"
       },
       {
         "amount": 35,
         "unit": "cm",
-        "price": "20.00 ₼"
+        "price": "27.00 ₼"
       }
     ]
   },
   {
     "id": 19,
     "category": "pizza",
-    "image": "/menu-food/pizza-bolonyeze.avif",
+    "image": "/menu-food/pizza-greek.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Болоньезе",
-      "en": "Bolognese",
-      "az": "Bolonez",
-      "tr": "Bolonez"
+      "ru": "Греческая пицца",
+      "en": "Greek Pizza",
+      "az": "Yunan Pizzasi",
+      "tr": "Yunan Pizzası"
     },
     "description": {
-      "ru": "Фарш из говядины, томаты, пармезан, базилик",
-      "en": "Beef mince, tomatoes, parmesan, basil",
-      "az": "Mal əti qiyməsi, pomidor, parmezan, reyhan",
-      "tr": "Dana kıyma, domates, parmesan, fesleğen"
+      "ru": "Соус для пиццы, Оливки, Сыр фета, Сыр моцарелла, Помидоры",
+      "en": "Pizza sauce, Olives, Feta cheese, Mozzarella cheese, Tomatoes",
+      "az": "Pizza sous, Zeytun, Feta pendiri, Mozzarella pendiri, Pomidor",
+      "tr": "Pizza sosu, zeytin, feta peyniri, mozzarella peyniri, domates"
     },
     "sizes": [
       {
         "amount": 25,
         "unit": "cm",
-        "price": "14.00 ₼"
+        "price": "12.00 ₼"
       },
       {
         "amount": 30,
@@ -667,27 +667,26 @@
       {
         "amount": 35,
         "unit": "cm",
-        "price": "20.00 ₼"
+        "price": "21.00 ₼"
       }
     ]
   },
   {
     "id": 20,
     "category": "pizza",
-    "image": "/menu-food/pizza-texas.avif",
-    "isSpicy": true,
+    "image": "/menu-food/pizza-mushroom.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Техас",
-      "en": "Texas",
-      "az": "Texas",
-      "tr": "Teksas"
+      "ru": "Грибная пицца",
+      "en": "Mushroom Pizza",
+      "az": "Mushrooms Pizza",
+      "tr": "Mantarlı Pizza"
     },
     "description": {
-      "ru": "Говядина, бекон, халапеньо, лук барбекю",
-      "en": "Beef, bacon, jalapeño, barbecue onion",
-      "az": "Mal əti, bekon, xalapenyo, barbekyu soğanı",
-      "tr": "Dana eti, pastırma, jalapeño, barbekü soğanı"
+      "ru": "Грибной соус, грибы, соленые огурцы, сыр моцарелла, куриное мясо",
+      "en": "Mushroom sauce, Mushrooms, Pickles, Mozzarella cheese, Chicken meat",
+      "az": "Göbələk sous, Göbələk, Turşu xiyar, Mozzarella pendiri, Toyuq əti",
+      "tr": "Mantar sosu, mantar, turşu salatalık, mozzarella peyniri, tavuk"
     },
     "sizes": [
       {
@@ -698,66 +697,66 @@
       {
         "amount": 30,
         "unit": "cm",
-        "price": "18.00 ₼"
+        "price": "22.00 ₼"
       },
       {
         "amount": 35,
         "unit": "cm",
-        "price": "21.00 ₼"
+        "price": "26.00 ₼"
       }
     ]
   },
   {
     "id": 21,
     "category": "pizza",
-    "image": "/menu-food/pizza-cocomix.avif",
+    "image": "/menu-food/pizza-bolognese.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Кокомикс",
-      "en": "Cocomix",
-      "az": "Kokomiks",
-      "tr": "Cocomix"
+      "ru": "Пицца Болоньезе",
+      "en": "Bolognese Pizza",
+      "az": "Bolonyeze Pizza",
+      "tr": "Bolonez Pizza"
     },
     "description": {
-      "ru": "Ветчина, шампиньоны, курица, сыр, сливки",
-      "en": "Ham, mushrooms, chicken, cheese, cream",
-      "az": "Vetçina, şampinyon, toyuq, pendir, qaymaq",
-      "tr": "Jambon, mantar, tavuk, peynir, krema"
+      "ru": "Соус болоньезе, пепперони, сыр гауда, грибы, оливки",
+      "en": "Bolognese sauce, pepperoni, gouda, mushrooms, olives",
+      "az": "Bolanez sous, Pepperoni, Qauda pendiri, Göbələk, Zeytun",
+      "tr": "Bolonez sos, pepperoni, gouda peyniri, mantar, zeytin"
     },
     "sizes": [
       {
         "amount": 25,
         "unit": "cm",
-        "price": "14.00 ₼"
+        "price": "16.00 ₼"
       },
       {
         "amount": 30,
         "unit": "cm",
-        "price": "17.00 ₼"
+        "price": "22.00 ₼"
       },
       {
         "amount": 35,
         "unit": "cm",
-        "price": "20.00 ₼"
+        "price": "27.00 ₼"
       }
     ]
   },
   {
     "id": 22,
     "category": "pizza",
-    "image": "/menu-food/pizza-pesto.avif",
+    "image": "/menu-food/pizza-hawaiian.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Песто",
-      "en": "Pesto",
-      "az": "Pesto",
-      "tr": "Pesto"
+      "ru": "Гавайская пицца",
+      "en": "Hawaiian Pizza",
+      "az": "Hawaiian Pizza",
+      "tr": "Hawaii Pizza"
     },
     "description": {
-      "ru": "Соус песто, моцарелла, томаты черри, пармезан",
-      "en": "Pesto sauce, mozzarella, cherry tomatoes, parmesan",
-      "az": "Pesto sousu, motsarella, çeri pomidor, parmezan",
-      "tr": "Pesto sos, mozzarella, kiraz domates, parmesan"
+      "ru": "Соус для пиццы, ветчина, сыр Гауда, помидор, ананас, курица",
+      "en": "Pizza sauce, Ham, Gouda cheese, Tomato, Pineapple, Chicken",
+      "az": "Pizza sous, Vetçina, Qauda pendiri,Pomidor, Ananas, Toyuq əti",
+      "tr": "Pizza sosu, jambon, gouda peyniri, domates, ananas, tavuk"
     },
     "sizes": [
       {
@@ -768,481 +767,1596 @@
       {
         "amount": 30,
         "unit": "cm",
-        "price": "16.00 ₼"
+        "price": "20.00 ₼"
       },
       {
         "amount": 35,
         "unit": "cm",
-        "price": "19.00 ₼"
+        "price": "24.00 ₼"
       }
     ]
   },
   {
     "id": 23,
     "category": "pizza",
-    "image": "/menu-food/pizza-cheezy-pizzy.avif",
-    "isPopular": true,
+    "image": "/menu-food/pizza-texas.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Сырная пицца",
-      "en": "Cheese Pizza",
-      "az": "Pendirli pizza",
-      "tr": "Peynirli pizza"
+      "ru": "Техасская пицца",
+      "en": "Texas Pizza",
+      "az": "Texas Pizza",
+      "tr": "Teksas Pizza"
     },
     "description": {
-      "ru": "Моцарелла, чеддер, пармезан, сливочный сыр",
-      "en": "Mozzarella, cheddar, parmesan, cream cheese",
-      "az": "Motsarella, çedder, parmezan, qaymaqlı pendir",
-      "tr": "Mozzarella, cheddar, parmesan, krem peynir"
+      "ru": "Соус барбекю, сыр Гауда, колбаса, картофель фри, солёные огурцы",
+      "en": "BBQ sauce, Gouda cheese, Sausage, French fries, Pickles",
+      "az": "BBQ sous, Qauda pendiri, Sosis, Kartof fri, Turşu xiyar",
+      "tr": "BBQ sos, gouda peyniri, sosis, patates kızartması, turşu salatalık"
     },
     "sizes": [
       {
         "amount": 25,
         "unit": "cm",
-        "price": "13.00 ₼"
+        "price": "15.00 ₼"
       },
       {
         "amount": 30,
         "unit": "cm",
-        "price": "16.00 ₼"
+        "price": "22.00 ₼"
       },
       {
         "amount": 35,
         "unit": "cm",
-        "price": "19.00 ₼"
+        "price": "28.00 ₼"
       }
     ]
   },
   {
     "id": 24,
-    "category": "burger",
-    "image": "/menu-food/pizza-peperoni.avif",
-    "isPopular": true,
+    "category": "sandwich",
+    "image": "/menu-food/sandwich-bbq.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Чизбургер",
-      "en": "Cheeseburger",
-      "az": "Çizburger",
-      "tr": "Cheeseburger"
+      "ru": "Сэндвич барбекю",
+      "en": "BBQ Sandwich",
+      "az": "Barbekyu Sendviç",
+      "tr": "Barbekü Sandviç"
     },
     "description": {
-      "ru": "Котлета из говядины, чеддер, лук, томат, соус",
-      "en": "Beef patty, cheddar, onion, tomato, sauce",
-      "az": "Mal əti kotleti, çedder, soğan, pomidor, sous",
-      "tr": "Dana köfte, cheddar, soğan, domates, sos"
+      "ru": "Соус барбекю, сыр Гауда, лук, курица",
+      "en": "BBQ sauce, Gouda cheese, Onion, Chicken",
+      "az": "BBQ sous, Qauda pendiri, Soğan, Toyuq əti",
+      "tr": "BBQ sos, gouda peyniri, soğan, tavuk"
     },
     "sizes": [
       {
-        "label": "standard",
-        "price": "12.00 ₼"
-      },
-      {
-        "label": "double",
-        "price": "16.00 ₼"
+        "price": "11.00 ₼"
       }
     ]
   },
   {
     "id": 25,
-    "category": "burger",
-    "image": "/menu-food/pizza-peperoni.avif",
+    "category": "sandwich",
+    "image": "/menu-food/sandwich-tuna.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Бургер Классический",
-      "en": "Classic Burger",
-      "az": "Klassik burger",
-      "tr": "Klasik Burger"
+      "ru": "Сэндвич с тунцом",
+      "en": "Tuna Sandwich",
+      "az": "Sendviç Tuna Balığı ilə",
+      "tr": "Ton Balıklı Sandviç"
     },
     "description": {
-      "ru": "Котлета из говядины, салат, томат, лук, фирменный соус",
-      "en": "Beef patty, lettuce, tomato, onion, signature sauce",
-      "az": "Mal əti kotleti, kahı, pomidor, soğan, xüsusi sous",
-      "tr": "Dana köfte, marul, domates, soğan, özel sos"
+      "ru": "Соус для пиццы, сыр Гауда, лук, кукуруза, тунец",
+      "en": "Pizza sauce, Gouda cheese, Onion, Corn, Tuna",
+      "az": "Pizza sous, Qauda pendiri, Soğan, Qarğıdalı, Tuna balığı",
+      "tr": "Pizza sosu, gouda peyniri, soğan, mısır, ton balığı"
     },
     "sizes": [
       {
-        "label": "standard",
-        "price": "14.00 ₼"
-      },
-      {
-        "label": "double",
-        "price": "18.00 ₼"
+        "price": "11.00 ₼"
       }
     ]
   },
   {
     "id": 26,
-    "category": "roll",
-    "image": "/menu-food/pizza-peperoni.avif",
-    "isPopular": true,
+    "category": "sandwich",
+    "image": "/menu-food/sandwich-beef.webp",
+    "isSpicy": true,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Филадельфия",
-      "en": "Philadelphia",
-      "az": "Filadelfiya",
-      "tr": "Philadelphia"
+      "ru": "Сэндвич с говядиной",
+      "en": "Beef Sandwich",
+      "az": "Beef Sandwich",
+      "tr": "Dana Etli Sandviç"
     },
     "description": {
-      "ru": "Лосось, сливочный сыр, огурец, авокадо",
-      "en": "Salmon, cream cheese, cucumber, avocado",
-      "az": "Qızılbalıq, qaymaqlı pendir, xiyar, avokado",
-      "tr": "Somon, krem peynir, salatalık, avokado"
+      "ru": "Специальный соус, грибы, сыр Гауда, говядина, помидор, халапеньо",
+      "en": "Special sauce, Mushroom, Gouda cheese, Beef, Tomato, Jalapeño",
+      "az": "Xüsusi sous, Göbələk, Qauda pendiri, Mal əti, Pomidor, Jalapeño",
+      "tr": "Özel sos, mantar, gouda peyniri, dana eti, domates, jalapeño"
     },
     "sizes": [
       {
-        "amount": 8,
-        "unit": "pcs",
-        "price": "15.00 ₼"
-      },
-      {
-        "amount": 12,
-        "unit": "pcs",
-        "price": "21.00 ₼"
+        "price": "14.00 ₼"
       }
     ]
   },
   {
     "id": 27,
-    "category": "roll",
-    "image": "/menu-food/pizza-peperoni.avif",
+    "category": "sandwich",
+    "image": "/menu-food/sandwich-chicken.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Калифорния",
-      "en": "California",
-      "az": "Kaliforniya",
-      "tr": "California"
+      "ru": "Сэндвич с курицей",
+      "en": "Chicken Sandwich",
+      "az": "Chicken Sandwich",
+      "tr": "Tavuklu Sandviç"
     },
     "description": {
-      "ru": "Снежный краб, икра масаго, огурец, авокадо",
-      "en": "Snow crab, masago roe, cucumber, avocado",
-      "az": "Qar xərçəngi, masaqo kürüsü, xiyar, avokado",
-      "tr": "Kar yengeci, masago havyarı, salatalık, avokado"
+      "ru": "Сырный соус, грибы, перец, сыр Гауда, курица, кукуруза",
+      "en": "Cheese sauce, Mushrooms, Peppers, Gouda cheese, Chicken, Corn",
+      "az": "Pendir sous, Göbələk, Bibər, Qauda pendiri, Toyuq əti, Qarğıdalı",
+      "tr": "Peynir sosu, mantar, biber, gouda peyniri, tavuk, mısır"
     },
     "sizes": [
       {
-        "amount": 8,
-        "unit": "pcs",
-        "price": "13.00 ₼"
-      },
-      {
-        "amount": 12,
-        "unit": "pcs",
-        "price": "18.00 ₼"
+        "price": "12.00 ₼"
       }
     ]
   },
   {
     "id": 28,
-    "category": "salads",
-    "image": "/menu-food/pizza-peperoni.avif",
+    "category": "sandwich",
+    "image": "/menu-food/sandwich-pizza-bread.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Цезарь с курицей",
-      "en": "Caesar with Chicken",
-      "az": "Toyuqlu sezar",
-      "tr": "Tavuklu Sezar"
+      "ru": "Пицца-хлеб",
+      "en": "Pizza Bread",
+      "az": "Pizza Bread",
+      "tr": "Pizza Ekmeği"
     },
     "description": {
-      "ru": "Ромэн, пармезан, сухарики, куриное филе, соус цезарь",
-      "en": "Romaine, parmesan, croutons, chicken fillet, caesar sauce",
-      "az": "Romen kahısı, parmezan, kruton, toyuq filesi, sezar sousu",
-      "tr": "Marul, parmesan, kruton, tavuk fileto, sezar sos"
+      "ru": "Соус для пиццы, Пепперони, Сыр Гауда, Оливки",
+      "en": "Pizza sauce, Pepperoni, Gouda cheese, Olives",
+      "az": "Pizza sous, Pepperoni, Qauda pendiri, Zeytun",
+      "tr": "Pizza sosu, pepperoni, gouda peyniri, zeytin"
     },
     "sizes": [
       {
-        "amount": 250,
-        "unit": "g",
-        "price": "9.00 ₼"
-      },
-      {
-        "amount": 400,
-        "unit": "g",
-        "price": "14.00 ₼"
-      }
-    ]
-  },
-  {
-    "id": 29,
-    "category": "salads",
-    "image": "/menu-food/pizza-peperoni.avif",
-    "selectedSizeIndex": 0,
-    "name": {
-      "ru": "Греческий салат",
-      "en": "Greek Salad",
-      "az": "Yunan salatı",
-      "tr": "Yunan salatası"
-    },
-    "description": {
-      "ru": "Огурцы, томаты, оливки, фета, оливковое масло",
-      "en": "Cucumbers, tomatoes, olives, feta, olive oil",
-      "az": "Xiyar, pomidor, zeytun, feta, zeytun yağı",
-      "tr": "Salatalık, domates, zeytin, beyaz peynir, zeytinyağı"
-    },
-    "sizes": [
-      {
-        "amount": 300,
-        "unit": "g",
         "price": "10.00 ₼"
       }
     ]
   },
   {
-    "id": 30,
-    "category": "pasta",
-    "image": "/menu-food/pizza-peperoni.avif",
+    "id": 29,
+    "category": "burger",
+    "image": "/menu-food/burger-cheesy.webp",
     "isPopular": true,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Карбонара",
-      "en": "Carbonara",
-      "az": "Karbonara",
-      "tr": "Carbonara"
+      "ru": "Бургер Cheesy",
+      "en": "Cheesy Burger",
+      "az": "Cheesy Burger",
+      "tr": "Cheesy Burger"
     },
     "description": {
-      "ru": "Спагетти, бекон, сливки, пармезан, яичный желток",
-      "en": "Spaghetti, bacon, cream, parmesan, egg yolk",
-      "az": "Spagetti, bekon, qaymaq, parmezan, yumurta sarısı",
-      "tr": "Spagetti, pastırma, krema, parmesan, yumurta sarısı"
+      "ru": "Горчица, мясо, сыр чеддер, соленые огурцы, лук, кетчуп",
+      "en": "Mustard, Meat, Cheddar cheese, Pickles, Onion, Ketchup",
+      "az": "Xardal, Ət, Çedar pendiri, Turşu xiyar, Soğan,Ketçup",
+      "tr": "Hardal, et, cheddar peyniri, turşu salatalık, soğan, ketçap"
     },
     "sizes": [
       {
-        "amount": 350,
-        "unit": "g",
-        "price": "13.00 ₼"
-      },
-      {
-        "amount": 500,
-        "unit": "g",
-        "price": "18.00 ₼"
+        "price": "9.50 ₼"
       }
     ]
   },
   {
-    "id": 31,
-    "category": "pasta",
-    "image": "/menu-food/pizza-peperoni.avif",
+    "id": 30,
+    "category": "burger",
+    "image": "/menu-food/burger-pizzy.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Болоньезе",
-      "en": "Bolognese",
-      "az": "Bolonez",
-      "tr": "Bolonez"
+      "ru": "Бургер Pizzy",
+      "en": "Pizzy Burger",
+      "az": "Pizzy Burger",
+      "tr": "Pizzy Burger"
     },
     "description": {
-      "ru": "Спагетти, фарш из говядины, томаты, пармезан",
-      "en": "Spaghetti, beef mince, tomatoes, parmesan",
-      "az": "Spagetti, mal əti qiyməsi, pomidor, parmezan",
-      "tr": "Spagetti, dana kıyma, domates, parmesan"
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
     },
     "sizes": [
       {
-        "amount": 350,
-        "unit": "g",
-        "price": "14.00 ₼"
-      },
-      {
-        "amount": 500,
-        "unit": "g",
-        "price": "19.00 ₼"
-      }
-    ]
-  },
-  {
-    "id": 32,
-    "category": "sweets",
-    "image": "/menu-food/pizza-peperoni.avif",
-    "selectedSizeIndex": 0,
-    "name": {
-      "ru": "Тирамису",
-      "en": "Tiramisu",
-      "az": "Tiramisu",
-      "tr": "Tiramisu"
-    },
-    "description": {
-      "ru": "Классический итальянский десерт с маскарпоне",
-      "en": "Classic Italian dessert with mascarpone",
-      "az": "Maskarpone ilə klassik italyan deserti",
-      "tr": "Mascarpone ile klasik İtalyan tatlısı"
-    },
-    "sizes": [
-      {
-        "amount": 150,
-        "unit": "g",
-        "price": "8.00 ₼"
-      }
-    ]
-  },
-  {
-    "id": 33,
-    "category": "sweets",
-    "image": "/menu-food/pizza-peperoni.avif",
-    "selectedSizeIndex": 0,
-    "name": {
-      "ru": "Чизкейк Нью-Йорк",
-      "en": "New York Cheesecake",
-      "az": "Nyu-York çizkeyki",
-      "tr": "New York Cheesecake"
-    },
-    "description": {
-      "ru": "Нежный сливочный сыр, клубничный соус",
-      "en": "Delicate cream cheese with strawberry sauce",
-      "az": "Zərif qaymaqlı pendir, çiyələk sousu",
-      "tr": "Yumuşak krem peynir, çilek sosu"
-    },
-    "sizes": [
-      {
-        "amount": 180,
-        "unit": "g",
         "price": "9.00 ₼"
       }
     ]
   },
   {
-    "id": 34,
-    "category": "snacks",
-    "image": "/menu-food/pizza-peperoni.avif",
+    "id": 31,
+    "category": "burger",
+    "image": "/menu-food/burger-zi.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Картофель фри",
-      "en": "French Fries",
-      "az": "Kartof fri",
-      "tr": "Patates kızartması"
+      "ru": "Бургер Zi",
+      "en": "Zi Burger",
+      "az": "Zi Burger",
+      "tr": "Zi Burger"
     },
     "description": {
-      "ru": "Хрустящий картофель с солью и специями",
-      "en": "Crispy potatoes with salt and spices",
-      "az": "Duz və ədviyyatlarla xırtıldayan kartof",
-      "tr": "Tuz ve baharatlarla çıtır patates"
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
     },
     "sizes": [
       {
-        "amount": 100,
-        "unit": "g",
-        "price": "4.00 ₼"
-      },
-      {
-        "amount": 200,
-        "unit": "g",
-        "price": "7.00 ₼"
+        "price": "8.50 ₼"
       }
     ]
   },
   {
-    "id": 35,
-    "category": "snacks",
-    "image": "/menu-food/pizza-peperoni.avif",
-    "isSpicy": true,
+    "id": 32,
+    "category": "roll",
+    "image": "/menu-food/roll-pizza.webp",
+    "isPopular": true,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Куриные крылышки",
-      "en": "Chicken Wings",
-      "az": "Toyuq qanadları",
-      "tr": "Tavuk kanatları"
+      "ru": "Пицца-ролл",
+      "en": "Pizza Roll",
+      "az": "Pizza roll",
+      "tr": "Pizza Dürüm"
     },
     "description": {
-      "ru": "Острые крылышки в соусе барбекю",
-      "en": "Spicy wings in barbecue sauce",
-      "az": "Barbekyu sousunda acı qanadlar",
-      "tr": "Barbekü soslu acılı kanatlar"
+      "ru": "Специальный соус, грибы, колбаса, сыр моцарелла, курица, кукуруза, помидор",
+      "en": "Special sauce, Mushrooms, Sausage, Mozzarella cheese, Chicken, Corn, Tomato",
+      "az": "Xüsusi sous, Göbələk, Sosis, Mozzarella pendiri, Toyuq əti, Qarğıdalı, Pomidor",
+      "tr": "Özel sos, mantar, sosis, mozzarella peyniri, tavuk, mısır, domates"
     },
     "sizes": [
       {
-        "amount": 6,
-        "unit": "pcs",
-        "price": "8.00 ₼"
-      },
-      {
-        "amount": 12,
-        "unit": "pcs",
         "price": "14.00 ₼"
       }
     ]
   },
   {
-    "id": 36,
-    "category": "drinks",
-    "image": "/menu-food/pizza-peperoni.avif",
+    "id": 33,
+    "category": "roll",
+    "image": "/menu-food/roll-beef.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Лимонад Домашний",
-      "en": "Homemade Lemonade",
-      "az": "Ev limonadı",
-      "tr": "Ev yapımı limonata"
+      "ru": "Ролл с говядиной",
+      "en": "Beef Roll",
+      "az": "Beef roll",
+      "tr": "Dana Etli Dürüm"
     },
     "description": {
-      "ru": "Натуральный лимонад с мятой и лимоном",
-      "en": "Natural lemonade with mint and lemon",
-      "az": "Nanə və limonla təbii limonad",
-      "tr": "Nane ve limonlu doğal limonata"
+      "ru": "Специальный соус, соленые огурцы, сыр моцарелла, говядина, помидоры",
+      "en": "Special sauce, Pickles, Mozzarella cheese, Beef, Tomato",
+      "az": "Xüsusi sous, Turşu xiyar, Mozzarella pendiri, Mal əti, Pomidor",
+      "tr": "Özel sos, turşu salatalık, mozzarella peyniri, dana eti, domates"
     },
     "sizes": [
       {
-        "amount": 0.3,
-        "unit": "l",
-        "price": "4.00 ₼"
-      },
+        "price": "14.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "category": "roll",
+    "image": "/menu-food/roll-caesar.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Ролл Цезарь",
+      "en": "Caesar Roll",
+      "az": "Sezar roll",
+      "tr": "Sezar Dürüm"
+    },
+    "description": {
+      "ru": "Айсберг, помидоры черри, курица, сыр моцарелла, пармезан, соус цезарь",
+      "en": "Iceberg, Cherry tomatoes, Chicken, Mozzarella cheese, Parmesan, Caesar sauce",
+      "az": "Aysberq, Çeri pomidor, Toyuq əti, Mozzarella pendiri, Parmesan, Sezar sous",
+      "tr": "Aysberg, çeri domates, tavuk, mozzarella peyniri, parmesan, sezar sos"
+    },
+    "sizes": [
       {
-        "amount": 0.5,
-        "unit": "l",
-        "price": "6.00 ₼"
+        "price": "11.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "category": "roll",
+    "image": "/menu-food/roll-cheesy-chicken.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Сырный ролл с курицей",
+      "en": "Cheesy Chicken Roll",
+      "az": "Cheesy Toyuq Roll",
+      "tr": "Cheesy Tavuklu Dürüm"
+    },
+    "description": {
+      "ru": "Соус барбекю, айсберг, сыр моцарелла, чеддер, помидор, перец, курица",
+      "en": "Barbecue sauce, Iceberg, Mozzarella cheese, Cheddar, Tomato, Pepper, Chicken",
+      "az": "Barbekyu sous, Aysberq, Mozzarella pendiri, Çeddar, Pomidor, Bibər, Toyuq əti",
+      "tr": "Barbekü sos, aysberg, mozzarella peyniri, cheddar, domates, biber, tavuk"
+    },
+    "sizes": [
+      {
+        "price": "10.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "category": "roll",
+    "image": "/menu-food/roll-chicken-melt.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Ролл Chicken Melt",
+      "en": "Chicken Melt Roll",
+      "az": "Chicken Melt Roll",
+      "tr": "Chicken Melt Dürüm"
+    },
+    "description": {
+      "ru": "Специальный соус, Айсберг, Сыр Моцарелла, Картофель фри, Соленые огурцы, Курица",
+      "en": "Special sauce, Iceberg, Mozzarella cheese, Fries, Pickles, Chicken",
+      "az": "Xüsusi sous, Aysberq, Mozzarella pendiri, Fri, Turşu xiyar, Toyuq əti",
+      "tr": "Özel sos, aysberg, mozzarella peyniri, patates kızartması, turşu salatalık, tavuk"
+    },
+    "sizes": [
+      {
+        "price": "10.00 ₼"
       }
     ]
   },
   {
     "id": 37,
-    "category": "coffee",
-    "image": "/menu-food/pizza-peperoni.avif",
+    "category": "pasta",
+    "image": "/menu-food/pasta-bolognese.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Кофе Капучино",
-      "en": "Cappuccino",
-      "az": "Kapuçino",
-      "tr": "Cappuccino"
+      "ru": "Спагетти Болоньезе",
+      "en": "Spaghetti Bolognese",
+      "az": "Spaqetti Bolonyeze",
+      "tr": "Spaghetti Bolonez"
     },
     "description": {
-      "ru": "Эспрессо с молочной пенкой",
-      "en": "Espresso with milk foam",
-      "az": "Süd köpüyü ilə espresso",
-      "tr": "Süt köpüklü espresso"
+      "ru": "Спагетти, соус Болоньезе, Пармезан",
+      "en": "Spaghetti, Bolognese sauce, Parmesan",
+      "az": "Spagetti, Bolonez sous, Parmezan",
+      "tr": "Spagetti, bolonez sos, parmesan"
     },
     "sizes": [
       {
-        "amount": 200,
-        "unit": "ml",
-        "price": "5.00 ₼"
-      },
-      {
-        "amount": 300,
-        "unit": "ml",
-        "price": "7.00 ₼"
+        "price": "11.00 ₼"
       }
     ]
   },
   {
     "id": 38,
-    "category": "kalyan",
-    "image": "/menu-food/pizza-peperoni.avif",
+    "category": "pasta",
+    "image": "/menu-food/pasta-pomodoro.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Кальян Классический",
-      "en": "Classic Hookah",
-      "az": "Klassik qəlyan",
-      "tr": "Klasik Nargile"
+      "ru": "Спагетти Помодоро",
+      "en": "Spaghetti Pomodoro",
+      "az": "Spaqetti Pomodoro",
+      "tr": "Spaghetti Pomodoro"
     },
     "description": {
-      "ru": "Табак Al Fakher, классическая чаша",
-      "en": "Al Fakher tobacco, classic bowl",
-      "az": "Al Fakher tütünü, klassik kasa",
-      "tr": "Al Fakher tütünü, klasik lüle"
+      "ru": "Спагетти, соус помодоро, пармезан",
+      "en": "Spaghetti, pomodoro sauce, parmesan",
+      "az": "Spagetti, Pomadora sous, Parmezan",
+      "tr": "Spagetti, pomodoro sos, parmesan"
     },
     "sizes": [
       {
-        "label": "standard",
-        "price": "25.00 ₼"
+        "price": "7.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "category": "salads",
+    "image": "/menu-food/salad-caesar-chicken.webp",
+    "isPopular": true,
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Цезарь с курицей",
+      "en": "Caesar Salad with Chicken",
+      "az": "Sezar Salatı Toyuq ilə",
+      "tr": "Tavuklu Sezar Salata"
+    },
+    "description": {
+      "ru": "Соус цезарь, айсберг, гренки, помидоры черри, пармезан, курица",
+      "en": "Caesar sauce, iceberg, croutons, cherry tomatoes, parmesan, chicken",
+      "az": "Sezar sous, Aysberg, Suxarı, Çeri pomidor, Parmesan, Toyuq əti",
+      "tr": "Sezar sos, aysberg, kruton, çeri domates, parmesan, tavuk"
+    },
+    "sizes": [
+      {
+        "price": "10.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "category": "salads",
+    "image": "/menu-food/salad-caesar-shrimp.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Цезарь с креветками",
+      "en": "Caesar Salad with Shrimp",
+      "az": "Sezar Salatı Krevet ilə",
+      "tr": "Karidesli Sezar Salata"
+    },
+    "description": {
+      "ru": "Соус цезарь, айсберг, гренки, помидоры черри, пармезан, креветки",
+      "en": "Caesar sauce, iceberg, croutons, cherry tomatoes, parmesan, shrimp",
+      "az": "Sezar sous, Aysberg, Suxarı, Çeri pomidor, Parmesan, Krevet",
+      "tr": "Sezar sos, aysberg, kruton, çeri domates, parmesan, karides"
+    },
+    "sizes": [
+      {
+        "price": "14.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "category": "salads",
+    "image": "/menu-food/salad-vegetarian.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Вегетарианский салат",
+      "en": "Vegetarian Salad",
+      "az": "Vegetarian Salatı",
+      "tr": "Vejetaryen Salata"
+    },
+    "description": {
+      "ru": "Айсберг, огурец, помидор, перец, авокадо, морковь, кукуруза, оливковое масло, лимонный сок",
+      "en": "Iceberg, Cucumber, Tomato, Pepper, Avocado, Carrot, Corn, Olive oil, lemon juice",
+      "az": "Aysberg, Xiyar, Pomidor, Bibər, Avokado, Kök, Qarğıdalı, Zeytun yağı,limon suyu",
+      "tr": "Aysberg, salatalık, domates, biber, avokado, havuç, mısır, zeytinyağı, limon suyu"
+    },
+    "sizes": [
+      {
+        "price": "8.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "category": "salads",
+    "image": "/menu-food/salad-mexican.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Мексиканский салат",
+      "en": "Mexican Salad",
+      "az": "Meksiakana Salatı",
+      "tr": "Meksika Salata"
+    },
+    "description": {
+      "ru": "Айсберг, специальный соус, кукуруза, фасоль, помидор, авокадо, лук, курица",
+      "en": "Iceberg, Special sauce, Corn, Beans, Tomato, Avocado, Onion, Chicken",
+      "az": "Aysberg, Xüsusi sous, Qarğıdalı, Lobya, Pomidor, Avokado, Soğan, Toyuq əti",
+      "tr": "Aysberg, özel sos, mısır, fasulye, domates, avokado, soğan, tavuk"
+    },
+    "sizes": [
+      {
+        "price": "9.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "category": "salads",
+    "image": "/menu-food/salad-beef.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Салат с мясом",
+      "en": "Salad with Beef",
+      "az": "Salat Ət ilə",
+      "tr": "Etli Salata"
+    },
+    "description": {
+      "ru": "Айсберг, Помидор, Огурец, Лук, Специальный соус, Говядина",
+      "en": "Iceberg, Tomato, Cucumber, Onion, Special sauce, Beef",
+      "az": "Aysberg, Pomidor, Xiyar, Soğan, Xüsusi sous, Mal əti",
+      "tr": "Aysberg, domates, salatalık, soğan, özel sos, dana eti"
+    },
+    "sizes": [
+      {
+        "price": "11.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "category": "salads",
+    "image": "/menu-food/salad-tuna.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Салат с тунцом",
+      "en": "Tuna Salad",
+      "az": "Tuna salati",
+      "tr": "Ton Balıklı Salata"
+    },
+    "description": {
+      "ru": "Айсберг, помидоры черри, огурец, оливки, перец, сыр фета, орегано, специальный соус",
+      "en": "Iceberg, cherry tomatoes, cucumber, olives, pepper, feta, oregano, special sauce",
+      "az": "Aysberg, Çeri pomidor, Xiyar, Zeytun, Bibər, Feta pendiri, Oreqano, Xüsusi",
+      "tr": "Aysberg, çeri domates, salatalık, zeytin, biber, feta peyniri, kekik, özel sos"
+    },
+    "sizes": [
+      {
+        "price": "11.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "category": "salads",
+    "image": "/menu-food/salad-greek.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Греческий салат",
+      "en": "Greek Salad",
+      "az": "Yunan salati",
+      "tr": "Yunan Salata"
+    },
+    "description": {
+      "ru": "Айсберг, помидоры черри, огурцы, оливки, тунец, кукуруза, специальный соус",
+      "en": "Iceberg, Cherry tomato, Cucumber, Olive, Tuna fish, Corn, Special sauce",
+      "az": "Aysberg, Çeri pomidor, Xiyar, Zeytun, Tuna balığı, Qarğıdalı, Xüsusi sous",
+      "tr": "Aysberg, çeri domates, salatalık, zeytin, ton balığı, mısır, özel sos"
+    },
+    "sizes": [
+      {
+        "price": "9.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "category": "soups",
+    "image": "/menu-food/soup-lentil.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Чечевичный суп",
+      "en": "Lentil Soup",
+      "az": "Mərci Şorbası",
+      "tr": "Mercimek Çorbası"
+    },
+    "description": {
+      "ru": "Чечевица, томатная паста, морковь, лук, специи",
+      "en": "Lentils, tomato paste, carrot, onion, spices",
+      "az": "Merci, Tomat pastası, Kök, Soğan, Ədviyyatlar",
+      "tr": "Mercimek, domates salçası, havuç, soğan, baharatlar"
+    },
+    "sizes": [
+      {
+        "price": "3.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "category": "snacks",
+    "image": "/menu-food/snack-fries.webp",
+    "isPopular": true,
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Картофель фри",
+      "en": "French Fries",
+      "az": "Kartof Fri",
+      "tr": "Patates Kızartması"
+    },
+    "description": {
+      "ru": "Классический жареный картофель",
+      "en": "Classic fried potatoes",
+      "az": "Klassik qızardılmış kartof",
+      "tr": "Klasik kızarmış patates"
+    },
+    "sizes": [
+      {
+        "label": "medium",
+        "price": "3.00 ₼"
       },
       {
-        "label": "premium",
-        "price": "35.00 ₼"
+        "label": "large",
+        "price": "3.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "category": "snacks",
+    "image": "/menu-food/snack-potato-slices.webp",
+    "isSpicy": true,
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Картофельные ломтики",
+      "en": "Potato Slices",
+      "az": "Kartof Dilimləri",
+      "tr": "Patates Dilimleri"
+    },
+    "description": {
+      "ru": "Острые картофельные ломтики",
+      "en": "Spicy potato slices",
+      "az": "Ədviyyatlı kartof dilimləri",
+      "tr": "Baharatlı patates dilimleri"
+    },
+    "sizes": [
+      {
+        "price": "4.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "category": "snacks",
+    "image": "/menu-food/snack-nuggets.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Наггетсы",
+      "en": "Nuggets",
+      "az": "Naggets",
+      "tr": "Nugget"
+    },
+    "description": {
+      "ru": "Куриные наггетсы",
+      "en": "Chicken nuggets",
+      "az": "Toyuq naggetsləri",
+      "tr": "Tavuk nugget"
+    },
+    "sizes": [
+      {
+        "amount": 4,
+        "unit": "pcs",
+        "price": "5.00 ₼"
+      },
+      {
+        "amount": 8,
+        "unit": "pcs",
+        "price": "8.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "category": "snacks",
+    "image": "/menu-food/snack-cheese-sticks.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Сырные палочки",
+      "en": "Cheese Sticks",
+      "az": "Pendir Çubuqları",
+      "tr": "Peynir Çubukları"
+    },
+    "description": {
+      "ru": "Гренки из хлеба, сыр моцарелла",
+      "en": "Bread croutons, Mozzarella cheese",
+      "az": "Çörək krutonları, Mozzarella pendiri",
+      "tr": "Ekmek krutonu, mozzarella peyniri"
+    },
+    "sizes": [
+      {
+        "amount": 4,
+        "unit": "pcs",
+        "price": "7.50 ₼"
+      },
+      {
+        "amount": 8,
+        "unit": "pcs",
+        "price": "13.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "category": "snacks",
+    "image": "/menu-food/snack-chicken-sticks.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Куриные палочки",
+      "en": "Chicken Sticks",
+      "az": "Toyuq Çubuqlari",
+      "tr": "Tavuk Çubukları"
+    },
+    "description": {
+      "ru": "Хлебные гренки, Куриное филе",
+      "en": "Bread croutons, Chicken fillet",
+      "az": "Çörək krutonları, Toyuq filesi",
+      "tr": "Ekmek krutonu, tavuk fileto"
+    },
+    "sizes": [
+      {
+        "amount": 4,
+        "unit": "pcs",
+        "price": "6.50 ₼"
+      },
+      {
+        "amount": 8,
+        "unit": "pcs",
+        "price": "10.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "category": "snacks",
+    "image": "/menu-food/snack-chicken-wings.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Куриные крылышки с соусом BBQ",
+      "en": "Chicken Wings with BBQ Sauce",
+      "az": "Toyuq qanadlari BBQ sous ile",
+      "tr": "BBQ Soslu Tavuk Kanat"
+    },
+    "description": {
+      "ru": "Куриные крылышки, соус барбекю, кунжут",
+      "en": "Chicken wings, BBQ sauce, Sesame",
+      "az": "Toyuq qanadları, BBQ sous, Küncüt",
+      "tr": "Tavuk kanat, BBQ sos, susam"
+    },
+    "sizes": [
+      {
+        "amount": 5,
+        "unit": "pcs",
+        "price": "7.50 ₼"
+      },
+      {
+        "amount": 8,
+        "unit": "pcs",
+        "price": "10.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "category": "snacks",
+    "image": "/menu-food/snack-chicken-schnitzel.webp",
+    "isSpicy": true,
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Куриный шницель",
+      "en": "Chicken Schnitzel",
+      "az": "Chicken Schnitzel",
+      "tr": "Tavuk Şnitzel"
+    },
+    "description": {
+      "ru": "Картофель фри, курица в панировке, острый соус, сырный соус",
+      "en": "French fries, breaded chicken, spicy sauce, cheese sauce",
+      "az": "Free, Çörək krutonlu Toyuq əti,acılı sous, pendirli sous",
+      "tr": "Patates kızartması, krutonlu tavuk, acılı sos, peynir sosu"
+    },
+    "sizes": [
+      {
+        "price": "9.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "category": "milkshake",
+    "image": "/menu-food/milkshake-oreo.webp",
+    "isPopular": true,
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Молочный коктейль Орео",
+      "en": "Oreo Milkshake",
+      "az": "Oreolu Milkşeyk",
+      "tr": "Oreolu Milkshake"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "price": "10.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "category": "milkshake",
+    "image": "/menu-food/milkshake-vanilla.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Ванильный молочный коктейль",
+      "en": "Vanilla Milkshake",
+      "az": "Vanilli Milkşeyk",
+      "tr": "Vanilyalı Milkshake"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "price": "9.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "category": "milkshake",
+    "image": "/menu-food/milkshake-strawberry.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Клубничный молочный коктейль",
+      "en": "Strawberry Milkshake",
+      "az": "Çiyələkli Milkşeyk",
+      "tr": "Çilekli Milkshake"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "price": "9.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "category": "drinks",
+    "image": "/menu-food/drink-coca-cola-330.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Coca-Cola®",
+      "en": "Coca-Cola®",
+      "az": "Coca-Cola®",
+      "tr": "Coca-Cola®"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 330,
+        "unit": "ml",
+        "price": "3.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "category": "drinks",
+    "image": "/menu-food/drink-coca-cola-500.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Coca-Cola®",
+      "en": "Coca-Cola®",
+      "az": "Coca-Cola®",
+      "tr": "Coca-Cola®"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 500,
+        "unit": "ml",
+        "price": "2.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "category": "drinks",
+    "image": "/menu-food/drink-coca-cola-zero-330.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Coca-Cola® без сахара",
+      "en": "Coca-Cola® Zero Sugar",
+      "az": "Coca-Cola® Şəkərsiz",
+      "tr": "Coca-Cola® Şekersiz"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 330,
+        "unit": "ml",
+        "price": "3.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "category": "drinks",
+    "image": "/menu-food/drink-coca-cola-zero-500.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Coca-Cola® без сахара",
+      "en": "Coca-Cola® Zero Sugar",
+      "az": "Coca-Cola® Şəkərsiz",
+      "tr": "Coca-Cola® Şekersiz"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 500,
+        "unit": "ml",
+        "price": "2.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "category": "drinks",
+    "image": "/menu-food/drink-fanta-330.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Fanta®",
+      "en": "Fanta®",
+      "az": "Fanta®",
+      "tr": "Fanta®"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 330,
+        "unit": "ml",
+        "price": "3.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "category": "drinks",
+    "image": "/menu-food/drink-fanta-500.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Fanta®",
+      "en": "Fanta®",
+      "az": "Fanta®",
+      "tr": "Fanta®"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 500,
+        "unit": "ml",
+        "price": "2.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "category": "drinks",
+    "image": "/menu-food/drink-sprite-330.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Sprite®",
+      "en": "Sprite®",
+      "az": "Sprite®",
+      "tr": "Sprite®"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 330,
+        "unit": "ml",
+        "price": "3.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "category": "drinks",
+    "image": "/menu-food/drink-sprite-500.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Sprite®",
+      "en": "Sprite®",
+      "az": "Sprite®",
+      "tr": "Sprite®"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 500,
+        "unit": "ml",
+        "price": "2.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "category": "drinks",
+    "image": "/menu-food/drink-fuse-tea-lemon.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Fuse Tea® Лимон",
+      "en": "Fuse Tea® Lemon",
+      "az": "Fuse Tea® Limon",
+      "tr": "Fuse Tea® Limon"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 500,
+        "unit": "ml",
+        "price": "3.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "category": "drinks",
+    "image": "/menu-food/drink-fuse-tea-peach.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Fuse Tea® Персик",
+      "en": "Fuse Tea® Peach",
+      "az": "Fuse Tea® Şaftalı",
+      "tr": "Fuse Tea® Şeftali"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 500,
+        "unit": "ml",
+        "price": "3.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "category": "drinks",
+    "image": "/menu-food/drink-cappy-orange-500.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Cappy® Апельсин",
+      "en": "Cappy® Orange",
+      "az": "Cappy® Portağal",
+      "tr": "Cappy® Portakal"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 500,
+        "unit": "ml",
+        "price": "3.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "category": "drinks",
+    "image": "/menu-food/drink-cappy-peach-500.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Cappy® Персик",
+      "en": "Cappy® Peach",
+      "az": "Cappy® Şaftalı",
+      "tr": "Cappy® Şeftali"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 500,
+        "unit": "ml",
+        "price": "3.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "category": "drinks",
+    "image": "/menu-food/drink-cappy-cherry-500.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Cappy® Вишня",
+      "en": "Cappy® Cherry",
+      "az": "Cappy® Albalı",
+      "tr": "Cappy® Vişne"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 500,
+        "unit": "ml",
+        "price": "3.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "category": "drinks",
+    "image": "/menu-food/drink-cappy-multivitamin-500.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Cappy® Мультивитамин",
+      "en": "Cappy® Multivitamin",
+      "az": "Cappy® Multivitamin",
+      "tr": "Cappy® Multivitamin"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 500,
+        "unit": "ml",
+        "price": "3.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "category": "drinks",
+    "image": "/menu-food/drink-cappy-cherry-200.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Cappy® Вишня",
+      "en": "Cappy® Cherry",
+      "az": "Cappy® Albalı",
+      "tr": "Cappy® Vişne"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 200,
+        "unit": "ml",
+        "price": "1.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "category": "drinks",
+    "image": "/menu-food/drink-cappy-apple-200.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Cappy® Яблоко",
+      "en": "Cappy® Apple",
+      "az": "Cappy® Alma",
+      "tr": "Cappy® Elma"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 200,
+        "unit": "ml",
+        "price": "1.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "category": "drinks",
+    "image": "/menu-food/drink-cappy-peach-200.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Cappy® Персик",
+      "en": "Cappy® Peach",
+      "az": "Cappy® Şaftalı",
+      "tr": "Cappy® Şeftali"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 200,
+        "unit": "ml",
+        "price": "1.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "category": "drinks",
+    "image": "/menu-food/drink-cappy-multivitamin-200.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Cappy® Мультивитамин",
+      "en": "Cappy® Multivitamin",
+      "az": "Cappy® Multivitamin",
+      "tr": "Cappy® Multivitamin"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 200,
+        "unit": "ml",
+        "price": "1.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "category": "drinks",
+    "image": "/menu-food/drink-sirab-sparkling.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Sirab® газированная",
+      "en": "Sirab® Sparkling",
+      "az": "Sirab® Qazlı",
+      "tr": "Sirab® Gazlı"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 500,
+        "unit": "ml",
+        "price": "1.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "category": "drinks",
+    "image": "/menu-food/drink-ayran-milla.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Айран Milla®",
+      "en": "Ayran Milla®",
+      "az": "Ayran Milla®",
+      "tr": "Ayran Milla®"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 200,
+        "unit": "ml",
+        "price": "1.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "category": "drinks",
+    "image": "/menu-food/drink-ayran-milla-mint.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Айран Milla® с мятой",
+      "en": "Ayran Milla® Mint",
+      "az": "Ayran Milla® Nanəli",
+      "tr": "Ayran Milla® Naneli"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 200,
+        "unit": "ml",
+        "price": "1.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "category": "coffee",
+    "image": "/menu-food/coffee-cappuccino.webp",
+    "isPopular": true,
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Капучино",
+      "en": "Cappuccino",
+      "az": "Kappuçino",
+      "tr": "Cappuccino"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "label": "medium",
+        "price": "5.50 ₼"
+      },
+      {
+        "label": "large",
+        "price": "6.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "category": "coffee",
+    "image": "/menu-food/coffee-latte.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Латте",
+      "en": "Latte",
+      "az": "Latte",
+      "tr": "Latte"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "label": "medium",
+        "price": "5.50 ₼"
+      },
+      {
+        "label": "large",
+        "price": "6.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "category": "coffee",
+    "image": "/menu-food/coffee-americano.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Американо",
+      "en": "Americano",
+      "az": "Amerikano",
+      "tr": "Americano"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "label": "medium",
+        "price": "4.00 ₼"
+      },
+      {
+        "label": "large",
+        "price": "4.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "category": "sauces",
+    "image": "/menu-food/sauce-ketchup.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Кетчуп",
+      "en": "Ketchup",
+      "az": "Ketçup",
+      "tr": "Ketçap"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "price": "1.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "category": "sauces",
+    "image": "/menu-food/sauce-mayonnaise.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Майонез",
+      "en": "Mayonnaise",
+      "az": "Mayonez",
+      "tr": "Mayonez"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "price": "1.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "category": "sauces",
+    "image": "/menu-food/sauce-bbq.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Соус барбекю",
+      "en": "BBQ Sauce",
+      "az": "Barbekyu Sousu",
+      "tr": "Barbekü Sos"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "price": "1.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "category": "sauces",
+    "image": "/menu-food/sauce-cheese.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Сырный соус",
+      "en": "Cheese Sauce",
+      "az": "Pendirli Sous",
+      "tr": "Peynirli Sos"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "price": "1.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "category": "sauces",
+    "image": "/menu-food/sauce-spicy.webp",
+    "isSpicy": true,
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Острый соус",
+      "en": "Spicy Sauce",
+      "az": "Acılı Sous",
+      "tr": "Acı Sos"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "price": "1.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "category": "sauces",
+    "image": "/menu-food/sauce-sweet-and-sour.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Кисло-сладкий соус",
+      "en": "Sweet and Sour Sauce",
+      "az": "Turşa-Şirin sous",
+      "tr": "Tatlı Ekşi Sos"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "price": "1.00 ₼"
       }
     ]
   }
