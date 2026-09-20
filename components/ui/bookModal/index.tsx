@@ -41,7 +41,8 @@ const CustomSelect = ({
   onToggle: () => void;
   onChange: (value: string) => void;
 }) => {
-  const selected = options.find((option) => option.value === value) ?? options[0];
+  const selected =
+    options.find((option) => option.value === value) ?? options[0];
 
   return (
     <div className="relative flex flex-col gap-1.5 text-sm text-gray-300">
@@ -55,7 +56,9 @@ const CustomSelect = ({
         className="booking-input flex items-center justify-between text-left"
       >
         <span>{selected?.label}</span>
-        <span className={`text-xs transition-transform ${open ? "rotate-180" : ""}`}>
+        <span
+          className={`text-xs transition-transform ${open ? "rotate-180" : ""}`}
+        >
           v
         </span>
       </button>
@@ -204,7 +207,10 @@ export const BookModal = ({
         className="max-h-[92vh] w-[min(620px,92vw)] overflow-y-auto rounded-2xl bg-boxColor p-5 shadow-2xl shadow-black/40 max-md:p-4"
       >
         <div className="mb-5 flex items-center justify-between">
-          <h2 id="book-modal-title" className="text-2xl font-semibold text-white">
+          <h2
+            id="book-modal-title"
+            className="text-2xl font-semibold text-white"
+          >
             {t.modal.title}
           </h2>
           <button
@@ -231,7 +237,9 @@ export const BookModal = ({
             value={bookingDate}
             options={bookingDates}
             open={openSelect === "date"}
-            onToggle={() => setOpenSelect(openSelect === "date" ? null : "date")}
+            onToggle={() =>
+              setOpenSelect(openSelect === "date" ? null : "date")
+            }
             onChange={setBookingDate}
           />
           <CustomSelect
@@ -240,12 +248,22 @@ export const BookModal = ({
             value={bookingTime}
             options={timeOptions.map((time) => ({ value: time, label: time }))}
             open={openSelect === "time"}
-            onToggle={() => setOpenSelect(openSelect === "time" ? null : "time")}
+            onToggle={() =>
+              setOpenSelect(openSelect === "time" ? null : "time")
+            }
             onChange={setBookingTime}
           />
           <label className="flex flex-col gap-1.5 text-sm text-gray-300">
             {t.modal.guests}
-            <input name="guests" type="number" min="1" max="50" defaultValue="1" required className="booking-input" />
+            <input
+              name="guests"
+              type="number"
+              min="1"
+              max="50"
+              defaultValue="1"
+              required
+              className="booking-input"
+            />
           </label>
           <CustomSelect
             name="room"
@@ -253,7 +271,9 @@ export const BookModal = ({
             value={bookingRoom}
             options={roomOptions}
             open={openSelect === "room"}
-            onToggle={() => setOpenSelect(openSelect === "room" ? null : "room")}
+            onToggle={() =>
+              setOpenSelect(openSelect === "room" ? null : "room")
+            }
             onChange={setBookingRoom}
           />
           <button
@@ -263,7 +283,9 @@ export const BookModal = ({
             {t.modal.submit}
           </button>
           {submitted && (
-            <p className="text-sm text-green-400 sm:col-span-2">{t.modal.success}</p>
+            <p className="text-sm text-green-400 sm:col-span-2">
+              {t.modal.success}
+            </p>
           )}
         </form>
         <div className="mt-6 flex flex-col gap-4 border-t border-white/10 pt-5">
