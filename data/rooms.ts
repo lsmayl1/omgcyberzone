@@ -36,11 +36,10 @@ export const ROOMS: Room[] = [
     title: "STANDART",
     key: "standart",
     images: [
-      "/images/standard-room-1.jpg",
-      "/images/standard-room-2.jpg",
-      "/images/standard-room-3.jpg",
-      "/images/standard-room-4.jpg",
-      "/images/standard-room-5.jpg",
+      "/omg/IMG_2646.webp",
+      "/omg/IMG_2649.webp",
+      "/omg/IMG_2655.webp",
+      "/omg/IMG_2661.webp",
     ],
     price: {
       midweek: [
