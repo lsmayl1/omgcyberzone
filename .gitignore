@@ -48,6 +48,10 @@ next-env.d.ts
 *.heic
 *.heif
 
+# Local artifacts that should never be pushed
+/nul
+/public/*.zip
+
 # Converted masters. Kept out of public/ on purpose: everything under
 # public/ is deployed and served, and only the handful actually used on
 # the site belongs there. Re-runnable with scripts/optimize-photos.mjs.
