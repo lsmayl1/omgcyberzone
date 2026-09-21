@@ -44,7 +44,7 @@ next-env.d.ts
 # committed: git keeps every blob forever, and anything under public/ is
 # deployed and served. Run scripts/optimize-photos.mjs and commit the
 # WebP masters it writes to public/photos instead.
-/public/omg/
+
 *.heic
 *.heif
 
