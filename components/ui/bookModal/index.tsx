@@ -3,11 +3,14 @@ import Close from "@/assets/close";
 import Instagram from "@/assets/Instagram";
 import Phone from "@/assets/Phone";
 import { Telegram } from "@/assets/Telegram";
+import WhatsApp from "@/assets/WhatsApp";
 import React, { useEffect, useRef, useState } from "react";
 import { useI18n } from "@/i18n/I18nProvider";
 
 const PHONE = "+994 70 222 88 86";
 const HANDLE = "omgcyberzone";
+/** wa.me wants the number bare: no plus, no spaces. */
+const WHATSAPP = PHONE.replace(/\D/g, "");
 
 const dateValue = (date: Date) => {
   const year = date.getFullYear();
@@ -159,7 +162,7 @@ export const BookModal = ({
     window.open(
       // https, and the number bare: plain http makes the first hop a
       // plaintext redirect carrying the guest's booking details in the query.
-      `https://wa.me/994702228886?text=${encodeURIComponent(details)}`,
+      `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(details)}`,
       "_blank",
       "noopener,noreferrer",
     );
@@ -167,6 +170,14 @@ export const BookModal = ({
   };
 
   const contacts = [
+    {
+      key: "whatsapp",
+      icon: <WhatsApp className="size-8 text-white" />,
+      label: t.footer.whatsapp,
+      value: PHONE,
+      href: `https://wa.me/${WHATSAPP}`,
+      external: true,
+    },
     {
       key: "phone",
       icon: <Phone />,

@@ -1,4 +1,5 @@
 "use client";
+import Close from "@/assets/close";
 import Logo from "@/assets/Logo";
 import { useEffect, useState, type MouseEvent as ReactMouseEvent } from "react";
 import { HamburgerMenu } from "@/assets/hamburger-menu";
@@ -118,45 +119,96 @@ export const Header = () => {
         </div>
 
         {hamburgerMenu ? (
-          <div className="fixed w-screen h-screen  z-50 left-0 top-0 ">
-            <div className=" bg-foreground gap-8 h-full p-1.5 flex  flex-col w-full ">
-              <div className="flex justify-between items-center container-custom  ">
+          /*
+            A drawer over the page rather than an opaque panel replacing it.
+            The backdrop keeps the page visible behind, which is what tells
+            you the menu is a layer you can dismiss.
+          */
+          <div className="fixed inset-0 z-50 lg:hidden">
+            <div
+              aria-hidden="true"
+              onClick={() => setHamburgerMenu(false)}
+              className="drawer-backdrop absolute inset-0 bg-black/70 backdrop-blur-sm"
+            />
+
+            <div
+              role="dialog"
+              aria-modal="true"
+              aria-label={t.nav.openMenu}
+              className="drawer-panel absolute right-0 top-0 flex h-full w-[min(20rem,85vw)] flex-col border-l border-white/10 bg-foreground shadow-2xl shadow-black/60"
+            >
+              <div className="flex shrink-0 items-center justify-between border-b border-white/10 px-5 py-3">
                 <Link
                   href={home}
                   aria-label={t.nav.toHome}
                   onClick={() => setHamburgerMenu(false)}
                 >
-                  <Logo className="size-24 max-md:w-22 h-12 cursor-pointer" />
+                  <Logo className="h-9 w-auto" />
                 </Link>
+                {/* A proper close, not the hamburger turned upside down. */}
                 <button
                   type="button"
                   aria-label={t.nav.closeMenu}
                   onClick={() => setHamburgerMenu(false)}
+                  className="rounded-lg p-2 text-white transition-colors hover:bg-white/10"
                 >
-                  <HamburgerMenu className="size-10 text-white rotate-180 " />
+                  <Close className="size-5" />
                 </button>
               </div>
-              <div className="flex flex-col gap-12 font-bold max-md:gap-12 container-custom ">
-                {menu.map((m) => (
-                  <Link
-                    key={m.href}
-                    href={m.href}
-                    onClick={(e) => handleNavClick(e, m.href)}
-                    className="cursor-pointer text-white max-md:text-lg"
-                  >
-                    {m.name}
-                  </Link>
-                ))}
+
+              {/* Scrolls on its own: seven links plus the footer block is
+                  taller than a short phone in landscape. */}
+              <nav className="flex-1 overflow-y-auto px-3 py-4">
+                <ul className="flex flex-col gap-1">
+                  {menu.map((m) => {
+                    const current = pathname === m.href;
+                    return (
+                      <li key={m.href}>
+                        <Link
+                          href={m.href}
+                          onClick={(e) => handleNavClick(e, m.href)}
+                          aria-current={current ? "page" : undefined}
+                          className={`flex items-center justify-between rounded-lg px-3 py-3 text-base font-semibold transition-colors ${
+                            current
+                              ? "bg-mainRed text-white"
+                              : "text-gray-200 hover:bg-white/10 hover:text-white"
+                          }`}
+                        >
+                          {m.name}
+                          <svg
+                            aria-hidden="true"
+                            viewBox="0 0 20 20"
+                            className="size-4 opacity-50"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M7.5 5 12.5 10 7.5 15" />
+                          </svg>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </nav>
+
+              <div className="flex shrink-0 flex-col gap-3 border-t border-white/10 p-4">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setHamburgerMenu(false);
+                    setBookModal(true);
+                  }}
+                  className="w-full rounded-xl bg-mainRed px-4 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-mainRed/85"
+                >
+                  {t.nav.book}
+                </button>
+                {/* The drawer covers the header, so the switcher in the bar
+                    behind it is unreachable while the menu is open. */}
+                <LanguageSwitcher />
               </div>
-              <button
-                onClick={() => {
-                  setHamburgerMenu(false);
-                  setBookModal(true);
-                }}
-                className="bg-mainRed w-fit text-lg container-custom   px-8 py-4 rounded-xl font-semibold cursor-pointer max-md:text-sm max-md:px-4 max-md:py-1 text-white uppercase text-nowrap max-md:rounded-sm"
-              >
-                {t.nav.book}
-              </button>
             </div>
           </div>
         ) : (
