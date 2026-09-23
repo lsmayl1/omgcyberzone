@@ -22,60 +22,66 @@ export const MenuPageContent = () => {
   );
 
   return (
-    <div className="flex flex-col container-custom pt-26 pb-8 min-h-screen">
-      {/* Hero Section - Modern Split Layout */}
-      <div className="relative bg-boxColor rounded-3xl overflow-hidden mb-8 max-md:hidden">
-        <div className="grid lg:grid-cols-2 gap-0">
-          <div className="relative p-8 md:p-12 flex flex-col justify-center">
-            <div className="inline-flex items-center gap-2 bg-mainRed/20 border border-mainRed/30 rounded-full px-4 py-2 mb-4 w-fit">
-              <span className="w-2 h-2 bg-mainRed rounded-full animate-pulse" />
-              <span className="text-mainRed text-sm font-semibold">
-                {t.menuPage.badge}
-              </span>
-            </div>
-            <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+    <div className="container-custom flex min-h-screen flex-col pb-8 pt-20 sm:pt-26">
+      {/*
+        One full-bleed photo with the title over it, rather than a text panel
+        beside a picture. The photo is the lounge — the room everything on
+        this page is served in — and it is used nowhere else on the site.
+      */}
+      <section className="relative mb-6 overflow-hidden rounded-2xl sm:mb-8 sm:rounded-3xl">
+        <div className="relative min-h-[26rem] sm:min-h-[30rem] lg:min-h-[34rem]">
+          <Image
+            src="/omg/IMG_2717.webp"
+            alt={t.menuPage.heroImageAlt}
+            fill
+            priority
+            sizes="100vw"
+            quality={90}
+            className="object-cover"
+          />
+          {/* Grounds the text: near-opaque at the foot where the copy and
+              stats sit, clearing towards the top so the counter reads. */}
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 bg-gradient-to-t from-background via-background/75 to-background/25"
+          />
+
+          <div className="relative flex min-h-[26rem] flex-col justify-end gap-3 p-5 sm:min-h-[30rem] sm:gap-4 sm:p-8 lg:min-h-[34rem] lg:p-12">
+            <span className="w-fit rounded-full border border-mainRed/40 bg-mainRed/15 px-3 py-1.5 text-xs font-semibold text-mainRed sm:text-sm">
+              {t.menuPage.badge}
+            </span>
+
+            <h1 className="max-w-2xl text-3xl font-bold leading-[1.1] text-white sm:text-5xl lg:text-6xl">
               {t.menuPage.titleLine1}
               <br />
               <span className="text-mainRed">{t.menuPage.titleLine2}</span>
             </h1>
-            <p className="text-gray-400 text-lg mb-8 max-w-xl">
+
+            <p className="max-w-xl text-sm leading-relaxed text-gray-300 sm:text-base lg:text-lg">
               {t.menuPage.lead}
             </p>
 
-            <div className="flex flex-wrap gap-6 mb-8">
-              {t.menuPage.stats.map((stat, i) => (
-                <React.Fragment key={stat.label}>
-                  {i > 0 && <div className="w-px bg-gray-700 h-12" />}
-                  <div>
-                    <div className="text-3xl font-bold text-white">
-                      {stat.value}
-                    </div>
-                    <div className="text-gray-400 text-sm">{stat.label}</div>
-                  </div>
-                </React.Fragment>
+            {/* Three-up at every width — a divided row needs more room than a
+                phone has, and these are short enough to sit side by side. */}
+            <dl className="mt-2 grid grid-cols-3 gap-3 border-t border-white/15 pt-4 sm:mt-4 sm:max-w-lg sm:gap-6 sm:pt-5">
+              {t.menuPage.stats.map((stat) => (
+                <div key={stat.label} className="min-w-0">
+                  <dt className="sr-only">{stat.label}</dt>
+                  <dd className="text-xl font-bold text-white sm:text-3xl">
+                    {stat.value}
+                  </dd>
+                  <p className="text-xs leading-snug text-gray-400 sm:text-sm">
+                    {stat.label}
+                  </p>
+                </div>
               ))}
-            </div>
-          </div>
-
-          <div className="relative min-h-[400px] lg:min-h-full">
-            <div className="absolute inset-0">
-              <Image
-                src="/menu-food/pizza-pepperoni.webp"
-                alt={t.menuPage.heroImageAlt}
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-l from-boxColor via-boxColor/50 to-transparent lg:bg-gradient-to-r" />
-            </div>
+            </dl>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Search and Filter Section */}
-      <div className="flex flex-col gap-4 mb-6">
-        <h2 className="text-white text-3xl font-bold border-l-4 border-mainRed pl-4 uppercase">
+      <div className="mb-5 flex flex-col gap-3 sm:mb-6 sm:gap-4">
+        <h2 className="border-l-4 border-mainRed pl-4 text-2xl font-bold uppercase text-white sm:text-3xl">
           {t.menu.heading}
         </h2>
 
@@ -85,15 +91,17 @@ export const MenuPageContent = () => {
           </label>
           <input
             id="menu-search"
-            type="text"
+            type="search"
             placeholder={t.menuPage.searchPlaceholder}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full bg-boxColor text-white px-4 py-3 rounded-xl pl-12 focus:outline-none focus:ring-2 focus:ring-mainRed transition-all"
+            // 16px on mobile: anything smaller makes iOS Safari zoom the page
+            // in when the field takes focus.
+            className="w-full rounded-xl bg-boxColor py-3 pl-11 pr-10 text-base text-white transition-all focus:outline-none focus:ring-2 focus:ring-mainRed sm:text-sm"
           />
           <svg
             aria-hidden="true"
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
+            className="pointer-events-none absolute left-4 top-1/2 size-5 -translate-y-1/2 text-gray-400"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -110,11 +118,11 @@ export const MenuPageContent = () => {
               type="button"
               aria-label={t.menuPage.clearSearch}
               onClick={() => setSearchQuery("")}
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white"
+              className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-gray-400 hover:text-white"
             >
               <svg
                 aria-hidden="true"
-                className="w-5 h-5"
+                className="size-5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -131,27 +139,23 @@ export const MenuPageContent = () => {
         </div>
       </div>
 
-      <div className="mb-6">
+      <div className="mb-5 sm:mb-6">
         <MenuCategory active={activeCategory} onChange={setActiveCategory} />
       </div>
 
-      <div className="flex items-center justify-between mb-4">
-        <p className="text-gray-400 text-sm">
-          {t.menuPage.found}{" "}
-          <span className="text-white font-semibold">
-            {filteredItems.length}
-          </span>{" "}
-          {plural(t.menuPage.dishes, filteredItems.length)}
-        </p>
-      </div>
+      <p className="mb-3 text-xs text-gray-400 sm:mb-4 sm:text-sm">
+        {t.menuPage.found}{" "}
+        <span className="font-semibold text-white">{filteredItems.length}</span>{" "}
+        {plural(t.menuPage.dishes, filteredItems.length)}
+      </p>
 
       <MenuCard items={filteredItems} />
 
       {filteredItems.length === 0 && (
-        <div className="flex flex-col items-center justify-center py-20">
+        <div className="flex flex-col items-center justify-center px-4 py-16 text-center sm:py-20">
           <svg
             aria-hidden="true"
-            className="w-24 h-24 text-gray-600 mb-4"
+            className="mb-4 size-16 text-gray-600 sm:size-24"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -163,8 +167,10 @@ export const MenuPageContent = () => {
               d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
             />
           </svg>
-          <p className="text-gray-400 text-lg">{t.menuPage.emptyTitle}</p>
-          <p className="text-gray-500 text-sm mt-1">{t.menuPage.emptyHint}</p>
+          <p className="text-base text-gray-400 sm:text-lg">
+            {t.menuPage.emptyTitle}
+          </p>
+          <p className="mt-1 text-sm text-gray-500">{t.menuPage.emptyHint}</p>
         </div>
       )}
     </div>

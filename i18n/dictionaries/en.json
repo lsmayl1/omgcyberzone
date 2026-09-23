@@ -51,10 +51,10 @@
   "about": {
     "heading": "About the club",
     "title": "Built for teams",
-    "lead": "Dark, quiet, clean. OMG Cyber Zone has been open in Baku since 2023.",
+    "lead": "OMG Cyber Zone has been operating in Baku since 2023 — a quiet, well-kept venue designed for long sessions.",
     "body": [
-      "A main hall, a PlayStation hall, a lounge and three private rooms. Every station has a 240 Hz monitor and a DXRacer chair, and in the PRO zone the screens run at 500 Hz.",
-      "We built this place around teams. Come as five, take a room, close the door and play until morning — we never close."
+      "The club comprises a main hall, a dedicated PlayStation hall, a lounge and three private rooms. Every station is equipped with a 240 Hz monitor and a DXRacer chair, and in the PRO zone the displays run at 500 Hz.",
+      "The layout was planned around group bookings: a private room accommodates a full team of five. The club is open 24 hours a day, seven days a week."
     ]
   },
   "dayNight": {
@@ -72,6 +72,13 @@
     "weekendDays": "SAT - SUN",
     "priceFrom": "Starting from",
     "perHour": "/ hour",
+    "priceOnRequest": "Price on request",
+    "seats": {
+      "one": "{n} station",
+      "other": "{n} stations"
+    },
+    "showTariffs": "Tariffs",
+    "hideTariffs": "Hide",
     "day": "Day",
     "night": "Night",
     "allDay": "All day",
@@ -143,7 +150,7 @@
     "titleLine1": "Delicious food",
     "titleLine2": "in a cosy atmosphere",
     "lead": "The best dishes from our chef. Fresh ingredients, signature recipes and unforgettable flavour.",
-    "heroImageAlt": "Pepperoni pizza",
+    "heroImageAlt": "The OMG Cyber Zone lounge under its neon sign",
     "stats": [
       {
         "value": "30+",
@@ -199,6 +206,12 @@
       "ps_zone_4": "PlayStation 5 area",
       "ps_zone_5": "PlayStation 5 gaming area"
     }
+  },
+  "photo": {
+    "viewPhoto": "Open photo",
+    "closePhoto": "Close",
+    "prevPhoto": "Previous photo",
+    "nextPhoto": "Next photo"
   },
   "roomAlts": {
     "standart": "STANDART zone",

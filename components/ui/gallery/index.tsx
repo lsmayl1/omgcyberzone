@@ -13,6 +13,18 @@ const getTileLayout = (index: number) => {
   return "col-span-4 row-span-1 max-md:col-span-2";
 };
 
+/**
+ * Must track getTileLayout. The tiles are 7, 5 and 4 columns of twelve, so a
+ * single `sizes` for all of them left the biggest tile asking for about a
+ * third of the pixels it actually renders at, which is what made it look
+ * soft. Below md every tile spans the full width of a two-column grid.
+ */
+const getTileSizes = (index: number) => {
+  if (index === 0) return "(max-width: 767px) 100vw, 58vw";
+  if (index === 1 || index === 2) return "(max-width: 767px) 100vw, 42vw";
+  return "(max-width: 767px) 100vw, 34vw";
+};
+
 export const Gallery = ({ t }: { t: Dictionary }) => {
   const [showAll, setShowAll] = useState(false);
   const [selectedTile, setSelectedTile] = useState<
@@ -45,7 +57,7 @@ export const Gallery = ({ t }: { t: Dictionary }) => {
                 src={tile.src}
                 alt={t.gallery.alts[tile.key as keyof typeof t.gallery.alts]}
                 fill
-                sizes="(max-width: 768px) 50vw, 25vw"
+                sizes={getTileSizes(index)}
                 className="h-full w-full object-cover transition-transform duration-300 hover:scale-120"
               />
             </button>
@@ -83,7 +95,10 @@ export const Gallery = ({ t }: { t: Dictionary }) => {
                 t.gallery.alts[selectedTile.key as keyof typeof t.gallery.alts]
               }
               fill
-              sizes="92vw"
+              // The box is min(1100px, 92vw) — declaring a flat 92vw asked
+              // for the wrong width on any screen wider than ~1196px.
+              sizes="(max-width: 1196px) 92vw, 1100px"
+              quality={90}
               className="object-contain"
             />
             <button

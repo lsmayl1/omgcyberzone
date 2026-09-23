@@ -119,6 +119,14 @@ const nextConfig: NextConfig = {
     remotePatterns: [],
     // Never let next/image render an uploaded SVG: SVG can carry script.
     dangerouslyAllowSVG: false,
+    // Next 16 only serves qualities listed here, so `quality={90}` on the
+    // zone photos needs 90 declared. 75 stays the default for everything
+    // else; the room cards are the one place the extra weight is worth it.
+    qualities: [75, 90],
+    // AVIF first: roughly 20-30% smaller than WebP at the same visual
+    // quality, which is what buys back the higher quality setting. Browsers
+    // that do not accept it fall through to WebP.
+    formats: ["image/avif", "image/webp"],
   },
 
   async headers() {

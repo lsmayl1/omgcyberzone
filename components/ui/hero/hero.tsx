@@ -17,7 +17,6 @@ export const Hero = () => {
     // A product name, so it is not translated — same rule as the game titles.
     { key: "ps", label: "PlayStation 5", href: `/${locale}#plans` },
     { key: "lounge", label: t.hero.tiles.lounge, href: `/${locale}/menu` },
-    { key: "kitchen", label: t.hero.tiles.kitchen, href: `/${locale}/menu` },
   ];
 
   return (

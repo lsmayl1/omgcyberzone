@@ -51,10 +51,10 @@
   "about": {
     "heading": "Kulüp hakkında",
     "title": "Takımlar için kuruldu",
-    "lead": "Karanlık, sessiz, tertemiz. OMG Cyber Zone 2023'ten beri Bakü'de.",
+    "lead": "OMG Cyber Zone 2023'ten bu yana Bakü'de hizmet veriyor — uzun oyun seansları için tasarlanmış, sessiz ve özenle bakılan bir mekân.",
     "body": [
-      "Ana salon, PlayStation salonu, lounge ve üç özel oda. Her istasyonda 240 Hz monitör ve DXRacer koltuk var, PRO bölgesinde ise ekranlar 500 Hz'de çalışıyor.",
-      "Burayı takımlar için kurduk. Beş kişi gelin, odayı alın, kapıyı kapatın ve sabaha kadar oynayın — biz hiç kapanmıyoruz."
+      "Kulüpte bir ana salon, ayrı bir PlayStation salonu, bir lounge ve üç özel oda bulunuyor. Her istasyon 240 Hz monitör ve DXRacer koltukla donatılmış, PRO bölgesinde ise ekranlar 500 Hz'de çalışıyor.",
+      "Yerleşim, takım rezervasyonları göz önünde bulundurularak planlandı: özel bir oda beş kişilik bir kadroyu ağırlıyor. Kulüp haftanın yedi günü 24 saat açıktır."
     ]
   },
   "dayNight": {
@@ -72,6 +72,12 @@
     "weekendDays": "CMT - PAZ",
     "priceFrom": "Başlangıç fiyatı",
     "perHour": "/ saat",
+    "priceOnRequest": "Fiyat için sorun",
+    "seats": {
+      "other": "{n} istasyon"
+    },
+    "showTariffs": "Tarifeler",
+    "hideTariffs": "Kapat",
     "day": "Gündüz",
     "night": "Gece",
     "allDay": "Tüm gün",
@@ -142,7 +148,7 @@
     "titleLine1": "Lezzetli yemekler",
     "titleLine2": "keyifli bir ortamda",
     "lead": "Şefimizden en iyi yemekler. Taze malzemeler, özel tarifler ve unutulmaz bir lezzet.",
-    "heroImageAlt": "Pepperoni pizza",
+    "heroImageAlt": "Neon tabelasının altındaki OMG Cyber Zone lounge alanı",
     "stats": [
       {
         "value": "30+",
@@ -197,6 +203,12 @@
       "ps_zone_4": "PlayStation 5 alanı",
       "ps_zone_5": "PlayStation 5 oyun alanı"
     }
+  },
+  "photo": {
+    "viewPhoto": "Fotoğrafı aç",
+    "closePhoto": "Kapat",
+    "prevPhoto": "Önceki fotoğraf",
+    "nextPhoto": "Sonraki fotoğraf"
   },
   "roomAlts": {
     "standart": "STANDART bölgesi",

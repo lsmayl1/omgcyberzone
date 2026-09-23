@@ -47,7 +47,9 @@ export const MenuCategory = ({ active, onChange }: MenuCategoryProps) => {
       ref={ref}
       onMouseDown={onMouseDown}
       onClickCapture={onClickCapture}
-      className="flex overflow-x-auto gap-2 pb-4  no-scrollbar-buttons scrollbar-hide cursor-grab active:cursor-grabbing select-none"
+      // Bleeds to the screen edges on mobile so a half-cut tab shows there
+      // is more to scroll to.
+      className="-mx-4 flex cursor-grab select-none gap-2 overflow-x-auto px-4 pb-3 no-scrollbar-buttons scrollbar-hide active:cursor-grabbing sm:mx-0 sm:px-0 sm:pb-4"
       style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
     >
       {CATEGORY_TAB_KEYS.map((key) => {
@@ -57,14 +59,18 @@ export const MenuCategory = ({ active, onChange }: MenuCategoryProps) => {
             key={key}
             onClick={() => onChange(key)}
             aria-pressed={active === key}
-            className={`flex-shrink-0 flex flex-col items-center justify-center gap-2 px-4 py-3 rounded-xl transition-all duration-300 min-w-[110px] ${
+            className={`flex min-w-[5rem] shrink-0 flex-col items-center justify-center gap-1.5 rounded-xl px-3 py-2.5 transition-colors sm:min-w-[110px] sm:gap-2 sm:px-4 sm:py-3 ${
               active === key
                 ? "bg-mainRed text-white shadow-lg shadow-mainRed/30"
                 : "bg-boxColor text-white hover:bg-mainRed/80"
             }`}
           >
-            <Icon aria-hidden="true" size={30} strokeWidth={1.8} />
-            <span className="text-xs font-semibold whitespace-nowrap">
+            <Icon
+              aria-hidden="true"
+              className="size-6 sm:size-[30px]"
+              strokeWidth={1.8}
+            />
+            <span className="whitespace-nowrap text-[0.7rem] font-semibold sm:text-xs">
               {t.menu.categories[key as keyof typeof t.menu.categories]}
             </span>
           </button>

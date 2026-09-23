@@ -20,9 +20,9 @@ export const MenuSection = () => {
   return (
     <div
       id="menu"
-      className="flex scroll-mt-28 max-md:scroll-mt-20 flex-col container-custom py-16 gap-4 border-b border-b-white/10 max-md:gap-2"
+      className="container-custom flex scroll-mt-20 flex-col gap-3 border-b border-b-white/10 py-12 sm:gap-4 sm:py-16 md:scroll-mt-28"
     >
-      <h2 className="text-white text-4xl font-bold max-md:text-xl mb-4 max-md:mb-2 border-l-4 border-mainRed pl-4 uppercase">
+      <h2 className="mb-2 border-l-4 border-mainRed pl-4 text-xl font-bold uppercase text-white sm:mb-4 sm:text-4xl">
         {t.menu.heading}
       </h2>
       <MenuCategory active={activeCategory} onChange={setActiveCategory} />
@@ -31,7 +31,7 @@ export const MenuSection = () => {
         <MenuCard items={filteredItems} limit={PREVIEW_LIMIT} />
       ) : (
         <div className="flex flex-col items-center justify-center py-16 bg-boxColor rounded-xl">
-          <p className="text-gray-400 text-lg max-md:text-base">
+          <p className="text-base text-gray-400 sm:text-lg">
             {t.menu.empty}
           </p>
         </div>
@@ -40,7 +40,7 @@ export const MenuSection = () => {
       <div className="flex items-center justify-center">
         <Link
           href={`/${locale}/menu`}
-          className="rounded-xl text-white bg-mainRed font-bold w-fit px-4 py-2 text-md mt-4 max-md:text-flg"
+          className="mt-4 w-fit rounded-xl bg-mainRed px-5 py-2.5 text-sm font-bold text-white sm:text-md"
         >
           {t.menu.more}
         </Link>

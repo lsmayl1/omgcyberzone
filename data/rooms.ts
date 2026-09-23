@@ -10,6 +10,13 @@ export type Room = {
   /** Also the key into dictionary.roomAlts for image alt text. */
   key: string;
   images: string[];
+  /** Stations in the zone. Drives the seat badge and the card's grid span. */
+  seats: number;
+  /**
+   * Two or three headline parts for the card face. Hardware names, so they
+   * are the same in every locale and stay out of the dictionaries.
+   */
+  highlight: string[];
   price?: RoomPricing;
   specs?: Spec[];
 };
@@ -41,6 +48,8 @@ export const ROOMS: Room[] = [
       "/omg/IMG_2655.webp",
       "/omg/IMG_2661.webp",
     ],
+    seats: 30,
+    highlight: ["RTX 3060 Ti", "240 Hz", "Core i5-12400F"],
     price: {
       midweek: [
         { hours: 1, dayPrice: "1.80 ₼", nightPrice: "2.00 ₼" },
@@ -63,6 +72,8 @@ export const ROOMS: Room[] = [
     title: "VIP",
     key: "vip",
     images: ["/omg/IMG_2638.webp", "/omg/IMG_2641.webp"],
+    seats: 10,
+    highlight: ["RTX 3080", "32 GB DDR5", "Core i7-12700F"],
     price: {
       midweek: [
         { hours: 1, dayPrice: "2.40 ₼", nightPrice: "3.00 ₼" },
@@ -91,6 +102,8 @@ export const ROOMS: Room[] = [
     // The real PRO room. It used to show gamerparking + two STANDART shots,
     // which were not this zone at all.
     images: ["/omg/pro.webp", "/omg/IMG_2710.webp"],
+    seats: 5,
+    highlight: ["RTX 4070 Ti", "500 Hz", "Superlight 2"],
     price: {
       midweek: [
         { hours: 1, dayPrice: "4.00 ₼", nightPrice: "5.00 ₼" },
@@ -121,6 +134,8 @@ export const ROOMS: Room[] = [
     title: "PLAYSTATION",
     key: "ps",
     images: ["/omg/IMG_2628.webp", "/omg/IMG_2636.webp"],
+    seats: 6,
+    highlight: ["PlayStation 5", "DualSense"],
     price: {
       midweek: [
         { hours: 1, dayPrice: "4.00 ₼", nightPrice: "5.00 ₼" },
@@ -142,6 +157,14 @@ export const ROOMS: Room[] = [
     title: "PREMIUM",
     key: "premium",
     images: ["/omg/IMG_2691.webp", "/omg/IMG_2702.webp"],
+    seats: 5,
+    highlight: ["2K 240 Hz", "RTX 3060 Ti", "PlayStation 5"],
+    // Booked as a whole room at one flat hourly rate — no night discount and
+    // no multi-hour packages, so day and night carry the same price.
+    price: {
+      midweek: [{ hours: 1, dayPrice: "20.00 ₼", nightPrice: "20.00 ₼" }],
+      weekend: [{ hours: 1, dayPrice: "20.00 ₼", nightPrice: "20.00 ₼" }],
+    },
     specs: withSpecs({
       ram: "DDR5 32 GB 3600Mhz",
       monitor: "ARON 2K 240Hz",

@@ -51,10 +51,10 @@
   "about": {
     "heading": "Klub haqqında",
     "title": "Komandalar üçün qurulub",
-    "lead": "Qaranlıq, sakit, təmiz. OMG Cyber Zone 2023-cü ildən Bakıda fəaliyyət göstərir.",
+    "lead": "OMG Cyber Zone 2023-cü ildən Bakıda fəaliyyət göstərir — uzun oyun sessiyaları üçün nəzərdə tutulmuş sakit və səliqəli məkan.",
     "body": [
-      "Əsas zal, PlayStation zalı, lounge və üç ayrıca otaq. Hər masada 240 Hz monitor və DXRacer kreslo var, PRO zonasında isə ekranlar 500 Hz-də işləyir.",
-      "Biz bu yeri komandalar üçün qurmuşuq. Beş nəfər gəlin, otağı götürün, qapını bağlayın və səhərə qədər oynayın — biz heç vaxt bağlamırıq."
+      "Klubda əsas zal, ayrıca PlayStation zalı, lounge və üç fərdi otaq var. Hər masa 240 Hz monitor və DXRacer kreslo ilə təchiz olunub, PRO zonasında isə ekranlar 500 Hz tezliyində işləyir.",
+      "Planlaşdırma komanda bronları nəzərə alınaraq aparılıb: fərdi otaq beş nəfərlik heyəti qəbul edir. Klub həftənin yeddi günü, gün ərzində 24 saat açıqdır."
     ]
   },
   "dayNight": {
@@ -72,6 +72,12 @@
     "weekendDays": "Ş - B",
     "priceFrom": "Başlanğıc qiymət",
     "perHour": "/ saat",
+    "priceOnRequest": "Qiymət sorğu ilə",
+    "seats": {
+      "other": "{n} yer"
+    },
+    "showTariffs": "Tariflər",
+    "hideTariffs": "Bağla",
     "day": "Gündüz",
     "night": "Gecə",
     "allDay": "Bütün gün",
@@ -142,7 +148,7 @@
     "titleLine1": "Dadlı yeməklər",
     "titleLine2": "rahat mühitdə",
     "lead": "Şef-aşpazdan ən yaxşı yeməklər. Təzə ingredientlər, müəllif reseptləri və unudulmaz dad.",
-    "heroImageAlt": "Peperoni pizza",
+    "heroImageAlt": "Neon lövhəsi altında OMG Cyber Zone lounge zonası",
     "stats": [
       {
         "value": "30+",
@@ -197,6 +203,12 @@
       "ps_zone_4": "PlayStation 5 zonası",
       "ps_zone_5": "PlayStation 5 oyun zonası"
     }
+  },
+  "photo": {
+    "viewPhoto": "Şəkli aç",
+    "closePhoto": "Bağla",
+    "prevPhoto": "Əvvəlki şəkil",
+    "nextPhoto": "Növbəti şəkil"
   },
   "roomAlts": {
     "standart": "STANDART zonası",
