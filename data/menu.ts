@@ -56,6 +56,24 @@ export const CATEGORY_KEYS = [
 
 export const CATEGORY_TAB_KEYS = ["all", ...CATEGORY_KEYS] as const;
 
+/**
+ * Categories that always render a glyph, whatever the data says. The bottle
+ * shots are stock product images rather than pictures of the club. Kept here
+ * rather than in the card because it decides what the All tab shows, not
+ * just how a card looks.
+ */
+export const ICON_CATEGORIES = new Set(["drinks"]);
+
+/** True when the card will show a photograph rather than a glyph. */
+export const hasPhoto = (item: MenuItem): boolean =>
+  Boolean(item.image) && !ICON_CATEGORIES.has(item.category);
+
+/**
+ * What leads the All tab. The kitchen's own draw is pizza first, then
+ * burgers and sandwiches; everything else follows.
+ */
+const PRIORITY_CATEGORIES = ["pizza", "burger", "sandwich"] as const;
+
 /** "" for a size that is only a price, which the card reads as "no chip". */
 export const formatSize = (size: ItemSize, t: Dictionary): string => {
   if (size.label) return t.menu.sizeLabels[size.label];
@@ -86,18 +104,30 @@ export const filterMenuItems = (
 
   if (category !== "all") return matchingItems;
 
-  // Interleave categories so the All preview represents the whole menu
-  // instead of showing only the first category's items.
-  const itemsByCategory = CATEGORY_KEYS.map((key) =>
-    matchingItems.filter((item) => item.category === key),
-  );
-  const mixedItems: MenuItem[] = [];
-  const maxItems = Math.max(...itemsByCategory.map((group) => group.length), 0);
-  for (let index = 0; index < maxItems; index += 1) {
-    for (const group of itemsByCategory) {
-      const item = group[index];
-      if (item) mixedItems.push(item);
+  // The All tab is the shop window, so it shows only dishes there is a
+  // photograph of. A search still sees everything — turning up nothing for
+  // a drink someone typed in would just look broken.
+  const browsing = q ? matchingItems : matchingItems.filter(hasPhoto);
+
+  // Round-robin within a group so one category cannot fill the first
+  // screenful, and the priority group runs out before the rest begin.
+  const interleave = (keys: readonly string[]) => {
+    const groups = keys.map((key) =>
+      browsing.filter((item) => item.category === key),
+    );
+    const out: MenuItem[] = [];
+    const longest = Math.max(...groups.map((g) => g.length), 0);
+    for (let index = 0; index < longest; index += 1) {
+      for (const group of groups) {
+        const item = group[index];
+        if (item) out.push(item);
+      }
     }
-  }
-  return mixedItems;
+    return out;
+  };
+
+  const rest = CATEGORY_KEYS.filter(
+    (key) => !PRIORITY_CATEGORIES.includes(key as (typeof PRIORITY_CATEGORIES)[number]),
+  );
+  return [...interleave(PRIORITY_CATEGORIES), ...interleave(rest)];
 };

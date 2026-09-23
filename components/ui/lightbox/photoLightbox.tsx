@@ -37,11 +37,17 @@ export const PhotoLightbox = ({
 }: {
   images: string[];
   index: number;
-  alt: string;
+  /**
+   * One label for the whole set, or one per image. The menu browses
+   * between dishes, so each frame needs its own name; the zone and lounge
+   * galleries are all one subject and pass a single string.
+   */
+  alt: string | string[];
   onIndexChange: (index: number) => void;
   onClose: () => void;
 }) => {
   const { t } = useI18n();
+  const label = Array.isArray(alt) ? (alt[index] ?? alt[0] ?? "") : alt;
 
   const step = useCallback(
     (direction: -1 | 1) =>
@@ -76,7 +82,7 @@ export const PhotoLightbox = ({
     <div
       role="dialog"
       aria-modal="true"
-      aria-label={alt}
+      aria-label={label}
       onClick={onClose}
       className="fixed inset-0 z-[100] flex items-center justify-center bg-black/92 p-4 max-md:p-2"
     >
@@ -108,7 +114,7 @@ export const PhotoLightbox = ({
       >
         <Image
           src={images[index]}
-          alt={alt}
+          alt={label}
           fill
           sizes="100vw"
           quality={90}
@@ -147,7 +153,7 @@ export const PhotoLightbox = ({
                   event.stopPropagation();
                   onIndexChange(i);
                 }}
-                aria-label={`${alt} — ${i + 1}`}
+                aria-label={`${Array.isArray(alt) ? (alt[i] ?? "") : `${alt} — ${i + 1}`}`}
                 aria-current={index === i}
                 className={`h-1.5 rounded-full transition-all ${
                   index === i ? "w-6 bg-mainRed" : "w-1.5 bg-white/45"

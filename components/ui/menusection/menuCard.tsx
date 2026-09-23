@@ -1,9 +1,16 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import { formatSize, hasSizeChoice, type MenuItem } from "@/data/menu";
+import {
+  formatSize,
+  hasSizeChoice,
+  hasPhoto,
+  ICON_CATEGORIES,
+  type MenuItem,
+} from "@/data/menu";
 import { useI18n } from "@/i18n/I18nProvider";
 import { CATEGORY_ICONS } from "./categoryIcons";
+import { PhotoLightbox } from "../lightbox/photoLightbox";
 
 interface MenuCardProps {
   items: MenuItem[];
@@ -23,19 +30,12 @@ interface MenuCardProps {
  */
 const IMAGE_SIZES = "(max-width: 639px) 7rem, (max-width: 1023px) 50vw, 25vw";
 
-/**
- * Categories that show a glyph even where a photograph exists. The bottle
- * shots are stock product images rather than pictures of the club, and a wall
- * of them competes with the food for attention — a single mark reads as
- * "drink" just as well and costs no download.
- */
-const ICON_CATEGORIES = new Set(["drinks"]);
-
 export const MenuCard = ({ items, limit }: MenuCardProps) => {
   const { locale, t } = useI18n();
   const [selectedSizeIndex, setSelectedSizeIndex] = useState<
     Record<number, number>
   >({});
+  const [viewing, setViewing] = useState<number | null>(null);
 
   const handleSizeChange = (itemId: number, newSizeIndex: number) => {
     setSelectedSizeIndex((prev) => ({ ...prev, [itemId]: newSizeIndex }));
@@ -43,7 +43,12 @@ export const MenuCard = ({ items, limit }: MenuCardProps) => {
 
   const displayItems = limit ? items.slice(0, limit) : items;
 
+  // Only the dishes actually showing a photograph are in the lightbox, so
+  // the arrows step between pictures rather than stopping on icon tiles.
+  const photos = displayItems.filter(hasPhoto);
+
   return (
+    <>
     <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 xl:grid-cols-4">
       {displayItems.map((item) => {
         const rawIndex =
@@ -78,13 +83,26 @@ export const MenuCard = ({ items, limit }: MenuCardProps) => {
                   />
                 </div>
               ) : (
-                <Image
-                  src={item.image!}
-                  alt={name}
-                  fill
-                  sizes={IMAGE_SIZES}
-                  className="object-cover transition-transform duration-500 sm:group-hover:scale-105"
-                />
+                /* The card crops hard to object-cover, so tapping the photo
+                   opens it whole — the same viewer the zones and the gallery
+                   use. The badges stay outside this button: they are siblings
+                   over the image, not content inside a control. */
+                <button
+                  type="button"
+                  onClick={() =>
+                    setViewing(photos.findIndex((p) => p.id === item.id))
+                  }
+                  aria-label={`${name} — ${t.photo.viewPhoto}`}
+                  className="absolute inset-0 block h-full w-full overflow-hidden"
+                >
+                  <Image
+                    src={item.image!}
+                    alt={name}
+                    fill
+                    sizes={IMAGE_SIZES}
+                    className="object-cover transition-transform duration-500 sm:group-hover:scale-105"
+                  />
+                </button>
               )}
               {(item.isPopular || item.isSpicy) && (
                 <div className="absolute left-2 top-2 flex flex-wrap gap-1 sm:left-3 sm:top-3 sm:gap-2">
@@ -149,5 +167,16 @@ export const MenuCard = ({ items, limit }: MenuCardProps) => {
         );
       })}
     </ul>
+
+    {viewing !== null && (
+      <PhotoLightbox
+        images={photos.map((item) => item.image!)}
+        alt={photos.map((item) => item.name[locale])}
+        index={viewing}
+        onIndexChange={setViewing}
+        onClose={() => setViewing(null)}
+      />
+    )}
+    </>
   );
 };
