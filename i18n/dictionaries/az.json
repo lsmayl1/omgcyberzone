@@ -282,6 +282,14 @@
       }
     ]
   },
+  "reviews": {
+    "heading": "Rəylər",
+    "lead": "Qonaqların klub haqqında Google-da yazdıqları.",
+    "readAll": "Bütün rəylər Google-da",
+    "count": {
+      "other": "{n} rəy"
+    }
+  },
   "footer": {
     "address": "Azadlıq prospekti 103E, Bakı, Azərbaycan",
     "phone": "Telefon",

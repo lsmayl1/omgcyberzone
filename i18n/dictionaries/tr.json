@@ -282,6 +282,14 @@
       }
     ]
   },
+  "reviews": {
+    "heading": "Yorumlar",
+    "lead": "Misafirlerin kulüp hakkında Google'da yazdıkları.",
+    "readAll": "Tüm yorumlar Google'da",
+    "count": {
+      "other": "{n} değerlendirme"
+    }
+  },
   "footer": {
     "address": "Azadlıq Bulvarı 103E, Bakü, Azerbaycan",
     "phone": "Telefon",

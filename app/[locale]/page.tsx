@@ -5,6 +5,7 @@ import { Games } from "@/components/ui/games";
 import { Hero } from "@/components/ui/hero/hero";
 import { MenuSection } from "@/components/ui/menusection/menuSection";
 import { Reveal } from "@/components/ui/reveal";
+import { Reviews } from "@/components/ui/reviews";
 import { Rooms } from "@/components/ui/rooms";
 import { FaqJsonLd } from "@/components/seo/jsonLd";
 import { isLocale } from "@/i18n/config";
@@ -41,6 +42,9 @@ export default async function Home({
       </Reveal>
       <Reveal>
         <Gallery t={t} />
+      </Reveal>
+      <Reveal>
+        <Reviews t={t} locale={locale} />
       </Reveal>
       <Reveal>
         <FAQ />

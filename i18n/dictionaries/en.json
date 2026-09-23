@@ -285,6 +285,15 @@
       }
     ]
   },
+  "reviews": {
+    "heading": "Reviews",
+    "lead": "What guests say about the club on Google.",
+    "readAll": "Read all reviews on Google",
+    "count": {
+      "one": "{n} review",
+      "other": "{n} reviews"
+    }
+  },
   "footer": {
     "address": "Azadlig Avenue 103E, Baku, Azerbaijan",
     "phone": "Phone",
