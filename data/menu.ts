@@ -20,7 +20,8 @@ export type ItemSize =
 export interface MenuItem {
   id: number;
   category: string;
-  image: string;
+  /** null where menu-in.com has no photograph; the card shows an icon. */
+  image: string | null;
   selectedSizeIndex: number;
   name: Localized;
   description: Localized;
@@ -30,6 +31,10 @@ export interface MenuItem {
 }
 
 /** Category keys in display order; labels come from the dictionary. */
+// Food first, then sweets, then everything you drink. Mirrors the order
+// menu-in.com lists them in, with its 18 sections folded into these 16
+// (its two sandwich sections and its Juice section have no separate identity
+// here).
 export const CATEGORY_KEYS = [
   "pizza",
   "sandwich",
@@ -37,12 +42,16 @@ export const CATEGORY_KEYS = [
   "roll",
   "pasta",
   "salads",
-  "soups",
   "snacks",
+  "sauces",
+  "sweets",
   "milkshake",
+  "lemonade",
+  "fresh",
   "drinks",
   "coffee",
-  "sauces",
+  "tea",
+  "hookah",
 ] as const;
 
 export const CATEGORY_TAB_KEYS = ["all", ...CATEGORY_KEYS] as const;

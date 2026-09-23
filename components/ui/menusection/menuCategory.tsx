@@ -1,44 +1,26 @@
 "use client";
 import React from "react";
-import {
-  Beef,
-  Coffee,
-  CupSoda,
-  Droplet,
-  IceCreamBowl,
-  Pizza,
-  Salad,
-  Sandwich,
-  Soup,
-  Utensils,
-  type LucideIcon,
-} from "lucide-react";
 import { CATEGORY_TAB_KEYS } from "@/data/menu";
+import { CATEGORY_ICONS } from "./categoryIcons";
 import { useDragScroll } from "@/hooks/useDragScroll";
 import { useI18n } from "@/i18n/I18nProvider";
 
 type MenuCategoryProps = {
   active: string;
   onChange: (key: string) => void;
+  /**
+   * Whether the row runs to the screen edges itself. Off when a parent
+   * already does it — the sticky bar on the menu page — so the negative
+   * margins are not applied twice.
+   */
+  bleed?: boolean;
 };
 
-const CATEGORY_ICONS: Record<string, LucideIcon> = {
-  all: Utensils,
-  pizza: Pizza,
-  sandwich: Sandwich,
-  burger: Beef,
-  roll: Sandwich,
-  pasta: Utensils,
-  salads: Salad,
-  soups: Soup,
-  snacks: Utensils,
-  milkshake: IceCreamBowl,
-  drinks: CupSoda,
-  coffee: Coffee,
-  sauces: Droplet,
-};
-
-export const MenuCategory = ({ active, onChange }: MenuCategoryProps) => {
+export const MenuCategory = ({
+  active,
+  onChange,
+  bleed = true,
+}: MenuCategoryProps) => {
   const { t } = useI18n();
   const { ref, onMouseDown, onClickCapture } = useDragScroll<HTMLDivElement>();
 
@@ -49,7 +31,9 @@ export const MenuCategory = ({ active, onChange }: MenuCategoryProps) => {
       onClickCapture={onClickCapture}
       // Bleeds to the screen edges on mobile so a half-cut tab shows there
       // is more to scroll to.
-      className="-mx-4 flex cursor-grab select-none gap-2 overflow-x-auto px-4 pb-3 no-scrollbar-buttons scrollbar-hide active:cursor-grabbing sm:mx-0 sm:px-0 sm:pb-4"
+      className={`flex cursor-grab select-none gap-2 overflow-x-auto pb-3 no-scrollbar-buttons scrollbar-hide active:cursor-grabbing sm:pb-4 ${
+        bleed ? "-mx-4 px-4 sm:mx-0 sm:px-0" : ""
+      }`}
       style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
     >
       {CATEGORY_TAB_KEYS.map((key) => {

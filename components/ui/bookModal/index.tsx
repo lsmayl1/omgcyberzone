@@ -157,7 +157,9 @@ export const BookModal = ({
       `${t.modal.room}: ${form.get("room")}`,
     ].join("\n");
     window.open(
-      `http://wa.me/+994702228886?text=${encodeURIComponent(details)}`,
+      // https, and the number bare: plain http makes the first hop a
+      // plaintext redirect carrying the guest's booking details in the query.
+      `https://wa.me/994702228886?text=${encodeURIComponent(details)}`,
       "_blank",
       "noopener,noreferrer",
     );

@@ -105,7 +105,11 @@
     "clearSearch": "Axtarışı təmizlə",
     "notFound": "Heç nə tapılmadı",
     "notFoundHint": "Başqa ad yoxlayın",
-    "more": "Daha çox"
+    "more": "Daha çox",
+    "requestHeading": "Axtardığınız oyun siyahıda yoxdur?",
+    "requestText": "Administratora deyin — onu sizin üçün yükləyib quraşdıraq.",
+    "steamHeading": "Klubun Steam hesabı",
+    "steamText": "Klubun öz Steam hesabı var: Steam-dəki bütün pulsuz oyunlar hər qonaq üçün əlçatandır."
   },
   "menu": {
     "heading": "Menyu",
@@ -124,12 +128,16 @@
       "roll": "Rollar",
       "pasta": "Spagetti",
       "salads": "Salatlar",
-      "soups": "Şorbalar",
       "snacks": "Qəlyanaltılar",
+      "sauces": "Souslar",
+      "sweets": "Şirniyyat",
       "milkshake": "Milkşeyklər",
+      "lemonade": "Limonadlar",
+      "fresh": "Freşlər",
       "drinks": "İçkilər",
       "coffee": "Qəhvə",
-      "sauces": "Souslar"
+      "tea": "Çay",
+      "hookah": "Qalyan"
     },
     "units": {
       "cm": "sm",
@@ -235,6 +243,42 @@
       {
         "question": "Yaş məhdudiyyəti varmı?",
         "answer": "Xeyr, yaş məhdudiyyəti yoxdur — istənilən yaşdan qonaqları məmnuniyyətlə qəbul edirik. Uşaqlarla gəlirsinizsə, administrator uyğun zonanı seçməyə və oyunlar barədə məsləhət verməyə kömək edəcək."
+      },
+      {
+        "question": "Əvvəlcədən bron etmək lazımdırmı?",
+        "answer": "Bronsuz da gələ bilərsiniz — adətən boş yer olur. Amma dostlarla gəlirsinizsə və ya fərdi otaq istəyirsinizsə, əvvəlcədən bron edin: saytdakı «Bron et» düyməsindən istifadə edin, WhatsApp-a yazın və ya +994 70 222 88 86 nömrəsinə zəng edin."
+      },
+      {
+        "question": "İstədiyim oyun yoxdursa nə etməli?",
+        "answer": "Administratora deyin — onu sizin üçün yükləyib quraşdıracağıq. Kitabxana saytda göstərilənlərlə məhdudlaşmır."
+      },
+      {
+        "question": "Öz Steam hesabım olmalıdırmı?",
+        "answer": "Xeyr. Klubun öz Steam hesabı var və Steam-dəki bütün pulsuz oyunlar hər qonaq üçün açıqdır. Öz aldığınız oyunları oynamaq istəyirsinizsə, sadəcə öz hesabınıza daxil olun."
+      },
+      {
+        "question": "PlayStation varmı?",
+        "answer": "Bəli. Ayrıca zalda altı PlayStation 5 yeri — divanlar, pultlar və tam lobbi üçün yer."
+      },
+      {
+        "question": "Komanda üçün ayrıca otaq götürmək olarmı?",
+        "answer": "Bəli, bu PREMIUM zonasıdır: 2K 240 Hz monitorlarda beş kompüter və bir PlayStation 5. Sabit qiymət saatda 20 ₼, gün ərzində 24 saat. Qapını bağlayırsınız — otaq sizindir."
+      },
+      {
+        "question": "Klubda internet necədir?",
+        "answer": "Bütün 50 oyun kompüterinə xidmət edən 1 Gbit/s kanal."
+      },
+      {
+        "question": "Yemək və içki varmı?",
+        "answer": "Bəli, öz mətbəximiz və lounge-umuz var: pizza, burger, sendviç, makaron, salat, qəlyanaltı, qəhvə, limonad və milkşeyk. Tam menyu saytdadır, hər şey lounge-da təqdim olunur."
+      },
+      {
+        "question": "Qalyan varmı?",
+        "answer": "Bəli, lounge-da. Qalyan Premium — 25 ₼, WTO — 35 ₼."
+      },
+      {
+        "question": "Saatlıq paketlər necə işləyir?",
+        "answer": "İş günlərində 3, 5, 7 və 9 saatlıq paketlər yalnız gecə, saat 16:00-dan 08:00-a qədər keçərlidir. Həftəsonu və bayram günlərində bütün paketlər 24 saat etibarlıdır."
       }
     ]
   },
@@ -245,7 +289,11 @@
     "telegram": "Telegram",
     "mapAlt": "Xəritə: Azadlıq prospekti 103E, Bakı",
     "copyright": "© 2025 OMG Cyber Zone.",
-    "directions": "Marşrut qur"
+    "directions": "Marşrut qur",
+    "whatsapp": "WhatsApp",
+    "navTitle": "Bölmələr",
+    "hours": "Həftənin yeddi günü, gün ərzində 24 saat açıqdır",
+    "writeUs": "WhatsApp-da yazın"
   },
   "modal": {
     "title": "Rezervasiya",

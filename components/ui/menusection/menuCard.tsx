@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { formatSize, hasSizeChoice, type MenuItem } from "@/data/menu";
 import { useI18n } from "@/i18n/I18nProvider";
+import { CATEGORY_ICONS } from "./categoryIcons";
 
 interface MenuCardProps {
   items: MenuItem[];
@@ -21,6 +22,14 @@ interface MenuCardProps {
  * layout downloads a desktop-sized image for a 7rem thumbnail.
  */
 const IMAGE_SIZES = "(max-width: 639px) 7rem, (max-width: 1023px) 50vw, 25vw";
+
+/**
+ * Categories that show a glyph even where a photograph exists. The bottle
+ * shots are stock product images rather than pictures of the club, and a wall
+ * of them competes with the food for attention — a single mark reads as
+ * "drink" just as well and costs no download.
+ */
+const ICON_CATEGORIES = new Set(["drinks"]);
 
 export const MenuCard = ({ items, limit }: MenuCardProps) => {
   const { locale, t } = useI18n();
@@ -49,6 +58,10 @@ export const MenuCard = ({ items, limit }: MenuCardProps) => {
         const showSizes = hasSizeChoice(item.sizes);
         const name = item.name[locale];
         const description = item.description[locale];
+        // No photograph on the source, or a category we deliberately keep
+        // photo-free.
+        const showIcon = !item.image || ICON_CATEGORIES.has(item.category);
+        const Icon = CATEGORY_ICONS[item.category] ?? CATEGORY_ICONS.all;
 
         return (
           <li
@@ -56,13 +69,23 @@ export const MenuCard = ({ items, limit }: MenuCardProps) => {
             className="group flex flex-row overflow-hidden rounded-xl bg-boxColor transition-colors sm:flex-col sm:rounded-2xl"
           >
             <div className="relative w-28 shrink-0 self-stretch sm:h-48 sm:w-full">
-              <Image
-                src={item.image}
-                alt={name}
-                fill
-                sizes={IMAGE_SIZES}
-                className="object-cover transition-transform duration-500 sm:group-hover:scale-105"
-              />
+              {showIcon ? (
+                <div className="flex h-full min-h-28 w-full items-center justify-center bg-background">
+                  <Icon
+                    aria-hidden="true"
+                    className="size-9 text-gray-600 sm:size-14"
+                    strokeWidth={1.4}
+                  />
+                </div>
+              ) : (
+                <Image
+                  src={item.image!}
+                  alt={name}
+                  fill
+                  sizes={IMAGE_SIZES}
+                  className="object-cover transition-transform duration-500 sm:group-hover:scale-105"
+                />
+              )}
               {(item.isPopular || item.isSpicy) && (
                 <div className="absolute left-2 top-2 flex flex-wrap gap-1 sm:left-3 sm:top-3 sm:gap-2">
                   {item.isPopular && (

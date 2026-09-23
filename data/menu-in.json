@@ -1,0 +1,2215 @@
+{
+  "source": "https://menu-in.com/omg",
+  "fetchedAt": "2026-09-23",
+  "categoryCount": 18,
+  "itemCount": 117,
+  "categories": [
+    {
+      "sourceId": "3009",
+      "title": "PIZZA 25 / 30 / 35",
+      "items": [
+        {
+          "sourceId": "21897",
+          "name": "BBQ CHICKEN PIZZA",
+          "description": "Barbekyu sous, Qauda pendiri, Çeddar pendiri, Soğan, Bibər, Toyuq əti",
+          "priceText": "13.00 AZN / 17.00 AZN / 24.00 AZN",
+          "basePrice": 13,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 13
+            },
+            {
+              "label": "Seçim 2",
+              "price": 17
+            },
+            {
+              "label": "Seçim 3",
+              "price": 24
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68920c2f532031754401839.png"
+          ],
+          "localImages": [
+            "/menu-in/68920c2f532031754401839.webp"
+          ]
+        },
+        {
+          "sourceId": "21898",
+          "name": "Beef Pizza",
+          "description": "Xüsusi sous, Qauda pendiri, Pomidor, Soğan, Mal əti",
+          "priceText": "17.00 AZN / 23.00 AZN / 28.00 AZN",
+          "basePrice": 17,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 17
+            },
+            {
+              "label": "Seçim 2",
+              "price": 23
+            },
+            {
+              "label": "Seçim 3",
+              "price": 28
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68920d4e6980c1754402126.png"
+          ],
+          "localImages": [
+            "/menu-in/68920d4e6980c1754402126.webp"
+          ]
+        },
+        {
+          "sourceId": "24400",
+          "name": "Bolonez Pizza",
+          "description": "Bolonez sous, Pepperoni, Qauda pendiri, Göbələk, Zeytun",
+          "priceText": "16.00 AZN / 22.00 AZN / 27.00 AZN",
+          "basePrice": 16,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 16
+            },
+            {
+              "label": "Seçim 2",
+              "price": 22
+            },
+            {
+              "label": "Seçim 3",
+              "price": 27
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68f01ec7c4b591760566983.jpg"
+          ],
+          "localImages": [
+            "/menu-in/68f01ec7c4b591760566983.webp"
+          ]
+        },
+        {
+          "sourceId": "21899",
+          "name": "Capricciosa Pizza",
+          "description": "Pizza sous, Qauda pendiri, Vetçina, Göbələk, Zeytun",
+          "priceText": "13.00 AZN / 18.00 AZN / 24.00 AZN",
+          "basePrice": 13,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 13
+            },
+            {
+              "label": "Seçim 2",
+              "price": 18
+            },
+            {
+              "label": "Seçim 3",
+              "price": 24
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68920d9866ee61754402200.png"
+          ],
+          "localImages": [
+            "/menu-in/68920d9866ee61754402200.webp"
+          ]
+        },
+        {
+          "sourceId": "21900",
+          "name": "Cheese Pizza",
+          "description": "Xüsusi sous, Qauda pendiri, Kifli pendir, Çeddar, Parmezan, Rikotta",
+          "priceText": "13.00 AZN / 19.00 AZN / 26.00 AZN",
+          "basePrice": 13,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 13
+            },
+            {
+              "label": "Seçim 2",
+              "price": 19
+            },
+            {
+              "label": "Seçim 3",
+              "price": 26
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68920dd2e35161754402258.png"
+          ],
+          "localImages": [
+            "/menu-in/68920dd2e35161754402258.webp"
+          ]
+        },
+        {
+          "sourceId": "21901",
+          "name": "Chicken Pizza",
+          "description": "Pizza sous, Qauda pendiri, Göbələk, Bibər, Toyuq əti",
+          "priceText": "14.00 AZN / 18.00 AZN / 25.00 AZN",
+          "basePrice": 14,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 14
+            },
+            {
+              "label": "Seçim 2",
+              "price": 18
+            },
+            {
+              "label": "Seçim 3",
+              "price": 25
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68920e2a544591754402346.png"
+          ],
+          "localImages": [
+            "/menu-in/68920e2a544591754402346.webp"
+          ]
+        },
+        {
+          "sourceId": "21902",
+          "name": "Coco Mix Pizza",
+          "description": "Pizza sous, Qauda pendiri, Pomidor, Bibər, Zeytun, Toyuq əti",
+          "priceText": "14.00 AZN / 18.00 AZN / 25.00 AZN",
+          "basePrice": 14,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 14
+            },
+            {
+              "label": "Seçim 2",
+              "price": 18
+            },
+            {
+              "label": "Seçim 3",
+              "price": 25
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68920e68ce0ee1754402408.png"
+          ],
+          "localImages": [
+            "/menu-in/68920e68ce0ee1754402408.webp"
+          ]
+        },
+        {
+          "sourceId": "21903",
+          "name": "Grand Mix Pizza",
+          "description": "Pizza sous, Qauda pendiri, Pepperoni, Sosis, Göbələk, Bibər, Zeytun, Toyuq əti",
+          "priceText": "17.00 AZN / 24.00 AZN / 30.00 AZN",
+          "basePrice": 17,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 17
+            },
+            {
+              "label": "Seçim 2",
+              "price": 24
+            },
+            {
+              "label": "Seçim 3",
+              "price": 30
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68920ee0d96081754402528.png"
+          ],
+          "localImages": [
+            "/menu-in/68920ee0d96081754402528.webp"
+          ]
+        },
+        {
+          "sourceId": "24401",
+          "name": "Hawaiian Pizza",
+          "description": "Pizza sous, Vetçina, Qauda pendiri, Pomidor, Ananas, Toyuq əti",
+          "priceText": "13.00 AZN / 19.00 AZN / 24.00 AZN",
+          "basePrice": 13,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 13
+            },
+            {
+              "label": "Seçim 2",
+              "price": 19
+            },
+            {
+              "label": "Seçim 3",
+              "price": 24
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68f01ed8330221760567000.jpeg"
+          ],
+          "localImages": [
+            "/menu-in/68f01ed8330221760567000.webp"
+          ]
+        },
+        {
+          "sourceId": "21904",
+          "name": "Margarita Pizza",
+          "description": "Pizza sous, Qauda pendiri, Pomidor",
+          "priceText": "10.00 AZN / 14.00 AZN / 19.00 AZN",
+          "basePrice": 10,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 10
+            },
+            {
+              "label": "Seçim 2",
+              "price": 14
+            },
+            {
+              "label": "Seçim 3",
+              "price": 19
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68920ef45832a1754402548.png"
+          ],
+          "localImages": [
+            "/menu-in/68920ef45832a1754402548.webp"
+          ]
+        },
+        {
+          "sourceId": "21905",
+          "name": "Mexican Chicken",
+          "description": "Göbələk, Boqar bibəri, Qauda pendiri, Toyuq filesi, Pomidor və Jalapeno",
+          "priceText": "13.00 AZN / 19.00 AZN / 26.00 AZN",
+          "basePrice": 13,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 13
+            },
+            {
+              "label": "Seçim 2",
+              "price": 19
+            },
+            {
+              "label": "Seçim 3",
+              "price": 26
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68920f2596f701754402597.png"
+          ],
+          "localImages": [
+            "/menu-in/68920f2596f701754402597.webp"
+          ]
+        },
+        {
+          "sourceId": "21906",
+          "name": "Mexico Pizza",
+          "description": "Pizza sous, Qauda pendiri, Bibər, Pomidor, Jalapeno, Mal əti",
+          "priceText": "13.00 AZN / 21.00 AZN / 28.00 AZN",
+          "basePrice": 13,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 13
+            },
+            {
+              "label": "Seçim 2",
+              "price": 21
+            },
+            {
+              "label": "Seçim 3",
+              "price": 28
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68920f60073651754402656.png"
+          ],
+          "localImages": [
+            "/menu-in/68920f60073651754402656.webp"
+          ]
+        },
+        {
+          "sourceId": "21907",
+          "name": "Mushroom Pizza",
+          "description": "Göbələkli sous, Göbələk, Turşu xiyar, Qauda pendiri, Toyuq filesi",
+          "priceText": "15.00 AZN / 22.00 AZN / 26.00 AZN",
+          "basePrice": 15,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 15
+            },
+            {
+              "label": "Seçim 2",
+              "price": 22
+            },
+            {
+              "label": "Seçim 3",
+              "price": 26
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68920f90d7fa21754402704.png"
+          ],
+          "localImages": [
+            "/menu-in/68920f90d7fa21754402704.webp"
+          ]
+        },
+        {
+          "sourceId": "21908",
+          "name": "Naggets Pizza",
+          "description": "Pizza sous, Naggets, Göbələk, Qarğıdalı, Qauda pendiri, Pomidor",
+          "priceText": "14.00 AZN / 20.00 AZN / 27.00 AZN",
+          "basePrice": 14,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 14
+            },
+            {
+              "label": "Seçim 2",
+              "price": 20
+            },
+            {
+              "label": "Seçim 3",
+              "price": 27
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68920fcc465411754402764.png"
+          ],
+          "localImages": [
+            "/menu-in/68920fcc465411754402764.webp"
+          ]
+        },
+        {
+          "sourceId": "21909",
+          "name": "Pepperoni Pizza",
+          "description": "Pizza sous, Qauda pendiri, Pepperoni",
+          "priceText": "13.00 AZN / 18.00 AZN / 24.00 AZN",
+          "basePrice": 13,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 13
+            },
+            {
+              "label": "Seçim 2",
+              "price": 18
+            },
+            {
+              "label": "Seçim 3",
+              "price": 24
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/689210088e7951754402824.png"
+          ],
+          "localImages": [
+            "/menu-in/689210088e7951754402824.webp"
+          ]
+        },
+        {
+          "sourceId": "21910",
+          "name": "Pesto Pizza",
+          "description": "Pesto sous, Qauda pendiri, Parmezan, Soğan, Bibər, Pomidor, Qarğıdalı",
+          "priceText": "16.00 AZN / 23.00 AZN / 29.00 AZN",
+          "basePrice": 16,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 16
+            },
+            {
+              "label": "Seçim 2",
+              "price": 23
+            },
+            {
+              "label": "Seçim 3",
+              "price": 29
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/6892103dca0c21754402877.png"
+          ],
+          "localImages": [
+            "/menu-in/6892103dca0c21754402877.webp"
+          ]
+        },
+        {
+          "sourceId": "21911",
+          "name": "Sausage Pizza",
+          "description": "Pesto sous, Qauda pendiri, Soğan, Bibər, Sosis",
+          "priceText": "14.00 AZN / 19.00 AZN / 23.00 AZN",
+          "basePrice": 14,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 14
+            },
+            {
+              "label": "Seçim 2",
+              "price": 19
+            },
+            {
+              "label": "Seçim 3",
+              "price": 23
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/689210904bdbc1754402960.png"
+          ],
+          "localImages": [
+            "/menu-in/689210904bdbc1754402960.webp"
+          ]
+        },
+        {
+          "sourceId": "21912",
+          "name": "Sezar Pizza",
+          "description": "Sezar sousu, Qauda pendiri, Aysberq, Toyuq filesi, Çeri pomidor",
+          "priceText": "14.00 AZN / 20.00 AZN / 27.00 AZN",
+          "basePrice": 14,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 14
+            },
+            {
+              "label": "Seçim 2",
+              "price": 20
+            },
+            {
+              "label": "Seçim 3",
+              "price": 27
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/6892109baf24f1754402971.png"
+          ],
+          "localImages": [
+            "/menu-in/6892109baf24f1754402971.webp"
+          ]
+        },
+        {
+          "sourceId": "24402",
+          "name": "Texas Pizza",
+          "description": "BBQ Sous, Qauda pendiri, Sosis, Karton fri, Turşu diyar",
+          "priceText": "15.00 AZN / 22.00 AZN / 28.00 AZN",
+          "basePrice": 15,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 15
+            },
+            {
+              "label": "Seçim 2",
+              "price": 22
+            },
+            {
+              "label": "Seçim 3",
+              "price": 28
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68f01ee86dd361760567016.jpeg"
+          ],
+          "localImages": [
+            "/menu-in/68f01ee86dd361760567016.webp"
+          ]
+        },
+        {
+          "sourceId": "21913",
+          "name": "Tuna Pizza",
+          "description": "Pizza sous, Qauda pendiri, Göbələk, Zeytun, Tuna balığı",
+          "priceText": "14.00 AZN / 20.00 AZN / 27.00 AZN",
+          "basePrice": 14,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 14
+            },
+            {
+              "label": "Seçim 2",
+              "price": 20
+            },
+            {
+              "label": "Seçim 3",
+              "price": 27
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/6892111a108111754403098.png"
+          ],
+          "localImages": [
+            "/menu-in/6892111a108111754403098.webp"
+          ]
+        },
+        {
+          "sourceId": "21914",
+          "name": "Vegetarian Pizza",
+          "description": "Pizza sous, Qauda pendiri, Soğan, Göbələk, Bibər, Zeytun",
+          "priceText": "11.00 AZN / 15.00 AZN / 19.00 AZN",
+          "basePrice": 11,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 11
+            },
+            {
+              "label": "Seçim 2",
+              "price": 15
+            },
+            {
+              "label": "Seçim 3",
+              "price": 19
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68921167e850f1754403175.png"
+          ],
+          "localImages": [
+            "/menu-in/68921167e850f1754403175.webp"
+          ]
+        },
+        {
+          "sourceId": "21915",
+          "name": "WOW Pizza",
+          "description": "Xüsusi sous, Qauda pendiri, Pepperoni, Göbələk, Avakado, Parmezan, Toyuq əti",
+          "priceText": "17.00 AZN / 24.00 AZN / 30.00 AZN",
+          "basePrice": 17,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 17
+            },
+            {
+              "label": "Seçim 2",
+              "price": 24
+            },
+            {
+              "label": "Seçim 3",
+              "price": 30
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/689211a8cc3f81754403240.png"
+          ],
+          "localImages": [
+            "/menu-in/689211a8cc3f81754403240.webp"
+          ]
+        },
+        {
+          "sourceId": "21916",
+          "name": "Yunan Pizza",
+          "description": "Pizza sous, Zeytun, Feta pendiri, Qauda pendiri, Bibər, Pomidor",
+          "priceText": "12.00 AZN / 16.00 AZN / 20.00 AZN",
+          "basePrice": 12,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 12
+            },
+            {
+              "label": "Seçim 2",
+              "price": 16
+            },
+            {
+              "label": "Seçim 3",
+              "price": 20
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/689211e0b008b1754403296.png"
+          ],
+          "localImages": [
+            "/menu-in/689211e0b008b1754403296.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "3371",
+      "title": "Burgers",
+      "items": [
+        {
+          "sourceId": "25036",
+          "name": "Cheese Burger",
+          "description": "Xardal, Ketçup, Soğan, Çeddar pendiri, Mal əti\r\nServed with French Fries",
+          "priceText": "8.50 AZN",
+          "basePrice": 8.5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "25037",
+          "name": "Pizza Burger",
+          "description": "Burger sous, Aysberq kahı, Pomidor, Turşu xiyar, Mal əti, Çeddar pendiri, Pendir sousu. Served with French Fries",
+          "priceText": "8.00 AZN",
+          "basePrice": 8,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "25038",
+          "name": "BBQ Burger",
+          "description": "BBQ sous, Mal əti, Çeddar pendiri, Soğan, Turşu xiyar, Mozarella pendiri. Served with French Fries",
+          "priceText": "7.50 AZN",
+          "basePrice": 7.5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "3800",
+      "title": "Club Sandwich",
+      "items": [
+        {
+          "sourceId": "27140",
+          "name": "Chicken Club Sandwich",
+          "description": "Sendviç çörəyi, Xardal, Mayonez, Vetçina, Toyuq filesi, Pomidor, Turşu xiyar, Çeddar pendiri\r\nServed with French Fries",
+          "priceText": "11.00 AZN",
+          "basePrice": 11,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "3010",
+      "title": "Pizza - Sandwich",
+      "items": [
+        {
+          "sourceId": "21917",
+          "name": "BBQ Sandwich",
+          "description": "BBQ sous, Qauda pendiri, Soğan, Rukola, Toyuq əti",
+          "priceText": "10.00 AZN",
+          "basePrice": 10,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/689212e265cba1754403554.png"
+          ],
+          "localImages": [
+            "/menu-in/689212e265cba1754403554.webp"
+          ]
+        },
+        {
+          "sourceId": "21918",
+          "name": "Beef Sandwich",
+          "description": "Sarımsaq sous, Göbələk, Qauda pendiri, Mal əti, Pomidor, Jalapeno",
+          "priceText": "13.00 AZN",
+          "basePrice": 13,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/6892133b08dfd1754403643.png"
+          ],
+          "localImages": [
+            "/menu-in/6892133b08dfd1754403643.webp"
+          ]
+        },
+        {
+          "sourceId": "21919",
+          "name": "Chicken Sandwich",
+          "description": "Pendir sousu, Göbələk, Bibər, Qauda pendiri, Toyuq filesi, Qarğıdalı",
+          "priceText": "11.00 AZN",
+          "basePrice": 11,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/6892135bd5dec1754403675.png"
+          ],
+          "localImages": [
+            "/menu-in/6892135bd5dec1754403675.webp"
+          ]
+        },
+        {
+          "sourceId": "24403",
+          "name": "Pizza Bread",
+          "description": "",
+          "priceText": "9.00 AZN",
+          "basePrice": 9,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21920",
+          "name": "Tuna Sandwich",
+          "description": "Pizza sous, Qauda pendiri, Soğan, Qarğıdalı, Rukola, Tuna balığı",
+          "priceText": "10.00 AZN",
+          "basePrice": 10,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/68921368ddebe1754403688.png"
+          ],
+          "localImages": [
+            "/menu-in/68921368ddebe1754403688.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "3011",
+      "title": "Roll - Sandwich",
+      "items": [
+        {
+          "sourceId": "21921",
+          "name": "Beef Roll",
+          "description": "Xüsusi sous, Turşu xiyar, Qauda pendiri, Mal əti, Pomidor",
+          "priceText": "13.00 AZN",
+          "basePrice": 13,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/68924a7a4bb8b1754417786.jpeg"
+          ],
+          "localImages": [
+            "/menu-in/68924a7a4bb8b1754417786.webp"
+          ]
+        },
+        {
+          "sourceId": "21922",
+          "name": "Cheese Chicken Roll",
+          "description": "Barbekyu sous, Ayzberq, Qauda pendiri, Fri, Qarğıdalı, Turşu xiyar, Toyuq əti",
+          "priceText": "9.00 AZN",
+          "basePrice": 9,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/68924a8fd95311754417807.jpeg"
+          ],
+          "localImages": [
+            "/menu-in/68924a8fd95311754417807.webp"
+          ]
+        },
+        {
+          "sourceId": "21923",
+          "name": "Chicken Melt Roll",
+          "description": "Xüsusi sous, Ayzberq, Qauda pendiri, Fri, Qarğıdalı, Turşu xiyar, Toyuq əti",
+          "priceText": "9.00 AZN",
+          "basePrice": 9,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/68924a9a6fd111754417818.jpeg"
+          ],
+          "localImages": [
+            "/menu-in/68924a9a6fd111754417818.webp"
+          ]
+        },
+        {
+          "sourceId": "21924",
+          "name": "Pizza Roll",
+          "description": "Xüsusi sous, Göbələk, Sosis, Qauda pendiri, Toyuq filesi, Qarğıdalı, Pomidor",
+          "priceText": "13.00 AZN",
+          "basePrice": 13,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/68924aa5ce9491754417829.jpeg"
+          ],
+          "localImages": [
+            "/menu-in/68924aa5ce9491754417829.webp"
+          ]
+        },
+        {
+          "sourceId": "21925",
+          "name": "Sezar Roll",
+          "description": "Ayzberq, Çeri pomidor, Toyuq filesi, Qauda pendiri, Parmezan pendiri, Sezar sous",
+          "priceText": "10.00 AZN",
+          "basePrice": 10,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/68924ab03f7f31754417840.jpeg"
+          ],
+          "localImages": [
+            "/menu-in/68924ab03f7f31754417840.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "3008",
+      "title": "Pasta",
+      "items": [
+        {
+          "sourceId": "21893",
+          "name": "Penne Arabiata",
+          "description": "Penne makaronu, Arabiata sous, Qauda",
+          "priceText": "8.00 AZN",
+          "basePrice": 8,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/689214922a3bf1754403986.png"
+          ],
+          "localImages": [
+            "/menu-in/689214922a3bf1754403986.webp"
+          ]
+        },
+        {
+          "sourceId": "21894",
+          "name": "Penne Arabiata Toyuq",
+          "description": "Penne makaronu, Arabiata sous, Qauda, Toyuq əti",
+          "priceText": "9.00 AZN",
+          "basePrice": 9,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/689214d137a7d1754404049.png"
+          ],
+          "localImages": [
+            "/menu-in/689214d137a7d1754404049.webp"
+          ]
+        },
+        {
+          "sourceId": "21895",
+          "name": "Spagetti Bolognese",
+          "description": "Spagetti, Bolonyez, Parmezan",
+          "priceText": "11.00 AZN",
+          "basePrice": 11,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/68921504cba661754404100.png"
+          ],
+          "localImages": [
+            "/menu-in/68921504cba661754404100.webp"
+          ]
+        },
+        {
+          "sourceId": "21896",
+          "name": "Spagetti Pomodoro",
+          "description": "Spagetti, Pomodoro sous, Parmezan pendiri",
+          "priceText": "7.00 AZN",
+          "basePrice": 7,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/6892153e7a9641754404158.png"
+          ],
+          "localImages": [
+            "/menu-in/6892153e7a9641754404158.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "3013",
+      "title": "Snacks",
+      "items": [
+        {
+          "sourceId": "21933",
+          "name": "Kartof Dilimləri",
+          "description": "Qızardılmış kartof dilimləri",
+          "priceText": "4.50 AZN",
+          "basePrice": 4.5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/6892158a4da9f1754404234.png"
+          ],
+          "localImages": [
+            "/menu-in/6892158a4da9f1754404234.webp"
+          ]
+        },
+        {
+          "sourceId": "21934",
+          "name": "Kartof Fri",
+          "description": "ORTA / BOYUK",
+          "priceText": "3.50 AZN / 4.00 AZN",
+          "basePrice": 3.5,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 3.5
+            },
+            {
+              "label": "Seçim 2",
+              "price": 4
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/689215c90d1271754404297.png"
+          ],
+          "localImages": [
+            "/menu-in/689215c90d1271754404297.webp"
+          ]
+        },
+        {
+          "sourceId": "21935",
+          "name": "Naggets 4/8",
+          "description": "Toyuq nagetsləri",
+          "priceText": "5.50 AZN / 8.50 AZN",
+          "basePrice": 5.5,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 5.5
+            },
+            {
+              "label": "Seçim 2",
+              "price": 8.5
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68921600ae5301754404352.png"
+          ],
+          "localImages": [
+            "/menu-in/68921600ae5301754404352.webp"
+          ]
+        },
+        {
+          "sourceId": "21936",
+          "name": "Pendir Çubuqları 4/8",
+          "description": "Çörək krutonları, Mozzarella pendiri",
+          "priceText": "8.00 AZN / 14.00 AZN",
+          "basePrice": 8,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 8
+            },
+            {
+              "label": "Seçim 2",
+              "price": 14
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68921638827a61754404408.png"
+          ],
+          "localImages": [
+            "/menu-in/68921638827a61754404408.webp"
+          ]
+        },
+        {
+          "sourceId": "21937",
+          "name": "Toyuq Çubuqları 4/8",
+          "description": "Çörək krutonları, Toyuq filesi",
+          "priceText": "7.00 AZN / 11.00 AZN",
+          "basePrice": 7,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 7
+            },
+            {
+              "label": "Seçim 2",
+              "price": 11
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/68921674aadca1754404468.png"
+          ],
+          "localImages": [
+            "/menu-in/68921674aadca1754404468.webp"
+          ]
+        },
+        {
+          "sourceId": "21938",
+          "name": "Toyuq Qanadları 5/8",
+          "description": "Toyuq qanadları, BBQ sous, Küncüt",
+          "priceText": "8.00 AZN / 11.00 AZN",
+          "basePrice": 8,
+          "currency": "AZN",
+          "variants": [
+            {
+              "label": "Seçim 1",
+              "price": 8
+            },
+            {
+              "label": "Seçim 2",
+              "price": 11
+            }
+          ],
+          "images": [
+            "https://menu-in.com/storage/menu/689216a9ed6231754404521.png"
+          ],
+          "localImages": [
+            "/menu-in/689216a9ed6231754404521.webp"
+          ]
+        },
+        {
+          "sourceId": "24404",
+          "name": "Chicken Schnitzel",
+          "description": "Kartof fri, Çörək krutonlu, Toyuq əti, Acılı sosu, Pendirli sous",
+          "priceText": "8.00 AZN",
+          "basePrice": 8,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "3012",
+      "title": "Salads",
+      "items": [
+        {
+          "sourceId": "21926",
+          "name": "Beef Salad",
+          "description": "Aysberq kahı, Pomidor, Xiyar, Soğan, Xüsusi sous, Mal əti",
+          "priceText": "10.00 AZN",
+          "basePrice": 10,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/68887c43afa541753775171.jpeg"
+          ],
+          "localImages": [
+            "/menu-in/68887c43afa541753775171.webp"
+          ]
+        },
+        {
+          "sourceId": "21927",
+          "name": "Mexico Salad",
+          "description": "Ayzberq, Xüsusi sous, Qarğıdalı, Lobya, Pomidor, Avakado, Soğan, Toyuq əti",
+          "priceText": "8.00 AZN",
+          "basePrice": 8,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/689216f027bee1754404592.png"
+          ],
+          "localImages": [
+            "/menu-in/689216f027bee1754404592.webp"
+          ]
+        },
+        {
+          "sourceId": "21928",
+          "name": "Sezar Krevet Salad",
+          "description": "Sezar sous, Ayzberq, Suxari, Çeri pomidor, Parmezan, Krevet",
+          "priceText": "15.00 AZN",
+          "basePrice": 15,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/68921721f0aef1754404641.png"
+          ],
+          "localImages": [
+            "/menu-in/68921721f0aef1754404641.webp"
+          ]
+        },
+        {
+          "sourceId": "21929",
+          "name": "Sezar Toyuq Salad",
+          "description": "Sezar sous, Ayzberq, Suxari, Seri pomidor, Parmezan, Toyuq əti",
+          "priceText": "9.00 AZN",
+          "basePrice": 9,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/68921753e65411754404691.png"
+          ],
+          "localImages": [
+            "/menu-in/68921753e65411754404691.webp"
+          ]
+        },
+        {
+          "sourceId": "21930",
+          "name": "Tuna Salad",
+          "description": "Ayzberq, Çeri pomidor, Xiyar, Zeytun, Tuna balığı, Qarğıdalı, Xüsusi sous",
+          "priceText": "10.00 AZN",
+          "basePrice": 10,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/6892179090d081754404752.png"
+          ],
+          "localImages": [
+            "/menu-in/6892179090d081754404752.webp"
+          ]
+        },
+        {
+          "sourceId": "21931",
+          "name": "Vegetarian Salad",
+          "description": "Ayzberq, Xiyar, Pomidor, Bibər, Avakado, Kök, Qarğıdalı, Zeytun yağı",
+          "priceText": "7.00 AZN",
+          "basePrice": 7,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/689217c503d1a1754404805.png"
+          ],
+          "localImages": [
+            "/menu-in/689217c503d1a1754404805.webp"
+          ]
+        },
+        {
+          "sourceId": "21932",
+          "name": "Yunan Salad",
+          "description": "Ayzberq, Çeri pomidor, Xiyar, Zeytun, Bibər, Feta pendiri, Oreqano, Xüsusi sous",
+          "priceText": "8.00 AZN",
+          "basePrice": 8,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/6892181dab01b1754404893.png"
+          ],
+          "localImages": [
+            "/menu-in/6892181dab01b1754404893.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "3014",
+      "title": "SOUS",
+      "items": [
+        {
+          "sourceId": "21939",
+          "name": "Acılı",
+          "description": "",
+          "priceText": "1.00 AZN",
+          "basePrice": 1,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/689219d5ba11d1754405333.png"
+          ],
+          "localImages": [
+            "/menu-in/689219d5ba11d1754405333.webp"
+          ]
+        },
+        {
+          "sourceId": "21940",
+          "name": "Barbekyu",
+          "description": "",
+          "priceText": "1.00 AZN",
+          "basePrice": 1,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/68921879988281754404985.png"
+          ],
+          "localImages": [
+            "/menu-in/68921879988281754404985.webp"
+          ]
+        },
+        {
+          "sourceId": "24405",
+          "name": "Burger",
+          "description": "",
+          "priceText": "1.00 AZN",
+          "basePrice": 1,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21941",
+          "name": "Ketchup",
+          "description": "",
+          "priceText": "1.00 AZN",
+          "basePrice": 1,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/689218fbdf0b51754405115.png"
+          ],
+          "localImages": [
+            "/menu-in/689218fbdf0b51754405115.webp"
+          ]
+        },
+        {
+          "sourceId": "21942",
+          "name": "Mayonez",
+          "description": "",
+          "priceText": "1.00 AZN",
+          "basePrice": 1,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/68921936570131754405174.png"
+          ],
+          "localImages": [
+            "/menu-in/68921936570131754405174.webp"
+          ]
+        },
+        {
+          "sourceId": "21943",
+          "name": "Pendirli",
+          "description": "",
+          "priceText": "1.00 AZN",
+          "basePrice": 1,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/6892199e632601754405278.png"
+          ],
+          "localImages": [
+            "/menu-in/6892199e632601754405278.webp"
+          ]
+        },
+        {
+          "sourceId": "24406",
+          "name": "Sezar",
+          "description": "",
+          "priceText": "1.00 AZN",
+          "basePrice": 1,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21944",
+          "name": "Turshu Şirin",
+          "description": "",
+          "priceText": "1.00 AZN",
+          "basePrice": 1,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/689219662d07b1754405222.png"
+          ],
+          "localImages": [
+            "/menu-in/689219662d07b1754405222.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "3018",
+      "title": "Sweets",
+      "items": [
+        {
+          "sourceId": "21952",
+          "name": "Twix",
+          "description": "",
+          "priceText": "3.00 AZN",
+          "basePrice": 3,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/68924aeb95e3a1754417899.jpeg"
+          ],
+          "localImages": [
+            "/menu-in/68924aeb95e3a1754417899.webp"
+          ]
+        },
+        {
+          "sourceId": "21953",
+          "name": "Bounty",
+          "description": "",
+          "priceText": "3.00 AZN",
+          "basePrice": 3,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/68924b01b472b1754417921.jpeg"
+          ],
+          "localImages": [
+            "/menu-in/68924b01b472b1754417921.webp"
+          ]
+        },
+        {
+          "sourceId": "21954",
+          "name": "M&M's",
+          "description": "",
+          "priceText": "3.00 AZN",
+          "basePrice": 3,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/menu/68924b11ae7c91754417937.jpeg"
+          ],
+          "localImages": [
+            "/menu-in/68924b11ae7c91754417937.webp"
+          ]
+        },
+        {
+          "sourceId": "21955",
+          "name": "Bombbar 40",
+          "description": "Coconut / Raspberry / Banana",
+          "priceText": "5.00 AZN",
+          "basePrice": 5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21956",
+          "name": "Bombbar Cookie",
+          "description": "Coconut",
+          "priceText": "5.00 AZN",
+          "basePrice": 5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21957",
+          "name": "Snaq Coco",
+          "description": "Coconut",
+          "priceText": "4.00 AZN",
+          "basePrice": 4,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21958",
+          "name": "Chika Musli",
+          "description": "Badam-Duzlu Karamel",
+          "priceText": "5.00 AZN",
+          "basePrice": 5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21959",
+          "name": "Snaqer",
+          "description": "Hazelnut / Peanut",
+          "priceText": "4.00 AZN",
+          "basePrice": 4,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21960",
+          "name": "Shocks Brownie",
+          "description": "Coffee / Extra Chocolate",
+          "priceText": "6.00 AZN",
+          "basePrice": 6,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "3019",
+      "title": "Drinks",
+      "items": [
+        {
+          "sourceId": "21961",
+          "name": "Sirab Qazsiz, 0.5",
+          "description": "",
+          "priceText": "1.50 AZN",
+          "basePrice": 1.5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21962",
+          "name": "Sirab Qazli, 0.5",
+          "description": "",
+          "priceText": "1.50 AZN",
+          "basePrice": 1.5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21963",
+          "name": "Sirab Glass Qazsiz, 0.5",
+          "description": "",
+          "priceText": "2.50 AZN",
+          "basePrice": 2.5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21964",
+          "name": "Sirab Glass Qazli, 0.5",
+          "description": "",
+          "priceText": "2.50 AZN",
+          "basePrice": 2.5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21965",
+          "name": "Coca-Cola Classic 0.5",
+          "description": "",
+          "priceText": "4.00 AZN",
+          "basePrice": 4,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21966",
+          "name": "Coca-Cola Classic 0.33",
+          "description": "",
+          "priceText": "4.00 AZN",
+          "basePrice": 4,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21967",
+          "name": "Coca-Cola Zero 0.33",
+          "description": "",
+          "priceText": "4.00 AZN",
+          "basePrice": 4,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21968",
+          "name": "Fanta 0.33",
+          "description": "",
+          "priceText": "4.00 AZN",
+          "basePrice": 4,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21969",
+          "name": "Sprite 0.33",
+          "description": "",
+          "priceText": "4.00 AZN",
+          "basePrice": 4,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21970",
+          "name": "Fuse Tea Lemon, 0.33",
+          "description": "",
+          "priceText": "4.00 AZN",
+          "basePrice": 4,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21971",
+          "name": "Fuse Tea Peach, 0.33",
+          "description": "",
+          "priceText": "4.00 AZN",
+          "basePrice": 4,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21972",
+          "name": "Fuse Tea Mango, 0.33",
+          "description": "",
+          "priceText": "4.00 AZN",
+          "basePrice": 4,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21973",
+          "name": "Pepsi 0.5",
+          "description": "",
+          "priceText": "4.00 AZN",
+          "basePrice": 4,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21974",
+          "name": "Pepsi 0.33",
+          "description": "",
+          "priceText": "4.00 AZN",
+          "basePrice": 4,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21975",
+          "name": "Mountain Dew 0.33",
+          "description": "",
+          "priceText": "4.00 AZN",
+          "basePrice": 4,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21976",
+          "name": "Lipton Lemon, 0.33",
+          "description": "",
+          "priceText": "4.00 AZN",
+          "basePrice": 4,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21977",
+          "name": "Lipton Peach, 0.33",
+          "description": "",
+          "priceText": "4.00 AZN",
+          "basePrice": 4,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21978",
+          "name": "Lipton Green, 0.33",
+          "description": "",
+          "priceText": "4.00 AZN",
+          "basePrice": 4,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21979",
+          "name": "Red Bull Energy Drink, 0.25",
+          "description": "",
+          "priceText": "6.00 AZN",
+          "basePrice": 6,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21980",
+          "name": "Red Bull Sugar Free, 0.25",
+          "description": "",
+          "priceText": "6.00 AZN",
+          "basePrice": 6,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21981",
+          "name": "Red Bull Yellow Edition, 0.25",
+          "description": "",
+          "priceText": "6.00 AZN",
+          "basePrice": 6,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21982",
+          "name": "Red Bull Watermelon, 0.25",
+          "description": "",
+          "priceText": "6.00 AZN",
+          "basePrice": 6,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21983",
+          "name": "Gorilla, 0.25",
+          "description": "",
+          "priceText": "2.00 AZN",
+          "basePrice": 2,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "3020",
+      "title": "Fresh",
+      "items": [
+        {
+          "sourceId": "21985",
+          "name": "Fresh Orange 0.3",
+          "description": "",
+          "priceText": "6.00 AZN",
+          "basePrice": 6,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21986",
+          "name": "Fresh Apple 0.3",
+          "description": "",
+          "priceText": "5.00 AZN",
+          "basePrice": 5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21987",
+          "name": "Fresh Carrot 0.3",
+          "description": "",
+          "priceText": "5.00 AZN",
+          "basePrice": 5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "3021",
+      "title": "Juice",
+      "items": [
+        {
+          "sourceId": "21988",
+          "name": "Juice",
+          "description": "",
+          "priceText": "3.00 AZN",
+          "basePrice": 3,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "3022",
+      "title": "Lemonades",
+      "items": [
+        {
+          "sourceId": "21989",
+          "name": "Passion Mango",
+          "description": "Passion fruit syrop, mango syrop, lemon fresh juice, sparkling water",
+          "priceText": "5.00 AZN",
+          "basePrice": 5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21990",
+          "name": "Strawberry - Kiwi",
+          "description": "Strawberry syrop, kiwi syrop, lemon fresh juice, sparkling water",
+          "priceText": "5.00 AZN",
+          "basePrice": 5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21991",
+          "name": "Kiwi - Pomegranate",
+          "description": "Kiwi syrop, pomegranate syrop, lemon fresh juice, sparkling water",
+          "priceText": "5.00 AZN",
+          "basePrice": 5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21992",
+          "name": "Green Apple",
+          "description": "Apple syrop, lemon fresh juice, sparkling water",
+          "priceText": "5.00 AZN",
+          "basePrice": 5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21993",
+          "name": "Tarxun Breeze",
+          "description": "Estragon syrop, feijoa syrop, lemon fresh juice, sparkling water",
+          "priceText": "5.00 AZN",
+          "basePrice": 5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21994",
+          "name": "Make Your Lemonade",
+          "description": "Ask the barmen and you'll get the lemonade of your dream",
+          "priceText": "5.00 AZN",
+          "basePrice": 5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "3023",
+      "title": "Milkshakes",
+      "items": [
+        {
+          "sourceId": "21995",
+          "name": "Vanilla Milkshake",
+          "description": "Vanilla syrop, milk, cream",
+          "priceText": "7.00 AZN",
+          "basePrice": 7,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21996",
+          "name": "Chocolate Milkshake",
+          "description": "Chocolate syrop, milk, cream",
+          "priceText": "7.00 AZN",
+          "basePrice": 7,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21997",
+          "name": "Strawberry Milkshake",
+          "description": "Strawberry syrop, milk, cream",
+          "priceText": "7.00 AZN",
+          "basePrice": 7,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "3024",
+      "title": "Tea",
+      "items": [
+        {
+          "sourceId": "21998",
+          "name": "Black Tea 1.0 L",
+          "description": "",
+          "priceText": "6.00 AZN",
+          "basePrice": 6,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "21999",
+          "name": "Green Tea 1.0 L",
+          "description": "",
+          "priceText": "6.00 AZN",
+          "basePrice": 6,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "3025",
+      "title": "Coffee",
+      "items": [
+        {
+          "sourceId": "22000",
+          "name": "Espresso",
+          "description": "",
+          "priceText": "3.00 AZN",
+          "basePrice": 3,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "22001",
+          "name": "Americano 0.25",
+          "description": "",
+          "priceText": "3.00 AZN",
+          "basePrice": 3,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "22002",
+          "name": "Cappuccino 0.3",
+          "description": "",
+          "priceText": "5.00 AZN",
+          "basePrice": 5,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "22003",
+          "name": "Latte 0.3",
+          "description": "",
+          "priceText": "6.00 AZN",
+          "basePrice": 6,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "22004",
+          "name": "Toppings",
+          "description": "",
+          "priceText": "1.00 AZN",
+          "basePrice": 1,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "3026",
+      "title": "Qalyan",
+      "items": [
+        {
+          "sourceId": "22005",
+          "name": "Qalyan Premium",
+          "description": "Must Have, Dark Side, Spectrum, Element, Deus, Fumari, Starline, Sarma",
+          "priceText": "25.00 AZN",
+          "basePrice": 25,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        },
+        {
+          "sourceId": "22006",
+          "name": "Qalyan WTO",
+          "description": "",
+          "priceText": "35.00 AZN",
+          "basePrice": 35,
+          "currency": "AZN",
+          "variants": [],
+          "images": [
+            "https://menu-in.com/storage/restaurant/logo/68860760afb611753614176.png"
+          ],
+          "localImages": [
+            "/menu-in/68860760afb611753614176.webp"
+          ]
+        }
+      ]
+    }
+  ]
+}

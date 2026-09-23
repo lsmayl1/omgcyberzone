@@ -105,7 +105,11 @@
     "clearSearch": "Aramayı temizle",
     "notFound": "Hiçbir şey bulunamadı",
     "notFoundHint": "Farklı bir ad deneyin",
-    "more": "Daha fazla"
+    "more": "Daha fazla",
+    "requestHeading": "Aradığınız oyun listede yok mu?",
+    "requestText": "Yöneticiye söyleyin — sizin için indirip kuralım.",
+    "steamHeading": "Kulübün Steam hesabı",
+    "steamText": "Kulübün kendi Steam hesabı var: Steam'deki tüm ücretsiz oyunlar her misafire açık."
   },
   "menu": {
     "heading": "Menü",
@@ -124,12 +128,16 @@
       "roll": "Dürümler",
       "pasta": "Makarna",
       "salads": "Salatalar",
-      "soups": "Çorbalar",
       "snacks": "Atıştırmalıklar",
+      "sauces": "Soslar",
+      "sweets": "Tatlılar",
       "milkshake": "Milkshake",
+      "lemonade": "Limonatalar",
+      "fresh": "Taze sıkma",
       "drinks": "İçecekler",
       "coffee": "Kahve",
-      "sauces": "Soslar"
+      "tea": "Çay",
+      "hookah": "Nargile"
     },
     "units": {
       "cm": "cm",
@@ -235,6 +243,42 @@
       {
         "question": "Yaş sınırı var mı?",
         "answer": "Hayır, yaş sınırı yoktur — her yaştan misafirimizi ağırlıyoruz. Çocuklarla geliyorsanız, yöneticimiz uygun bölgeyi seçmenize ve oyun konusunda size yardımcı olur."
+      },
+      {
+        "question": "Önceden rezervasyon gerekiyor mu?",
+        "answer": "Rezervasyonsuz da gelebilirsiniz — genelde boş yer olur. Ancak kalabalık geliyorsanız ya da özel odayı istiyorsanız önceden ayırtın: sitedeki «Rezervasyon» düğmesini kullanın, WhatsApp'tan yazın veya +994 70 222 88 86 numarasını arayın."
+      },
+      {
+        "question": "İstediğim oyun kurulu değilse ne olur?",
+        "answer": "Yöneticiye söyleyin — sizin için indirip kuralım. Kütüphane sitede listelenenlerle sınırlı değil."
+      },
+      {
+        "question": "Kendi Steam hesabım gerekli mi?",
+        "answer": "Hayır. Kulübün kendi Steam hesabı var, Steam'deki tüm ücretsiz oyunlar her misafire açık. Kendi satın aldığınız oyunları oynamak isterseniz kendi hesabınıza giriş yapmanız yeterli."
+      },
+      {
+        "question": "PlayStation var mı?",
+        "answer": "Evet. Kendi salonunda altı PlayStation 5 yeri — kanepeler, kumandalar ve tam bir lobi için yer."
+      },
+      {
+        "question": "Takım için özel oda tutabilir miyiz?",
+        "answer": "Evet, bu PREMIUM bölgesi: 2K 240 Hz monitörlerde beş PC ve bir PlayStation 5. Saati sabit 20 ₼, 24 saat boyunca. Kapıyı kapatın, oda sizindir."
+      },
+      {
+        "question": "İnternet hızı nasıl?",
+        "answer": "50 oyun bilgisayarının tamamına hizmet veren 1 Gbit/s hat."
+      },
+      {
+        "question": "Yiyecek ve içecek var mı?",
+        "answer": "Evet, kendi mutfağımız ve lounge'umuz var: pizza, burger, sandviç, makarna, salata, atıştırmalık, kahve, limonata ve milkshake. Tam menü sitede, her şey lounge'da servis ediliyor."
+      },
+      {
+        "question": "Nargile var mı?",
+        "answer": "Evet, lounge'da. Premium nargile 25 ₼, WTO 35 ₼."
+      },
+      {
+        "question": "Saatlik paketler nasıl işliyor?",
+        "answer": "Hafta içi 3, 5, 7 ve 9 saatlik paketler yalnızca gece, 16:00 - 08:00 arası geçerlidir. Hafta sonu ve resmî tatillerde tüm paketler 24 saat boyunca geçerlidir."
       }
     ]
   },
@@ -245,7 +289,11 @@
     "telegram": "Telegram",
     "mapAlt": "Harita: Azadlıq Bulvarı 103E, Bakü",
     "copyright": "© 2025 OMG Cyber Zone.",
-    "directions": "Yol tarifi al"
+    "directions": "Yol tarifi al",
+    "whatsapp": "WhatsApp",
+    "navTitle": "Bölümler",
+    "hours": "Haftanın yedi günü, günde 24 saat açık",
+    "writeUs": "WhatsApp'tan yazın"
   },
   "modal": {
     "title": "Rezervasyon",

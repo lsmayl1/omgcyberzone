@@ -139,8 +139,18 @@ export const MenuPageContent = () => {
         </div>
       </div>
 
-      <div className="mb-5 sm:mb-6">
-        <MenuCategory active={activeCategory} onChange={setActiveCategory} />
+      {/*
+        Parked under the header so a category is always one tap away, however
+        far down the list you are. The offsets are the header's own heights
+        (h-14 on mobile, h-24 from md), and z-30 keeps it under the header's
+        z-40 rather than over it.
+      */}
+      <div className="sticky top-14 z-30 -mx-4 mb-5 border-b border-white/10 bg-background/95 px-4 pt-2 backdrop-blur-md sm:mb-6 md:top-24">
+        <MenuCategory
+          active={activeCategory}
+          onChange={setActiveCategory}
+          bleed={false}
+        />
       </div>
 
       <p className="mb-3 text-xs text-gray-400 sm:mb-4 sm:text-sm">

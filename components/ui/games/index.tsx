@@ -2,52 +2,13 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { useI18n } from "@/i18n/I18nProvider";
+import { PC_GAMES, PS_GAMES, type Game } from "@/data/games";
 
-type Game = { name: string; title: string; img: string };
 type Device = "pc" | "ps";
 
-// Titles are proper nouns and stay untranslated across locales.
-const GAMES: Record<Device, Game[]> = {
-  pc: [
-    { name: "csgo2", title: "Counter-Strike 2", img: "/games/csgo2.jpg" },
-    { name: "pubg", title: "PUBG: Battlegrounds", img: "/games/pubg.jpg" },
-    { name: "dota2", title: "Dota 2", img: "/games/dota2.jpg" },
-    { name: "apex", title: "Apex Legends", img: "/games/apexLegends.jpg" },
-    { name: "gta5", title: "GTA V", img: "/games/gta5.jpg" },
-    { name: "rust", title: "Rust", img: "/games/rust.jpg" },
-    { name: "arcRaiders", title: "ARC Raiders", img: "/games/arcRaiders.jpg" },
-    {
-      name: "battlefield6",
-      title: "Battlefield 6",
-      img: "/games/battlefield6.jpg",
-    },
-    {
-      name: "callofdutyblackops7",
-      title: "Call of Duty: Black Ops 7",
-      img: "/games/callofdutyblackops7.jpg",
-    },
-    {
-      name: "callofdutymodernwarfare",
-      title: "Call of Duty: Modern Warfare",
-      img: "/games/callofdutymodernwarfare.jpg",
-    },
-    { name: "cyberpunk", title: "Cyberpunk 2077", img: "/games/cyberpunk.jpg" },
-    {
-      name: "forzahorizon5",
-      title: "Forza Horizon 5",
-      img: "/games/forzahorizon5.jpg",
-    },
-    { name: "rdr2", title: "Red Dead Redemption 2", img: "/games/rdr2.jpg" },
-    { name: "rivals", title: "Marvel Rivals", img: "/games/rivals.jpg" },
-    {
-      name: "sonsoftheforest",
-      title: "Sons of the Forest",
-      img: "/games/sonsoftheforest.jpg",
-    },
-    { name: "warthunder", title: "War Thunder", img: "/games/warthunder.jpg" },
-  ],
-  ps: [],
-};
+// Generated from the club's installed-games export — see
+// scripts/import-games.mjs. Titles are proper nouns and are not translated.
+const GAMES: Record<Device, Game[]> = { pc: PC_GAMES, ps: PS_GAMES };
 
 // First screenful. The rest is one click away rather than a wall of covers.
 const PREVIEW_LIMIT = 8;
@@ -169,14 +130,25 @@ export const Games = () => {
               key={gm.name}
               className="group relative overflow-hidden rounded-lg max-md:rounded cursor-pointer"
             >
-              <Image
-                src={gm.img}
-                alt={gm.title}
-                width={460}
-                height={215}
-                sizes="(max-width: 768px) 50vw, 25vw"
-                className="w-full h-auto transition-transform duration-500 group-hover:scale-110"
-              />
+              {gm.img ? (
+                <Image
+                  src={gm.img}
+                  alt={gm.title}
+                  width={460}
+                  height={215}
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  className="w-full h-auto transition-transform duration-500 group-hover:scale-110"
+                />
+              ) : (
+                /* Console and launcher exclusives have no cover to fetch. The
+                   tile keeps the shelf's 460x215 rhythm and states the title
+                   itself, rather than dropping the game from the list. */
+                <div className="flex aspect-[460/215] w-full items-center justify-center bg-gradient-to-br from-boxColor to-background p-3 text-center">
+                  <span className="line-clamp-3 text-sm font-semibold leading-tight text-gray-300 max-md:text-xs">
+                    {gm.title}
+                  </span>
+                </div>
+              )}
               {/* Titles exist in the data but were never shown. Touch devices
                   have no hover, so below md they stay on permanently. */}
               <div
@@ -211,6 +183,62 @@ export const Games = () => {
           </button>
         </div>
       )}
+
+      {/* What the grid cannot say: the library is not a closed list, and the
+          free Steam catalogue is open to everyone. Both answer a question
+          people otherwise have to come to the desk to ask. */}
+      <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
+        {[
+          {
+            key: "request",
+            heading: t.games.requestHeading,
+            text: t.games.requestText,
+            icon: (
+              <path d="M12 3v12m0 0-4-4m4 4 4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
+            ),
+          },
+          {
+            key: "steam",
+            heading: t.games.steamHeading,
+            text: t.games.steamText,
+            icon: (
+              <>
+                <circle cx="12" cy="12" r="9" />
+                <circle cx="15" cy="9.5" r="2.5" />
+                <path d="m3.5 15 6-2.5" />
+              </>
+            ),
+          },
+        ].map((note) => (
+          <div
+            key={note.key}
+            className="flex items-start gap-3 rounded-xl border border-white/10 bg-boxColor p-4"
+          >
+            <span className="mt-0.5 shrink-0 text-mainRed">
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                className="size-5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.8}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                {note.icon}
+              </svg>
+            </span>
+            <div className="min-w-0">
+              <h3 className="text-sm font-semibold text-white">
+                {note.heading}
+              </h3>
+              <p className="mt-1 text-sm leading-relaxed text-gray-400 max-md:text-xs">
+                {note.text}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

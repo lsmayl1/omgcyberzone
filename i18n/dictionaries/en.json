@@ -107,7 +107,11 @@
     "clearSearch": "Clear search",
     "notFound": "Nothing found",
     "notFoundHint": "Try a different title",
-    "more": "Show more"
+    "more": "Show more",
+    "requestHeading": "Not on the list?",
+    "requestText": "Ask an administrator and we will download and install it for you.",
+    "steamHeading": "The club's Steam account",
+    "steamText": "The club has its own Steam account, so every free-to-play title on Steam is open to any guest."
   },
   "menu": {
     "heading": "Menu",
@@ -126,12 +130,16 @@
       "roll": "Rolls",
       "pasta": "Pasta",
       "salads": "Salads",
-      "soups": "Soups",
       "snacks": "Snacks",
+      "sauces": "Sauces",
+      "sweets": "Sweets",
       "milkshake": "Milkshakes",
+      "lemonade": "Lemonades",
+      "fresh": "Fresh juice",
       "drinks": "Drinks",
       "coffee": "Coffee",
-      "sauces": "Sauces"
+      "tea": "Tea",
+      "hookah": "Hookah"
     },
     "units": {
       "cm": "cm",
@@ -238,6 +246,42 @@
       {
         "question": "Is there an age restriction?",
         "answer": "No, there are no age restrictions — guests of any age are welcome. If you are coming with children, our administrator will help you pick a suitable zone and suggest games to match."
+      },
+      {
+        "question": "Do I need to book in advance?",
+        "answer": "Walk-ins are fine — there are usually free seats. If you are coming as a group or want the private room, book ahead: use the Book button on the site, message us on WhatsApp, or call +994 70 222 88 86."
+      },
+      {
+        "question": "What if the game I want is not installed?",
+        "answer": "Ask an administrator and we will download and install it for you. The library is not limited to what the site lists."
+      },
+      {
+        "question": "Do I need my own Steam account?",
+        "answer": "No. The club has its own Steam account, so every free-to-play title on Steam is open to any guest. If you want to play games you own, just sign in to your own account."
+      },
+      {
+        "question": "Do you have PlayStation?",
+        "answer": "Yes. Six PlayStation 5 seats in a hall of their own — sofas, controllers and room for a full lobby."
+      },
+      {
+        "question": "Can we book a private room for a team?",
+        "answer": "Yes, that is the PREMIUM zone: five PCs on 2K 240 Hz monitors plus a PlayStation 5. A flat 20 ₼ per hour, round the clock. Close the door and the room is yours."
+      },
+      {
+        "question": "How fast is the internet?",
+        "answer": "A 1 Gbit/s line serving all 50 gaming PCs."
+      },
+      {
+        "question": "Is there food and drink?",
+        "answer": "Yes — we have our own kitchen and lounge: pizza, burgers, sandwiches, pasta, salads, snacks, coffee, lemonades and milkshakes. The full menu is on the site, and everything is served in the lounge."
+      },
+      {
+        "question": "Do you have hookah?",
+        "answer": "Yes, in the lounge. Premium hookah is 25 ₼ and WTO is 35 ₼."
+      },
+      {
+        "question": "How do the hourly packages work?",
+        "answer": "On weekdays the 3, 5, 7 and 9 hour packages run at night only, from 16:00 to 08:00. At weekends and on public holidays every package is valid around the clock."
       }
     ]
   },
@@ -248,7 +292,11 @@
     "telegram": "Telegram",
     "mapAlt": "Map: Azadlig Avenue 103E, Baku",
     "copyright": "© 2025 OMG Cyber Zone.",
-    "directions": "Get directions"
+    "directions": "Get directions",
+    "whatsapp": "WhatsApp",
+    "navTitle": "Sections",
+    "hours": "Open 24 hours a day, seven days a week",
+    "writeUs": "Message us on WhatsApp"
   },
   "modal": {
     "title": "Booking",

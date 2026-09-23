@@ -97,7 +97,7 @@ export default async function LocaleLayout({
           <LocalBusinessJsonLd locale={locale as Locale} t={dictionary} />
           <Header />
           {children}
-          <Footer t={dictionary} />
+          <Footer t={dictionary} locale={locale as Locale} />
         </I18nProvider>
       </body>
     </html>
