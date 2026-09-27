@@ -102,8 +102,18 @@ export const Header = () => {
           positioned below the header bar and would be clipped by it. */}
       <div className="flex  container-custom z-40  w-full   justify-between items-center max-md:gap-4">
         <BookModal open={bookModal} handleClose={() => setBookModal(false)} />
-        <Link href={home} aria-label={t.nav.toHome}>
+        <Link
+          href={home}
+          aria-label={t.nav.toHome}
+          className="flex flex-col items-center"
+        >
           <Logo className="size-24 max-md:w-22 h-12 cursor-pointer" />
+          <span
+            aria-hidden="true"
+            className="-mt-1 whitespace-nowrap text-[9px] font-bold uppercase tracking-[0.25em] text-mainRed"
+          >
+            One More Game
+          </span>
         </Link>
 
         <div className="flex items-center gap-2 lg:hidden">

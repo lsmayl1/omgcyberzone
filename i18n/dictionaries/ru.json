@@ -313,7 +313,14 @@
     "whatsapp": "WhatsApp",
     "navTitle": "Разделы",
     "hours": "Открыто круглосуточно, семь дней в неделю",
-    "writeUs": "Написать в WhatsApp"
+    "writeUs": "Написать в WhatsApp",
+    "wifi": "Подключиться к Wi-Fi",
+    "wifiTitle": "Гостевой Wi-Fi",
+    "wifiScan": "Отсканируйте камерой телефона, чтобы подключиться к сети.",
+    "wifiNetwork": "Сеть",
+    "wifiPassword": "Пароль",
+    "wifiCopy": "Скопировать пароль",
+    "wifiCopied": "Скопировано"
   },
   "modal": {
     "title": "Бронирование",

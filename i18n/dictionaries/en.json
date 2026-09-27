@@ -305,7 +305,14 @@
     "whatsapp": "WhatsApp",
     "navTitle": "Sections",
     "hours": "Open 24 hours a day, seven days a week",
-    "writeUs": "Message us on WhatsApp"
+    "writeUs": "Message us on WhatsApp",
+    "wifi": "Connect to Wi-Fi",
+    "wifiTitle": "Guest Wi-Fi",
+    "wifiScan": "Scan with your phone camera to join the network.",
+    "wifiNetwork": "Network",
+    "wifiPassword": "Password",
+    "wifiCopy": "Copy password",
+    "wifiCopied": "Copied"
   },
   "modal": {
     "title": "Booking",

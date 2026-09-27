@@ -301,7 +301,14 @@
     "whatsapp": "WhatsApp",
     "navTitle": "Bölümler",
     "hours": "Haftanın yedi günü, günde 24 saat açık",
-    "writeUs": "WhatsApp'tan yazın"
+    "writeUs": "WhatsApp'tan yazın",
+    "wifi": "Wi-Fi’a bağlan",
+    "wifiTitle": "Misafir Wi-Fi",
+    "wifiScan": "Ağa bağlanmak için telefon kameranızla tarayın.",
+    "wifiNetwork": "Ağ",
+    "wifiPassword": "Şifre",
+    "wifiCopy": "Şifreyi kopyala",
+    "wifiCopied": "Kopyalandı"
   },
   "modal": {
     "title": "Rezervasyon",

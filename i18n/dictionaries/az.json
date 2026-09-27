@@ -301,7 +301,14 @@
     "whatsapp": "WhatsApp",
     "navTitle": "Bölmələr",
     "hours": "Həftənin yeddi günü, gün ərzində 24 saat açıqdır",
-    "writeUs": "WhatsApp-da yazın"
+    "writeUs": "WhatsApp-da yazın",
+    "wifi": "Wi-Fi-a qoşul",
+    "wifiTitle": "Qonaq Wi-Fi",
+    "wifiScan": "Şəbəkəyə qoşulmaq üçün telefon kamerası ilə skan edin.",
+    "wifiNetwork": "Şəbəkə",
+    "wifiPassword": "Şifrə",
+    "wifiCopy": "Şifrəni kopyala",
+    "wifiCopied": "Kopyalandı"
   },
   "modal": {
     "title": "Rezervasiya",

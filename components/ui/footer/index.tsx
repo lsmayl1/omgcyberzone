@@ -4,7 +4,9 @@ import Phone from "@/assets/Phone";
 import { Telegram } from "@/assets/Telegram";
 import WhatsApp from "@/assets/WhatsApp";
 import Link from "next/link";
+import QRCode from "qrcode";
 import React from "react";
+import { WifiButton } from "./wifiButton";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/types";
 
@@ -20,8 +22,31 @@ const WHATSAPP = PHONE.replace(/\D/g, "");
  */
 const MAP_QUERY = "OMG Cyber Zone, Azadlıq prospekti 103E, Baku";
 
-export const Footer = ({ t, locale }: { t: Dictionary; locale: Locale }) => {
+/** The trailing space is part of the network name as the router broadcasts it. */
+const WIFI_SSID = "OMGCYBERZONE ";
+const WIFI_PASSWORD = "onemoregame";
+/** The WIFI: payload reserves \ ; , : and " — they must be backslash-escaped. */
+const wifiEscape = (v: string) => v.replace(/([\\;,:"])/g, "\\$1");
+/**
+ * The network is WPA3, but T:WPA is what camera apps understand: it means
+ * "WPA-family, use the password", and the phone negotiates WPA3 with the
+ * router itself. T:SAE is newer and still ignored by some readers.
+ */
+const WIFI_PAYLOAD = `WIFI:T:WPA;S:${wifiEscape(WIFI_SSID)};P:${wifiEscape(WIFI_PASSWORD)};;`;
+
+export const Footer = async ({
+  t,
+  locale,
+}: {
+  t: Dictionary;
+  locale: Locale;
+}) => {
   const home = `/${locale}`;
+  const wifiQr = await QRCode.toString(WIFI_PAYLOAD, {
+    type: "svg",
+    margin: 0,
+    errorCorrectionLevel: "M",
+  });
 
   /** Mirrors the header, minus Home — the logo above already goes there. */
   const sections = [
@@ -80,12 +105,21 @@ export const Footer = ({ t, locale }: { t: Dictionary; locale: Locale }) => {
             <Link href={home} aria-label={t.nav.toHome} className="w-fit">
               <Logo className="h-10 w-auto" />
             </Link>
+            <p className="-mt-2 text-xs font-bold uppercase tracking-[0.3em] text-mainRed">
+              One More Game
+            </p>
             <p className="max-w-xs text-sm leading-relaxed text-gray-400">
               {t.footer.hours}
             </p>
             <p className="max-w-xs text-sm leading-relaxed text-gray-400">
               {t.footer.address}
             </p>
+            <WifiButton
+              t={t}
+              ssid={WIFI_SSID}
+              password={WIFI_PASSWORD}
+              qrSvg={wifiQr}
+            />
           </div>
 
           <nav
