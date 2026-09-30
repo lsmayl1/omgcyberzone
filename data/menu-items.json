@@ -2,7 +2,7 @@
   {
     "id": 1,
     "category": "pizza",
-    "image": "/menu-in/68920c2f532031754401839.webp",
+    "image": "/menu-food/pizza-bbq-chicken.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Пицца BBQ с курицей",
@@ -37,7 +37,7 @@
   {
     "id": 2,
     "category": "pizza",
-    "image": "/menu-in/68920d4e6980c1754402126.webp",
+    "image": "/menu-food/pizza-meat.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Пицца с говядиной",
@@ -72,42 +72,7 @@
   {
     "id": 3,
     "category": "pizza",
-    "image": "/menu-in/68f01ec7c4b591760566983.webp",
-    "selectedSizeIndex": 0,
-    "name": {
-      "ru": "Пицца Болоньезе",
-      "en": "Bolognese Pizza",
-      "az": "Bolonez Pizza",
-      "tr": "Bolonez Pizza"
-    },
-    "description": {
-      "ru": "Соус болоньезе, Пепперони, Сыр гауда, Грибы, Оливки",
-      "en": "Bolognese sauce, Pepperoni, Gouda cheese, Mushrooms, Olives",
-      "az": "Bolonez sous, Pepperoni, Qauda pendiri, Göbələk, Zeytun",
-      "tr": "Bolonez sos, Pepperoni, Gouda peyniri, Mantar, Zeytin"
-    },
-    "sizes": [
-      {
-        "amount": 25,
-        "unit": "cm",
-        "price": "16.00 ₼"
-      },
-      {
-        "amount": 30,
-        "unit": "cm",
-        "price": "22.00 ₼"
-      },
-      {
-        "amount": 35,
-        "unit": "cm",
-        "price": "27.00 ₼"
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "category": "pizza",
-    "image": "/menu-in/68920d9866ee61754402200.webp",
+    "image": "/menu-food/pizza-capricciosa.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Пицца Капричоза",
@@ -140,7 +105,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 4,
     "category": "pizza",
     "image": "/menu-in/68920dd2e35161754402258.webp",
     "selectedSizeIndex": 0,
@@ -175,9 +140,9 @@
     ]
   },
   {
-    "id": 6,
+    "id": 5,
     "category": "pizza",
-    "image": "/menu-in/68920e2a544591754402346.webp",
+    "image": "/menu-food/pizza-chicken.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Пицца с курицей",
@@ -210,9 +175,9 @@
     ]
   },
   {
-    "id": 7,
+    "id": 6,
     "category": "pizza",
-    "image": "/menu-in/68920e68ce0ee1754402408.webp",
+    "image": "/menu-food/pizza-coco-mix.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Пицца Коко Микс",
@@ -245,9 +210,9 @@
     ]
   },
   {
-    "id": 8,
+    "id": 7,
     "category": "pizza",
-    "image": "/menu-in/68920ee0d96081754402528.webp",
+    "image": "/menu-food/pizza-grand-mix.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Пицца Гранд Микс",
@@ -280,9 +245,9 @@
     ]
   },
   {
-    "id": 9,
+    "id": 8,
     "category": "pizza",
-    "image": "/menu-in/68f01ed8330221760567000.webp",
+    "image": "/menu-food/pizza-hawaiian.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Пицца Гавайская",
@@ -315,9 +280,9 @@
     ]
   },
   {
-    "id": 10,
+    "id": 9,
     "category": "pizza",
-    "image": "/menu-in/68920ef45832a1754402548.webp",
+    "image": "/menu-food/pizza-margherita.webp",
     "isPopular": true,
     "selectedSizeIndex": 0,
     "name": {
@@ -351,9 +316,9 @@
     ]
   },
   {
-    "id": 11,
+    "id": 10,
     "category": "pizza",
-    "image": "/menu-in/68920f2596f701754402597.webp",
+    "image": "/menu-food/pizza-mexican-chicken.webp",
     "isSpicy": true,
     "selectedSizeIndex": 0,
     "name": {
@@ -387,9 +352,9 @@
     ]
   },
   {
-    "id": 12,
+    "id": 11,
     "category": "pizza",
-    "image": "/menu-in/68920f60073651754402656.webp",
+    "image": "/menu-food/pizza-mexican.webp",
     "isSpicy": true,
     "selectedSizeIndex": 0,
     "name": {
@@ -423,44 +388,9 @@
     ]
   },
   {
-    "id": 13,
+    "id": 12,
     "category": "pizza",
-    "image": "/menu-in/68920f90d7fa21754402704.webp",
-    "selectedSizeIndex": 0,
-    "name": {
-      "ru": "Грибная пицца",
-      "en": "Mushroom Pizza",
-      "az": "Göbələkli Pizza",
-      "tr": "Mantarlı Pizza"
-    },
-    "description": {
-      "ru": "Грибной соус, Грибы, Солёный огурец, Сыр гауда, Куриное филе",
-      "en": "Mushroom sauce, Mushrooms, Pickled cucumber, Gouda cheese, Chicken fillet",
-      "az": "Göbələkli sous, Göbələk, Turşu xiyar, Qauda pendiri, Toyuq filesi",
-      "tr": "Mantarlı sos, Mantar, Turşu salatalık, Gouda peyniri, Tavuk fileto"
-    },
-    "sizes": [
-      {
-        "amount": 25,
-        "unit": "cm",
-        "price": "15.00 ₼"
-      },
-      {
-        "amount": 30,
-        "unit": "cm",
-        "price": "22.00 ₼"
-      },
-      {
-        "amount": 35,
-        "unit": "cm",
-        "price": "26.00 ₼"
-      }
-    ]
-  },
-  {
-    "id": 14,
-    "category": "pizza",
-    "image": "/menu-in/68920fcc465411754402764.webp",
+    "image": "/menu-food/pizza-nuggets.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Пицца с наггетсами",
@@ -493,9 +423,9 @@
     ]
   },
   {
-    "id": 15,
+    "id": 13,
     "category": "pizza",
-    "image": "/menu-in/689210088e7951754402824.webp",
+    "image": "/menu-food/pizza-pepperoni.webp",
     "isPopular": true,
     "selectedSizeIndex": 0,
     "name": {
@@ -529,9 +459,9 @@
     ]
   },
   {
-    "id": 16,
+    "id": 14,
     "category": "pizza",
-    "image": "/menu-in/6892103dca0c21754402877.webp",
+    "image": "/menu-food/pizza-pesto.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Пицца Песто",
@@ -564,9 +494,9 @@
     ]
   },
   {
-    "id": 17,
+    "id": 15,
     "category": "pizza",
-    "image": "/menu-in/689210904bdbc1754402960.webp",
+    "image": "/menu-food/pizza-sausage.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Пицца с колбасками",
@@ -599,9 +529,9 @@
     ]
   },
   {
-    "id": 18,
+    "id": 16,
     "category": "pizza",
-    "image": "/menu-in/6892109baf24f1754402971.webp",
+    "image": "/menu-food/pizza-caesar.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Пицца Цезарь",
@@ -634,9 +564,9 @@
     ]
   },
   {
-    "id": 19,
+    "id": 17,
     "category": "pizza",
-    "image": "/menu-in/68f01ee86dd361760567016.webp",
+    "image": "/menu-food/pizza-texas.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Пицца Техас",
@@ -669,9 +599,9 @@
     ]
   },
   {
-    "id": 20,
+    "id": 18,
     "category": "pizza",
-    "image": "/menu-in/6892111a108111754403098.webp",
+    "image": "/menu-food/pizza-tuna.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Пицца с тунцом",
@@ -704,9 +634,9 @@
     ]
   },
   {
-    "id": 21,
+    "id": 19,
     "category": "pizza",
-    "image": "/menu-in/68921167e850f1754403175.webp",
+    "image": "/menu-food/pizza-vegetarian.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Вегетарианская пицца",
@@ -739,70 +669,100 @@
     ]
   },
   {
-    "id": 22,
+    "id": 20,
     "category": "pizza",
-    "image": "/menu-in/689211a8cc3f81754403240.webp",
+    "image": null,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца WOW",
-      "en": "WOW Pizza",
-      "az": "WOW Pizza",
-      "tr": "WOW Pizza"
+      "ru": "Пицца Альфредо",
+      "en": "Alfredo Pizza",
+      "az": "Alfredo Pizza",
+      "tr": "Alfredo Pizza"
     },
     "description": {
-      "ru": "Фирменный соус, Сыр гауда, Пепперони, Грибы, Авокадо, Пармезан, Курица",
-      "en": "House sauce, Gouda cheese, Pepperoni, Mushrooms, Avocado, Parmesan, Chicken",
-      "az": "Xüsusi sous, Qauda pendiri, Pepperoni, Göbələk, Avakado, Parmezan, Toyuq əti",
-      "tr": "Özel sos, Gouda peyniri, Pepperoni, Mantar, Avokado, Parmesan, Tavuk eti"
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
     },
     "sizes": [
       {
         "amount": 25,
         "unit": "cm",
-        "price": "17.00 ₼"
-      },
-      {
-        "amount": 30,
-        "unit": "cm",
-        "price": "24.00 ₼"
-      },
-      {
-        "amount": 35,
-        "unit": "cm",
-        "price": "30.00 ₼"
+        "price": "16.50 ₼"
       }
     ]
   },
   {
-    "id": 23,
+    "id": 21,
     "category": "pizza",
-    "image": "/menu-in/689211e0b008b1754403296.webp",
+    "image": null,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Греческая пицца",
-      "en": "Greek Pizza",
-      "az": "Yunan Pizzası",
-      "tr": "Yunan Pizza"
+      "ru": "Пицца с кебабом",
+      "en": "Kebab Pizza",
+      "az": "Kabab Pizza",
+      "tr": "Kebap Pizza"
     },
     "description": {
-      "ru": "Соус для пиццы, Оливки, Сыр фета, Сыр гауда, Перец, Помидор",
-      "en": "Pizza sauce, Olives, Feta cheese, Gouda cheese, Peppers, Tomato",
-      "az": "Pizza sous, Zeytun, Feta pendiri, Qauda pendiri, Bibər, Pomidor",
-      "tr": "Pizza sosu, Zeytin, Feta peyniri, Gouda peyniri, Biber, Domates"
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "amount": 25,
+        "unit": "cm",
+        "price": "17.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "category": "pizza",
+    "image": null,
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Пицца с лососем",
+      "en": "Salmon Pizza",
+      "az": "Qızılbalıqlı Pizza",
+      "tr": "Somonlu Pizza"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
     },
     "sizes": [
       {
         "amount": 25,
         "unit": "cm",
         "price": "12.00 ₼"
-      },
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "category": "pizza",
+    "image": null,
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Пицца с креветками",
+      "en": "Shrimp Pizza",
+      "az": "Krevetli Pizza",
+      "tr": "Karidesli Pizza"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
       {
-        "amount": 30,
-        "unit": "cm",
-        "price": "16.00 ₼"
-      },
-      {
-        "amount": 35,
+        "amount": 25,
         "unit": "cm",
         "price": "20.00 ₼"
       }
@@ -811,7 +771,7 @@
   {
     "id": 24,
     "category": "burger",
-    "image": null,
+    "image": "/menu-food/burger-cheesy.webp",
     "isPopular": true,
     "selectedSizeIndex": 0,
     "name": {
@@ -828,14 +788,14 @@
     },
     "sizes": [
       {
-        "price": "8.50 ₼"
+        "price": "10.00 ₼"
       }
     ]
   },
   {
     "id": 25,
     "category": "burger",
-    "image": null,
+    "image": "/menu-food/burger-pizzy.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Пицца-бургер",
@@ -851,7 +811,7 @@
     },
     "sizes": [
       {
-        "price": "8.00 ₼"
+        "price": "8.50 ₼"
       }
     ]
   },
@@ -861,25 +821,48 @@
     "image": null,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Бургер BBQ",
-      "en": "BBQ Burger",
-      "az": "BBQ Burger",
-      "tr": "BBQ Burger"
+      "ru": "Лаваш бургер",
+      "en": "Lavash Burger",
+      "az": "Lavaş Burger",
+      "tr": "Lavaş Burger"
     },
     "description": {
-      "ru": "Соус BBQ, Говядина, Сыр чеддер, Лук, Солёный огурец, Сыр моцарелла, Подаётся с картофелем фри",
-      "en": "BBQ sauce, Beef, Cheddar cheese, Onion, Pickled cucumber, Mozzarella cheese, Served with French fries",
-      "az": "BBQ sous, Mal əti, Çeddar pendiri, Soğan, Turşu xiyar, Mozzarella pendiri, Kartof fri ilə verilir",
-      "tr": "BBQ sos, Dana eti, Cheddar peyniri, Soğan, Turşu salatalık, Mozzarella peyniri, Patates kızartması ile servis edilir"
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
     },
     "sizes": [
       {
-        "price": "7.50 ₼"
+        "price": "11.00 ₼"
       }
     ]
   },
   {
     "id": 27,
+    "category": "burger",
+    "image": null,
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Зен бургер",
+      "en": "Zen Burger",
+      "az": "Zen Burger",
+      "tr": "Zen Burger"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "price": "8.50 ₼"
+      }
+    ]
+  },
+  {
+    "id": 28,
     "category": "sandwich",
     "image": null,
     "selectedSizeIndex": 0,
@@ -897,14 +880,14 @@
     },
     "sizes": [
       {
-        "price": "11.00 ₼"
+        "price": "10.00 ₼"
       }
     ]
   },
   {
-    "id": 28,
+    "id": 29,
     "category": "sandwich",
-    "image": "/menu-in/689212e265cba1754403554.webp",
+    "image": "/menu-food/sandwich-bbq.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Сэндвич BBQ",
@@ -920,14 +903,14 @@
     },
     "sizes": [
       {
-        "price": "10.00 ₼"
+        "price": "11.00 ₼"
       }
     ]
   },
   {
-    "id": 29,
+    "id": 30,
     "category": "sandwich",
-    "image": "/menu-in/6892133b08dfd1754403643.webp",
+    "image": "/menu-food/sandwich-beef.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Сэндвич с говядиной",
@@ -943,37 +926,14 @@
     },
     "sizes": [
       {
-        "price": "13.00 ₼"
-      }
-    ]
-  },
-  {
-    "id": 30,
-    "category": "sandwich",
-    "image": "/menu-in/6892135bd5dec1754403675.webp",
-    "selectedSizeIndex": 0,
-    "name": {
-      "ru": "Сэндвич с курицей",
-      "en": "Chicken Sandwich",
-      "az": "Toyuqlu Sendviç",
-      "tr": "Tavuklu Sandviç"
-    },
-    "description": {
-      "ru": "Сырный соус, Грибы, Перец, Сыр гауда, Куриное филе, Кукуруза",
-      "en": "Cheese sauce, Mushrooms, Peppers, Gouda cheese, Chicken fillet, Sweetcorn",
-      "az": "Pendir sousu, Göbələk, Bibər, Qauda pendiri, Toyuq filesi, Qarğıdalı",
-      "tr": "Peynir sosu, Mantar, Biber, Gouda peyniri, Tavuk fileto, Mısır"
-    },
-    "sizes": [
-      {
-        "price": "11.00 ₼"
+        "price": "12.00 ₼"
       }
     ]
   },
   {
     "id": 31,
     "category": "sandwich",
-    "image": null,
+    "image": "/menu-food/sandwich-pizza-bread.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Пицца-хлеб",
@@ -989,37 +949,14 @@
     },
     "sizes": [
       {
-        "price": "9.00 ₼"
-      }
-    ]
-  },
-  {
-    "id": 32,
-    "category": "sandwich",
-    "image": "/menu-in/68921368ddebe1754403688.webp",
-    "selectedSizeIndex": 0,
-    "name": {
-      "ru": "Сэндвич с тунцом",
-      "en": "Tuna Sandwich",
-      "az": "Tuna balıqlı Sendviç",
-      "tr": "Ton Balıklı Sandviç"
-    },
-    "description": {
-      "ru": "Соус для пиццы, Сыр гауда, Лук, Кукуруза, Руккола, Тунец",
-      "en": "Pizza sauce, Gouda cheese, Onion, Sweetcorn, Rocket, Tuna",
-      "az": "Pizza sous, Qauda pendiri, Soğan, Qarğıdalı, Rukola, Tuna balığı",
-      "tr": "Pizza sosu, Gouda peyniri, Soğan, Mısır, Roka, Ton balığı"
-    },
-    "sizes": [
-      {
         "price": "10.00 ₼"
       }
     ]
   },
   {
-    "id": 33,
+    "id": 32,
     "category": "roll",
-    "image": "/menu-in/68924a7a4bb8b1754417786.webp",
+    "image": "/menu-food/roll-beef.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Ролл с говядиной",
@@ -1035,14 +972,14 @@
     },
     "sizes": [
       {
-        "price": "13.00 ₼"
+        "price": "12.00 ₼"
       }
     ]
   },
   {
-    "id": 34,
+    "id": 33,
     "category": "roll",
-    "image": "/menu-in/68924a8fd95311754417807.webp",
+    "image": "/menu-food/roll-cheesy-chicken.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Ролл с курицей и сыром",
@@ -1058,14 +995,14 @@
     },
     "sizes": [
       {
-        "price": "9.00 ₼"
+        "price": "9.50 ₼"
       }
     ]
   },
   {
-    "id": 35,
+    "id": 34,
     "category": "roll",
-    "image": "/menu-in/68924a9a6fd111754417818.webp",
+    "image": "/menu-food/roll-chicken-melt.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Ролл Чикен Мелт",
@@ -1081,14 +1018,14 @@
     },
     "sizes": [
       {
-        "price": "9.00 ₼"
+        "price": "9.50 ₼"
       }
     ]
   },
   {
-    "id": 36,
+    "id": 35,
     "category": "roll",
-    "image": "/menu-in/68924aa5ce9491754417829.webp",
+    "image": "/menu-food/roll-pizza.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Пицца-ролл",
@@ -1104,14 +1041,14 @@
     },
     "sizes": [
       {
-        "price": "13.00 ₼"
+        "price": "11.00 ₼"
       }
     ]
   },
   {
-    "id": 37,
+    "id": 36,
     "category": "roll",
-    "image": "/menu-in/68924ab03f7f31754417840.webp",
+    "image": "/menu-food/roll-caesar.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Ролл Цезарь",
@@ -1127,12 +1064,58 @@
     },
     "sizes": [
       {
-        "price": "10.00 ₼"
+        "price": "11.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "category": "roll",
+    "image": null,
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Кранч ролл",
+      "en": "Crunch Roll",
+      "az": "Crunch Roll",
+      "tr": "Crunch Roll"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "price": "9.40 ₼"
       }
     ]
   },
   {
     "id": 38,
+    "category": "roll",
+    "image": null,
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Кранч ролл с кебабом",
+      "en": "Crunch Roll Kebab",
+      "az": "Crunch Roll Kabab",
+      "tr": "Crunch Roll Kebap"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "price": "11.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 39,
     "category": "pasta",
     "image": "/menu-in/689214922a3bf1754403986.webp",
     "selectedSizeIndex": 0,
@@ -1155,7 +1138,7 @@
     ]
   },
   {
-    "id": 39,
+    "id": 40,
     "category": "pasta",
     "image": "/menu-in/689214d137a7d1754404049.webp",
     "selectedSizeIndex": 0,
@@ -1178,9 +1161,9 @@
     ]
   },
   {
-    "id": 40,
+    "id": 41,
     "category": "pasta",
-    "image": "/menu-in/68921504cba661754404100.webp",
+    "image": "/menu-food/pasta-bolognese.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Спагетти Болоньезе",
@@ -1201,9 +1184,9 @@
     ]
   },
   {
-    "id": 41,
+    "id": 42,
     "category": "pasta",
-    "image": "/menu-in/6892153e7a9641754404158.webp",
+    "image": "/menu-food/pasta-pomodoro.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Спагетти Помодоро",
@@ -1219,14 +1202,14 @@
     },
     "sizes": [
       {
-        "price": "7.00 ₼"
+        "price": "8.00 ₼"
       }
     ]
   },
   {
-    "id": 42,
+    "id": 43,
     "category": "snacks",
-    "image": "/menu-in/6892158a4da9f1754404234.webp",
+    "image": "/menu-food/snack-potato-slices.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Картофельные дольки",
@@ -1247,9 +1230,9 @@
     ]
   },
   {
-    "id": 43,
+    "id": 44,
     "category": "snacks",
-    "image": "/menu-in/689215c90d1271754404297.webp",
+    "image": "/menu-food/snack-fries.webp",
     "isPopular": true,
     "selectedSizeIndex": 0,
     "name": {
@@ -1276,39 +1259,9 @@
     ]
   },
   {
-    "id": 44,
-    "category": "snacks",
-    "image": "/menu-in/68921600ae5301754404352.webp",
-    "selectedSizeIndex": 0,
-    "name": {
-      "ru": "Наггетсы",
-      "en": "Nuggets",
-      "az": "Nagets",
-      "tr": "Nuggets"
-    },
-    "description": {
-      "ru": "Куриные наггетсы",
-      "en": "Chicken nuggets",
-      "az": "Toyuq nagetsləri",
-      "tr": "Tavuk nuggets"
-    },
-    "sizes": [
-      {
-        "amount": 4,
-        "unit": "pcs",
-        "price": "5.50 ₼"
-      },
-      {
-        "amount": 8,
-        "unit": "pcs",
-        "price": "8.50 ₼"
-      }
-    ]
-  },
-  {
     "id": 45,
     "category": "snacks",
-    "image": "/menu-in/68921638827a61754404408.webp",
+    "image": "/menu-food/snack-cheese-sticks.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Сырные палочки",
@@ -1338,7 +1291,7 @@
   {
     "id": 46,
     "category": "snacks",
-    "image": "/menu-in/68921674aadca1754404468.webp",
+    "image": "/menu-food/snack-chicken-sticks.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Куриные палочки",
@@ -1368,7 +1321,7 @@
   {
     "id": 47,
     "category": "snacks",
-    "image": "/menu-in/689216a9ed6231754404521.webp",
+    "image": "/menu-food/snack-chicken-wings.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Куриные крылышки",
@@ -1398,7 +1351,7 @@
   {
     "id": 48,
     "category": "snacks",
-    "image": null,
+    "image": "/menu-food/snack-chicken-schnitzel.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Куриный шницель",
@@ -1414,14 +1367,37 @@
     },
     "sizes": [
       {
-        "price": "8.00 ₼"
+        "price": "9.50 ₼"
       }
     ]
   },
   {
     "id": 49,
+    "category": "snacks",
+    "image": null,
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Пиццадог",
+      "en": "Pizzadog",
+      "az": "Pizzadog",
+      "tr": "Pizzadog"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "price": "5.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 50,
     "category": "salads",
-    "image": "/menu-in/68887c43afa541753775171.webp",
+    "image": "/menu-food/salad-beef.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Салат с говядиной",
@@ -1437,14 +1413,14 @@
     },
     "sizes": [
       {
-        "price": "10.00 ₼"
+        "price": "7.00 ₼"
       }
     ]
   },
   {
-    "id": 50,
+    "id": 51,
     "category": "salads",
-    "image": "/menu-in/689216f027bee1754404592.webp",
+    "image": "/menu-food/salad-mexican.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Мексиканский салат",
@@ -1460,14 +1436,14 @@
     },
     "sizes": [
       {
-        "price": "8.00 ₼"
+        "price": "7.00 ₼"
       }
     ]
   },
   {
-    "id": 51,
+    "id": 52,
     "category": "salads",
-    "image": "/menu-in/68921721f0aef1754404641.webp",
+    "image": "/menu-food/salad-caesar-shrimp.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Цезарь с креветками",
@@ -1483,14 +1459,14 @@
     },
     "sizes": [
       {
-        "price": "15.00 ₼"
+        "price": "11.00 ₼"
       }
     ]
   },
   {
-    "id": 52,
+    "id": 53,
     "category": "salads",
-    "image": "/menu-in/68921753e65411754404691.webp",
+    "image": "/menu-food/salad-caesar-chicken.webp",
     "isPopular": true,
     "selectedSizeIndex": 0,
     "name": {
@@ -1507,37 +1483,14 @@
     },
     "sizes": [
       {
-        "price": "9.00 ₼"
-      }
-    ]
-  },
-  {
-    "id": 53,
-    "category": "salads",
-    "image": "/menu-in/6892179090d081754404752.webp",
-    "selectedSizeIndex": 0,
-    "name": {
-      "ru": "Салат с тунцом",
-      "en": "Tuna Salad",
-      "az": "Tuna balıqlı Salat",
-      "tr": "Ton Balıklı Salata"
-    },
-    "description": {
-      "ru": "Айсберг, Помидоры черри, Огурец, Оливки, Тунец, Кукуруза, Фирменный соус",
-      "en": "Iceberg lettuce, Cherry tomatoes, Cucumber, Olives, Tuna, Sweetcorn, House sauce",
-      "az": "Ayzberq, Çeri pomidor, Xiyar, Zeytun, Tuna balığı, Qarğıdalı, Xüsusi sous",
-      "tr": "Iceberg marul, Cherry domates, Salatalık, Zeytin, Ton balığı, Mısır, Özel sos"
-    },
-    "sizes": [
-      {
-        "price": "10.00 ₼"
+        "price": "8.50 ₼"
       }
     ]
   },
   {
     "id": 54,
     "category": "salads",
-    "image": "/menu-in/689217c503d1a1754404805.webp",
+    "image": "/menu-food/salad-vegetarian.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Вегетарианский салат",
@@ -1560,30 +1513,30 @@
   {
     "id": 55,
     "category": "salads",
-    "image": "/menu-in/6892181dab01b1754404893.webp",
+    "image": null,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Греческий салат",
-      "en": "Greek Salad",
-      "az": "Yunan Salatı",
-      "tr": "Yunan Salata"
+      "ru": "Весенний салат",
+      "en": "Spring Salad",
+      "az": "Bahar Salatı",
+      "tr": "Bahar Salatası"
     },
     "description": {
-      "ru": "Айсберг, Помидоры черри, Огурец, Оливки, Перец, Сыр фета, Орегано, Фирменный соус",
-      "en": "Iceberg lettuce, Cherry tomatoes, Cucumber, Olives, Peppers, Feta cheese, Oregano, House sauce",
-      "az": "Ayzberq, Çeri pomidor, Xiyar, Zeytun, Bibər, Feta pendiri, Oreqano, Xüsusi sous",
-      "tr": "Iceberg marul, Cherry domates, Salatalık, Zeytin, Biber, Feta peyniri, Kekik, Özel sos"
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
     },
     "sizes": [
       {
-        "price": "8.00 ₼"
+        "price": "7.00 ₼"
       }
     ]
   },
   {
     "id": 56,
     "category": "sauces",
-    "image": "/menu-in/689219d5ba11d1754405333.webp",
+    "image": "/menu-food/sauce-spicy.webp",
     "isSpicy": true,
     "selectedSizeIndex": 0,
     "name": {
@@ -1607,7 +1560,7 @@
   {
     "id": 57,
     "category": "sauces",
-    "image": "/menu-in/68921879988281754404985.webp",
+    "image": "/menu-food/sauce-bbq.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Соус барбекю",
@@ -1653,7 +1606,7 @@
   {
     "id": 59,
     "category": "sauces",
-    "image": "/menu-in/689218fbdf0b51754405115.webp",
+    "image": "/menu-food/sauce-ketchup.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Кетчуп",
@@ -1676,7 +1629,7 @@
   {
     "id": 60,
     "category": "sauces",
-    "image": "/menu-in/68921936570131754405174.webp",
+    "image": "/menu-food/sauce-mayonnaise.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Майонез",
@@ -1699,7 +1652,7 @@
   {
     "id": 61,
     "category": "sauces",
-    "image": "/menu-in/6892199e632601754405278.webp",
+    "image": "/menu-food/sauce-cheese.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Сырный соус",
@@ -1745,7 +1698,7 @@
   {
     "id": 63,
     "category": "sauces",
-    "image": "/menu-in/689219662d07b1754405222.webp",
+    "image": "/menu-food/sauce-sweet-and-sour.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Кисло-сладкий соус",
@@ -1768,7 +1721,7 @@
   {
     "id": 64,
     "category": "sweets",
-    "image": "/menu-in/68924aeb95e3a1754417899.webp",
+    "image": "/menu-food/sweet-twix.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Twix",
@@ -1791,7 +1744,7 @@
   {
     "id": 65,
     "category": "sweets",
-    "image": "/menu-in/68924b01b472b1754417921.webp",
+    "image": "/menu-food/sweet-bounty.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Bounty",
@@ -1814,7 +1767,7 @@
   {
     "id": 66,
     "category": "sweets",
-    "image": "/menu-in/68924b11ae7c91754417937.webp",
+    "image": "/menu-food/sweet-mms.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "M&M's",
@@ -1837,6 +1790,29 @@
   {
     "id": 67,
     "category": "sweets",
+    "image": "/menu-food/sweet-snickers.webp",
+    "selectedSizeIndex": 0,
+    "name": {
+      "ru": "Snickers",
+      "en": "Snickers",
+      "az": "Snickers",
+      "tr": "Snickers"
+    },
+    "description": {
+      "ru": "",
+      "en": "",
+      "az": "",
+      "tr": ""
+    },
+    "sizes": [
+      {
+        "price": "3.00 ₼"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "category": "sweets",
     "image": null,
     "selectedSizeIndex": 0,
     "name": {
@@ -1858,7 +1834,7 @@
     ]
   },
   {
-    "id": 68,
+    "id": 69,
     "category": "sweets",
     "image": null,
     "selectedSizeIndex": 0,
@@ -1881,7 +1857,7 @@
     ]
   },
   {
-    "id": 69,
+    "id": 70,
     "category": "sweets",
     "image": null,
     "selectedSizeIndex": 0,
@@ -1904,7 +1880,7 @@
     ]
   },
   {
-    "id": 70,
+    "id": 71,
     "category": "sweets",
     "image": null,
     "selectedSizeIndex": 0,
@@ -1927,7 +1903,7 @@
     ]
   },
   {
-    "id": 71,
+    "id": 72,
     "category": "sweets",
     "image": null,
     "selectedSizeIndex": 0,
@@ -1950,7 +1926,7 @@
     ]
   },
   {
-    "id": 72,
+    "id": 73,
     "category": "sweets",
     "image": null,
     "selectedSizeIndex": 0,
@@ -1973,7 +1949,7 @@
     ]
   },
   {
-    "id": 73,
+    "id": 74,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -1996,7 +1972,7 @@
     ]
   },
   {
-    "id": 74,
+    "id": 75,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2019,7 +1995,7 @@
     ]
   },
   {
-    "id": 75,
+    "id": 76,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2042,7 +2018,7 @@
     ]
   },
   {
-    "id": 76,
+    "id": 77,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2065,7 +2041,7 @@
     ]
   },
   {
-    "id": 77,
+    "id": 78,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2088,7 +2064,7 @@
     ]
   },
   {
-    "id": 78,
+    "id": 79,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2111,7 +2087,7 @@
     ]
   },
   {
-    "id": 79,
+    "id": 80,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2134,7 +2110,7 @@
     ]
   },
   {
-    "id": 80,
+    "id": 81,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2157,7 +2133,7 @@
     ]
   },
   {
-    "id": 81,
+    "id": 82,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2180,7 +2156,7 @@
     ]
   },
   {
-    "id": 82,
+    "id": 83,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2203,7 +2179,7 @@
     ]
   },
   {
-    "id": 83,
+    "id": 84,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2226,7 +2202,7 @@
     ]
   },
   {
-    "id": 84,
+    "id": 85,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2249,7 +2225,7 @@
     ]
   },
   {
-    "id": 85,
+    "id": 86,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2272,7 +2248,7 @@
     ]
   },
   {
-    "id": 86,
+    "id": 87,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2295,7 +2271,7 @@
     ]
   },
   {
-    "id": 87,
+    "id": 88,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2318,7 +2294,7 @@
     ]
   },
   {
-    "id": 88,
+    "id": 89,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2341,7 +2317,7 @@
     ]
   },
   {
-    "id": 89,
+    "id": 90,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2364,7 +2340,7 @@
     ]
   },
   {
-    "id": 90,
+    "id": 91,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2387,7 +2363,7 @@
     ]
   },
   {
-    "id": 91,
+    "id": 92,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2410,7 +2386,7 @@
     ]
   },
   {
-    "id": 92,
+    "id": 93,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2433,7 +2409,7 @@
     ]
   },
   {
-    "id": 93,
+    "id": 94,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2456,7 +2432,7 @@
     ]
   },
   {
-    "id": 94,
+    "id": 95,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2479,7 +2455,7 @@
     ]
   },
   {
-    "id": 95,
+    "id": 96,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2502,7 +2478,7 @@
     ]
   },
   {
-    "id": 96,
+    "id": 97,
     "category": "fresh",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2525,7 +2501,7 @@
     ]
   },
   {
-    "id": 97,
+    "id": 98,
     "category": "fresh",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2548,7 +2524,7 @@
     ]
   },
   {
-    "id": 98,
+    "id": 99,
     "category": "fresh",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2571,7 +2547,7 @@
     ]
   },
   {
-    "id": 99,
+    "id": 100,
     "category": "drinks",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2594,7 +2570,7 @@
     ]
   },
   {
-    "id": 100,
+    "id": 101,
     "category": "lemonade",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2617,7 +2593,7 @@
     ]
   },
   {
-    "id": 101,
+    "id": 102,
     "category": "lemonade",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2640,7 +2616,7 @@
     ]
   },
   {
-    "id": 102,
+    "id": 103,
     "category": "lemonade",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2663,7 +2639,7 @@
     ]
   },
   {
-    "id": 103,
+    "id": 104,
     "category": "lemonade",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2686,7 +2662,7 @@
     ]
   },
   {
-    "id": 104,
+    "id": 105,
     "category": "lemonade",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2709,7 +2685,7 @@
     ]
   },
   {
-    "id": 105,
+    "id": 106,
     "category": "lemonade",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2732,7 +2708,7 @@
     ]
   },
   {
-    "id": 106,
+    "id": 107,
     "category": "milkshake",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2755,7 +2731,7 @@
     ]
   },
   {
-    "id": 107,
+    "id": 108,
     "category": "milkshake",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2778,7 +2754,7 @@
     ]
   },
   {
-    "id": 108,
+    "id": 109,
     "category": "milkshake",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2801,7 +2777,7 @@
     ]
   },
   {
-    "id": 109,
+    "id": 110,
     "category": "tea",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2824,7 +2800,7 @@
     ]
   },
   {
-    "id": 110,
+    "id": 111,
     "category": "tea",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2847,7 +2823,7 @@
     ]
   },
   {
-    "id": 111,
+    "id": 112,
     "category": "coffee",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2870,7 +2846,7 @@
     ]
   },
   {
-    "id": 112,
+    "id": 113,
     "category": "coffee",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2893,7 +2869,7 @@
     ]
   },
   {
-    "id": 113,
+    "id": 114,
     "category": "coffee",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2916,7 +2892,7 @@
     ]
   },
   {
-    "id": 114,
+    "id": 115,
     "category": "coffee",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2939,7 +2915,7 @@
     ]
   },
   {
-    "id": 115,
+    "id": 116,
     "category": "coffee",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2962,7 +2938,7 @@
     ]
   },
   {
-    "id": 116,
+    "id": 117,
     "category": "hookah",
     "image": null,
     "selectedSizeIndex": 0,
@@ -2985,7 +2961,7 @@
     ]
   },
   {
-    "id": 117,
+    "id": 118,
     "category": "hookah",
     "image": null,
     "selectedSizeIndex": 0,
