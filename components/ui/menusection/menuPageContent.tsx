@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { MenuCard } from "./menuCard";
 import { MenuCategory } from "./menuCategory";
@@ -13,6 +13,26 @@ export const MenuPageContent = () => {
   const { locale, t, plural } = useI18n();
   const [activeCategory, setActiveCategory] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
+  const categoryBarRef = useRef<HTMLDivElement>(null);
+  const listStartRef = useRef<HTMLParagraphElement>(null);
+
+  // Switching category while deep in a long list would otherwise leave the
+  // reader in the middle of the new one. Bring the list's start up to just
+  // under the sticky bar so they can swipe it from the top — but only when
+  // they are already past that point, never pulling them down from the hero.
+  const changeCategory = (key: string) => {
+    setActiveCategory(key);
+    const bar = categoryBarRef.current;
+    const listStart = listStartRef.current;
+    if (!bar || !listStart) return;
+    const stickyTop = parseFloat(getComputedStyle(bar).top) || 0;
+    const target =
+      listStart.getBoundingClientRect().top +
+      window.scrollY -
+      stickyTop -
+      bar.offsetHeight;
+    if (window.scrollY > target) window.scrollTo({ top: target });
+  };
 
   const filteredItems = filterMenuItems(
     menuItems,
@@ -145,15 +165,18 @@ export const MenuPageContent = () => {
         (h-14 on mobile, h-24 from md), and z-30 keeps it under the header's
         z-40 rather than over it.
       */}
-      <div className="sticky top-14 z-30 -mx-4 mb-5 border-b border-white/10 bg-background/95 px-4 pt-2 backdrop-blur-md sm:mb-6 md:top-24">
+      <div
+        ref={categoryBarRef}
+        className="sticky top-14 z-30 -mx-4 mb-5 border-b border-white/10 bg-background/95 px-4 pt-2 backdrop-blur-md sm:mb-6 md:top-24"
+      >
         <MenuCategory
           active={activeCategory}
-          onChange={setActiveCategory}
+          onChange={changeCategory}
           bleed={false}
         />
       </div>
 
-      <p className="mb-3 text-xs text-gray-400 sm:mb-4 sm:text-sm">
+      <p ref={listStartRef} className="mb-3 text-xs text-gray-400 sm:mb-4 sm:text-sm">
         {t.menuPage.found}{" "}
         <span className="font-semibold text-white">{filteredItems.length}</span>{" "}
         {plural(t.menuPage.dishes, filteredItems.length)}

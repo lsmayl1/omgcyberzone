@@ -26,9 +26,9 @@ interface MenuCardProps {
  * change: a row on phones, a stacked card from sm up.
  *
  * Widths are declared mobile-first, so `sizes` has to be too or the phone
- * layout downloads a desktop-sized image for a 7rem thumbnail.
+ * layout downloads a desktop-sized image for a 5rem thumbnail.
  */
-const IMAGE_SIZES = "(max-width: 639px) 7rem, (max-width: 1023px) 50vw, 25vw";
+const IMAGE_SIZES = "(max-width: 639px) 5rem, (max-width: 1023px) 50vw, 25vw";
 
 export const MenuCard = ({ items, limit }: MenuCardProps) => {
   const { locale, t } = useI18n();
@@ -73,12 +73,15 @@ export const MenuCard = ({ items, limit }: MenuCardProps) => {
             key={item.id}
             className="group flex flex-row overflow-hidden rounded-xl bg-boxColor transition-colors sm:flex-col sm:rounded-2xl"
           >
-            <div className="relative w-28 shrink-0 self-stretch sm:h-48 sm:w-full">
+            {/* A fixed square thumbnail on phones, inset from the card edge, so a
+                dish with a long description or size row does not stretch the
+                photo into a tall strip. */}
+            <div className="relative m-3 mr-0 size-20 shrink-0 self-start overflow-hidden rounded-lg sm:m-0 sm:h-48 sm:w-full sm:rounded-none">
               {showIcon ? (
-                <div className="flex h-full min-h-28 w-full items-center justify-center bg-background">
+                <div className="flex h-full w-full items-center justify-center bg-background">
                   <Icon
                     aria-hidden="true"
-                    className="size-9 text-gray-600 sm:size-14"
+                    className="size-8 text-gray-600 sm:size-14"
                     strokeWidth={1.4}
                   />
                 </div>
@@ -105,7 +108,7 @@ export const MenuCard = ({ items, limit }: MenuCardProps) => {
                 </button>
               )}
               {(item.isPopular || item.isSpicy) && (
-                <div className="absolute left-2 top-2 flex flex-wrap gap-1 sm:left-3 sm:top-3 sm:gap-2">
+                <div className="absolute left-1 top-1 flex flex-wrap gap-1 sm:left-3 sm:top-3 sm:gap-2">
                   {item.isPopular && (
                     <span className="rounded-full bg-mainRed px-2 py-0.5 text-[0.65rem] font-bold text-white sm:py-1 sm:text-xs">
                       {t.menu.badges.popular}

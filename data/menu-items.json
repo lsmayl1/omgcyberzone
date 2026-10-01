@@ -5,10 +5,10 @@
     "image": "/menu-food/pizza-bbq-chicken.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца BBQ с курицей",
+      "ru": "BBQ Chicken Pizza",
       "en": "BBQ Chicken Pizza",
-      "az": "BBQ Toyuqlu Pizza",
-      "tr": "BBQ Tavuklu Pizza"
+      "az": "BBQ Chicken Pizza",
+      "tr": "BBQ Chicken Pizza"
     },
     "description": {
       "ru": "Соус барбекю, Сыр гауда, Сыр чеддер, Лук, Перец, Курица",
@@ -40,10 +40,10 @@
     "image": "/menu-food/pizza-meat.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца с говядиной",
+      "ru": "Beef Pizza",
       "en": "Beef Pizza",
-      "az": "Mal ətli Pizza",
-      "tr": "Etli Pizza"
+      "az": "Beef Pizza",
+      "tr": "Beef Pizza"
     },
     "description": {
       "ru": "Фирменный соус, Сыр гауда, Помидор, Лук, Говядина",
@@ -75,7 +75,7 @@
     "image": "/menu-food/pizza-capricciosa.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца Капричоза",
+      "ru": "Capricciosa Pizza",
       "en": "Capricciosa Pizza",
       "az": "Capricciosa Pizza",
       "tr": "Capricciosa Pizza"
@@ -110,10 +110,10 @@
     "image": "/menu-in/68920dd2e35161754402258.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Сырная пицца",
+      "ru": "Cheese Pizza",
       "en": "Cheese Pizza",
-      "az": "Pendirli Pizza",
-      "tr": "Peynirli Pizza"
+      "az": "Cheese Pizza",
+      "tr": "Cheese Pizza"
     },
     "description": {
       "ru": "Фирменный соус, Сыр гауда, Сыр с плесенью, Чеддер, Пармезан, Рикотта",
@@ -145,10 +145,10 @@
     "image": "/menu-food/pizza-chicken.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца с курицей",
+      "ru": "Chicken Pizza",
       "en": "Chicken Pizza",
-      "az": "Toyuqlu Pizza",
-      "tr": "Tavuklu Pizza"
+      "az": "Chicken Pizza",
+      "tr": "Chicken Pizza"
     },
     "description": {
       "ru": "Соус для пиццы, Сыр гауда, Грибы, Перец, Курица",
@@ -180,7 +180,7 @@
     "image": "/menu-food/pizza-coco-mix.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца Коко Микс",
+      "ru": "Coco Mix Pizza",
       "en": "Coco Mix Pizza",
       "az": "Coco Mix Pizza",
       "tr": "Coco Mix Pizza"
@@ -215,7 +215,7 @@
     "image": "/menu-food/pizza-grand-mix.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца Гранд Микс",
+      "ru": "Grand Mix Pizza",
       "en": "Grand Mix Pizza",
       "az": "Grand Mix Pizza",
       "tr": "Grand Mix Pizza"
@@ -250,10 +250,10 @@
     "image": "/menu-food/pizza-hawaiian.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца Гавайская",
+      "ru": "Hawaiian Pizza",
       "en": "Hawaiian Pizza",
-      "az": "Havay Pizzası",
-      "tr": "Hawaii Pizza"
+      "az": "Hawaiian Pizza",
+      "tr": "Hawaiian Pizza"
     },
     "description": {
       "ru": "Соус для пиццы, Ветчина, Сыр гауда, Помидор, Ананас, Курица",
@@ -286,9 +286,9 @@
     "isPopular": true,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца Маргарита",
-      "en": "Margherita Pizza",
-      "az": "Marqarita Pizza",
+      "ru": "Margarita Pizza",
+      "en": "Margarita Pizza",
+      "az": "Margarita Pizza",
       "tr": "Margarita Pizza"
     },
     "description": {
@@ -322,10 +322,10 @@
     "isSpicy": true,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Мексиканская пицца с курицей",
+      "ru": "Mexican Chicken Pizza",
       "en": "Mexican Chicken Pizza",
-      "az": "Meksika Toyuqlu Pizza",
-      "tr": "Meksika Tavuklu Pizza"
+      "az": "Mexican Chicken Pizza",
+      "tr": "Mexican Chicken Pizza"
     },
     "description": {
       "ru": "Грибы, Болгарский перец, Сыр гауда, Куриное филе, Помидор и халапеньо",
@@ -358,10 +358,10 @@
     "isSpicy": true,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца Мексика",
+      "ru": "Mexico Pizza",
       "en": "Mexico Pizza",
-      "az": "Meksika Pizzası",
-      "tr": "Meksika Pizza"
+      "az": "Mexico Pizza",
+      "tr": "Mexico Pizza"
     },
     "description": {
       "ru": "Соус для пиццы, Сыр гауда, Перец, Помидор, Халапеньо, Говядина",
@@ -393,10 +393,10 @@
     "image": "/menu-food/pizza-nuggets.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца с наггетсами",
-      "en": "Nuggets Pizza",
-      "az": "Nagetsli Pizza",
-      "tr": "Nuggetslı Pizza"
+      "ru": "Naggets Pizza",
+      "en": "Naggets Pizza",
+      "az": "Naggets Pizza",
+      "tr": "Naggets Pizza"
     },
     "description": {
       "ru": "Соус для пиццы, Наггетсы, Грибы, Кукуруза, Сыр гауда, Помидор",
@@ -429,7 +429,7 @@
     "isPopular": true,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца Пепперони",
+      "ru": "Pepperoni Pizza",
       "en": "Pepperoni Pizza",
       "az": "Pepperoni Pizza",
       "tr": "Pepperoni Pizza"
@@ -464,7 +464,7 @@
     "image": "/menu-food/pizza-pesto.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца Песто",
+      "ru": "Pesto Pizza",
       "en": "Pesto Pizza",
       "az": "Pesto Pizza",
       "tr": "Pesto Pizza"
@@ -499,10 +499,10 @@
     "image": "/menu-food/pizza-sausage.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца с колбасками",
+      "ru": "Sausage Pizza",
       "en": "Sausage Pizza",
-      "az": "Sosisli Pizza",
-      "tr": "Sosisli Pizza"
+      "az": "Sausage Pizza",
+      "tr": "Sausage Pizza"
     },
     "description": {
       "ru": "Соус песто, Сыр гауда, Лук, Перец, Колбаски",
@@ -534,8 +534,8 @@
     "image": "/menu-food/pizza-caesar.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца Цезарь",
-      "en": "Caesar Pizza",
+      "ru": "Sezar Pizza",
+      "en": "Sezar Pizza",
       "az": "Sezar Pizza",
       "tr": "Sezar Pizza"
     },
@@ -569,7 +569,7 @@
     "image": "/menu-food/pizza-texas.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца Техас",
+      "ru": "Texas Pizza",
       "en": "Texas Pizza",
       "az": "Texas Pizza",
       "tr": "Texas Pizza"
@@ -604,10 +604,10 @@
     "image": "/menu-food/pizza-tuna.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца с тунцом",
+      "ru": "Tuna Pizza",
       "en": "Tuna Pizza",
-      "az": "Tuna balıqlı Pizza",
-      "tr": "Ton Balıklı Pizza"
+      "az": "Tuna Pizza",
+      "tr": "Tuna Pizza"
     },
     "description": {
       "ru": "Соус для пиццы, Сыр гауда, Грибы, Оливки, Тунец",
@@ -639,10 +639,10 @@
     "image": "/menu-food/pizza-vegetarian.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Вегетарианская пицца",
+      "ru": "Vegetarian Pizza",
       "en": "Vegetarian Pizza",
       "az": "Vegetarian Pizza",
-      "tr": "Vejetaryen Pizza"
+      "tr": "Vegetarian Pizza"
     },
     "description": {
       "ru": "Соус для пиццы, Сыр гауда, Лук, Грибы, Перец, Оливки",
@@ -674,7 +674,7 @@
     "image": null,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца Альфредо",
+      "ru": "Alfredo Pizza",
       "en": "Alfredo Pizza",
       "az": "Alfredo Pizza",
       "tr": "Alfredo Pizza"
@@ -699,10 +699,10 @@
     "image": null,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца с кебабом",
-      "en": "Kebab Pizza",
+      "ru": "Kabab Pizza",
+      "en": "Kabab Pizza",
       "az": "Kabab Pizza",
-      "tr": "Kebap Pizza"
+      "tr": "Kabab Pizza"
     },
     "description": {
       "ru": "",
@@ -724,10 +724,10 @@
     "image": null,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца с лососем",
+      "ru": "Salmon Pizza",
       "en": "Salmon Pizza",
-      "az": "Qızılbalıqlı Pizza",
-      "tr": "Somonlu Pizza"
+      "az": "Salmon Pizza",
+      "tr": "Salmon Pizza"
     },
     "description": {
       "ru": "",
@@ -749,10 +749,10 @@
     "image": null,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца с креветками",
+      "ru": "Shrimp Pizza",
       "en": "Shrimp Pizza",
-      "az": "Krevetli Pizza",
-      "tr": "Karidesli Pizza"
+      "az": "Shrimp Pizza",
+      "tr": "Shrimp Pizza"
     },
     "description": {
       "ru": "",
@@ -775,10 +775,10 @@
     "isPopular": true,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Чизбургер",
+      "ru": "Cheese Burger",
       "en": "Cheese Burger",
-      "az": "Pendirli Burger",
-      "tr": "Peynirli Burger"
+      "az": "Cheese Burger",
+      "tr": "Cheese Burger"
     },
     "description": {
       "ru": "Горчица, Кетчуп, Лук, Сыр чеддер, Говядина, Подаётся с картофелем фри",
@@ -798,7 +798,7 @@
     "image": "/menu-food/burger-pizzy.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца-бургер",
+      "ru": "Pizza Burger",
       "en": "Pizza Burger",
       "az": "Pizza Burger",
       "tr": "Pizza Burger"
@@ -821,10 +821,10 @@
     "image": null,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Лаваш бургер",
+      "ru": "Lavash Burger",
       "en": "Lavash Burger",
-      "az": "Lavaş Burger",
-      "tr": "Lavaş Burger"
+      "az": "Lavash Burger",
+      "tr": "Lavash Burger"
     },
     "description": {
       "ru": "",
@@ -844,7 +844,7 @@
     "image": null,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Зен бургер",
+      "ru": "Zen Burger",
       "en": "Zen Burger",
       "az": "Zen Burger",
       "tr": "Zen Burger"
@@ -867,10 +867,10 @@
     "image": null,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Клаб-сэндвич с курицей",
+      "ru": "Chicken Club Sandwich",
       "en": "Chicken Club Sandwich",
-      "az": "Toyuqlu Klub Sendviç",
-      "tr": "Tavuklu Club Sandviç"
+      "az": "Chicken Club Sandwich",
+      "tr": "Chicken Club Sandwich"
     },
     "description": {
       "ru": "Сэндвичный хлеб, Горчица, Майонез, Ветчина, Куриное филе, Помидор, Солёный огурец, Сыр чеддер, Подаётся с картофелем фри",
@@ -880,7 +880,7 @@
     },
     "sizes": [
       {
-        "price": "10.00 ₼"
+        "price": "11.00 ₼"
       }
     ]
   },
@@ -890,10 +890,10 @@
     "image": "/menu-food/sandwich-bbq.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Сэндвич BBQ",
-      "en": "BBQ Sandwich",
-      "az": "BBQ Sendviç",
-      "tr": "BBQ Sandviç"
+      "ru": "BBQ Pizza-Sandwich",
+      "en": "BBQ Pizza-Sandwich",
+      "az": "BBQ Pizza-Sandwich",
+      "tr": "BBQ Pizza-Sandwich"
     },
     "description": {
       "ru": "Соус BBQ, Сыр гауда, Лук, Руккола, Курица",
@@ -913,10 +913,10 @@
     "image": "/menu-food/sandwich-beef.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Сэндвич с говядиной",
-      "en": "Beef Sandwich",
-      "az": "Mal ətli Sendviç",
-      "tr": "Etli Sandviç"
+      "ru": "Beef Pizza-Sandwich",
+      "en": "Beef Pizza-Sandwich",
+      "az": "Beef Pizza-Sandwich",
+      "tr": "Beef Pizza-Sandwich"
     },
     "description": {
       "ru": "Чесночный соус, Грибы, Сыр гауда, Говядина, Помидор, Халапеньо",
@@ -926,7 +926,7 @@
     },
     "sizes": [
       {
-        "price": "12.00 ₼"
+        "price": "13.00 ₼"
       }
     ]
   },
@@ -936,10 +936,10 @@
     "image": "/menu-food/sandwich-pizza-bread.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца-хлеб",
+      "ru": "Pizza Bread",
       "en": "Pizza Bread",
-      "az": "Pizza Çörəyi",
-      "tr": "Pizza Ekmeği"
+      "az": "Pizza Bread",
+      "tr": "Pizza Bread"
     },
     "description": {
       "ru": "",
@@ -959,10 +959,10 @@
     "image": "/menu-food/roll-beef.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Ролл с говядиной",
+      "ru": "Beef Roll",
       "en": "Beef Roll",
-      "az": "Mal ətli Roll",
-      "tr": "Etli Rulo"
+      "az": "Beef Roll",
+      "tr": "Beef Roll"
     },
     "description": {
       "ru": "Фирменный соус, Солёный огурец, Сыр гауда, Говядина, Помидор",
@@ -972,7 +972,7 @@
     },
     "sizes": [
       {
-        "price": "12.00 ₼"
+        "price": "13.00 ₼"
       }
     ]
   },
@@ -982,10 +982,10 @@
     "image": "/menu-food/roll-cheesy-chicken.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Ролл с курицей и сыром",
+      "ru": "Cheese Chicken Roll",
       "en": "Cheese Chicken Roll",
-      "az": "Pendirli Toyuq Roll",
-      "tr": "Peynirli Tavuk Rulo"
+      "az": "Cheese Chicken Roll",
+      "tr": "Cheese Chicken Roll"
     },
     "description": {
       "ru": "Соус барбекю, Айсберг, Сыр гауда, Картофель фри, Кукуруза, Солёный огурец, Курица",
@@ -1005,10 +1005,10 @@
     "image": "/menu-food/roll-chicken-melt.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Ролл Чикен Мелт",
+      "ru": "Chicken Melt Roll",
       "en": "Chicken Melt Roll",
       "az": "Chicken Melt Roll",
-      "tr": "Chicken Melt Rulo"
+      "tr": "Chicken Melt Roll"
     },
     "description": {
       "ru": "Фирменный соус, Айсберг, Сыр гауда, Картофель фри, Кукуруза, Солёный огурец, Курица",
@@ -1028,10 +1028,10 @@
     "image": "/menu-food/roll-pizza.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пицца-ролл",
+      "ru": "Pizza Roll",
       "en": "Pizza Roll",
       "az": "Pizza Roll",
-      "tr": "Pizza Rulo"
+      "tr": "Pizza Roll"
     },
     "description": {
       "ru": "Фирменный соус, Грибы, Колбаски, Сыр гауда, Куриное филе, Кукуруза, Помидор",
@@ -1041,7 +1041,7 @@
     },
     "sizes": [
       {
-        "price": "11.00 ₼"
+        "price": "13.00 ₼"
       }
     ]
   },
@@ -1051,10 +1051,10 @@
     "image": "/menu-food/roll-caesar.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Ролл Цезарь",
-      "en": "Caesar Roll",
+      "ru": "Sezar Roll",
+      "en": "Sezar Roll",
       "az": "Sezar Roll",
-      "tr": "Sezar Rulo"
+      "tr": "Sezar Roll"
     },
     "description": {
       "ru": "Айсберг, Помидоры черри, Куриное филе, Сыр гауда, Сыр пармезан, Соус Цезарь",
@@ -1074,7 +1074,7 @@
     "image": null,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Кранч ролл",
+      "ru": "Crunch Roll",
       "en": "Crunch Roll",
       "az": "Crunch Roll",
       "tr": "Crunch Roll"
@@ -1087,7 +1087,7 @@
     },
     "sizes": [
       {
-        "price": "9.40 ₼"
+        "price": "9.50 ₼"
       }
     ]
   },
@@ -1097,10 +1097,10 @@
     "image": null,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Кранч ролл с кебабом",
-      "en": "Crunch Roll Kebab",
+      "ru": "Crunch Roll Kabab",
+      "en": "Crunch Roll Kabab",
       "az": "Crunch Roll Kabab",
-      "tr": "Crunch Roll Kebap"
+      "tr": "Crunch Roll Kabab"
     },
     "description": {
       "ru": "",
@@ -1120,8 +1120,8 @@
     "image": "/menu-in/689214922a3bf1754403986.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пенне Арабьята",
-      "en": "Penne Arrabbiata",
+      "ru": "Penne Arabiata",
+      "en": "Penne Arabiata",
       "az": "Penne Arabiata",
       "tr": "Penne Arabiata"
     },
@@ -1143,10 +1143,10 @@
     "image": "/menu-in/689214d137a7d1754404049.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пенне Арабьята с курицей",
-      "en": "Penne Arrabbiata with Chicken",
+      "ru": "Penne Arabiata Toyuq",
+      "en": "Penne Arabiata Toyuq",
       "az": "Penne Arabiata Toyuq",
-      "tr": "Tavuklu Penne Arabiata"
+      "tr": "Penne Arabiata Toyuq"
     },
     "description": {
       "ru": "Паста пенне, Соус арабьята, Гауда, Курица",
@@ -1166,10 +1166,10 @@
     "image": "/menu-food/pasta-bolognese.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Спагетти Болоньезе",
-      "en": "Spaghetti Bolognese",
-      "az": "Spagetti Bolognese",
-      "tr": "Spagetti Bolonez"
+      "ru": "Spagetti Bolonyeze",
+      "en": "Spagetti Bolonyeze",
+      "az": "Spagetti Bolonyeze",
+      "tr": "Spagetti Bolonyeze"
     },
     "description": {
       "ru": "Спагетти, Болоньезе, Пармезан",
@@ -1189,8 +1189,8 @@
     "image": "/menu-food/pasta-pomodoro.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Спагетти Помодоро",
-      "en": "Spaghetti Pomodoro",
+      "ru": "Spagetti Pomodoro",
+      "en": "Spagetti Pomodoro",
       "az": "Spagetti Pomodoro",
       "tr": "Spagetti Pomodoro"
     },
@@ -1212,10 +1212,10 @@
     "image": "/menu-food/snack-potato-slices.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Картофельные дольки",
-      "en": "Potato Wedges",
+      "ru": "Kartof Dilimləri",
+      "en": "Kartof Dilimləri",
       "az": "Kartof Dilimləri",
-      "tr": "Patates Dilimleri"
+      "tr": "Kartof Dilimləri"
     },
     "description": {
       "ru": "Жареные картофельные дольки",
@@ -1236,10 +1236,10 @@
     "isPopular": true,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Картофель фри",
-      "en": "French Fries",
+      "ru": "Kartof Fri",
+      "en": "Kartof Fri",
       "az": "Kartof Fri",
-      "tr": "Patates Kızartması"
+      "tr": "Kartof Fri"
     },
     "description": {
       "ru": "Средняя / большая",
@@ -1264,10 +1264,10 @@
     "image": "/menu-food/snack-cheese-sticks.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Сырные палочки",
-      "en": "Cheese Sticks",
+      "ru": "Pendir Çubuqları",
+      "en": "Pendir Çubuqları",
       "az": "Pendir Çubuqları",
-      "tr": "Peynir Çubukları"
+      "tr": "Pendir Çubuqları"
     },
     "description": {
       "ru": "Гренки, Сыр моцарелла",
@@ -1294,10 +1294,10 @@
     "image": "/menu-food/snack-chicken-sticks.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Куриные палочки",
-      "en": "Chicken Sticks",
+      "ru": "Toyuq Çubuqları",
+      "en": "Toyuq Çubuqları",
       "az": "Toyuq Çubuqları",
-      "tr": "Tavuk Çubukları"
+      "tr": "Toyuq Çubuqları"
     },
     "description": {
       "ru": "Гренки, Куриное филе",
@@ -1324,10 +1324,10 @@
     "image": "/menu-food/snack-chicken-wings.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Куриные крылышки",
-      "en": "Chicken Wings",
+      "ru": "Toyuq Qanadları",
+      "en": "Toyuq Qanadları",
       "az": "Toyuq Qanadları",
-      "tr": "Tavuk Kanatları"
+      "tr": "Toyuq Qanadları"
     },
     "description": {
       "ru": "Куриные крылышки, Соус BBQ, Кунжут",
@@ -1354,10 +1354,10 @@
     "image": "/menu-food/snack-chicken-schnitzel.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Куриный шницель",
+      "ru": "Chicken Schnitzel",
       "en": "Chicken Schnitzel",
-      "az": "Toyuq Şnitseli",
-      "tr": "Tavuk Şnitzel"
+      "az": "Chicken Schnitzel",
+      "tr": "Chicken Schnitzel"
     },
     "description": {
       "ru": "Картофель фри, С гренками, Курица, Острый соус, Сырный соус",
@@ -1377,7 +1377,7 @@
     "image": null,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Пиццадог",
+      "ru": "Pizzadog",
       "en": "Pizzadog",
       "az": "Pizzadog",
       "tr": "Pizzadog"
@@ -1400,10 +1400,10 @@
     "image": "/menu-food/salad-beef.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Салат с говядиной",
+      "ru": "Beef Salad",
       "en": "Beef Salad",
-      "az": "Mal ətli Salat",
-      "tr": "Etli Salata"
+      "az": "Beef Salad",
+      "tr": "Beef Salad"
     },
     "description": {
       "ru": "Салат айсберг, Помидор, Огурец, Лук, Фирменный соус, Говядина",
@@ -1413,7 +1413,7 @@
     },
     "sizes": [
       {
-        "price": "7.00 ₼"
+        "price": "9.00 ₼"
       }
     ]
   },
@@ -1423,10 +1423,10 @@
     "image": "/menu-food/salad-mexican.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Мексиканский салат",
-      "en": "Mexican Salad",
-      "az": "Meksika Salatı",
-      "tr": "Meksika Salata"
+      "ru": "Mexico Salad",
+      "en": "Mexico Salad",
+      "az": "Mexico Salad",
+      "tr": "Mexico Salad"
     },
     "description": {
       "ru": "Айсберг, Фирменный соус, Кукуруза, Фасоль, Помидор, Авокадо, Лук, Курица",
@@ -1436,7 +1436,7 @@
     },
     "sizes": [
       {
-        "price": "7.00 ₼"
+        "price": "9.00 ₼"
       }
     ]
   },
@@ -1446,10 +1446,10 @@
     "image": "/menu-food/salad-caesar-shrimp.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Цезарь с креветками",
-      "en": "Caesar Salad with Shrimp",
-      "az": "Sezar Krevetli Salat",
-      "tr": "Karidesli Sezar Salata"
+      "ru": "Sezar Krevet Salad",
+      "en": "Sezar Krevet Salad",
+      "az": "Sezar Krevet Salad",
+      "tr": "Sezar Krevet Salad"
     },
     "description": {
       "ru": "Соус Цезарь, Айсберг, Сухарики, Помидоры черри, Пармезан, Креветки",
@@ -1459,7 +1459,7 @@
     },
     "sizes": [
       {
-        "price": "11.00 ₼"
+        "price": "13.00 ₼"
       }
     ]
   },
@@ -1470,10 +1470,10 @@
     "isPopular": true,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Цезарь с курицей",
-      "en": "Caesar Salad with Chicken",
-      "az": "Sezar Toyuqlu Salat",
-      "tr": "Tavuklu Sezar Salata"
+      "ru": "Sezar Toyuq Salad",
+      "en": "Sezar Toyuq Salad",
+      "az": "Sezar Toyuq Salad",
+      "tr": "Sezar Toyuq Salad"
     },
     "description": {
       "ru": "Соус Цезарь, Айсберг, Сухарики, Помидоры черри, Пармезан, Курица",
@@ -1483,7 +1483,7 @@
     },
     "sizes": [
       {
-        "price": "8.50 ₼"
+        "price": "9.00 ₼"
       }
     ]
   },
@@ -1493,10 +1493,10 @@
     "image": "/menu-food/salad-vegetarian.webp",
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Вегетарианский салат",
+      "ru": "Vegetarian Salad",
       "en": "Vegetarian Salad",
-      "az": "Vegetarian Salat",
-      "tr": "Vejetaryen Salata"
+      "az": "Vegetarian Salad",
+      "tr": "Vegetarian Salad"
     },
     "description": {
       "ru": "Айсберг, Огурец, Помидор, Перец, Авокадо, Морковь, Кукуруза, Оливковое масло",
@@ -1516,10 +1516,10 @@
     "image": null,
     "selectedSizeIndex": 0,
     "name": {
-      "ru": "Весенний салат",
+      "ru": "Spring Salad",
       "en": "Spring Salad",
-      "az": "Bahar Salatı",
-      "tr": "Bahar Salatası"
+      "az": "Spring Salad",
+      "tr": "Spring Salad"
     },
     "description": {
       "ru": "",
