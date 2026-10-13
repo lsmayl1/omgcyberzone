@@ -2572,7 +2572,7 @@
   {
     "id": 101,
     "category": "lemonade",
-    "image": null,
+    "image": "/menu-food/lemonade-passion-mango.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Маракуйя — манго",
@@ -2595,7 +2595,7 @@
   {
     "id": 102,
     "category": "lemonade",
-    "image": null,
+    "image": "/menu-food/lemonade-strawberry-kiwi.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Клубника — киви",
@@ -2641,7 +2641,7 @@
   {
     "id": 104,
     "category": "lemonade",
-    "image": null,
+    "image": "/menu-food/lemonade-green-apple.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Зелёное яблоко",
@@ -2710,7 +2710,7 @@
   {
     "id": 107,
     "category": "milkshake",
-    "image": null,
+    "image": "/menu-food/milkshake-classic-vanilla.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Ванильный милкшейк",
@@ -2733,7 +2733,7 @@
   {
     "id": 108,
     "category": "milkshake",
-    "image": null,
+    "image": "/menu-food/milkshake-classic-chocolate.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Шоколадный милкшейк",
@@ -2756,7 +2756,7 @@
   {
     "id": 109,
     "category": "milkshake",
-    "image": null,
+    "image": "/menu-food/milkshake-classic-strawberry.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Клубничный милкшейк",
