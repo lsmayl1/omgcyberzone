@@ -2618,7 +2618,7 @@
   {
     "id": 103,
     "category": "lemonade",
-    "image": null,
+    "image": "/menu-food/lemonade-strawberry-kiwi.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Киви — гранат",
@@ -2664,7 +2664,7 @@
   {
     "id": 105,
     "category": "lemonade",
-    "image": null,
+    "image": "/menu-food/lemonade-green-apple.webp",
     "selectedSizeIndex": 0,
     "name": {
       "ru": "Тархун Бриз",
